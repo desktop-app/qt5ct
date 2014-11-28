@@ -48,6 +48,8 @@ private slots:
     void on_buttonBox_accepted();
 
 private:
+    void closeEvent(QCloseEvent *);
+
     Ui::MainWindow *m_ui;
 };
 

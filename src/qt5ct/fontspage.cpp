@@ -90,18 +90,3 @@ void FontsPage::loadFont(QSettings *settings, QLabel *label, const QString &key)
     label->setText(font.family () + " " + QString::number(font.pointSize ()));
     label->setFont(font);
 }
-
-void FontsPage::on_changeAllFontsButton_clicked()
-{
-    bool ok = false;
-    QFont font = QFontDialog::getFont (&ok, m_ui->generalFontLabel->font(), this);
-    if(ok)
-    {
-        foreach (QLabel *label, QList<QLabel *>() << m_ui->generalFontLabel
-                 << m_ui->fixedFontLabel)
-        {
-            label->setText(font.family () + " " + QString::number(font.pointSize ()));
-            label->setFont(font);
-        }
-    }
-}

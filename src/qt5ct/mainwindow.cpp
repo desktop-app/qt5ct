@@ -41,6 +41,9 @@ MainWindow::MainWindow(QWidget *parent) :
     m_ui->setupUi(this);
     m_ui->tabWidget->addTab(new AppearancePage(this), tr("Appearance"));
     m_ui->tabWidget->addTab(new FontsPage(this), tr("Fonts"));
+
+    QSettings settings(Qt5CT::configFile(), QSettings::IniFormat);
+    restoreGeometry(settings.value("SettingsWindow/geometry").toByteArray());
 }
 
 MainWindow::~MainWindow()
@@ -50,6 +53,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_buttonBox_rejected()
 {
+    close();
     qApp->quit();
 }
 
@@ -61,5 +65,12 @@ void MainWindow::on_buttonBox_accepted()
         if(p)
             p->writeSettings();
     }
+    close();
     qApp->quit();
+}
+
+void MainWindow::closeEvent(QCloseEvent *)
+{
+    QSettings settings(Qt5CT::configFile(), QSettings::IniFormat);
+    settings.setValue("SettingsWindow/geometry", saveGeometry());
 }
