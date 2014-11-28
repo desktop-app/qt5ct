@@ -39,3 +39,32 @@ QString Qt5CT::configFile()
 {
     return configPath() + "qt5ct.conf";
 }
+
+QStringList Qt5CT::iconPaths()
+{
+    QString xdgDataDirs = qgetenv("XDG_DATA_DIRS");
+
+    QStringList paths;
+    paths << QDir::homePath() + "/.icons/";
+
+    if(xdgDataDirs.isEmpty())
+    {
+        paths << "/usr/share/icons";
+        paths << "/usr/local/share/icons";
+    }
+    else
+    {
+        foreach (QString p, xdgDataDirs.split(":"))
+            paths << QDir(p + "/icons/").absolutePath();
+    }
+    paths << "/usr/share/pixmaps";
+    paths.removeDuplicates();
+
+    //remove invalid
+    foreach (QString p, paths)
+    {
+        if(!QDir(p).exists())
+            paths.removeAll(p);
+    }
+    return paths;
+}

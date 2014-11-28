@@ -9,13 +9,15 @@ SOURCES += \
     appearancepage.cpp \
     fontspage.cpp \
     qt5ct.cpp \
-    paletteeditdialog.cpp
+    paletteeditdialog.cpp \
+    iconthemepage.cpp
 
 FORMS += \
     mainwindow.ui \
     appearancepage.ui \
     fontspage.ui \
-    paletteeditdialog.ui
+    paletteeditdialog.ui \
+    iconthemepage.ui
 
 HEADERS += \
     mainwindow.h \
@@ -23,4 +25,5 @@ HEADERS += \
     appearancepage.h \
     fontspage.h \
     qt5ct.h \
-    paletteeditdialog.h
+    paletteeditdialog.h \
+    iconthemepage.h

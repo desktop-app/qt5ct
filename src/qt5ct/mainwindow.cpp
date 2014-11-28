@@ -32,6 +32,7 @@
 #include "mainwindow.h"
 #include "appearancepage.h"
 #include "fontspage.h"
+#include "iconthemepage.h"
 #include "ui_mainwindow.h"
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -41,6 +42,7 @@ MainWindow::MainWindow(QWidget *parent) :
     m_ui->setupUi(this);
     m_ui->tabWidget->addTab(new AppearancePage(this), tr("Appearance"));
     m_ui->tabWidget->addTab(new FontsPage(this), tr("Fonts"));
+    m_ui->tabWidget->addTab(new IconThemePage(this), tr("Icon Theme"));
 
     QSettings settings(Qt5CT::configFile(), QSettings::IniFormat);
     restoreGeometry(settings.value("SettingsWindow/geometry").toByteArray());

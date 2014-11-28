@@ -26,30 +26,24 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef QT5CT_H
-#define QT5CT_H
+#include <QSettings>
+#include "qt5ct.h"
+#include "iconthemepage.h"
+#include "ui_iconthemepage.h"
 
-#define QT5CT_VERSION_MAJOR 0
-#define QT5CT_VERSION_MINOR 1
-
-#define QT5CT_TOSTRING(s) #s
-#define QT5CT_STRINGIFY(s)         QT5CT_TOSTRING(s)
-
-#define QT5CT_VERSION_INT (QT5CT_VERSION_MAJOR<<8 | QT5CT_VERSION_MINOR)
-#define QT5CT_VERSION_STR QT5CT_STRINGIFY(QT5CT_VERSION_MAJOR.QT5CT_VERSION_MINOR)
-
-#include <QString>
-#include <QStringList>
-
-class Qt5CT
+IconThemePage::IconThemePage(QWidget *parent) :
+    TabPage(parent),
+    m_ui(new Ui::IconThemePage)
 {
-public:
-    static QString configPath();
-    static QString configFile();
-    static QStringList iconPaths();
+    m_ui->setupUi(this);
+}
 
-private:
-    Qt5CT() {}
-};
+IconThemePage::~IconThemePage()
+{
+    delete m_ui;
+}
 
-#endif // QT5CT_H
+void IconThemePage::writeSettings()
+{
+
+}
