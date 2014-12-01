@@ -4,11 +4,6 @@
 <context>
     <name>AppearancePage</name>
     <message>
-        <location filename="../appearancepage.ui" line="14"/>
-        <source>Form</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../appearancepage.ui" line="20"/>
         <source>Style:</source>
         <translation type="unfinished"></translation>
@@ -87,11 +82,6 @@
 <context>
     <name>FontsPage</name>
     <message>
-        <location filename="../fontspage.ui" line="14"/>
-        <source>Form</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../fontspage.ui" line="44"/>
         <location filename="../fontspage.ui" line="64"/>
         <location filename="../fontspage.ui" line="80"/>
@@ -110,36 +100,13 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../fontspage.ui" line="119"/>
+        <location filename="../fontspage.ui" line="122"/>
         <source>Create  fonts.conf</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../fontspage.ui" line="126"/>
+        <location filename="../fontspage.ui" line="132"/>
         <source>Remove fonts.conf</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>IconThemePage</name>
-    <message>
-        <location filename="../iconthemepage.ui" line="14"/>
-        <source>Form</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../iconthemepage.ui" line="27"/>
-        <source>1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../iconthemepage.ui" line="32"/>
-        <source>2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../iconthemepage.ui" line="37"/>
-        <source>3</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

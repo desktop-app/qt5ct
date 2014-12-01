@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string notr="true">Form</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -24,17 +24,17 @@
      </attribute>
      <column>
       <property name="text">
-       <string>1</string>
+       <string notr="true">1</string>
       </property>
      </column>
      <column>
       <property name="text">
-       <string>2</string>
+       <string notr="true">2</string>
       </property>
      </column>
      <column>
       <property name="text">
-       <string>3</string>
+       <string notr="true">3</string>
       </property>
      </column>
      <column>
