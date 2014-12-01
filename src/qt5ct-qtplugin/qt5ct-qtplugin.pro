@@ -1,3 +1,5 @@
+include(../../qt5ct.pri)
+
 TEMPLATE = lib
 TARGET = qt5ct
 CONFIG += plugin
