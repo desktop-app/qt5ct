@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/" >
+        <file>32x32/qt5ct.png</file>
+    </qresource>
+</RCC>
