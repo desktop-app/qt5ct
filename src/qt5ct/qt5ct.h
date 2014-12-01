@@ -47,6 +47,7 @@ public:
     static QString configPath();
     static QString configFile();
     static QStringList iconPaths();
+    static QString systemLanguageID();
 
 private:
     Qt5CT() {}

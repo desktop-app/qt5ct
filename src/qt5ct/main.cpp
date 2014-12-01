@@ -29,12 +29,22 @@
 #include <QApplication>
 #include <QLibraryInfo>
 #include <QLocale>
+#include "qt5ct.h"
 #include <QTranslator>
 #include "mainwindow.h"
 
 int main(int argc, char **argv)
 {
     QApplication app(argc, argv);
+
+    QTranslator translator;
+    QString locale = Qt5CT::systemLanguageID();
+    translator.load(QString(":/qt5ct_") + locale);
+    app.installTranslator(&translator);
+
+    QTranslator qt_translator;
+    qt_translator.load(QLibraryInfo::location (QLibraryInfo::TranslationsPath) + "/qtbase_" + locale);
+    app.installTranslator(&qt_translator);
 
     MainWindow w;
     w.show();

@@ -27,6 +27,7 @@
  */
 
 #include <QDir>
+#include <QLocale>
 #include "qt5ct.h"
 
 
@@ -67,4 +68,18 @@ QStringList Qt5CT::iconPaths()
             paths.removeAll(p);
     }
     return paths;
+}
+
+QString Qt5CT::systemLanguageID()
+{
+#ifdef Q_OS_UNIX
+    QByteArray v = qgetenv ("LC_ALL");
+    if (v.isEmpty())
+        v = qgetenv ("LC_MESSAGES");
+    if (v.isEmpty())
+        v = qgetenv ("LANG");
+    if (!v.isEmpty())
+        return QLocale (v).name();
+#endif
+    return  QLocale::system().name();
 }

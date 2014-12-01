@@ -29,3 +29,5 @@ HEADERS += \
     qt5ct.h \
     paletteeditdialog.h \
     iconthemepage.h
+
+RESOURCES = translations/translations.qrc
