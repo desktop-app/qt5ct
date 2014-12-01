@@ -104,7 +104,6 @@ QVariant Qt5CTPlatformTheme::themeHint(QPlatformTheme::ThemeHint hint) const
     switch (hint)
     {
     case QPlatformTheme::SystemIconThemeName:
-        qDebug() << "iconTheme" << m_iconTheme;
         return m_iconTheme;
     case QPlatformTheme::StyleNames:
         return QStringList() << m_style;
