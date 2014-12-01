@@ -31,3 +31,10 @@ HEADERS += \
     iconthemepage.h
 
 RESOURCES = translations/translations.qrc
+
+target.path = $$[QT_INSTALL_BINS]
+
+desktop.files = qt5ct.desktop
+desktop.path = /usr/share/applications
+
+INSTALLS += target desktop
