@@ -1,0 +1,31 @@
+qt5ct - Qt5 Configuration Tool
+
+This program allows users to configure Qt5 settings (theme, font, icons, etc.)
+under DE/WM without support of the Qt integration.
+
+
+Requirements:
+
+- GNU Linux or FreeBSD
+- qtbase > 5.4.0
+- qtsvg > 5.4.0
+- qt54svg > 5.4.0
+- qttools > 5.4.0 (For build only)
+
+
+Installation:
+
+qmake
+make
+make install (under root)
+
+
+Usage:
+
+Add line 'export QT_QPA_PLATFORMTHEME=qt5ct' to ~/.profile and re-login
+
+Base files:
+qt5ct - Qt5 configuration tool
+qt5ct-plugin.so - qt5ct platform plugin
+~/.config/qt5ct/qt5ct.conf - configuration file
+
