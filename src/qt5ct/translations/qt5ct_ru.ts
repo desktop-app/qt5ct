@@ -6,77 +6,77 @@
     <message>
         <location filename="../appearancepage.ui" line="20"/>
         <source>Style:</source>
-        <translation type="unfinished"></translation>
+        <translation>Стиль:</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="27"/>
         <source>Preview</source>
-        <translation type="unfinished"></translation>
+        <translation>Предварительный просмотр</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="46"/>
         <source>Active palette</source>
-        <translation type="unfinished"></translation>
+        <translation>Активная палитра</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="60"/>
         <source>Preview Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Неактивная палитра</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="70"/>
         <source>Tab 1</source>
-        <translation type="unfinished"></translation>
+        <translation>Вкладка 1</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="76"/>
         <source>PushButton</source>
-        <translation type="unfinished"></translation>
+        <translation>Кнопка</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="97"/>
         <source>Tab 2</source>
-        <translation type="unfinished"></translation>
+        <translation>Вкладка 2</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="103"/>
         <source>RadioButton</source>
-        <translation type="unfinished"></translation>
+        <translation>Переключатель</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="110"/>
         <source>CheckBox</source>
-        <translation type="unfinished"></translation>
+        <translation>Выключатель</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="138"/>
         <source>Inactive palette</source>
-        <translation type="unfinished"></translation>
+        <translation>Неактивная палитра</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="145"/>
         <source>Disabled palette</source>
-        <translation type="unfinished"></translation>
+        <translation>Палитра выключенных элеметнов</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="155"/>
         <source>Palette</source>
-        <translation type="unfinished"></translation>
+        <translation>Палитра</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="161"/>
         <source>Default</source>
-        <translation type="unfinished"></translation>
+        <translation>По умолчанию</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="171"/>
         <source>Custom</source>
-        <translation type="unfinished"></translation>
+        <translation>Изменённая</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="181"/>
         <source>Change...</source>
-        <translation type="unfinished"></translation>
+        <translation>Изменить...</translation>
     </message>
 </context>
 <context>
@@ -87,27 +87,28 @@
         <location filename="../fontspage.ui" line="80"/>
         <location filename="../fontspage.ui" line="87"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation>...</translation>
     </message>
     <message>
         <location filename="../fontspage.ui" line="57"/>
         <source>General:</source>
-        <translation type="unfinished"></translation>
+        <translation>Общий:</translation>
     </message>
     <message>
         <location filename="../fontspage.ui" line="94"/>
         <source>Fixed width:</source>
-        <translation type="unfinished"></translation>
+        <translation>Фиксированной ширины:</translation>
     </message>
     <message>
         <location filename="../fontspage.ui" line="122"/>
         <source>Create  fonts.conf</source>
-        <translation type="unfinished"></translation>
+        <translatorcomment>Создать fonts.conf</translatorcomment>
+        <translation></translation>
     </message>
     <message>
         <location filename="../fontspage.ui" line="132"/>
         <source>Remove fonts.conf</source>
-        <translation type="unfinished"></translation>
+        <translation>Удалить fonts.conf</translation>
     </message>
 </context>
 <context>
@@ -115,22 +116,22 @@
     <message>
         <location filename="../mainwindow.ui" line="14"/>
         <source>Qt5 Configuration Tool</source>
-        <translation type="unfinished"></translation>
+        <translation>Средство настройки Qt5</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="43"/>
         <source>Appearance</source>
-        <translation type="unfinished"></translation>
+        <translation>Внешний вид</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="44"/>
         <source>Fonts</source>
-        <translation type="unfinished"></translation>
+        <translation>Шрифты</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="45"/>
         <source>Icon Theme</source>
-        <translation type="unfinished"></translation>
+        <translation>Стиль значков</translation>
     </message>
 </context>
 <context>
@@ -138,142 +139,142 @@
     <message>
         <location filename="../paletteeditdialog.ui" line="14"/>
         <source>Palette Editor</source>
-        <translation type="unfinished"></translation>
+        <translation>Редактор палитры</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.ui" line="29"/>
         <source>Reset palette</source>
-        <translation type="unfinished"></translation>
+        <translation>Сбросить палитру</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.ui" line="36"/>
         <source>Build inactive palette</source>
-        <translation type="unfinished"></translation>
+        <translation>Создать неактивную политру</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.ui" line="43"/>
         <source>Build disabled palette</source>
-        <translation type="unfinished"></translation>
+        <translation>Создать &quot;выключенную&quot; палитру</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="47"/>
         <source>Active</source>
-        <translation type="unfinished"></translation>
+        <translation>Активная</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="47"/>
         <source>Inactive</source>
-        <translation type="unfinished"></translation>
+        <translation>Неактивная</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="47"/>
         <source>Disabled</source>
-        <translation type="unfinished"></translation>
+        <translation>Отключенная</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="86"/>
         <source>WindowText</source>
-        <translation type="unfinished"></translation>
+        <translation>Текст Окна</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="86"/>
         <source>Button</source>
-        <translation type="unfinished"></translation>
+        <translation>Кнопка</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="86"/>
         <source>Light</source>
-        <translation type="unfinished"></translation>
+        <translation>Светлый</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="86"/>
         <source>Midlight</source>
-        <translation type="unfinished"></translation>
+        <translation>Полусветлый</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="86"/>
         <source>Dark</source>
-        <translation type="unfinished"></translation>
+        <translation>Тёмный</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="86"/>
         <source>Mid</source>
-        <translation type="unfinished"></translation>
+        <translation>Полутёмный</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="87"/>
         <source>Text</source>
-        <translation type="unfinished"></translation>
+        <translation>Текст</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="87"/>
         <source>BrightText</source>
-        <translation type="unfinished"></translation>
+        <translation>Светлый текст</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="87"/>
         <source>ButtonText</source>
-        <translation type="unfinished"></translation>
+        <translation>Текст кнопки</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="87"/>
         <source>Base</source>
-        <translation type="unfinished"></translation>
+        <translation>Фон</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="87"/>
         <source>Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Окно</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="87"/>
         <source>Shadow</source>
-        <translation type="unfinished"></translation>
+        <translation>Тень</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="88"/>
         <source>Highlight</source>
-        <translation type="unfinished"></translation>
+        <translation>Выделенная область</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="88"/>
         <source>HighlightedText</source>
-        <translation type="unfinished"></translation>
+        <translation>Выделенный текст</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="88"/>
         <source>Link</source>
-        <translation type="unfinished"></translation>
+        <translation>Ссылка</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="88"/>
         <source>LinkVisited</source>
-        <translation type="unfinished"></translation>
+        <translation>Посешённая ссылка</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="89"/>
         <source>AlternateBase</source>
-        <translation type="unfinished"></translation>
+        <translation>Альтернативный фон</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="89"/>
         <source>NoRole</source>
-        <translation type="unfinished"></translation>
+        <translation>По умолчанию</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="89"/>
         <source>ToolTipBase</source>
-        <translation type="unfinished"></translation>
+        <translation>Фон подсказки</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="89"/>
         <source>ToolTipText</source>
-        <translation type="unfinished"></translation>
+        <translation>Текст подсказки</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="95"/>
         <source>Select Color</source>
-        <translation type="unfinished"></translation>
+        <translation>Выберите цвет</translation>
     </message>
 </context>
 </TS>

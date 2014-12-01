@@ -39,7 +39,7 @@ PaletteEditDialog::PaletteEditDialog(const QPalette &palette, QStyle *currentSty
     m_ui->setupUi(this);
     m_ui->tableWidget->setColumnCount(3);
     m_ui->tableWidget->setRowCount(QPalette::NColorRoles);
-    m_ui->tableWidget->verticalHeader()->setDefaultSectionSize(fontMetrics().height() + 3);
+    m_ui->tableWidget->verticalHeader()->setDefaultSectionSize(fontMetrics().height() + 8);
     m_ui->tableWidget->verticalHeader()->setSectionResizeMode(QHeaderView::Fixed);
     m_ui->tableWidget->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
 
