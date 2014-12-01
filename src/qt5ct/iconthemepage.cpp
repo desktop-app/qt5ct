@@ -56,18 +56,25 @@ void IconThemePage::writeSettings()
     QSettings settings(Qt5CT::configFile(), QSettings::IniFormat);
     QTreeWidgetItem *item = m_ui->treeWidget->currentItem();
     if(item)
-        settings.setValue("Appearance/icon_theme", item->text(3));
+        settings.setValue("Appearance/icon_theme", item->data(3, Qt::UserRole));
 }
 
 void IconThemePage::readSettings()
 {
     QSettings settings(Qt5CT::configFile(), QSettings::IniFormat);
     QString name = settings.value("Appearance/icon_theme").toString();
-    if(!name.isEmpty())
+
+    if(name.isEmpty())
+        return;
+
+    for(int i = 0; i < m_ui->treeWidget->topLevelItemCount(); ++i)
     {
-        QList<QTreeWidgetItem *> items = m_ui->treeWidget->findItems(name, Qt::MatchExactly, 3);
-        if(!items.isEmpty())
-            m_ui->treeWidget->setCurrentItem(items.first());
+        QTreeWidgetItem *item = m_ui->treeWidget->topLevelItem(i);
+        if(item->data(3, Qt::UserRole).toString() == name)
+        {
+            m_ui->treeWidget->setCurrentItem(item);
+            break;
+        }
     }
 }
 
@@ -124,6 +131,7 @@ void IconThemePage::loadTheme(const QString &path)
             item->setIcon(1, loadIcon(iconPaths, "document-open"));
             item->setIcon(2, loadIcon(iconPaths, "media-playback-stop"));
             item->setText(3, name);
+            item->setData(3, Qt::UserRole, QFileInfo(path).path().section("/", -1));
             item->setToolTip(3, comment);
             item->setSizeHint(0, QSize(24,24));
             m_ui->treeWidget->addTopLevelItem(item);
