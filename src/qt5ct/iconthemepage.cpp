@@ -27,6 +27,12 @@
  */
 
 #include <QSettings>
+#include <QFileInfo>
+#include <QFileInfoList>
+#include <QDir>
+#include <QTreeWidgetItem>
+#include <QImageReader>
+#include <QDebug>
 #include "qt5ct.h"
 #include "iconthemepage.h"
 #include "ui_iconthemepage.h"
@@ -36,6 +42,8 @@ IconThemePage::IconThemePage(QWidget *parent) :
     m_ui(new Ui::IconThemePage)
 {
     m_ui->setupUi(this);
+    loadThemes();
+    readSettings();
 }
 
 IconThemePage::~IconThemePage()
@@ -45,5 +53,99 @@ IconThemePage::~IconThemePage()
 
 void IconThemePage::writeSettings()
 {
+    QSettings settings(Qt5CT::configFile(), QSettings::IniFormat);
+    QTreeWidgetItem *item = m_ui->treeWidget->currentItem();
+    if(item)
+        settings.setValue("Appearance/icon_theme", item->text(3));
+}
 
+void IconThemePage::readSettings()
+{
+    QSettings settings(Qt5CT::configFile(), QSettings::IniFormat);
+    QString name = settings.value("Appearance/icon_theme").toString();
+    if(!name.isEmpty())
+    {
+        QList<QTreeWidgetItem *> items = m_ui->treeWidget->findItems(name, Qt::MatchExactly, 3);
+        if(!items.isEmpty())
+            m_ui->treeWidget->setCurrentItem(items.first());
+    }
+}
+
+void IconThemePage::loadThemes()
+{
+    QFileInfoList themeFileList;
+    foreach(QString path, Qt5CT::iconPaths())
+    {
+        QDir dir(path);
+        dir.setFilter(QDir::Dirs | QDir::NoDotDot | QDir::NoDot);
+        foreach (QFileInfo info, dir.entryInfoList())
+        {
+            QDir themeDir(info.absoluteFilePath());
+            themeDir.setFilter(QDir::Files);
+            themeFileList << themeDir.entryInfoList(QStringList() << "index.theme");
+        }
+    }
+
+    foreach(QFileInfo info, themeFileList)
+    {
+        loadTheme(info.absoluteFilePath());
+    }
+}
+
+void IconThemePage::loadTheme(const QString &path)
+{
+    QSettings config(path, QSettings::IniFormat);
+
+    config.beginGroup("Icon Theme");
+    QStringList dirs = config.value("Directories").toStringList();
+    if(dirs.isEmpty() || config.value("Hidden", false).toBool())
+        return;
+    QString name = config.value("Name").toString();
+    QString comment = config.value("Comment").toString();
+    QStringList inherits = config.value("Inherits").toStringList();
+    //qDebug("IconThemePage: %s: %s (%s)",qPrintable(path), qPrintable(name), qPrintable(comment));
+    config.endGroup();
+
+    foreach (QString dir, dirs)
+    {
+        config.beginGroup(dir);
+        if(config.value("Context").toString() == "Actions" &&
+                config.value("Size").toInt() == 24)
+        {
+            QStringList iconPaths;
+            iconPaths << QFileInfo(path).path() + "/" + dir;
+            foreach (QString altDir, inherits)
+            {
+                iconPaths << QFileInfo(path).path() + "/../" + altDir + "/" + dir;
+            }
+
+            QTreeWidgetItem *item = new QTreeWidgetItem();
+            item->setIcon(0, loadIcon(iconPaths, "document-save"));
+            item->setIcon(1, loadIcon(iconPaths, "document-open"));
+            item->setIcon(2, loadIcon(iconPaths, "media-playback-stop"));
+            item->setText(3, name);
+            item->setToolTip(3, comment);
+            item->setSizeHint(0, QSize(24,24));
+            m_ui->treeWidget->addTopLevelItem(item);
+        }
+        config.endGroup();
+    }
+    m_ui->treeWidget->resizeColumnToContents(0);
+    m_ui->treeWidget->resizeColumnToContents(1);
+    m_ui->treeWidget->resizeColumnToContents(2);
+    m_ui->treeWidget->resizeColumnToContents(3);
+}
+
+QIcon IconThemePage::loadIcon(const QStringList &paths, const QString &name)
+{
+    foreach (QString path, paths)
+    {
+        QDir iconDir(path);
+        iconDir.setFilter(QDir::Files);
+        iconDir.setNameFilters(QStringList () << (name + ".*"));
+        QFileInfoList iconList = iconDir.entryInfoList();
+        if(!iconList.isEmpty())
+            return QIcon(iconList.first().filePath());
+    }
+    return QIcon();
 }

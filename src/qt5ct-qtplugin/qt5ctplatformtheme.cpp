@@ -67,6 +67,7 @@ Qt5CTPlatformTheme::Qt5CTPlatformTheme()
             }
         }
     }
+    m_iconTheme = settings.value("icon_theme").toString();
     settings.endGroup();
 
     settings.beginGroup("Fonts");
@@ -102,8 +103,13 @@ QVariant Qt5CTPlatformTheme::themeHint(QPlatformTheme::ThemeHint hint) const
 {
     switch (hint)
     {
+    case QPlatformTheme::SystemIconThemeName:
+        qDebug() << "iconTheme" << m_iconTheme;
+        return m_iconTheme;
     case QPlatformTheme::StyleNames:
         return QStringList() << m_style;
+    case IconThemeSearchPaths:
+        return Qt5CT::iconPaths();
     default:
         return QPlatformTheme::themeHint(hint);
     }

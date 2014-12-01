@@ -46,6 +46,8 @@ MainWindow::MainWindow(QWidget *parent) :
 
     QSettings settings(Qt5CT::configFile(), QSettings::IniFormat);
     restoreGeometry(settings.value("SettingsWindow/geometry").toByteArray());
+
+    setWindowIcon(QIcon::fromTheme("media-playback-stop"));
 }
 
 MainWindow::~MainWindow()

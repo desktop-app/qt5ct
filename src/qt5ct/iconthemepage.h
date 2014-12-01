@@ -29,6 +29,7 @@
 #ifndef ICONTHEMEPAGE_H
 #define ICONTHEMEPAGE_H
 
+#include <QIcon>
 #include "tabpage.h"
 
 namespace Ui {
@@ -46,6 +47,10 @@ public:
     void writeSettings();
 
 private:
+    void readSettings();
+    void loadThemes();
+    void loadTheme(const QString &path);
+    QIcon loadIcon(const QStringList &paths, const QString &name);
     Ui::IconThemePage *m_ui;
 };
 

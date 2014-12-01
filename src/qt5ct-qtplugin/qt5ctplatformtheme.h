@@ -60,7 +60,7 @@ public:
     //virtual QString standardButtonText(int button) const;
 
 private:
-    QString m_style;
+    QString m_style, m_iconTheme;
     QPalette *m_customPalette;
     QFont m_generalFont, m_fixedFont;
 };
