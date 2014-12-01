@@ -110,34 +110,38 @@ void IconThemePage::loadTheme(const QString &path)
     QString name = config.value("Name").toString();
     QString comment = config.value("Comment").toString();
     QStringList inherits = config.value("Inherits").toStringList();
-    //qDebug("IconThemePage: %s: %s (%s)",qPrintable(path), qPrintable(name), qPrintable(comment));
     config.endGroup();
+
+    QStringList iconPaths;
 
     foreach (QString dir, dirs)
     {
         config.beginGroup(dir);
-        if(config.value("Context").toString() == "Actions" &&
-                config.value("Size").toInt() == 24)
+        if(config.value("Context").toString() == "Actions" && (config.value("Size").toInt() == 22
+                                                               || config.value("Size").toInt() == 24))
         {
-            QStringList iconPaths;
             iconPaths << QFileInfo(path).path() + "/" + dir;
             foreach (QString altDir, inherits)
             {
                 iconPaths << QFileInfo(path).path() + "/../" + altDir + "/" + dir;
             }
-
-            QTreeWidgetItem *item = new QTreeWidgetItem();
-            item->setIcon(0, loadIcon(iconPaths, "document-save"));
-            item->setIcon(1, loadIcon(iconPaths, "document-open"));
-            item->setIcon(2, loadIcon(iconPaths, "media-playback-stop"));
-            item->setText(3, name);
-            item->setData(3, Qt::UserRole, QFileInfo(path).path().section("/", -1));
-            item->setToolTip(3, comment);
-            item->setSizeHint(0, QSize(24,24));
-            m_ui->treeWidget->addTopLevelItem(item);
         }
         config.endGroup();
     }
+
+    if(iconPaths.isEmpty())
+        return;
+
+    QTreeWidgetItem *item = new QTreeWidgetItem();
+    item->setIcon(0, loadIcon(iconPaths, "document-save"));
+    item->setIcon(1, loadIcon(iconPaths, "document-print"));
+    item->setIcon(2, loadIcon(iconPaths, "media-playback-stop"));
+    item->setText(3, name);
+    item->setData(3, Qt::UserRole, QFileInfo(path).path().section("/", -1));
+    item->setToolTip(3, comment);
+    item->setSizeHint(0, QSize(24,24));
+    m_ui->treeWidget->addTopLevelItem(item);
+
     m_ui->treeWidget->resizeColumnToContents(0);
     m_ui->treeWidget->resizeColumnToContents(1);
     m_ui->treeWidget->resizeColumnToContents(2);
