@@ -14,47 +14,47 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="46"/>
+        <location filename="../appearancepage.ui" line="33"/>
         <source>Active palette</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="60"/>
+        <location filename="../appearancepage.ui" line="47"/>
         <source>Preview Window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="70"/>
+        <location filename="../appearancepage.ui" line="57"/>
         <source>Tab 1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="76"/>
+        <location filename="../appearancepage.ui" line="63"/>
         <source>PushButton</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="97"/>
+        <location filename="../appearancepage.ui" line="84"/>
         <source>Tab 2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="103"/>
+        <location filename="../appearancepage.ui" line="90"/>
         <source>RadioButton</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="110"/>
+        <location filename="../appearancepage.ui" line="97"/>
         <source>CheckBox</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="138"/>
+        <location filename="../appearancepage.ui" line="125"/>
         <source>Inactive palette</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="145"/>
+        <location filename="../appearancepage.ui" line="132"/>
         <source>Disabled palette</source>
         <translation type="unfinished"></translation>
     </message>
@@ -130,6 +130,11 @@
     <message>
         <location filename="../mainwindow.cpp" line="45"/>
         <source>Icon Theme</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="52"/>
+        <source>Version: %1</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
