@@ -48,6 +48,8 @@ MainWindow::MainWindow(QWidget *parent) :
     restoreGeometry(settings.value("SettingsWindow/geometry").toByteArray());
 
     setWindowIcon(QIcon::fromTheme("preferences-desktop-theme"));
+
+    m_ui->versionLabel->setText(tr("Version: %1").arg(QT5CT_VERSION_STR));
 }
 
 MainWindow::~MainWindow()
