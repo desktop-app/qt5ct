@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="ru_RU">
+<TS version="2.1" language="ru_RU">
 <context>
     <name>AppearancePage</name>
     <message>
@@ -14,67 +14,67 @@
         <translation>Предварительный просмотр</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="33"/>
+        <location filename="../appearancepage.ui" line="34"/>
         <source>Active palette</source>
         <translation>Активная палитра</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="47"/>
+        <location filename="../appearancepage.ui" line="69"/>
         <source>Preview Window</source>
         <translation>Неактивная палитра</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="57"/>
+        <location filename="../appearancepage.ui" line="79"/>
         <source>Tab 1</source>
         <translation>Вкладка 1</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="63"/>
+        <location filename="../appearancepage.ui" line="85"/>
         <source>PushButton</source>
         <translation>Кнопка</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="84"/>
+        <location filename="../appearancepage.ui" line="106"/>
         <source>Tab 2</source>
         <translation>Вкладка 2</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="90"/>
+        <location filename="../appearancepage.ui" line="112"/>
         <source>RadioButton</source>
         <translation>Переключатель</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="97"/>
+        <location filename="../appearancepage.ui" line="119"/>
         <source>CheckBox</source>
         <translation>Выключатель</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="125"/>
+        <location filename="../appearancepage.ui" line="39"/>
         <source>Inactive palette</source>
         <translation>Неактивная палитра</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="132"/>
+        <location filename="../appearancepage.ui" line="44"/>
         <source>Disabled palette</source>
         <translation>Палитра выключенных элеметнов</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="155"/>
+        <location filename="../appearancepage.ui" line="150"/>
         <source>Palette</source>
         <translation>Палитра</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="161"/>
+        <location filename="../appearancepage.ui" line="156"/>
         <source>Default</source>
         <translation>По умолчанию</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="171"/>
+        <location filename="../appearancepage.ui" line="166"/>
         <source>Custom</source>
         <translation>Изменённая</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="181"/>
+        <location filename="../appearancepage.ui" line="176"/>
         <source>Change...</source>
         <translation>Изменить...</translation>
     </message>

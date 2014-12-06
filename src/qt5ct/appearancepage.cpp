@@ -42,9 +42,7 @@ AppearancePage::AppearancePage(QWidget *parent) :
     m_ui->setupUi(this);
     m_ui->styleComboBox->addItems(QStyleFactory::keys());
 
-    connect(m_ui->activePaletteButton, SIGNAL(clicked()), SLOT(updatePalette()));
-    connect(m_ui->inactivePaletteButton, SIGNAL(clicked()), SLOT(updatePalette()));
-    connect(m_ui->disabledPaletteButton, SIGNAL(clicked()), SLOT(updatePalette()));
+    connect(m_ui->paletteComboBox, SIGNAL(activated(int)), SLOT(updatePalette()));
 
     readSettings();
 }
@@ -103,11 +101,11 @@ void AppearancePage::updatePalette()
                 m_customPalette : m_selectedStyle->standardPalette();
     QPalette::ColorGroup colorGroup = QPalette::Disabled;
 
-    if(m_ui->activePaletteButton->isChecked())
+    if(m_ui->paletteComboBox->currentIndex() == 0)
     {
         colorGroup = QPalette::Active;
     }
-    else if(m_ui->inactivePaletteButton->isChecked())
+    else if(m_ui->paletteComboBox->currentIndex() == 1)
     {
         colorGroup = QPalette::Inactive;
     }

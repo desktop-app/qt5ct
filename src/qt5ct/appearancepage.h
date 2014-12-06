@@ -50,7 +50,6 @@ public:
 private slots:
     void on_styleComboBox_activated(const QString &text);
     void updatePalette();
-
     void on_changePaletteButton_clicked();
 
 private:
