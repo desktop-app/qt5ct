@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="ru_RU">
+<TS version="2.0" language="ru_RU">
 <context>
     <name>AppearancePage</name>
     <message>
@@ -21,7 +21,7 @@
     <message>
         <location filename="../appearancepage.ui" line="69"/>
         <source>Preview Window</source>
-        <translation>Неактивная палитра</translation>
+        <translation>Окно предпросмотра</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="79"/>

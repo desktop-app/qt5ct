@@ -117,7 +117,7 @@ void AppearancePage::updatePalette()
         previewPalette.setColor(QPalette::Inactive, role, currentPalette.color(colorGroup, role));
     }
 
-    setPalette(m_ui->previewWindow, previewPalette);
+    setPalette(m_ui->mdiArea, previewPalette);
 }
 
 void AppearancePage::readSettings()
