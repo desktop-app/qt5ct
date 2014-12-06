@@ -43,6 +43,8 @@ AppearancePage::AppearancePage(QWidget *parent) :
     m_ui->styleComboBox->addItems(QStyleFactory::keys());
 
     connect(m_ui->paletteComboBox, SIGNAL(activated(int)), SLOT(updatePalette()));
+    connect(m_ui->customPaletteButton, SIGNAL(clicked()), SLOT(updatePalette()));
+    connect(m_ui->defaultPaletteButton, SIGNAL(clicked()), SLOT(updatePalette()));
 
     readSettings();
 }
