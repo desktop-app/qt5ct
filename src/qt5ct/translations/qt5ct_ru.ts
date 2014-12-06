@@ -147,17 +147,17 @@
         <translation>Редактор палитры</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.ui" line="29"/>
+        <location filename="../paletteeditdialog.ui" line="43"/>
         <source>Reset palette</source>
         <translation>Сбросить палитру</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.ui" line="36"/>
+        <location filename="../paletteeditdialog.ui" line="29"/>
         <source>Build inactive palette</source>
         <translation>Создать неактивную политру</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.ui" line="43"/>
+        <location filename="../paletteeditdialog.ui" line="36"/>
         <source>Build disabled palette</source>
         <translation>Создать &quot;выключенную&quot; палитру</translation>
     </message>
