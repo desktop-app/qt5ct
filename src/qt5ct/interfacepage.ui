@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>InterfacePage</class>
+ <widget class="QWidget" name="InterfacePage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>498</width>
+    <height>449</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Double click interval:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Cursor flash time:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>ComboBox effect:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>ToolTip effect:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>ToolBox effect:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QSpinBox" name="doubleClickIntervalSpinBox"/>
+     </item>
+     <item row="1" column="1">
+      <widget class="QSpinBox" name="cursorFlashTimeSpinBox"/>
+     </item>
+     <item row="3" column="1">
+      <widget class="QComboBox" name="coboBoxEffectComboBox">
+       <item>
+        <property name="text">
+         <string>Disable</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Animate</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QComboBox" name="toolTipEffectComboBox">
+       <item>
+        <property name="text">
+         <string>Disable</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Animate</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Fade</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QComboBox" name="toolBoxEffectComboBox">
+       <item>
+        <property name="text">
+         <string>Disable</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Animate</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>Menu effect:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QComboBox" name="menuEffectComboBox">
+       <item>
+        <property name="text">
+         <string>Disable</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Animate</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Fade</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="1">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>238</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="0">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>259</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

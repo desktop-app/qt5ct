@@ -26,59 +26,22 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <QApplication>
-#include <QSettings>
-#include "qt5ct.h"
-#include "mainwindow.h"
-#include "appearancepage.h"
-#include "fontspage.h"
-#include "iconthemepage.h"
 #include "interfacepage.h"
-#include "ui_mainwindow.h"
+#include "ui_interfacepage.h"
 
-MainWindow::MainWindow(QWidget *parent) :
-    QWidget(parent),
-    m_ui(new Ui::MainWindow)
+InterfacePage::InterfacePage(QWidget *parent) :
+    TabPage(parent),
+    m_ui(new Ui::InterfacePage)
 {
     m_ui->setupUi(this);
-    m_ui->tabWidget->addTab(new AppearancePage(this), tr("Appearance"));
-    m_ui->tabWidget->addTab(new FontsPage(this), tr("Fonts"));
-    m_ui->tabWidget->addTab(new IconThemePage(this), tr("Icon Theme"));
-    m_ui->tabWidget->addTab(new InterfacePage(this), tr("Interface"));
-
-    QSettings settings(Qt5CT::configFile(), QSettings::IniFormat);
-    restoreGeometry(settings.value("SettingsWindow/geometry").toByteArray());
-
-    setWindowIcon(QIcon::fromTheme("preferences-desktop-theme"));
-
-    m_ui->versionLabel->setText(tr("Version: %1").arg(QT5CT_VERSION_STR));
 }
 
-MainWindow::~MainWindow()
+InterfacePage::~InterfacePage()
 {
     delete m_ui;
 }
 
-void MainWindow::on_buttonBox_rejected()
+void InterfacePage::writeSettings()
 {
-    close();
-    qApp->quit();
-}
 
-void MainWindow::on_buttonBox_accepted()
-{
-    for(int i = 0; i < m_ui->tabWidget->count(); ++i)
-    {
-        TabPage *p = qobject_cast<TabPage*>(m_ui->tabWidget->widget(i));
-        if(p)
-            p->writeSettings();
-    }
-    close();
-    qApp->quit();
-}
-
-void MainWindow::closeEvent(QCloseEvent *)
-{
-    QSettings settings(Qt5CT::configFile(), QSettings::IniFormat);
-    settings.setValue("SettingsWindow/geometry", saveGeometry());
 }
