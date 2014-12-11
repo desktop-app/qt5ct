@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="ru_RU">
+<TS version="2.0" language="ru_RU">
 <context>
     <name>AppearancePage</name>
     <message>
@@ -116,33 +116,33 @@
     <message>
         <location filename="../interfacepage.ui" line="22"/>
         <source>Double click interval:</source>
-        <translation type="unfinished"></translation>
+        <translation>Интервал двойного щелчка:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="29"/>
         <source>Cursor flash time:</source>
-        <translation type="unfinished"></translation>
+        <translation>Период мигания курсора:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="36"/>
         <source>ComboBox effect:</source>
-        <translation type="unfinished"></translation>
+        <translation>Эффект выпадающего списка:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="43"/>
         <source>ToolTip effect:</source>
-        <translation type="unfinished"></translation>
+        <translation>Эффект подсказки:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="50"/>
         <source>ToolBox effect:</source>
-        <translation type="unfinished"></translation>
+        <translation>Эффект панели инструментов:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="57"/>
         <location filename="../interfacepage.ui" line="67"/>
         <source> ms</source>
-        <translation type="unfinished"></translation>
+        <translation> мс</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="81"/>
@@ -150,7 +150,7 @@
         <location filename="../interfacepage.ui" line="120"/>
         <location filename="../interfacepage.ui" line="144"/>
         <source>Disable</source>
-        <translation type="unfinished"></translation>
+        <translation>Выключен</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="86"/>
@@ -158,23 +158,23 @@
         <location filename="../interfacepage.ui" line="125"/>
         <location filename="../interfacepage.ui" line="149"/>
         <source>Animate</source>
-        <translation type="unfinished"></translation>
+        <translation>Анимация</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="108"/>
         <location filename="../interfacepage.ui" line="154"/>
         <source>Fade</source>
-        <translation type="unfinished"></translation>
+        <translation>Затухание</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="133"/>
         <source>Menu effect:</source>
-        <translation type="unfinished"></translation>
+        <translation>Эффект меню:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="162"/>
         <source>Enable gui effects</source>
-        <translation type="unfinished"></translation>
+        <translation>Включить эффекты интерфейса</translation>
     </message>
 </context>
 <context>
@@ -202,7 +202,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="47"/>
         <source>Interface</source>
-        <translation type="unfinished"></translation>
+        <translation>Интерфейс</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="54"/>
