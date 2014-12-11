@@ -9,7 +9,6 @@ Requirements:
 - GNU Linux or FreeBSD
 - qtbase >= 5.4.0
 - qtsvg >= 5.4.0
-- qt54svg >= 5.4.0
 - qttools >= 5.4.0 (For build only)
 
 
