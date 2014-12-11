@@ -26,6 +26,9 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
+#include <QSettings>
+#include <QApplication>
+#include "qt5ct.h"
 #include "interfacepage.h"
 #include "ui_interfacepage.h"
 
@@ -34,6 +37,7 @@ InterfacePage::InterfacePage(QWidget *parent) :
     m_ui(new Ui::InterfacePage)
 {
     m_ui->setupUi(this);
+    readSettings();
 }
 
 InterfacePage::~InterfacePage()
@@ -43,5 +47,59 @@ InterfacePage::~InterfacePage()
 
 void InterfacePage::writeSettings()
 {
+    QSettings settings(Qt5CT::configFile(), QSettings::IniFormat);
+    settings.beginGroup("Interface");
+    settings.setValue("double_click_interval", m_ui->doubleClickIntervalSpinBox->value());
+    settings.setValue("cursor_flash_time", m_ui->cursorFlashTimeSpinBox->value());
 
+    QStringList effects;
+    if(m_ui->guiEffectsCheckBox->isChecked())
+        effects << "General";
+
+    if(m_ui->menuEffectComboBox->currentIndex() == 1)
+        effects << "AnimateMenu";
+    else if(m_ui->menuEffectComboBox->currentIndex() == 2)
+        effects << "FadeMenu";
+
+    if(m_ui->coboBoxEffectComboBox->currentIndex() == 1)
+        effects << "AnimateCombo";
+
+    if(m_ui->toolTipEffectComboBox->currentIndex() == 1)
+        effects << "AnimateTooltip";
+    else if(m_ui->toolTipEffectComboBox->currentIndex() == 2)
+        effects << "FadeTooltip";
+
+    if(m_ui->toolBoxEffectComboBox->currentIndex() == 1)
+        effects << "AnimateToolBox";
+
+    settings.setValue("gui_effects", effects);
+    settings.endGroup();
+}
+
+void InterfacePage::readSettings()
+{
+    QSettings settings(Qt5CT::configFile(), QSettings::IniFormat);
+    settings.beginGroup("Interface");
+    m_ui->doubleClickIntervalSpinBox->setValue(qApp->doubleClickInterval());
+    m_ui->cursorFlashTimeSpinBox->setValue(qApp->cursorFlashTime());
+
+    m_ui->guiEffectsCheckBox->setChecked(qApp->isEffectEnabled(Qt::UI_General));
+
+    if(qApp->isEffectEnabled(Qt::UI_AnimateMenu))
+        m_ui->menuEffectComboBox->setCurrentIndex(1);
+    else if(qApp->isEffectEnabled(Qt::UI_FadeMenu))
+        m_ui->menuEffectComboBox->setCurrentIndex(2);
+
+    if(qApp->isEffectEnabled(Qt::UI_AnimateCombo))
+        m_ui->coboBoxEffectComboBox->setCurrentIndex(1);
+
+    if(qApp->isEffectEnabled(Qt::UI_AnimateTooltip))
+        m_ui->toolTipEffectComboBox->setCurrentIndex(1);
+    else  if(qApp->isEffectEnabled(Qt::UI_FadeTooltip))
+        m_ui->toolTipEffectComboBox->setCurrentIndex(2);
+
+    if(qApp->isEffectEnabled(Qt::UI_AnimateToolBox))
+        m_ui->toolBoxEffectComboBox->setCurrentIndex(1);
+
+    settings.endGroup();
 }

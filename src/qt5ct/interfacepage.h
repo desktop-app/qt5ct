@@ -47,6 +47,8 @@ public:
     void writeSettings();
 
 private:
+    void readSettings();
+
     Ui::InterfacePage *m_ui;
 };
 

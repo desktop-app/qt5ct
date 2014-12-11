@@ -75,8 +75,35 @@ Qt5CTPlatformTheme::Qt5CTPlatformTheme()
     m_fixedFont = settings.value("fixed", QPlatformTheme::font(QPlatformTheme::FixedFont)).value<QFont>();
     settings.endGroup();
 
-    QGuiApplication::setFont(m_generalFont); //apply font
+    settings.beginGroup("Interface");
+    m_doubleClickInterval = QPlatformTheme::themeHint(QPlatformTheme::MouseDoubleClickInterval).toInt();
+    m_doubleClickInterval = settings.value("double_click_interval", m_doubleClickInterval).toInt();
+    m_cursorFlashTime = QPlatformTheme::themeHint(QPlatformTheme::CursorFlashTime).toInt();
+    m_cursorFlashTime = settings.value("cursor_flash_time", m_cursorFlashTime).toInt();
+    //load effects
+    m_uiEffects = QPlatformTheme::themeHint(QPlatformTheme::UiEffects).toInt();
+    if(settings.childKeys().contains("gui_effects"))
+    {
+        QStringList effectList = settings.value("gui_effects").toStringList();
+        m_uiEffects = 0;
+        if(effectList.contains("General"))
+            m_uiEffects |= QPlatformTheme::GeneralUiEffect;
+        if(effectList.contains("AnimateMenu"))
+            m_uiEffects |= QPlatformTheme::AnimateMenuUiEffect;
+        if(effectList.contains("FadeMenu"))
+            m_uiEffects |= QPlatformTheme::FadeMenuUiEffect;
+        if(effectList.contains("AnimateCombo"))
+            m_uiEffects |= QPlatformTheme::AnimateComboUiEffect;
+        if(effectList.contains("AnimateTooltip"))
+            m_uiEffects |= QPlatformTheme::AnimateTooltipUiEffect;
+        if(effectList.contains("FadeTooltip"))
+            m_uiEffects |= QPlatformTheme::FadeTooltipUiEffect;
+        if(effectList.contains("AnimateToolBox"))
+            m_uiEffects |= QPlatformTheme::AnimateToolBoxUiEffect;
+    }
+    settings.endGroup();
 
+    QGuiApplication::setFont(m_generalFont); //apply font
 }
 
 Qt5CTPlatformTheme::~Qt5CTPlatformTheme()
@@ -103,12 +130,18 @@ QVariant Qt5CTPlatformTheme::themeHint(QPlatformTheme::ThemeHint hint) const
 {
     switch (hint)
     {
+    case QPlatformTheme::CursorFlashTime:
+        return m_cursorFlashTime;
+    case MouseDoubleClickInterval:
+        return m_doubleClickInterval;
     case QPlatformTheme::SystemIconThemeName:
         return m_iconTheme;
     case QPlatformTheme::StyleNames:
         return QStringList() << m_style;
-    case IconThemeSearchPaths:
+    case QPlatformTheme::IconThemeSearchPaths:
         return Qt5CT::iconPaths();
+    case QPlatformTheme::UiEffects:
+        return m_uiEffects;
     default:
         return QPlatformTheme::themeHint(hint);
     }

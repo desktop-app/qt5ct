@@ -63,6 +63,9 @@ private:
     QString m_style, m_iconTheme;
     QPalette *m_customPalette;
     QFont m_generalFont, m_fixedFont;
+    int m_doubleClickInterval;
+    int m_cursorFlashTime;
+    int m_uiEffects;
 };
 
 #endif // QT5CTPLATFORMTHEME_H
