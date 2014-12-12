@@ -80,6 +80,86 @@
     </message>
 </context>
 <context>
+    <name>FontConfigDialog</name>
+    <message>
+        <location filename="../fontconfigdialog.ui" line="14"/>
+        <location filename="../fontconfigdialog.cpp" line="71"/>
+        <source>Font Configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fontconfigdialog.ui" line="29"/>
+        <source>Disable automatic hinting for bold fonts</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fontconfigdialog.ui" line="36"/>
+        <source>LCD filter:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fontconfigdialog.ui" line="43"/>
+        <source>Automatic hinting</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fontconfigdialog.ui" line="50"/>
+        <source>Hinting</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fontconfigdialog.ui" line="67"/>
+        <source>Font resolution:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fontconfigdialog.ui" line="110"/>
+        <source> dpi</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fontconfigdialog.ui" line="83"/>
+        <source>Subpixel geometry:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fontconfigdialog.ui" line="90"/>
+        <source>Antialiasing</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fontconfigdialog.ui" line="97"/>
+        <source>Hinting style:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fontconfigdialog.cpp" line="42"/>
+        <location filename="../fontconfigdialog.cpp" line="47"/>
+        <source>None</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fontconfigdialog.cpp" line="43"/>
+        <source>Slight</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fontconfigdialog.cpp" line="44"/>
+        <source>Medium</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fontconfigdialog.cpp" line="45"/>
+        <source>Full</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fontconfigdialog.cpp" line="72"/>
+        <source>&lt;i&gt;%1&lt;/i&gt; already exists. Do you want to replace it?</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>FontsPage</name>
     <message>
         <location filename="../fontspage.ui" line="44"/>
@@ -100,13 +180,23 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../fontspage.ui" line="122"/>
+        <location filename="../fontspage.ui" line="119"/>
         <source>Create  fonts.conf</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../fontspage.ui" line="132"/>
+        <location filename="../fontspage.ui" line="126"/>
         <source>Remove fonts.conf</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fontspage.cpp" line="111"/>
+        <source>Remove Font Configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fontspage.cpp" line="112"/>
+        <source>Are you sure you want to delete &lt;i&gt;%1&lt;/i&gt;?</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

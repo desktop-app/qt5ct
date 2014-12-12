@@ -80,6 +80,86 @@
     </message>
 </context>
 <context>
+    <name>FontConfigDialog</name>
+    <message>
+        <location filename="../fontconfigdialog.ui" line="14"/>
+        <location filename="../fontconfigdialog.cpp" line="71"/>
+        <source>Font Configuration</source>
+        <translation>Настройка шрифтов</translation>
+    </message>
+    <message>
+        <location filename="../fontconfigdialog.ui" line="29"/>
+        <source>Disable automatic hinting for bold fonts</source>
+        <translation>Отключить автоуточнение для жирных шрифтов</translation>
+    </message>
+    <message>
+        <location filename="../fontconfigdialog.ui" line="36"/>
+        <source>LCD filter:</source>
+        <translation>Фильтр LCD:</translation>
+    </message>
+    <message>
+        <location filename="../fontconfigdialog.ui" line="43"/>
+        <source>Automatic hinting</source>
+        <translation>Автоматическое уточнение</translation>
+    </message>
+    <message>
+        <location filename="../fontconfigdialog.ui" line="50"/>
+        <source>Hinting</source>
+        <translation>Уточнение</translation>
+    </message>
+    <message>
+        <location filename="../fontconfigdialog.ui" line="67"/>
+        <source>Font resolution:</source>
+        <translation>Разрешение шрифтов:</translation>
+    </message>
+    <message>
+        <location filename="../fontconfigdialog.ui" line="110"/>
+        <source> dpi</source>
+        <translation> точек/дюйм</translation>
+    </message>
+    <message>
+        <location filename="../fontconfigdialog.ui" line="83"/>
+        <source>Subpixel geometry:</source>
+        <translation>Геометрия субпикселей:</translation>
+    </message>
+    <message>
+        <location filename="../fontconfigdialog.ui" line="90"/>
+        <source>Antialiasing</source>
+        <translation>Сглаживание</translation>
+    </message>
+    <message>
+        <location filename="../fontconfigdialog.ui" line="97"/>
+        <source>Hinting style:</source>
+        <translation>Стиль уточнения:</translation>
+    </message>
+    <message>
+        <location filename="../fontconfigdialog.cpp" line="42"/>
+        <location filename="../fontconfigdialog.cpp" line="47"/>
+        <source>None</source>
+        <translation>Выключен</translation>
+    </message>
+    <message>
+        <location filename="../fontconfigdialog.cpp" line="43"/>
+        <source>Slight</source>
+        <translation>Слабое</translation>
+    </message>
+    <message>
+        <location filename="../fontconfigdialog.cpp" line="44"/>
+        <source>Medium</source>
+        <translation>Среднее</translation>
+    </message>
+    <message>
+        <location filename="../fontconfigdialog.cpp" line="45"/>
+        <source>Full</source>
+        <translation>Полное</translation>
+    </message>
+    <message>
+        <location filename="../fontconfigdialog.cpp" line="72"/>
+        <source>&lt;i&gt;%1&lt;/i&gt; already exists. Do you want to replace it?</source>
+        <translation>Файл &lt;i&gt;%1&lt;/i&gt; уже существует. Хотите ли вы его заменить?</translation>
+    </message>
+</context>
+<context>
     <name>FontsPage</name>
     <message>
         <location filename="../fontspage.ui" line="44"/>
@@ -100,15 +180,24 @@
         <translation>Фиксированной ширины:</translation>
     </message>
     <message>
-        <location filename="../fontspage.ui" line="122"/>
+        <location filename="../fontspage.ui" line="119"/>
         <source>Create  fonts.conf</source>
-        <translatorcomment>Создать fonts.conf</translatorcomment>
-        <translation></translation>
+        <translation>Создать fonts.conf</translation>
     </message>
     <message>
-        <location filename="../fontspage.ui" line="132"/>
+        <location filename="../fontspage.ui" line="126"/>
         <source>Remove fonts.conf</source>
         <translation>Удалить fonts.conf</translation>
+    </message>
+    <message>
+        <location filename="../fontspage.cpp" line="111"/>
+        <source>Remove Font Configuration</source>
+        <translation>Удалить настройку шрифтов</translation>
+    </message>
+    <message>
+        <location filename="../fontspage.cpp" line="112"/>
+        <source>Are you sure you want to delete &lt;i&gt;%1&lt;/i&gt;?</source>
+        <translation>Вы уверены, что хотите удалить &lt;i&gt;%1&lt;/i&gt;?</translation>
     </message>
 </context>
 <context>
