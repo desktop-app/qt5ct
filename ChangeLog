@@ -12,3 +12,6 @@ Version 0.2
 
 Version 0.3
 * added gui settings
+
+Version 0.4
+* added fonts.conf generation

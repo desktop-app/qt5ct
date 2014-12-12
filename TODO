@@ -1,6 +1,4 @@
-interface settings (double click interval, cursor flash time, gui effects, etc)
 improve icon theme parsing
 mouse cursor settings
 color schemas
 css editor
-
