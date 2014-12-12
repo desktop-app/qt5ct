@@ -109,7 +109,7 @@ void FontsPage::on_removeFontsConfButton_clicked()
     if(QFile::exists(path))
     {
         if(QMessageBox::question(this, tr("Remove Font Configuration"),
-                                 tr("Are you sure want to delete <i>%1</i>?").arg(path),
+                                 tr("Are you sure you want to delete <i>%1</i>?").arg(path),
                                  QMessageBox::Yes | QMessageBox::No) == QMessageBox::No)
         {
             return;
