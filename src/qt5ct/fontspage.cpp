@@ -27,9 +27,12 @@
  */
 
 #include <QSignalMapper>
+#include <QMessageBox>
 #include <QSettings>
 #include <QApplication>
 #include <QFontDialog>
+#include <QDir>
+#include <QFile>
 #include "qt5ct.h"
 #include "fontspage.h"
 #include "fontconfigdialog.h"
@@ -96,4 +99,24 @@ void FontsPage::on_createFontsConfButton_clicked()
 {
     FontConfigDialog d(this);
     d.exec();
+}
+
+void FontsPage::on_removeFontsConfButton_clicked()
+{
+    QString path = QDir::homePath() + "/.config/fontconfig/fonts.conf";
+
+
+    if(QFile::exists(path))
+    {
+        if(QMessageBox::question(this, tr("Remove Font Configuration"),
+                                 tr("Are you sure want to delete <i>%1</i>?").arg(path),
+                                 QMessageBox::Yes | QMessageBox::No) == QMessageBox::No)
+        {
+            return;
+        }
+
+        QFile::remove(path + ".back");
+        QFile::copy(path, path + ".back");
+        QFile::remove(path);
+    }
 }
