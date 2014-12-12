@@ -97,7 +97,7 @@ void FontConfigDialog::accept()
     writeOption(&stream, "hintstyle", "const", m_ui->hintingStyleComboBox->currentData().toString());
     writeOption(&stream, "rgba", "const", m_ui->rgbaComboBox->currentData().toString());
     writeOption(&stream, "autohint", "bool", m_ui->autohinterCheckBox->isChecked() ? "true" : "false");
-    writeOption(&stream, "lcdfilter", "const", m_ui->lcdFilterComboBox->currentData().toString());
+    writeOption(&stream, "lcdfilter", "const", m_ui->lcdFilterComboBox->currentText());
     writeOption(&stream, "dpi", "double", QString::number(m_ui->dpiSpinBox->value()));
     stream.writeEndElement();
 
