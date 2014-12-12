@@ -32,6 +32,7 @@
 #include <QFontDialog>
 #include "qt5ct.h"
 #include "fontspage.h"
+#include "fontconfigdialog.h"
 #include "ui_fontspage.h"
 
 FontsPage::FontsPage(QWidget *parent) :
@@ -89,4 +90,10 @@ void FontsPage::loadFont(QSettings *settings, QLabel *label, const QString &key)
     QFont font = settings->value(key, QApplication::font()).value<QFont>();
     label->setText(font.family () + " " + QString::number(font.pointSize ()));
     label->setFont(font);
+}
+
+void FontsPage::on_createFontsConfButton_clicked()
+{
+    FontConfigDialog d(this);
+    d.exec();
 }

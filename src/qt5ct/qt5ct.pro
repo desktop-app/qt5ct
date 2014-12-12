@@ -13,7 +13,8 @@ SOURCES += \
     qt5ct.cpp \
     paletteeditdialog.cpp \
     iconthemepage.cpp \
-    interfacepage.cpp
+    interfacepage.cpp \
+    fontconfigdialog.cpp
 
 FORMS += \
     mainwindow.ui \
@@ -21,7 +22,8 @@ FORMS += \
     fontspage.ui \
     paletteeditdialog.ui \
     iconthemepage.ui \
-    interfacepage.ui
+    interfacepage.ui \
+    fontconfigdialog.ui
 
 HEADERS += \
     mainwindow.h \
@@ -31,7 +33,8 @@ HEADERS += \
     qt5ct.h \
     paletteeditdialog.h \
     iconthemepage.h \
-    interfacepage.h
+    interfacepage.h \
+    fontconfigdialog.h
 
 RESOURCES = translations/translations.qrc
 

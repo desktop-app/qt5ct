@@ -50,6 +50,7 @@ public:
 
 private slots:
     void onFontChangeRequested(QWidget *widget);
+    void on_createFontsConfButton_clicked();
 
 private:
     void readSettings();

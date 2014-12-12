@@ -114,10 +114,7 @@
     </spacer>
    </item>
    <item row="1" column="0">
-    <widget class="QPushButton" name="pushButton">
-     <property name="enabled">
-      <bool>false</bool>
-     </property>
+    <widget class="QPushButton" name="createFontsConfButton">
      <property name="text">
       <string>Create  fonts.conf</string>
      </property>
