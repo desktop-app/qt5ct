@@ -19,36 +19,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="69"/>
-        <source>Preview Window</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../appearancepage.ui" line="79"/>
-        <source>Tab 1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../appearancepage.ui" line="85"/>
-        <source>PushButton</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../appearancepage.ui" line="106"/>
-        <source>Tab 2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../appearancepage.ui" line="112"/>
-        <source>RadioButton</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../appearancepage.ui" line="119"/>
-        <source>CheckBox</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../appearancepage.ui" line="39"/>
         <source>Inactive palette</source>
         <translation type="unfinished"></translation>
@@ -59,22 +29,22 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="150"/>
+        <location filename="../appearancepage.ui" line="75"/>
         <source>Palette</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="156"/>
+        <location filename="../appearancepage.ui" line="81"/>
         <source>Default</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="166"/>
+        <location filename="../appearancepage.ui" line="91"/>
         <source>Custom</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="176"/>
+        <location filename="../appearancepage.ui" line="101"/>
         <source>Change...</source>
         <translation type="unfinished"></translation>
     </message>
@@ -439,6 +409,39 @@
     <message>
         <location filename="../paletteeditdialog.cpp" line="95"/>
         <source>Select Color</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>PreviewForm</name>
+    <message>
+        <location filename="../previewform.ui" line="14"/>
+        <source>Preview Window</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../previewform.ui" line="24"/>
+        <source>Tab 1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../previewform.ui" line="30"/>
+        <source>PushButton</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../previewform.ui" line="51"/>
+        <source>Tab 2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../previewform.ui" line="57"/>
+        <source>RadioButton</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../previewform.ui" line="64"/>
+        <source>CheckBox</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
