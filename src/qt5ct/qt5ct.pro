@@ -23,7 +23,8 @@ FORMS += \
     paletteeditdialog.ui \
     iconthemepage.ui \
     interfacepage.ui \
-    fontconfigdialog.ui
+    fontconfigdialog.ui \
+    previewform.ui
 
 HEADERS += \
     mainwindow.h \

@@ -27,11 +27,13 @@
  */
 
 #include <QStyleFactory>
+#include <QMdiSubWindow>
 #include <QSettings>
 #include "qt5ct.h"
 #include "appearancepage.h"
 #include "paletteeditdialog.h"
 #include "ui_appearancepage.h"
+#include "ui_previewform.h"
 
 AppearancePage::AppearancePage(QWidget *parent) :
     TabPage(parent),
@@ -46,6 +48,14 @@ AppearancePage::AppearancePage(QWidget *parent) :
     connect(m_ui->customPaletteButton, SIGNAL(clicked()), SLOT(updatePalette()));
     connect(m_ui->defaultPaletteButton, SIGNAL(clicked()), SLOT(updatePalette()));
 
+    m_previewWidget = new QWidget(this);
+    m_previewUi = new Ui::PreviewForm();
+    m_previewUi->setupUi(m_previewWidget);
+    QMdiSubWindow *w = m_ui->mdiArea->addSubWindow(m_previewWidget, Qt::CustomizeWindowHint
+                                                   | Qt::WindowMinMaxButtonsHint
+                                                   | Qt::WindowTitleHint);
+    w->move(10, 10);
+
     readSettings();
 }
 
@@ -54,6 +64,7 @@ AppearancePage::~AppearancePage()
     if(m_selectedStyle)
         delete m_selectedStyle;
     delete m_ui;
+    delete m_previewUi;
 }
 
 void AppearancePage::writeSettings()
@@ -84,7 +95,7 @@ void AppearancePage::on_styleComboBox_activated(const QString &text)
     QStyle *style = QStyleFactory::create(text);
     if(!style)
         return;
-    setStyle(m_ui->previewWindow, style);
+    setStyle(m_previewWidget, style);
 
     if(m_selectedStyle)
         delete m_selectedStyle;

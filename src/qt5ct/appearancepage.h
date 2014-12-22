@@ -33,6 +33,7 @@
 
 namespace Ui {
 class AppearancePage;
+class PreviewForm;
 }
 
 class QStyle;
@@ -59,6 +60,8 @@ private:
     Ui::AppearancePage *m_ui;
     QStyle *m_selectedStyle;
     QPalette m_customPalette;
+    QWidget *m_previewWidget;
+    Ui::PreviewForm *m_previewUi;
 };
 
 #endif // APPEARANCEPAGE_H
