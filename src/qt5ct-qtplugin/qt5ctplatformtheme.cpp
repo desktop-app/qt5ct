@@ -80,6 +80,8 @@ Qt5CTPlatformTheme::Qt5CTPlatformTheme()
     m_doubleClickInterval = settings.value("double_click_interval", m_doubleClickInterval).toInt();
     m_cursorFlashTime = QPlatformTheme::themeHint(QPlatformTheme::CursorFlashTime).toInt();
     m_cursorFlashTime = settings.value("cursor_flash_time", m_cursorFlashTime).toInt();
+    m_buttonBoxLayout = QPlatformTheme::themeHint(QPlatformTheme::DialogButtonBoxLayout).toInt();
+    m_buttonBoxLayout = settings.value("buttonbox_layout", m_buttonBoxLayout).toInt();
     //load effects
     m_uiEffects = QPlatformTheme::themeHint(QPlatformTheme::UiEffects).toInt();
     if(settings.childKeys().contains("gui_effects"))
@@ -140,6 +142,8 @@ QVariant Qt5CTPlatformTheme::themeHint(QPlatformTheme::ThemeHint hint) const
         return QStringList() << m_style;
     case QPlatformTheme::IconThemeSearchPaths:
         return Qt5CT::iconPaths();
+    case DialogButtonBoxLayout:
+        return m_buttonBoxLayout;
     case QPlatformTheme::UiEffects:
         return m_uiEffects;
     default:

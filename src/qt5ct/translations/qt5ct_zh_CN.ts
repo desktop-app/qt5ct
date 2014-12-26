@@ -235,6 +235,11 @@
         <source>Enable gui effects</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <location filename="../interfacepage.ui" line="169"/>
+        <source>Dialog buttons layout:</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>

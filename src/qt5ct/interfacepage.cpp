@@ -28,6 +28,7 @@
 
 #include <QSettings>
 #include <QApplication>
+#include <QDialogButtonBox>
 #include "qt5ct.h"
 #include "interfacepage.h"
 #include "ui_interfacepage.h"
@@ -37,6 +38,12 @@ InterfacePage::InterfacePage(QWidget *parent) :
     m_ui(new Ui::InterfacePage)
 {
     m_ui->setupUi(this);
+
+    m_ui->buttonLayoutComboBox->addItem("Windows", QDialogButtonBox::WinLayout);
+    m_ui->buttonLayoutComboBox->addItem("Mac OS X", QDialogButtonBox::MacLayout);
+    m_ui->buttonLayoutComboBox->addItem("KDE", QDialogButtonBox::KdeLayout);
+    m_ui->buttonLayoutComboBox->addItem("GNOME", QDialogButtonBox::GnomeLayout);
+
     readSettings();
 }
 
@@ -51,6 +58,7 @@ void InterfacePage::writeSettings()
     settings.beginGroup("Interface");
     settings.setValue("double_click_interval", m_ui->doubleClickIntervalSpinBox->value());
     settings.setValue("cursor_flash_time", m_ui->cursorFlashTimeSpinBox->value());
+    settings.setValue("buttonbox_layout", m_ui->buttonLayoutComboBox->currentData());
 
     QStringList effects;
     if(m_ui->guiEffectsCheckBox->isChecked())
@@ -84,6 +92,11 @@ void InterfacePage::readSettings()
     m_ui->cursorFlashTimeSpinBox->setValue(qApp->cursorFlashTime());
 
     m_ui->guiEffectsCheckBox->setChecked(qApp->isEffectEnabled(Qt::UI_General));
+
+    int layout = settings.value("buttonbox_layout", style()->styleHint(QStyle::SH_DialogButtonLayout)).toInt();
+    int index = m_ui->buttonLayoutComboBox->findData(layout);
+    if(index >= 0)
+        m_ui->buttonLayoutComboBox->setCurrentIndex(index);
 
     if(qApp->isEffectEnabled(Qt::UI_AnimateMenu))
         m_ui->menuEffectComboBox->setCurrentIndex(1);

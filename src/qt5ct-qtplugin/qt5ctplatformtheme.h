@@ -66,6 +66,7 @@ private:
     int m_doubleClickInterval;
     int m_cursorFlashTime;
     int m_uiEffects;
+    int m_buttonBoxLayout;
 };
 
 #endif // QT5CTPLATFORMTHEME_H
