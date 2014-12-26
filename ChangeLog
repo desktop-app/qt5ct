@@ -17,3 +17,8 @@ Version 0.4
 * added font config generation
 * fixed segmentation fault in the preview window
 * updated Russian translation
+
+Version 0.5
+* added dialog buttons layout setting
+* added feature to change install prefix
+* updated Russian translation
