@@ -21,6 +21,6 @@ HEADERS += \
     qt5ctplatformtheme.h \
     ../qt5ct/qt5ct.h
 
-target.path = $$[QT_INSTALL_PLUGINS]/platformthemes
+target.path = $$PLUGINDIR
 INSTALLS += target
 

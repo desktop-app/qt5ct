@@ -14,7 +14,7 @@ Requirements:
 
 Installation:
 
-qmake
+qmake PREFIX=<your installation path>
 make
 make install (under root)
 

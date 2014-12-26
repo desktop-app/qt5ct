@@ -39,9 +39,9 @@ HEADERS += \
 
 RESOURCES = translations/translations.qrc
 
-target.path = $$[QT_INSTALL_BINS]
+target.path = $$BINDIR
 
 desktop.files = qt5ct.desktop
-desktop.path = /usr/share/applications
+desktop.path = $$DATADIR/applications
 
 INSTALLS += target desktop

@@ -27,3 +27,10 @@ message(Found lrelease executable: $$LRELEASE_EXECUTABLE)
 message(generating translations)
 unix:system(find . -name *.ts | xargs $$LRELEASE_EXECUTABLE)
 win32:system(for /r %B in (*.ts) do $$LRELEASE_EXECUTABLE %B)
+
+include(qt5ct.pri)
+
+message (PREFIX=$$PREFIX)
+message (BINDIR=$$BINDIR)
+message (DATADIR=$$DATADIR)
+message (PLUGINDIR=$$PLUGINDIR)
