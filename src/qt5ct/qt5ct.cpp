@@ -70,6 +70,16 @@ QStringList Qt5CT::iconPaths()
     return paths;
 }
 
+QString Qt5CT::userStyleSheetPath()
+{
+    return configPath() + "qss/";
+}
+
+QString Qt5CT::sharedStyleSheetPath()
+{
+    return "/usr/share/qt5ct/qss/"; //TODO use installation prefix
+}
+
 QString Qt5CT::systemLanguageID()
 {
 #ifdef Q_OS_UNIX

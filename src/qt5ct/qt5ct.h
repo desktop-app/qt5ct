@@ -47,6 +47,8 @@ public:
     static QString configPath();
     static QString configFile();
     static QStringList iconPaths();
+    static QString userStyleSheetPath();
+    static QString sharedStyleSheetPath();
     static QString systemLanguageID();
 
 private:

@@ -46,6 +46,8 @@ public:
     void writeSettings();
 
 private:
+    void readSettings();
+    void findStyleSheets(const QString &path);
     Ui::QSSPage *m_ui;
 };
 

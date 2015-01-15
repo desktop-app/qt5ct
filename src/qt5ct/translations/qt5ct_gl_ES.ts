@@ -270,7 +270,7 @@
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="49"/>
-        <source>Style sheets</source>
+        <source>Style Sheets</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -458,17 +458,17 @@
 <context>
     <name>QSSPage</name>
     <message>
-        <location filename="../qsspage.ui" line="23"/>
+        <location filename="../qsspage.ui" line="27"/>
         <source>Create</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qsspage.ui" line="30"/>
+        <location filename="../qsspage.ui" line="34"/>
         <source>Edit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qsspage.ui" line="37"/>
+        <location filename="../qsspage.ui" line="41"/>
         <source>Remove</source>
         <translation type="unfinished"></translation>
     </message>

@@ -27,15 +27,22 @@
  */
 
 #include <QSettings>
+#include <QDir>
 #include "qt5ct.h"
 #include "qsspage.h"
 #include "ui_qsspage.h"
+
+#define QSS_FULL_PATH_ROLE (Qt::ItemDataRole(Qt::UserRole))
+#define QSS_WRITABLE_ROLE (Qt::ItemDataRole(Qt::UserRole + 1))
 
 QSSPage::QSSPage(QWidget *parent) :
     TabPage(parent),
     m_ui(new Ui::QSSPage)
 {
     m_ui->setupUi(this);
+    QDir("/").mkpath(Qt5CT::userStyleSheetPath());
+
+    readSettings();
 }
 
 QSSPage::~QSSPage()
@@ -45,5 +52,49 @@ QSSPage::~QSSPage()
 
 void QSSPage::writeSettings()
 {
+    QStringList styleSheets;
+    QSettings settings(Qt5CT::configFile(), QSettings::IniFormat);
 
+    for(int i = 0; i < m_ui->qssListWidget->count(); ++i)
+    {
+        QListWidgetItem *item = m_ui->qssListWidget->item(i);
+        if(item->checkState() == Qt::Checked)
+            styleSheets << item->data(QSS_FULL_PATH_ROLE).toString();
+    }
+
+    settings.setValue("Interface/stylesheets", styleSheets);
+}
+
+void QSSPage::readSettings()
+{
+    //load stylesheets
+    m_ui->qssListWidget->clear();
+    findStyleSheets(Qt5CT::userStyleSheetPath());
+    findStyleSheets(Qt5CT::sharedStyleSheetPath());
+
+    QSettings settings(Qt5CT::configFile(), QSettings::IniFormat);
+    QStringList styleSheets = settings.value("Interface/stylesheets").toStringList();
+    for(int i = 0; i < m_ui->qssListWidget->count(); ++i)
+    {
+        QListWidgetItem *item = m_ui->qssListWidget->item(i);
+        if(styleSheets.contains(item->data(QSS_FULL_PATH_ROLE).toString()))
+            item->setCheckState(Qt::Checked);
+        else
+            item->setCheckState(Qt::Unchecked);
+    }
+}
+
+void QSSPage::findStyleSheets(const QString &path)
+{
+    QDir dir(path);
+    dir.setFilter(QDir::Files);
+    dir.setNameFilters(QStringList() << "*.qss");
+
+    foreach (QFileInfo info, dir.entryInfoList())
+    {
+        QListWidgetItem *item = new QListWidgetItem(info.fileName(),  m_ui->qssListWidget);
+        item->setToolTip(info.filePath());
+        item->setData(QSS_FULL_PATH_ROLE, info.filePath());
+        item->setData(QSS_WRITABLE_ROLE, info.isWritable());
+    }
 }
