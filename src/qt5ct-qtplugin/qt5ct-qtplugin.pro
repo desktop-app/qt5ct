@@ -4,7 +4,7 @@ TEMPLATE = lib
 TARGET = qt5ct
 CONFIG += plugin
 
-QT += gui-private core-private
+QT += gui-private core-private widgets-private
 
 SOURCES += \
     main.cpp \

@@ -33,6 +33,7 @@
 #include <QFont>
 #include <QPalette>
 #include <private/qfont_p.h>
+#include <private/qapplication_p.h>
 #include <qt5ct/qt5ct.h>
 #include "qt5ctplatformtheme.h"
 
@@ -105,7 +106,9 @@ Qt5CTPlatformTheme::Qt5CTPlatformTheme()
     }
     settings.endGroup();
 
+
     QGuiApplication::setFont(m_generalFont); //apply font
+    //QApplicationPrivate::styleSheet = "QLineEdit { background: yellow } QCheckBox { color: red }";
 }
 
 Qt5CTPlatformTheme::~Qt5CTPlatformTheme()
