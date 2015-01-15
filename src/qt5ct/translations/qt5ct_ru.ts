@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="ru_RU">
+<TS version="2.1" language="ru_RU">
 <context>
     <name>AppearancePage</name>
     <message>
@@ -249,27 +249,32 @@
         <translation>Средство настройки Qt5</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="44"/>
+        <location filename="../mainwindow.cpp" line="45"/>
         <source>Appearance</source>
         <translation>Внешний вид</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="45"/>
+        <location filename="../mainwindow.cpp" line="46"/>
         <source>Fonts</source>
         <translation>Шрифты</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="46"/>
+        <location filename="../mainwindow.cpp" line="47"/>
         <source>Icon Theme</source>
         <translation>Стиль значков</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="47"/>
+        <location filename="../mainwindow.cpp" line="48"/>
         <source>Interface</source>
         <translation>Интерфейс</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="54"/>
+        <location filename="../mainwindow.cpp" line="49"/>
+        <source>Style sheets</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="56"/>
         <source>Version: %1</source>
         <translation>Версия: %1</translation>
     </message>
@@ -448,6 +453,24 @@
         <location filename="../previewform.ui" line="64"/>
         <source>CheckBox</source>
         <translation>Выключатель</translation>
+    </message>
+</context>
+<context>
+    <name>QSSPage</name>
+    <message>
+        <location filename="../qsspage.ui" line="23"/>
+        <source>Create</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qsspage.ui" line="30"/>
+        <source>Edit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qsspage.ui" line="37"/>
+        <source>Remove</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

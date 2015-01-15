@@ -26,6 +26,8 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
+#include <QSettings>
+#include "qt5ct.h"
 #include "qsspage.h"
 #include "ui_qsspage.h"
 
@@ -39,4 +41,9 @@ QSSPage::QSSPage(QWidget *parent) :
 QSSPage::~QSSPage()
 {
     delete m_ui;
+}
+
+void QSSPage::writeSettings()
+{
+
 }

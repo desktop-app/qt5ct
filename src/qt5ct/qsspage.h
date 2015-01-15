@@ -43,6 +43,8 @@ public:
     explicit QSSPage(QWidget *parent = 0);
     ~QSSPage();
 
+    void writeSettings();
+
 private:
     Ui::QSSPage *m_ui;
 };
