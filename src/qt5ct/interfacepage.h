@@ -29,7 +29,6 @@
 #ifndef INTERFACEPAGE_H
 #define INTERFACEPAGE_H
 
-#include <QWidget>
 #include "tabpage.h"
 
 namespace Ui {
