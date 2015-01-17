@@ -3,6 +3,8 @@ qt5ct - Qt5 Configuration Tool
 This program allows users to configure Qt5 settings (theme, font, icons, etc.)
 under DE/WM without Qt integration.
 
+Official home page: http://qt-apps.org/content/show.php/Qt5+Configuration+Tool?content=168066
+
 
 Requirements:
 
@@ -29,3 +31,7 @@ qt5ct-plugin.so - qt5ct platform plugin
 ~/.config/qt5ct/qt5ct.conf - configuration file
 ~/.config/qt5ct/qss/ - style sheets
 
+
+Translation:
+
+Use Transifex service: https://www.transifex.com/projects/p/qt5ct/
