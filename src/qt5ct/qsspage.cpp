@@ -84,7 +84,7 @@ void QSSPage::on_qssListWidget_currentItemChanged(QListWidgetItem *current, QLis
 
 void QSSPage::on_createButton_clicked()
 {
-    QString name = QInputDialog::getText(this, tr("Enter Stylesheet Name"), tr("File name:"));
+    QString name = QInputDialog::getText(this, tr("Enter Style Sheet Name"), tr("File name:"));
     if(name.isEmpty())
         return;
 
@@ -130,7 +130,7 @@ void QSSPage::on_removeButton_clicked()
         return;
 
     int button = QMessageBox::question(this, tr("Confirm Remove"),
-                                       tr("Are you shure you want to remove stylesheet \"%1\"")
+                                       tr("Are you shure you want to remove style sheet \"%1\"?")
                                        .arg(item->text()),
                                        QMessageBox::Yes | QMessageBox::No);
     if(button == QMessageBox::Yes)
