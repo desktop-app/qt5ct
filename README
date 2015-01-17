@@ -22,9 +22,10 @@ Add line 'export QT_QPA_PLATFORMTHEME=qt5ct' to ~/.profile and re-login.
 
 
 
-Files:
+Files and directories:
 
 qt5ct - Qt5 configuration tool
 qt5ct-plugin.so - qt5ct platform plugin
 ~/.config/qt5ct/qt5ct.conf - configuration file
+~/.config/qt5ct/qss/ - style sheets
 
