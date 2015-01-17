@@ -83,6 +83,7 @@ Qt5CTPlatformTheme::Qt5CTPlatformTheme()
     m_cursorFlashTime = settings.value("cursor_flash_time", m_cursorFlashTime).toInt();
     m_buttonBoxLayout = QPlatformTheme::themeHint(QPlatformTheme::DialogButtonBoxLayout).toInt();
     m_buttonBoxLayout = settings.value("buttonbox_layout", m_buttonBoxLayout).toInt();
+
     //load effects
     m_uiEffects = QPlatformTheme::themeHint(QPlatformTheme::UiEffects).toInt();
     if(settings.childKeys().contains("gui_effects"))
@@ -104,11 +105,13 @@ Qt5CTPlatformTheme::Qt5CTPlatformTheme()
         if(effectList.contains("AnimateToolBox"))
             m_uiEffects |= QPlatformTheme::AnimateToolBoxUiEffect;
     }
+
+    //load style sheets
+    QStringList qssPaths = settings.value("stylesheets").toStringList();
+    QApplicationPrivate::styleSheet.append(loadStyleSheets(qssPaths));
     settings.endGroup();
 
-
     QGuiApplication::setFont(m_generalFont); //apply font
-    //QApplicationPrivate::styleSheet = "QLineEdit { background: yellow } QCheckBox { color: red }";
 }
 
 Qt5CTPlatformTheme::~Qt5CTPlatformTheme()
@@ -152,4 +155,19 @@ QVariant Qt5CTPlatformTheme::themeHint(QPlatformTheme::ThemeHint hint) const
     default:
         return QPlatformTheme::themeHint(hint);
     }
+}
+
+QString Qt5CTPlatformTheme::loadStyleSheets(const QStringList &paths)
+{
+    QString content;
+    foreach (QString path, paths)
+    {
+        if(!QFile::exists(path))
+            continue;
+
+        QFile file(path);
+        file.open(QIODevice::ReadOnly);
+        content.append(file.readAll());
+    }
+    return content;
 }

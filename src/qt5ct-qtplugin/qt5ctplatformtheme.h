@@ -60,6 +60,7 @@ public:
     //virtual QString standardButtonText(int button) const;
 
 private:
+    QString loadStyleSheets(const QStringList &paths);
     QString m_style, m_iconTheme;
     QPalette *m_customPalette;
     QFont m_generalFont, m_fixedFont;
