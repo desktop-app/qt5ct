@@ -22,3 +22,8 @@ Version 0.5
 * added dialog buttons layout setting
 * added feature to change install prefix
 * updated Russian translation
+
+Version 0.6
+* added style sheet settings
+* added transifex integration
+* updated Russian translation
