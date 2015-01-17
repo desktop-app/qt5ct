@@ -456,20 +456,63 @@
     </message>
 </context>
 <context>
+    <name>QSSEditorDialog</name>
+    <message>
+        <location filename="../qsseditordialog.ui" line="14"/>
+        <source>Dialog</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qsseditordialog.cpp" line="43"/>
+        <source>%1 - Style Sheet Editor</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>QSSPage</name>
     <message>
-        <location filename="../qsspage.ui" line="27"/>
+        <location filename="../qsspage.ui" line="30"/>
         <source>Create</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qsspage.ui" line="34"/>
+        <location filename="../qsspage.ui" line="40"/>
         <source>Edit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qsspage.ui" line="41"/>
+        <location filename="../qsspage.ui" line="50"/>
         <source>Remove</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qsspage.cpp" line="87"/>
+        <source>Enter Stylesheet Name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qsspage.cpp" line="87"/>
+        <source>File name:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qsspage.cpp" line="98"/>
+        <source>Error</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qsspage.cpp" line="98"/>
+        <source>The file &apos;%1&apos; already exists</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qsspage.cpp" line="132"/>
+        <source>Confirm Remove</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qsspage.cpp" line="133"/>
+        <source>Are you shure you want to remove stylesheet &quot;%1&quot;</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
