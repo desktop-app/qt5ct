@@ -31,6 +31,7 @@
 #include <QInputDialog>
 #include <QMessageBox>
 #include "qt5ct.h"
+#include "qsseditordialog.h"
 #include "qsspage.h"
 #include "ui_qsspage.h"
 
@@ -114,7 +115,12 @@ void QSSPage::on_createButton_clicked()
 
 void QSSPage::on_editButton_clicked()
 {
-
+    QListWidgetItem *item = m_ui->qssListWidget->currentItem();
+    if(item)
+    {
+        QSSEditorDialog dialog(item->data(QSS_FULL_PATH_ROLE).toString(), this);
+        dialog.exec();
+    }
 }
 
 void QSSPage::on_removeButton_clicked()

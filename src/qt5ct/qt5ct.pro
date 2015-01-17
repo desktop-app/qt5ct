@@ -15,7 +15,8 @@ SOURCES += \
     iconthemepage.cpp \
     interfacepage.cpp \
     fontconfigdialog.cpp \
-    qsspage.cpp
+    qsspage.cpp \
+    qsseditordialog.cpp
 
 FORMS += \
     mainwindow.ui \
@@ -26,7 +27,8 @@ FORMS += \
     interfacepage.ui \
     fontconfigdialog.ui \
     previewform.ui \
-    qsspage.ui
+    qsspage.ui \
+    qsseditordialog.ui
 
 HEADERS += \
     mainwindow.h \
@@ -38,7 +40,8 @@ HEADERS += \
     iconthemepage.h \
     interfacepage.h \
     fontconfigdialog.h \
-    qsspage.h
+    qsspage.h \
+    qsseditordialog.h
 
 RESOURCES = translations/translations.qrc
 
