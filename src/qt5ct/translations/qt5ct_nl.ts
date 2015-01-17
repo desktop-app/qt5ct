@@ -458,13 +458,13 @@
 <context>
     <name>QSSEditorDialog</name>
     <message>
-        <location filename="../qsseditordialog.ui" line="14"/>
-        <source>Dialog</source>
+        <location filename="../qsseditordialog.cpp" line="43"/>
+        <source>%1 - Style Sheet Editor</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qsseditordialog.cpp" line="43"/>
-        <source>%1 - Style Sheet Editor</source>
+        <location filename="../qsseditordialog.ui" line="14"/>
+        <source>Style Sheet Editor</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -487,12 +487,12 @@
     </message>
     <message>
         <location filename="../qsspage.cpp" line="87"/>
-        <source>Enter Stylesheet Name</source>
+        <source>File name:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="87"/>
-        <source>File name:</source>
+        <source>Enter Style Sheet Name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -502,7 +502,7 @@
     </message>
     <message>
         <location filename="../qsspage.cpp" line="98"/>
-        <source>The file &apos;%1&apos; already exists</source>
+        <source>The file &quot;%1&quot; already exists</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -512,7 +512,7 @@
     </message>
     <message>
         <location filename="../qsspage.cpp" line="133"/>
-        <source>Are you shure you want to remove stylesheet &quot;%1&quot;</source>
+        <source>Are you shure you want to remove style sheet &quot;%1&quot;?</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="ru_RU">
+<TS version="2.0" language="ru_RU">
 <context>
     <name>AppearancePage</name>
     <message>
@@ -271,7 +271,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="49"/>
         <source>Style Sheets</source>
-        <translation type="unfinished"></translation>
+        <translation>Таблицы стилей</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="56"/>
@@ -458,14 +458,14 @@
 <context>
     <name>QSSEditorDialog</name>
     <message>
-        <location filename="../qsseditordialog.ui" line="14"/>
-        <source>Dialog</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../qsseditordialog.cpp" line="43"/>
         <source>%1 - Style Sheet Editor</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 - Редактор Таблицы Стилей</translation>
+    </message>
+    <message>
+        <location filename="../qsseditordialog.ui" line="14"/>
+        <source>Style Sheet Editor</source>
+        <translation>Редактор Таблицы Стилей</translation>
     </message>
 </context>
 <context>
@@ -473,47 +473,47 @@
     <message>
         <location filename="../qsspage.ui" line="30"/>
         <source>Create</source>
-        <translation type="unfinished"></translation>
+        <translation>Создать</translation>
     </message>
     <message>
         <location filename="../qsspage.ui" line="40"/>
         <source>Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Изменить</translation>
     </message>
     <message>
         <location filename="../qsspage.ui" line="50"/>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qsspage.cpp" line="87"/>
-        <source>Enter Stylesheet Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Удалить</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="87"/>
         <source>File name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Имя файла:</translation>
+    </message>
+    <message>
+        <location filename="../qsspage.cpp" line="87"/>
+        <source>Enter Style Sheet Name</source>
+        <translation>Введите имя таблицы стилей</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="98"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Ошибка</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="98"/>
-        <source>The file &apos;%1&apos; already exists</source>
-        <translation type="unfinished"></translation>
+        <source>The file &quot;%1&quot; already exists</source>
+        <translation>Файл &quot;%1&quot; уже существует</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="132"/>
         <source>Confirm Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Подтвердите удаление</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="133"/>
-        <source>Are you shure you want to remove stylesheet &quot;%1&quot;</source>
-        <translation type="unfinished"></translation>
+        <source>Are you shure you want to remove style sheet &quot;%1&quot;?</source>
+        <translation>Вы уверены, что хотите удалить файл &quot;%1&quot;?</translation>
     </message>
 </context>
 </TS>
