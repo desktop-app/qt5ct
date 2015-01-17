@@ -95,7 +95,7 @@ void QSSPage::on_createButton_clicked()
 
     if(QFile::exists(filePath))
     {
-        QMessageBox::warning(this, tr("Error"), tr("The file '%1' already exists").arg(filePath));
+        QMessageBox::warning(this, tr("Error"), tr("The file \"%1\" already exists").arg(filePath));
         return;
     }
 
