@@ -1,0 +1,15 @@
+[main]
+host = https://www.transifex.com
+
+[qt5ct.qt5ct]
+file_filter = src/qt5ct/translations/qt5ct_<lang>.ts
+source_lang = en
+source_file = src/qt5ct/translations/qt5ct_en.ts
+type = QT
+
+[qt5ct.qt5ct-desktop]
+file_filter = src/qt5ct/desktop-translations/qt5ct_<lang>.desktop.in
+source_lang = en
+source_file = src/qt5ct/qt5ct.desktop
+type = DESKTOP
+

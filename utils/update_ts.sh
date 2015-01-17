@@ -9,9 +9,6 @@ do
 
      plug_name=`echo $tr_dir | cut -d '/' -f 3`
 
-     echo $plug_name
-
-
      echo "Updating ${plug_name}"
 
      ts_files=''
