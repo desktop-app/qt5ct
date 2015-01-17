@@ -35,6 +35,8 @@ namespace Ui {
 class QSSPage;
 }
 
+class QListWidgetItem;
+
 class QSSPage : public TabPage
 {
     Q_OBJECT
@@ -44,6 +46,12 @@ public:
     ~QSSPage();
 
     void writeSettings();
+
+private slots:
+    void on_qssListWidget_currentItemChanged(QListWidgetItem *current, QListWidgetItem *);
+    void on_createButton_clicked();
+    void on_editButton_clicked();
+    void on_removeButton_clicked();
 
 private:
     void readSettings();

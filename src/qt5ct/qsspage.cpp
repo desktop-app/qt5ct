@@ -28,6 +28,8 @@
 
 #include <QSettings>
 #include <QDir>
+#include <QInputDialog>
+#include <QMessageBox>
 #include "qt5ct.h"
 #include "qsspage.h"
 #include "ui_qsspage.h"
@@ -63,6 +65,73 @@ void QSSPage::writeSettings()
     }
 
     settings.setValue("Interface/stylesheets", styleSheets);
+}
+
+void QSSPage::on_qssListWidget_currentItemChanged(QListWidgetItem *current, QListWidgetItem *)
+{
+    if(current)
+    {
+        m_ui->editButton->setEnabled(current->data(QSS_WRITABLE_ROLE).toBool());
+        m_ui->removeButton->setEnabled(current->data(QSS_WRITABLE_ROLE).toBool());
+    }
+    else
+    {
+        m_ui->editButton->setEnabled(false);
+        m_ui->removeButton->setEnabled(false);
+    }
+}
+
+void QSSPage::on_createButton_clicked()
+{
+    QString name = QInputDialog::getText(this, tr("Enter Stylesheet Name"), tr("File name:"));
+    if(name.isEmpty())
+        return;
+
+    if(!name.endsWith(".qss", Qt::CaseInsensitive))
+        name.append(".qss");
+
+    QString filePath = Qt5CT::userStyleSheetPath() + name;
+
+    if(QFile::exists(filePath))
+    {
+        QMessageBox::warning(this, tr("Error"), tr("The file '%1' already exists").arg(filePath));
+        return;
+    }
+
+    //creating empty file
+    QFile file(filePath);
+    file.open(QIODevice::WriteOnly);
+    file.close();
+
+    //creating item
+    QFileInfo info(filePath);
+    QListWidgetItem *item = new QListWidgetItem(info.fileName(),  m_ui->qssListWidget);
+    item->setToolTip(info.filePath());
+    item->setData(QSS_FULL_PATH_ROLE, info.filePath());
+    item->setData(QSS_WRITABLE_ROLE, info.isWritable());
+    item->setCheckState(Qt::Unchecked);
+}
+
+void QSSPage::on_editButton_clicked()
+{
+
+}
+
+void QSSPage::on_removeButton_clicked()
+{
+    QListWidgetItem *item = m_ui->qssListWidget->currentItem();
+    if(!item)
+        return;
+
+    int button = QMessageBox::question(this, tr("Confirm Remove"),
+                                       tr("Are you shure you want to remove stylesheet \"%1\"")
+                                       .arg(item->text()),
+                                       QMessageBox::Yes | QMessageBox::No);
+    if(button == QMessageBox::Yes)
+    {
+        QFile::remove(item->data(QSS_FULL_PATH_ROLE).toString());
+        delete item;
+    }
 }
 
 void QSSPage::readSettings()
