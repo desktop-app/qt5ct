@@ -31,6 +31,7 @@
 #include <QInputDialog>
 #include <QMessageBox>
 #include <QFile>
+#include <QMenu>
 #include "qt5ct.h"
 #include "qsseditordialog.h"
 #include "qsspage.h"
@@ -45,6 +46,12 @@ QSSPage::QSSPage(QWidget *parent) :
 {
     m_ui->setupUi(this);
     QDir("/").mkpath(Qt5CT::userStyleSheetPath());
+
+    m_menu = new QMenu(this);
+    m_menu->addAction(tr("Edit"), this, SLOT(on_editButton_clicked()));
+    m_menu->addAction(tr("Rename"), this, SLOT(on_renameButton_clicked()));
+    m_menu->addSeparator();
+    m_menu->addAction(tr("Remove"), this, SLOT(on_removeButton_clicked()));
 
     readSettings();
 }
@@ -208,4 +215,13 @@ void QSSPage::on_renameButton_clicked()
     item->setText(name);
     item->setData(QSS_FULL_PATH_ROLE, newPath);
     item->setToolTip(newPath);
+}
+
+void QSSPage::on_qssListWidget_customContextMenuRequested(const QPoint &pos)
+{
+    QListWidgetItem *item = m_ui->qssListWidget->currentItem();
+    if(item && item->data(QSS_WRITABLE_ROLE).toBool())
+    {
+        m_menu->exec(m_ui->qssListWidget->viewport()->mapToGlobal(pos));
+    }
 }

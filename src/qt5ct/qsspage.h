@@ -36,6 +36,7 @@ class QSSPage;
 }
 
 class QListWidgetItem;
+class QMenu;
 
 class QSSPage : public TabPage
 {
@@ -52,13 +53,14 @@ private slots:
     void on_createButton_clicked();
     void on_editButton_clicked();
     void on_removeButton_clicked();
-
     void on_renameButton_clicked();
+    void on_qssListWidget_customContextMenuRequested(const QPoint &pos);
 
 private:
     void readSettings();
     void findStyleSheets(const QString &path);
     Ui::QSSPage *m_ui;
+    QMenu *m_menu;
 };
 
 #endif // QSSPAGE_H
