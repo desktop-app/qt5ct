@@ -30,6 +30,7 @@
 #include <QDir>
 #include <QInputDialog>
 #include <QMessageBox>
+#include <QFile>
 #include "qt5ct.h"
 #include "qsseditordialog.h"
 #include "qsspage.h"
@@ -74,11 +75,13 @@ void QSSPage::on_qssListWidget_currentItemChanged(QListWidgetItem *current, QLis
     {
         m_ui->editButton->setEnabled(current->data(QSS_WRITABLE_ROLE).toBool());
         m_ui->removeButton->setEnabled(current->data(QSS_WRITABLE_ROLE).toBool());
+        m_ui->renameButton->setEnabled(current->data(QSS_WRITABLE_ROLE).toBool());
     }
     else
     {
         m_ui->editButton->setEnabled(false);
         m_ui->removeButton->setEnabled(false);
+        m_ui->renameButton->setEnabled(false);
     }
 }
 
@@ -172,4 +175,37 @@ void QSSPage::findStyleSheets(const QString &path)
         item->setData(QSS_FULL_PATH_ROLE, info.filePath());
         item->setData(QSS_WRITABLE_ROLE, info.isWritable());
     }
+}
+
+void QSSPage::on_renameButton_clicked()
+{
+    QListWidgetItem *item = m_ui->qssListWidget->currentItem();
+    if(!item)
+        return;
+
+    QString name = QInputDialog::getText(this, tr("Rename Style Sheet"), tr("Style sheet name:"),
+                          QLineEdit::Normal, item->text(), 0);
+    if(name.isEmpty())
+        return;
+
+    if(!m_ui->qssListWidget->findItems(name, Qt::MatchExactly).isEmpty())
+    {
+        QMessageBox::warning(this, tr("Error"), tr("The style sheet \"%1\" already exists").arg(name));
+        return;
+    }
+
+    if(!name.endsWith(".qss", Qt::CaseInsensitive))
+            name.append(".qss");
+
+    QString newPath = Qt5CT::userStyleSheetPath() + name;
+
+    if(!QFile::rename(item->data(QSS_FULL_PATH_ROLE).toString(), newPath))
+    {
+        QMessageBox::warning(this, tr("Error"), tr("Unable to rename file"));
+        return;
+    }
+
+    item->setText(name);
+    item->setData(QSS_FULL_PATH_ROLE, newPath);
+    item->setToolTip(newPath);
 }

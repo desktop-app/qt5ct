@@ -53,6 +53,8 @@ private slots:
     void on_editButton_clicked();
     void on_removeButton_clicked();
 
+    void on_renameButton_clicked();
+
 private:
     void readSettings();
     void findStyleSheets(const QString &path);
