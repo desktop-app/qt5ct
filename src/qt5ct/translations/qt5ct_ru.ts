@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="ru_RU">
+<TS version="2.0" language="ru_RU">
 <context>
     <name>AppearancePage</name>
     <message>
@@ -485,7 +485,7 @@
         <location filename="../qsspage.ui" line="76"/>
         <location filename="../qsspage.cpp" line="52"/>
         <source>Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Переименовать</translation>
     </message>
     <message>
         <location filename="../qsspage.ui" line="33"/>
@@ -528,22 +528,22 @@
     <message>
         <location filename="../qsspage.cpp" line="193"/>
         <source>Rename Style Sheet</source>
-        <translation type="unfinished"></translation>
+        <translation>Переименовать таблицу стилей</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="193"/>
         <source>Style sheet name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Имя таблицы стилей:</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="200"/>
         <source>The style sheet &quot;%1&quot; already exists</source>
-        <translation type="unfinished"></translation>
+        <translation>Таблица стилей с именем &quot;%1&quot; уже существует</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="211"/>
         <source>Unable to rename file</source>
-        <translation type="unfinished"></translation>
+        <translation>Невозможно переименовать файл</translation>
     </message>
 </context>
 </TS>
