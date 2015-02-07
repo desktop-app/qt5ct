@@ -27,3 +27,12 @@ Version 0.6
 * added style sheet settings
 * added transifex integration
 * updated Russian translation
+
+Version 0.7
+* added feature to rename style sheet
+* added context menu to the style sheet list
+* added feature to apply theme for running applications
+* added Chinese (Taiwan) translation (Jeff Huang)
+* added Czech translation (fri)
+* added German translation (Mario Blättermann)
+* updated Russian translation
