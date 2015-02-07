@@ -33,9 +33,11 @@
 #include <QFont>
 #include <QPalette>
 #include <QTimer>
+#include <QStyle>
 #include <QFileSystemWatcher>
 #include <private/qfont_p.h>
 #include <private/qapplication_p.h>
+#include <private/qiconloader_p.h>
 #include <qt5ct/qt5ct.h>
 #include "qt5ctplatformtheme.h"
 
@@ -114,6 +116,10 @@ void Qt5CTPlatformTheme::updateSettings()
     qApp->setStyleSheet(QApplicationPrivate::styleSheet);
     if(m_customPalette)
         qApp->setPalette(*m_customPalette);
+    else
+        qApp->setPalette(qApp->style()->standardPalette());
+    QIconLoader::instance()->updateSystemTheme();
+
     foreach (QWidget *w, qApp->allWidgets())
     {
         QEvent e(QEvent::ThemeChange);
