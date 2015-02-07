@@ -30,12 +30,14 @@
 #define QT5CTPLATFORMTHEME_H
 
 #include <qpa/qplatformtheme.h>
+#include <QObject>
 #include <QFont>
 
 class QPalette;
 
-class Qt5CTPlatformTheme : public QPlatformTheme
+class Qt5CTPlatformTheme : public QObject, public QPlatformTheme
 {
+    Q_OBJECT
 public:
     Qt5CTPlatformTheme();
 
@@ -59,9 +61,14 @@ public:
     //virtual QList<QKeySequence> keyBindings(QKeySequence::StandardKey key) const;
     //virtual QString standardButtonText(int button) const;
 
+private slots:
+    void cteateFSWatcher();
+    void updateSettings();
+
 private:
+    void readSettings();
     QString loadStyleSheets(const QStringList &paths);
-    QString m_style, m_iconTheme;
+    QString m_style, m_iconTheme, m_userStyleSheet;
     QPalette *m_customPalette;
     QFont m_generalFont, m_fixedFont;
     int m_doubleClickInterval;

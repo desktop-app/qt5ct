@@ -32,6 +32,8 @@
 #include <QScreen>
 #include <QFont>
 #include <QPalette>
+#include <QTimer>
+#include <QFileSystemWatcher>
 #include <private/qfont_p.h>
 #include <private/qapplication_p.h>
 #include <qt5ct/qt5ct.h>
@@ -43,6 +45,89 @@
 Qt5CTPlatformTheme::Qt5CTPlatformTheme()
 {
     m_customPalette = 0;
+    m_userStyleSheet = QApplicationPrivate::styleSheet;
+    readSettings();
+    QMetaObject::invokeMethod(this, "cteateFSWatcher", Qt::QueuedConnection);
+}
+
+Qt5CTPlatformTheme::~Qt5CTPlatformTheme()
+{
+    if(m_customPalette)
+        delete m_customPalette;
+}
+
+const QPalette *Qt5CTPlatformTheme::palette(QPlatformTheme::Palette type) const
+{
+    if(m_customPalette)
+        return m_customPalette;
+    return QPlatformTheme::palette(type);
+}
+
+const QFont *Qt5CTPlatformTheme::font(QPlatformTheme::Font type) const
+{
+    if(type == QPlatformTheme::FixedFont)
+        return &m_fixedFont;
+    return &m_generalFont;
+}
+
+QVariant Qt5CTPlatformTheme::themeHint(QPlatformTheme::ThemeHint hint) const
+{
+    switch (hint)
+    {
+    case QPlatformTheme::CursorFlashTime:
+        return m_cursorFlashTime;
+    case MouseDoubleClickInterval:
+        return m_doubleClickInterval;
+    case QPlatformTheme::SystemIconThemeName:
+        return m_iconTheme;
+    case QPlatformTheme::StyleNames:
+        return QStringList() << m_style;
+    case QPlatformTheme::IconThemeSearchPaths:
+        return Qt5CT::iconPaths();
+    case DialogButtonBoxLayout:
+        return m_buttonBoxLayout;
+    case QPlatformTheme::UiEffects:
+        return m_uiEffects;
+    default:
+        return QPlatformTheme::themeHint(hint);
+    }
+}
+
+void Qt5CTPlatformTheme::cteateFSWatcher()
+{
+    QFileSystemWatcher *watcher = new QFileSystemWatcher(this);
+    watcher->addPath(Qt5CT::configPath());
+
+    QTimer *timer = new QTimer(this);
+    timer->setSingleShot(true);
+    timer->setInterval(3000);
+    connect(watcher, SIGNAL(directoryChanged(QString)), timer, SLOT(start()));
+    connect(timer, SIGNAL(timeout()), SLOT(updateSettings()));
+}
+
+void Qt5CTPlatformTheme::updateSettings()
+{
+    qDebug("Qt5CTPlatformTheme: updating settings..");
+    readSettings();
+
+    qApp->setStyle(m_style);
+    qApp->setStyleSheet(QApplicationPrivate::styleSheet);
+    if(m_customPalette)
+        qApp->setPalette(*m_customPalette);
+    foreach (QWidget *w, qApp->allWidgets())
+    {
+        QEvent e(QEvent::ThemeChange);
+        QApplication::sendEvent(w, &e);
+    }
+}
+
+void Qt5CTPlatformTheme::readSettings()
+{
+    if(m_customPalette)
+    {
+        delete m_customPalette;
+        m_customPalette = 0;
+    }
 
     QSettings settings(Qt5CT::configFile(), QSettings::IniFormat);
 
@@ -108,53 +193,10 @@ Qt5CTPlatformTheme::Qt5CTPlatformTheme()
 
     //load style sheets
     QStringList qssPaths = settings.value("stylesheets").toStringList();
-    QApplicationPrivate::styleSheet.append(loadStyleSheets(qssPaths));
+    QApplicationPrivate::styleSheet = m_userStyleSheet + loadStyleSheets(qssPaths);
     settings.endGroup();
 
     QGuiApplication::setFont(m_generalFont); //apply font
-}
-
-Qt5CTPlatformTheme::~Qt5CTPlatformTheme()
-{
-    if(m_customPalette)
-        delete m_customPalette;
-}
-
-const QPalette *Qt5CTPlatformTheme::palette(QPlatformTheme::Palette type) const
-{
-    if(m_customPalette)
-        return m_customPalette;
-    return QPlatformTheme::palette(type);
-}
-
-const QFont *Qt5CTPlatformTheme::font(QPlatformTheme::Font type) const
-{
-    if(type == QPlatformTheme::FixedFont)
-        return &m_fixedFont;
-    return &m_generalFont;
-}
-
-QVariant Qt5CTPlatformTheme::themeHint(QPlatformTheme::ThemeHint hint) const
-{
-    switch (hint)
-    {
-    case QPlatformTheme::CursorFlashTime:
-        return m_cursorFlashTime;
-    case MouseDoubleClickInterval:
-        return m_doubleClickInterval;
-    case QPlatformTheme::SystemIconThemeName:
-        return m_iconTheme;
-    case QPlatformTheme::StyleNames:
-        return QStringList() << m_style;
-    case QPlatformTheme::IconThemeSearchPaths:
-        return Qt5CT::iconPaths();
-    case DialogButtonBoxLayout:
-        return m_buttonBoxLayout;
-    case QPlatformTheme::UiEffects:
-        return m_uiEffects;
-    default:
-        return QPlatformTheme::themeHint(hint);
-    }
 }
 
 QString Qt5CTPlatformTheme::loadStyleSheets(const QStringList &paths)

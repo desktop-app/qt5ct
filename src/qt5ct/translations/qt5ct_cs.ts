@@ -1,4 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="cs" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="cs">
 <context>
     <name>AppearancePage</name>
     <message>
@@ -402,7 +404,7 @@
     <message>
         <location filename="../paletteeditdialog.cpp" line="89"/>
         <source>NoRole</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="89"/>
