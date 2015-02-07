@@ -31,6 +31,8 @@
 
 #include <QWidget>
 
+class QAbstractButton;
+
 namespace Ui {
 class MainWindow;
 }
@@ -44,8 +46,7 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_buttonBox_rejected();
-    void on_buttonBox_accepted();
+    void on_buttonBox_clicked(QAbstractButton *button);
 
 private:
     void closeEvent(QCloseEvent *);

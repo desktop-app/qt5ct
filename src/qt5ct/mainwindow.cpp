@@ -61,26 +61,28 @@ MainWindow::~MainWindow()
     delete m_ui;
 }
 
-void MainWindow::on_buttonBox_rejected()
-{
-    close();
-    qApp->quit();
-}
-
-void MainWindow::on_buttonBox_accepted()
-{
-    for(int i = 0; i < m_ui->tabWidget->count(); ++i)
-    {
-        TabPage *p = qobject_cast<TabPage*>(m_ui->tabWidget->widget(i));
-        if(p)
-            p->writeSettings();
-    }
-    close();
-    qApp->quit();
-}
-
 void MainWindow::closeEvent(QCloseEvent *)
 {
     QSettings settings(Qt5CT::configFile(), QSettings::IniFormat);
     settings.setValue("SettingsWindow/geometry", saveGeometry());
+}
+
+void MainWindow::on_buttonBox_clicked(QAbstractButton *button)
+{
+    int id = m_ui->buttonBox->standardButton(button);
+    if(id == QDialogButtonBox::Ok || id == QDialogButtonBox::Apply)
+    {
+        for(int i = 0; i < m_ui->tabWidget->count(); ++i)
+        {
+            TabPage *p = qobject_cast<TabPage*>(m_ui->tabWidget->widget(i));
+            if(p)
+                p->writeSettings();
+        }
+    }
+
+    if(id == QDialogButtonBox::Ok || id == QDialogButtonBox::Cancel)
+    {
+        close();
+        qApp->quit();
+    }
 }
