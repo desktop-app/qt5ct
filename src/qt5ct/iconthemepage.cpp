@@ -32,7 +32,7 @@
 #include <QDir>
 #include <QTreeWidgetItem>
 #include <QImageReader>
-#include <QDebug>
+#include <QLocale>
 #include "qt5ct.h"
 #include "iconthemepage.h"
 #include "ui_iconthemepage.h"
@@ -102,40 +102,44 @@ void IconThemePage::loadThemes()
 void IconThemePage::loadTheme(const QString &path)
 {
     QSettings config(path, QSettings::IniFormat);
+    config.setIniCodec("UTF-8");
 
     config.beginGroup("Icon Theme");
     QStringList dirs = config.value("Directories").toStringList();
     if(dirs.isEmpty() || config.value("Hidden", false).toBool())
         return;
-    QString name = config.value("Name").toString();
-    QString comment = config.value("Comment").toString();
-    QStringList inherits = config.value("Inherits").toStringList();
+
+    QString name, comment;
+    QString lang = QLocale::system().name();
+
+    name = config.value(QString("Name[%1]").arg(lang)).toString();
+    comment = config.value(QString("Comment[%1]").arg(lang)).toString();
+
+    if(lang.contains("_"))
+        lang = lang.split("_").first();
+
+    if(name.isEmpty())
+        name = config.value(QString("Name[%1]").arg(lang)).toString();
+
+    if(comment.isEmpty())
+        comment = config.value(QString("Comment[%1]").arg(lang)).toString();
+
+    if(name.isEmpty())
+        name = config.value("Name").toString();
+
+    if(comment.isEmpty())
+        comment = config.value("Comment").toString();
+
     config.endGroup();
 
-    QStringList iconPaths;
-
-    foreach (QString dir, dirs)
-    {
-        config.beginGroup(dir);
-        if(config.value("Context").toString() == "Actions" && (config.value("Size").toInt() == 22
-                                                               || config.value("Size").toInt() == 24))
-        {
-            iconPaths << QFileInfo(path).path() + "/" + dir;
-            foreach (QString altDir, inherits)
-            {
-                iconPaths << QFileInfo(path).path() + "/../" + altDir + "/" + dir;
-            }
-        }
-        config.endGroup();
-    }
-
-    if(iconPaths.isEmpty())
-        return;
+    QIcon icon1 = findIcon(path, 24, "document-save");
+    QIcon icon2 = findIcon(path, 24, "document-print");
+    QIcon icon3 = findIcon(path, 24, "media-playback-stop");
 
     QTreeWidgetItem *item = new QTreeWidgetItem();
-    item->setIcon(0, loadIcon(iconPaths, "document-save"));
-    item->setIcon(1, loadIcon(iconPaths, "document-print"));
-    item->setIcon(2, loadIcon(iconPaths, "media-playback-stop"));
+    item->setIcon(0, icon1);
+    item->setIcon(1, icon2);
+    item->setIcon(2, icon3);
     item->setText(3, name);
     item->setData(3, Qt::UserRole, QFileInfo(path).path().section("/", -1));
     item->setToolTip(3, comment);
@@ -148,16 +152,58 @@ void IconThemePage::loadTheme(const QString &path)
     m_ui->treeWidget->resizeColumnToContents(3);
 }
 
-QIcon IconThemePage::loadIcon(const QStringList &paths, const QString &name)
+QIcon IconThemePage::findIcon(const QString &themePath, int size, const QString &name)
 {
-    foreach (QString path, paths)
+    QSettings config(themePath, QSettings::IniFormat);
+    config.beginGroup("Icon Theme");
+    QStringList dirs = config.value("Directories").toStringList();
+    QStringList parents = config.value("Inherits").toStringList();
+    config.endGroup();
+
+    foreach (QString dir, dirs)
     {
-        QDir iconDir(path);
-        iconDir.setFilter(QDir::Files);
-        iconDir.setNameFilters(QStringList () << (name + ".*"));
-        QFileInfoList iconList = iconDir.entryInfoList();
-        if(!iconList.isEmpty())
-            return QIcon(iconList.first().filePath());
+        config.beginGroup(dir);
+        if(config.value("Size").toInt() == size)
+        {
+            QDir iconDir = QFileInfo(themePath).path() + "/" + dir;
+            iconDir.setFilter(QDir::Files);
+            iconDir.setNameFilters(QStringList () << name + ".*");
+            if(iconDir.entryInfoList().isEmpty())
+                continue;
+            return QIcon(iconDir.entryInfoList().first().absoluteFilePath());
+        }
+        config.endGroup();
     }
+
+    foreach (QString dir, dirs)
+    {
+        config.beginGroup(dir);
+        if(abs(config.value("Size").toInt() - size) < 4)
+        {
+            QDir iconDir = QFileInfo(themePath).path() + "/" + dir;
+            iconDir.setFilter(QDir::Files);
+            iconDir.setNameFilters(QStringList () << name + ".*");
+            if(iconDir.entryInfoList().isEmpty())
+                continue;
+            return QIcon(iconDir.entryInfoList().first().absoluteFilePath());
+        }
+        config.endGroup();
+    }
+
+    parents.append("hicolor"); //add fallback themes
+    parents.append("gnome");
+
+    foreach (QString parent, parents)
+    {
+        QString filePath = QFileInfo(themePath).path() + "/../" + parent + "/index.theme";
+        if(!QFile::exists(filePath))
+            continue;
+
+        QIcon icon = findIcon(filePath, size, name);
+        if(!icon.isNull())
+            return icon;
+    }
+
     return QIcon();
+
 }

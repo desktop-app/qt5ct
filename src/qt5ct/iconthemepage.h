@@ -50,7 +50,7 @@ private:
     void readSettings();
     void loadThemes();
     void loadTheme(const QString &path);
-    QIcon loadIcon(const QStringList &paths, const QString &name);
+    QIcon findIcon(const QString &themePath, int size, const QString &name);
     Ui::IconThemePage *m_ui;
 };
 
