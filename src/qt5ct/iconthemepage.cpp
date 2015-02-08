@@ -205,5 +205,4 @@ QIcon IconThemePage::findIcon(const QString &themePath, int size, const QString 
     }
 
     return QIcon();
-
 }
