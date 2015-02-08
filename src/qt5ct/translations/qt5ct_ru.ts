@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="ru_RU">
+<TS version="2.0" language="ru_RU">
 <context>
     <name>AppearancePage</name>
     <message>
@@ -394,7 +394,7 @@
     <message>
         <location filename="../paletteeditdialog.cpp" line="88"/>
         <source>LinkVisited</source>
-        <translation>Посешённая ссылка</translation>
+        <translation>Посещённая ссылка</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="89"/>
