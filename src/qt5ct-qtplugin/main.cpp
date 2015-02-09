@@ -31,7 +31,7 @@
 
 QT_BEGIN_NAMESPACE
 
-class LXQtPlatformThemePlugin: public QPlatformThemePlugin
+class Qt5CTPlatformThemePlugin: public QPlatformThemePlugin
 {
     Q_OBJECT
     Q_PLUGIN_METADATA(IID "org.qt-project.Qt.QPA.QPlatformThemeFactoryInterface.5.1" FILE "qt5ct.json")
@@ -39,7 +39,7 @@ public:
     QPlatformTheme *create(const QString &key, const QStringList &params);
 };
 
-QPlatformTheme *LXQtPlatformThemePlugin::create(const QString &key, const QStringList &params)
+QPlatformTheme *Qt5CTPlatformThemePlugin::create(const QString &key, const QStringList &params)
 {
     Q_UNUSED(params);
     if (key.toLower() == "qt5ct")
