@@ -83,10 +83,10 @@ void PaletteEditDialog::setPalette(const QPalette &palette)
     }
 
     QStringList labels;
-    labels << tr("WindowText") << tr("Button") << tr("Light") << tr("Midlight") << tr("Dark") << tr("Mid")
-           << tr("Text") << tr("BrightText") << tr("ButtonText") << tr("Base") << tr("Window") << tr("Shadow")
-           << tr("Highlight") << tr("HighlightedText")  << tr("Link")  << tr("LinkVisited")
-           << tr("AlternateBase") << tr("NoRole") << tr("ToolTipBase")  << tr("ToolTipText");
+    labels << tr("Window text") << tr("Button background") << tr("Bright") << tr("Less bright") << tr("Dark") << tr("Less dark")
+           << tr("Text") << tr("Bright text") << tr("Button text") << tr("Base") << tr("Window") << tr("Shadow")
+           << tr("Highlight") << tr("Highlighted text")  << tr("Link")  << tr("Visited link")
+           << tr("Alternate base") << tr("Default") << tr("Tooltip background")  << tr("Tooltip text");
     m_ui->tableWidget->setVerticalHeaderLabels(labels);
 }
 
