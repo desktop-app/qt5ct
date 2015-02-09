@@ -117,7 +117,7 @@ void Qt5CTPlatformTheme::updateSettings()
     if(m_customPalette)
         qApp->setPalette(*m_customPalette);
     else
-        qApp->setPalette(qApp->style()->standardPalette());
+        qApp->setPalette(*QPlatformTheme::palette(QPlatformTheme::SystemPalette));
     QIconLoader::instance()->updateSystemTheme();
 
     foreach (QWidget *w, qApp->allWidgets())
@@ -202,7 +202,7 @@ void Qt5CTPlatformTheme::readSettings()
     QApplicationPrivate::styleSheet = m_userStyleSheet + loadStyleSheets(qssPaths);
     settings.endGroup();
 
-    QGuiApplication::setFont(m_generalFont); //apply font
+    qApp->setFont(m_generalFont); //apply font
 }
 
 QString Qt5CTPlatformTheme::loadStyleSheets(const QStringList &paths)
