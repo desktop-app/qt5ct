@@ -36,3 +36,10 @@ Version 0.7
 * added Czech translation (fri)
 * added German translation (Mario Blättermann)
 * updated Russian translation
+
+Version 0.8
+* improved icon theme parsing
+* added Bulgarian translation (Kiril Kirilov)
+* fixed plugin metadata
+* fixed font updating issue
+* fixed Russian translation
