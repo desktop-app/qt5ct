@@ -318,33 +318,8 @@
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="86"/>
-        <source>WindowText</source>
-        <translation>視窗文字</translation>
-    </message>
-    <message>
-        <location filename="../paletteeditdialog.cpp" line="86"/>
-        <source>Button</source>
-        <translation>按鈕</translation>
-    </message>
-    <message>
-        <location filename="../paletteeditdialog.cpp" line="86"/>
-        <source>Light</source>
-        <translation>亮</translation>
-    </message>
-    <message>
-        <location filename="../paletteeditdialog.cpp" line="86"/>
-        <source>Midlight</source>
-        <translation>微亮</translation>
-    </message>
-    <message>
-        <location filename="../paletteeditdialog.cpp" line="86"/>
         <source>Dark</source>
         <translation>黑暗</translation>
-    </message>
-    <message>
-        <location filename="../paletteeditdialog.cpp" line="86"/>
-        <source>Mid</source>
-        <translation>中性</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="87"/>
@@ -352,14 +327,29 @@
         <translation>文字</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="87"/>
-        <source>BrightText</source>
-        <translation>突顯的文字</translation>
+        <location filename="../paletteeditdialog.cpp" line="86"/>
+        <source>Window text</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="87"/>
-        <source>ButtonText</source>
-        <translation>按鈕文字</translation>
+        <location filename="../paletteeditdialog.cpp" line="86"/>
+        <source>Button background</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../paletteeditdialog.cpp" line="86"/>
+        <source>Bright</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../paletteeditdialog.cpp" line="86"/>
+        <source>Less bright</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../paletteeditdialog.cpp" line="86"/>
+        <source>Less dark</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="87"/>
@@ -377,44 +367,54 @@
         <translation>陰影</translation>
     </message>
     <message>
+        <location filename="../paletteeditdialog.cpp" line="87"/>
+        <source>Bright text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../paletteeditdialog.cpp" line="87"/>
+        <source>Button text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../paletteeditdialog.cpp" line="88"/>
         <source>Highlight</source>
         <translation>突顯</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="88"/>
-        <source>HighlightedText</source>
-        <translation>已突顯的文字</translation>
+        <source>Highlighted text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../paletteeditdialog.cpp" line="88"/>
+        <source>Visited link</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../paletteeditdialog.cpp" line="89"/>
+        <source>Alternate base</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../paletteeditdialog.cpp" line="89"/>
+        <source>Default</source>
+        <translation type="unfinished">預設</translation>
+    </message>
+    <message>
+        <location filename="../paletteeditdialog.cpp" line="89"/>
+        <source>Tooltip background</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../paletteeditdialog.cpp" line="89"/>
+        <source>Tooltip text</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="88"/>
         <source>Link</source>
         <translation>連結</translation>
-    </message>
-    <message>
-        <location filename="../paletteeditdialog.cpp" line="88"/>
-        <source>LinkVisited</source>
-        <translation>已造訪的連結</translation>
-    </message>
-    <message>
-        <location filename="../paletteeditdialog.cpp" line="89"/>
-        <source>AlternateBase</source>
-        <translation>候補基礎</translation>
-    </message>
-    <message>
-        <location filename="../paletteeditdialog.cpp" line="89"/>
-        <source>NoRole</source>
-        <translation>無作用</translation>
-    </message>
-    <message>
-        <location filename="../paletteeditdialog.cpp" line="89"/>
-        <source>ToolTipBase</source>
-        <translation>工具提示基礎</translation>
-    </message>
-    <message>
-        <location filename="../paletteeditdialog.cpp" line="89"/>
-        <source>ToolTipText</source>
-        <translation>工具提示文字</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="95"/>

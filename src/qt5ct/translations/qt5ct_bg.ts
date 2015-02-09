@@ -318,33 +318,8 @@
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="86"/>
-        <source>WindowText</source>
-        <translation>Текст на прозорец</translation>
-    </message>
-    <message>
-        <location filename="../paletteeditdialog.cpp" line="86"/>
-        <source>Button</source>
-        <translation>Бутон</translation>
-    </message>
-    <message>
-        <location filename="../paletteeditdialog.cpp" line="86"/>
-        <source>Light</source>
-        <translation>Светъл</translation>
-    </message>
-    <message>
-        <location filename="../paletteeditdialog.cpp" line="86"/>
-        <source>Midlight</source>
-        <translation>Средно светъл</translation>
-    </message>
-    <message>
-        <location filename="../paletteeditdialog.cpp" line="86"/>
         <source>Dark</source>
         <translation>Тъмен</translation>
-    </message>
-    <message>
-        <location filename="../paletteeditdialog.cpp" line="86"/>
-        <source>Mid</source>
-        <translation>Среден</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="87"/>
@@ -352,14 +327,29 @@
         <translation>Текст</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="87"/>
-        <source>BrightText</source>
-        <translation>Открояващ се текст</translation>
+        <location filename="../paletteeditdialog.cpp" line="86"/>
+        <source>Window text</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="87"/>
-        <source>ButtonText</source>
-        <translation>Текст на бутон</translation>
+        <location filename="../paletteeditdialog.cpp" line="86"/>
+        <source>Button background</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../paletteeditdialog.cpp" line="86"/>
+        <source>Bright</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../paletteeditdialog.cpp" line="86"/>
+        <source>Less bright</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../paletteeditdialog.cpp" line="86"/>
+        <source>Less dark</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="87"/>
@@ -377,44 +367,54 @@
         <translation>Сянка</translation>
     </message>
     <message>
+        <location filename="../paletteeditdialog.cpp" line="87"/>
+        <source>Bright text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../paletteeditdialog.cpp" line="87"/>
+        <source>Button text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../paletteeditdialog.cpp" line="88"/>
         <source>Highlight</source>
         <translation>Подчертаване</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="88"/>
-        <source>HighlightedText</source>
-        <translation>Подчертан текст</translation>
+        <source>Highlighted text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../paletteeditdialog.cpp" line="88"/>
+        <source>Visited link</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../paletteeditdialog.cpp" line="89"/>
+        <source>Alternate base</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../paletteeditdialog.cpp" line="89"/>
+        <source>Default</source>
+        <translation type="unfinished">По подразбиране</translation>
+    </message>
+    <message>
+        <location filename="../paletteeditdialog.cpp" line="89"/>
+        <source>Tooltip background</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../paletteeditdialog.cpp" line="89"/>
+        <source>Tooltip text</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="88"/>
         <source>Link</source>
         <translation>Връзка</translation>
-    </message>
-    <message>
-        <location filename="../paletteeditdialog.cpp" line="88"/>
-        <source>LinkVisited</source>
-        <translation>Посетени адреси</translation>
-    </message>
-    <message>
-        <location filename="../paletteeditdialog.cpp" line="89"/>
-        <source>AlternateBase</source>
-        <translation>AlternateBase</translation>
-    </message>
-    <message>
-        <location filename="../paletteeditdialog.cpp" line="89"/>
-        <source>NoRole</source>
-        <translation>NoRole</translation>
-    </message>
-    <message>
-        <location filename="../paletteeditdialog.cpp" line="89"/>
-        <source>ToolTipBase</source>
-        <translation>ToolTipBase</translation>
-    </message>
-    <message>
-        <location filename="../paletteeditdialog.cpp" line="89"/>
-        <source>ToolTipText</source>
-        <translation>ToolTipText</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="95"/>

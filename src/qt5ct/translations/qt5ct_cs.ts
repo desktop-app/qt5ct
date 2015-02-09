@@ -318,33 +318,8 @@
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="86"/>
-        <source>WindowText</source>
-        <translation>Text okna</translation>
-    </message>
-    <message>
-        <location filename="../paletteeditdialog.cpp" line="86"/>
-        <source>Button</source>
-        <translation>Tlačítko</translation>
-    </message>
-    <message>
-        <location filename="../paletteeditdialog.cpp" line="86"/>
-        <source>Light</source>
-        <translation>Světlé</translation>
-    </message>
-    <message>
-        <location filename="../paletteeditdialog.cpp" line="86"/>
-        <source>Midlight</source>
-        <translation>Polosvětlé</translation>
-    </message>
-    <message>
-        <location filename="../paletteeditdialog.cpp" line="86"/>
         <source>Dark</source>
         <translation>Tmavé</translation>
-    </message>
-    <message>
-        <location filename="../paletteeditdialog.cpp" line="86"/>
-        <source>Mid</source>
-        <translation>Polotmavé</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="87"/>
@@ -352,14 +327,29 @@
         <translation>Text</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="87"/>
-        <source>BrightText</source>
-        <translation>Světlý text</translation>
+        <location filename="../paletteeditdialog.cpp" line="86"/>
+        <source>Window text</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="87"/>
-        <source>ButtonText</source>
-        <translation>Text tlačítka</translation>
+        <location filename="../paletteeditdialog.cpp" line="86"/>
+        <source>Button background</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../paletteeditdialog.cpp" line="86"/>
+        <source>Bright</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../paletteeditdialog.cpp" line="86"/>
+        <source>Less bright</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../paletteeditdialog.cpp" line="86"/>
+        <source>Less dark</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="87"/>
@@ -377,44 +367,54 @@
         <translation>Stín</translation>
     </message>
     <message>
+        <location filename="../paletteeditdialog.cpp" line="87"/>
+        <source>Bright text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../paletteeditdialog.cpp" line="87"/>
+        <source>Button text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../paletteeditdialog.cpp" line="88"/>
         <source>Highlight</source>
         <translation>Zvýrazněná oblast</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="88"/>
-        <source>HighlightedText</source>
-        <translation>Zvýrazněný text</translation>
+        <source>Highlighted text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../paletteeditdialog.cpp" line="88"/>
+        <source>Visited link</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../paletteeditdialog.cpp" line="89"/>
+        <source>Alternate base</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../paletteeditdialog.cpp" line="89"/>
+        <source>Default</source>
+        <translation type="unfinished">Výchozí</translation>
+    </message>
+    <message>
+        <location filename="../paletteeditdialog.cpp" line="89"/>
+        <source>Tooltip background</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../paletteeditdialog.cpp" line="89"/>
+        <source>Tooltip text</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="88"/>
         <source>Link</source>
         <translation>Odkaz</translation>
-    </message>
-    <message>
-        <location filename="../paletteeditdialog.cpp" line="88"/>
-        <source>LinkVisited</source>
-        <translation>Navštívený odkaz</translation>
-    </message>
-    <message>
-        <location filename="../paletteeditdialog.cpp" line="89"/>
-        <source>AlternateBase</source>
-        <translation>Náhradní podklad</translation>
-    </message>
-    <message>
-        <location filename="../paletteeditdialog.cpp" line="89"/>
-        <source>NoRole</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../paletteeditdialog.cpp" line="89"/>
-        <source>ToolTipBase</source>
-        <translation>Podklad bublinové nápovědy</translation>
-    </message>
-    <message>
-        <location filename="../paletteeditdialog.cpp" line="89"/>
-        <source>ToolTipText</source>
-        <translation>Text bublinové nápovědy</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="95"/>
