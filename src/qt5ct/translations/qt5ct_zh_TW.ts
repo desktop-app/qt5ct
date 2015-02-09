@@ -322,11 +322,6 @@
         <translation>黑暗</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="87"/>
-        <source>Text</source>
-        <translation>文字</translation>
-    </message>
-    <message>
         <location filename="../paletteeditdialog.cpp" line="86"/>
         <source>Window text</source>
         <translation type="unfinished"></translation>
@@ -353,11 +348,6 @@
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="87"/>
-        <source>Base</source>
-        <translation>基礎</translation>
-    </message>
-    <message>
-        <location filename="../paletteeditdialog.cpp" line="87"/>
         <source>Window</source>
         <translation>視窗</translation>
     </message>
@@ -377,6 +367,16 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../paletteeditdialog.cpp" line="87"/>
+        <source>Normal text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../paletteeditdialog.cpp" line="87"/>
+        <source>Normal background</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../paletteeditdialog.cpp" line="88"/>
         <source>Highlight</source>
         <translation>突顯</translation>
@@ -389,11 +389,6 @@
     <message>
         <location filename="../paletteeditdialog.cpp" line="88"/>
         <source>Visited link</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../paletteeditdialog.cpp" line="89"/>
-        <source>Alternate base</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -415,6 +410,11 @@
         <location filename="../paletteeditdialog.cpp" line="88"/>
         <source>Link</source>
         <translation>連結</translation>
+    </message>
+    <message>
+        <location filename="../paletteeditdialog.cpp" line="89"/>
+        <source>Alternate background</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="95"/>

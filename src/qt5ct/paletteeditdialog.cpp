@@ -39,7 +39,7 @@ PaletteEditDialog::PaletteEditDialog(const QPalette &palette, QStyle *currentSty
     m_ui->setupUi(this);
     m_ui->tableWidget->setColumnCount(3);
     m_ui->tableWidget->setRowCount(QPalette::NColorRoles);
-    m_ui->tableWidget->verticalHeader()->setDefaultSectionSize(fontMetrics().height() + 8);
+    m_ui->tableWidget->verticalHeader()->setDefaultSectionSize(fontMetrics().lineSpacing() + 10);
     m_ui->tableWidget->verticalHeader()->setSectionResizeMode(QHeaderView::Fixed);
     m_ui->tableWidget->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
 
@@ -84,9 +84,9 @@ void PaletteEditDialog::setPalette(const QPalette &palette)
 
     QStringList labels;
     labels << tr("Window text") << tr("Button background") << tr("Bright") << tr("Less bright") << tr("Dark") << tr("Less dark")
-           << tr("Text") << tr("Bright text") << tr("Button text") << tr("Base") << tr("Window") << tr("Shadow")
+           << tr("Normal text") << tr("Bright text") << tr("Button text") << tr("Normal background") << tr("Window") << tr("Shadow")
            << tr("Highlight") << tr("Highlighted text")  << tr("Link")  << tr("Visited link")
-           << tr("Alternate base") << tr("Default") << tr("Tooltip background")  << tr("Tooltip text");
+           << tr("Alternate background") << tr("Default") << tr("Tooltip background")  << tr("Tooltip text");
     m_ui->tableWidget->setVerticalHeaderLabels(labels);
 }
 
