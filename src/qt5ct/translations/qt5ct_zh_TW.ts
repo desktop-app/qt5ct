@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="zh_TW">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="zh_TW" version="2.1">
 <context>
     <name>AppearancePage</name>
     <message>
@@ -324,27 +322,27 @@
     <message>
         <location filename="../paletteeditdialog.cpp" line="86"/>
         <source>Window text</source>
-        <translation type="unfinished"></translation>
+        <translation>視窗文字</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="86"/>
         <source>Button background</source>
-        <translation type="unfinished"></translation>
+        <translation>按鈕背景</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="86"/>
         <source>Bright</source>
-        <translation type="unfinished"></translation>
+        <translation>亮</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="86"/>
         <source>Less bright</source>
-        <translation type="unfinished"></translation>
+        <translation>較不亮</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="86"/>
         <source>Less dark</source>
-        <translation type="unfinished"></translation>
+        <translation>較不黑暗</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="87"/>
@@ -359,22 +357,22 @@
     <message>
         <location filename="../paletteeditdialog.cpp" line="87"/>
         <source>Bright text</source>
-        <translation type="unfinished"></translation>
+        <translation>亮文字</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="87"/>
         <source>Button text</source>
-        <translation type="unfinished"></translation>
+        <translation>按鈕文字</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="87"/>
         <source>Normal text</source>
-        <translation type="unfinished"></translation>
+        <translation>一般文字</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="87"/>
         <source>Normal background</source>
-        <translation type="unfinished"></translation>
+        <translation>一般背景</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="88"/>
@@ -384,27 +382,27 @@
     <message>
         <location filename="../paletteeditdialog.cpp" line="88"/>
         <source>Highlighted text</source>
-        <translation type="unfinished"></translation>
+        <translation>突顯的文字</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="88"/>
         <source>Visited link</source>
-        <translation type="unfinished"></translation>
+        <translation>已造訪的連結</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="89"/>
         <source>Default</source>
-        <translation type="unfinished">預設</translation>
+        <translation>預設</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="89"/>
         <source>Tooltip background</source>
-        <translation type="unfinished"></translation>
+        <translation>工具提示背景</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="89"/>
         <source>Tooltip text</source>
-        <translation type="unfinished"></translation>
+        <translation>工具提示文字</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="88"/>
@@ -414,7 +412,7 @@
     <message>
         <location filename="../paletteeditdialog.cpp" line="89"/>
         <source>Alternate background</source>
-        <translation type="unfinished"></translation>
+        <translation>備用背景</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="95"/>
