@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="cs">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="cs" version="2.1">
 <context>
     <name>AppearancePage</name>
     <message>
@@ -324,27 +322,27 @@
     <message>
         <location filename="../paletteeditdialog.cpp" line="86"/>
         <source>Window text</source>
-        <translation type="unfinished"></translation>
+        <translation>Text okna</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="86"/>
         <source>Button background</source>
-        <translation type="unfinished"></translation>
+        <translation>Pozadí tlačítka</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="86"/>
         <source>Bright</source>
-        <translation type="unfinished"></translation>
+        <translation>Světlé</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="86"/>
         <source>Less bright</source>
-        <translation type="unfinished"></translation>
+        <translation>Méně světlé</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="86"/>
         <source>Less dark</source>
-        <translation type="unfinished"></translation>
+        <translation>Tmavé</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="87"/>
@@ -359,22 +357,22 @@
     <message>
         <location filename="../paletteeditdialog.cpp" line="87"/>
         <source>Bright text</source>
-        <translation type="unfinished"></translation>
+        <translation>Světlý text</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="87"/>
         <source>Button text</source>
-        <translation type="unfinished"></translation>
+        <translation>Text tlačítka</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="87"/>
         <source>Normal text</source>
-        <translation type="unfinished"></translation>
+        <translation>Běžný text</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="87"/>
         <source>Normal background</source>
-        <translation type="unfinished"></translation>
+        <translation>Běžné pozadí</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="88"/>
@@ -384,27 +382,27 @@
     <message>
         <location filename="../paletteeditdialog.cpp" line="88"/>
         <source>Highlighted text</source>
-        <translation type="unfinished"></translation>
+        <translation>Zvýrazněný text</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="88"/>
         <source>Visited link</source>
-        <translation type="unfinished"></translation>
+        <translation>Navštívený odkaz</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="89"/>
         <source>Default</source>
-        <translation type="unfinished">Výchozí</translation>
+        <translation>Výchozí</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="89"/>
         <source>Tooltip background</source>
-        <translation type="unfinished"></translation>
+        <translation>Pozadí bublinové nápovědy</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="89"/>
         <source>Tooltip text</source>
-        <translation type="unfinished"></translation>
+        <translation>Text bublinové nápovědy</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="88"/>
@@ -414,7 +412,7 @@
     <message>
         <location filename="../paletteeditdialog.cpp" line="89"/>
         <source>Alternate background</source>
-        <translation type="unfinished"></translation>
+        <translation>Náhradní pozadí</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="95"/>
