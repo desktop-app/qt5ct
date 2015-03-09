@@ -46,6 +46,10 @@ Version 0.8
 
 Version 0.9
 * added more user frendly color roles
-* updated  Chinese (Taiwan) translation (Jeff Huang)
+* added feature to disable qss support
+* added Dutch (Netherlands) translation (Heimen Stoffels)
+* updated Chinese (Taiwan) translation (Jeff Huang)
 * updated Czech translation (fri)
-
+* updated Bulgarian translation (Kiril Kirilov)
+* updated German translation (Mario Blättermann)
+* updated Russian translation
