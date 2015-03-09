@@ -1,4 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="bg" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="bg">
 <context>
     <name>AppearancePage</name>
     <message>
@@ -267,12 +269,12 @@
         <translation>Интерфейс</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="49"/>
+        <location filename="../mainwindow.cpp" line="50"/>
         <source>Style Sheets</source>
         <translation>Стил на страниците</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="56"/>
+        <location filename="../mainwindow.cpp" line="58"/>
         <source>Version: %1</source>
         <translation>Версия: %1</translation>
     </message>

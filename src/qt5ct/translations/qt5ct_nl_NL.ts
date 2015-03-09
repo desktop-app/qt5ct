@@ -1,4 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="nl_NL" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="nl_NL">
 <context>
     <name>AppearancePage</name>
     <message>
@@ -267,12 +269,12 @@
         <translation>Uiterlijk</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="49"/>
+        <location filename="../mainwindow.cpp" line="50"/>
         <source>Style Sheets</source>
         <translation>Stijlbladen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="56"/>
+        <location filename="../mainwindow.cpp" line="58"/>
         <source>Version: %1</source>
         <translation>Versie: %1</translation>
     </message>

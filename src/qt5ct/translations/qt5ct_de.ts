@@ -1,4 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="de" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="de">
 <context>
     <name>AppearancePage</name>
     <message>
@@ -109,7 +111,7 @@
     <message>
         <location filename="../fontconfigdialog.cpp" line="43"/>
         <source>Slight</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.cpp" line="44"/>
@@ -267,12 +269,12 @@
         <translation>Oberfläche</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="49"/>
+        <location filename="../mainwindow.cpp" line="50"/>
         <source>Style Sheets</source>
         <translation>Stilvorlagen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="56"/>
+        <location filename="../mainwindow.cpp" line="58"/>
         <source>Version: %1</source>
         <translation>Version: %1</translation>
     </message>
@@ -332,17 +334,17 @@
     <message>
         <location filename="../paletteeditdialog.cpp" line="86"/>
         <source>Bright</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="86"/>
         <source>Less bright</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="86"/>
         <source>Less dark</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="87"/>
@@ -357,7 +359,7 @@
     <message>
         <location filename="../paletteeditdialog.cpp" line="87"/>
         <source>Bright text</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="87"/>
@@ -372,47 +374,47 @@
     <message>
         <location filename="../paletteeditdialog.cpp" line="87"/>
         <source>Normal background</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="88"/>
         <source>Highlight</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="88"/>
         <source>Highlighted text</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="88"/>
         <source>Visited link</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="89"/>
         <source>Default</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Standard</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="89"/>
         <source>Tooltip background</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="89"/>
         <source>Tooltip text</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="88"/>
         <source>Link</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="89"/>
         <source>Alternate background</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="95"/>
@@ -425,7 +427,7 @@
     <message>
         <location filename="../previewform.ui" line="14"/>
         <source>Preview Window</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../previewform.ui" line="24"/>
