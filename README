@@ -10,7 +10,7 @@ Requirements:
 
 - GNU Linux or FreeBSD
 - qtbase >= 5.4.0
-- qtsvg >= 5.4.0
+- qtsvg >= 5.4.0 (For svg icons)
 - qttools >= 5.4.0 (For build only)
 
 
@@ -22,6 +22,10 @@ make install (under root)
 
 Add line 'export QT_QPA_PLATFORMTHEME=qt5ct' to ~/.profile and re-login.
 
+Extra build options (for advanced users only):
+qmake DISABLE_QSS=1 - disables style sheets support (removes depency of the QtWidgets
+module from the platform plugin)
+qmake PLUGINDIR=<custom path> - changes a path of the platform plugin (libqt5ct.so)
 
 
 Files and directories:

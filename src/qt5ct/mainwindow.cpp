@@ -46,7 +46,9 @@ MainWindow::MainWindow(QWidget *parent) :
     m_ui->tabWidget->addTab(new FontsPage(this), tr("Fonts"));
     m_ui->tabWidget->addTab(new IconThemePage(this), tr("Icon Theme"));
     m_ui->tabWidget->addTab(new InterfacePage(this), tr("Interface"));
+#ifdef USE_QSS
     m_ui->tabWidget->addTab(new QSSPage(this), tr("Style Sheets"));
+#endif
 
     QSettings settings(Qt5CT::configFile(), QSettings::IniFormat);
     restoreGeometry(settings.value("SettingsWindow/geometry").toByteArray());

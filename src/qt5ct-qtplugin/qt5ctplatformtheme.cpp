@@ -33,10 +33,14 @@
 #include <QFont>
 #include <QPalette>
 #include <QTimer>
+#ifdef USE_QSS
 #include <QStyle>
+#include <private/qapplication_p.h>
+#endif
+#include <QFile>
 #include <QFileSystemWatcher>
 #include <private/qfont_p.h>
-#include <private/qapplication_p.h>
+
 #include <private/qiconloader_p.h>
 #include <qt5ct/qt5ct.h>
 #include "qt5ctplatformtheme.h"
@@ -47,7 +51,9 @@
 Qt5CTPlatformTheme::Qt5CTPlatformTheme()
 {
     m_customPalette = 0;
+#ifdef USE_QSS
     m_userStyleSheet = QApplicationPrivate::styleSheet;
+#endif
     readSettings();
     QMetaObject::invokeMethod(this, "cteateFSWatcher", Qt::QueuedConnection);
 }
@@ -112,6 +118,7 @@ void Qt5CTPlatformTheme::updateSettings()
     qDebug("Qt5CTPlatformTheme: updating settings..");
     readSettings();
 
+#ifdef USE_QSS
     qApp->setStyle(m_style);
     qApp->setStyleSheet(QApplicationPrivate::styleSheet);
     if(m_customPalette)
@@ -125,6 +132,7 @@ void Qt5CTPlatformTheme::updateSettings()
         QEvent e(QEvent::ThemeChange);
         QApplication::sendEvent(w, &e);
     }
+#endif
 }
 
 void Qt5CTPlatformTheme::readSettings()
@@ -198,8 +206,10 @@ void Qt5CTPlatformTheme::readSettings()
     }
 
     //load style sheets
+#ifdef USE_QSS
     QStringList qssPaths = settings.value("stylesheets").toStringList();
     QApplicationPrivate::styleSheet = m_userStyleSheet + loadStyleSheets(qssPaths);
+#endif
     settings.endGroup();
 
     qApp->setFont(m_generalFont); //apply font

@@ -43,6 +43,11 @@ HEADERS += \
     qsspage.h \
     qsseditordialog.h
 
+!equals (DISABLE_QSS,1) {
+   QT += widgets-private
+   DEFINES += USE_QSS
+}
+
 RESOURCES = translations/translations.qrc
 
 target.path = $$BINDIR
