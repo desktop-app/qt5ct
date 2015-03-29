@@ -15,4 +15,6 @@ unix {
 
   BINDIR = $$PREFIX/bin
   DATADIR = $$PREFIX/share
+
+  DEFINES += QT5CT_DATADIR=\\\"$$DATADIR\\\"
 }

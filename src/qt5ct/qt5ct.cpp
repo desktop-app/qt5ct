@@ -30,6 +30,10 @@
 #include <QLocale>
 #include "qt5ct.h"
 
+#ifndef QT5CT_DATADIR
+#define QT5CT_DATADIR "/usr/share"
+#endif
+
 
 QString Qt5CT::configPath()
 {
@@ -77,7 +81,7 @@ QString Qt5CT::userStyleSheetPath()
 
 QString Qt5CT::sharedStyleSheetPath()
 {
-    return "/usr/share/qt5ct/qss/"; //TODO use installation prefix
+    return QT5CT_DATADIR"/qt5ct/qss/";
 }
 
 QString Qt5CT::systemLanguageID()
