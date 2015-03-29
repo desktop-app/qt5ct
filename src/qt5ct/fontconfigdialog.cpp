@@ -64,6 +64,7 @@ FontConfigDialog::~FontConfigDialog()
 void FontConfigDialog::accept()
 {
     QString path = QDir::homePath() + "/.config/fontconfig/fonts.conf";
+    qDebug("FontConfigDialog: fontconfig path: %s", qPrintable(path));
 
 
     if(QFile::exists(path))
@@ -81,7 +82,11 @@ void FontConfigDialog::accept()
     }
 
     QFile file(path);
-    file.open(QIODevice::WriteOnly);
+    if(!file.open(QIODevice::WriteOnly))
+    {
+        qWarning("FontConfigDialog: unable to open file: %s", qPrintable(file.errorString()));
+        return;
+    }
 
     QXmlStreamWriter stream(&file);
     stream.setAutoFormatting(true);

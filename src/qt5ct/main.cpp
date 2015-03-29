@@ -46,6 +46,8 @@ int main(int argc, char **argv)
     qt_translator.load(QLibraryInfo::location (QLibraryInfo::TranslationsPath) + "/qtbase_" + locale);
     app.installTranslator(&qt_translator);
 
+    qDebug("Configuration path: %s", Qt5CT::configPath());
+
     MainWindow w;
     w.show();
 
