@@ -63,6 +63,7 @@ FontConfigDialog::~FontConfigDialog()
 
 void FontConfigDialog::accept()
 {
+    QDir::home().mkpath(".config/fontconfig/");
     QString path = QDir::homePath() + "/.config/fontconfig/fonts.conf";
     qDebug("FontConfigDialog: fontconfig path: %s", qPrintable(path));
 
