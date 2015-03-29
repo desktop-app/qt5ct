@@ -1,4 +1,4 @@
-Changelog of Qt5 Configuration Tool
+Changelog of the Qt5 Configuration Tool
 
 -----------
 Version 0.1
@@ -53,3 +53,9 @@ Version 0.9
 * updated Bulgarian translation (Kiril Kirilov)
 * updated German translation (Mario Blättermann)
 * updated Russian translation
+
+Version 0.10
+* added more debug messages
+* added Greek translation (Dimitrios Glentadakis)
+* moved home page to sf.net
+* fixed qss path
