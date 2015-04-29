@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="de">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="de" version="2.1">
 <context>
     <name>AppearancePage</name>
     <message>
@@ -55,7 +53,7 @@
         <location filename="../fontconfigdialog.ui" line="14"/>
         <location filename="../fontconfigdialog.cpp" line="71"/>
         <source>Font Configuration</source>
-        <translation>Schrifteinstellungen</translation>
+        <translation>Schriftkonfiguration</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="29"/>
@@ -90,7 +88,7 @@
     <message>
         <location filename="../fontconfigdialog.ui" line="83"/>
         <source>Subpixel geometry:</source>
-        <translation>Subpixel-Geometrie:</translation>
+        <translation>Teilbildpunkt-Geometrie:</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="90"/>
@@ -111,7 +109,7 @@
     <message>
         <location filename="../fontconfigdialog.cpp" line="43"/>
         <source>Slight</source>
-        <translation type="unfinished"></translation>
+        <translation>Gering</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.cpp" line="44"/>
@@ -126,7 +124,7 @@
     <message>
         <location filename="../fontconfigdialog.cpp" line="72"/>
         <source>&lt;i&gt;%1&lt;/i&gt; already exists. Do you want to replace it?</source>
-        <translation>&lt;i&gt;%1&lt;/i&gt; existiert bereits. Wollen Sie es ersetzen?</translation>
+        <translation>&lt;i&gt;%1&lt;/i&gt; ist bereits vorhanden. Wollen Sie es ersetzen?</translation>
     </message>
 </context>
 <context>
@@ -180,7 +178,7 @@
     <message>
         <location filename="../interfacepage.ui" line="29"/>
         <source>Cursor flash time:</source>
-        <translation>Cursor-Blinkdauer:</translation>
+        <translation>Eingabezeiger-Blinkdauer:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="36"/>
@@ -190,12 +188,12 @@
     <message>
         <location filename="../interfacepage.ui" line="43"/>
         <source>ToolTip effect:</source>
-        <translation>ToolTip-Effekt:</translation>
+        <translation>Kurzinfo-Effekt:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="50"/>
         <source>ToolBox effect:</source>
-        <translation>ToolBox-Effekt:</translation>
+        <translation>Werkzeugkasten-Effekt:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="57"/>
@@ -238,7 +236,7 @@
     <message>
         <location filename="../interfacepage.ui" line="169"/>
         <source>Dialog buttons layout:</source>
-        <translation>Anordnung der Dialogknöpfe:</translation>
+        <translation>Anordnung der Dialogschaltflächen:</translation>
     </message>
 </context>
 <context>
@@ -256,7 +254,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="46"/>
         <source>Fonts</source>
-        <translation>Schriften</translation>
+        <translation>Schriftarten</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="47"/>
@@ -269,12 +267,12 @@
         <translation>Oberfläche</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="50"/>
+        <location filename="../mainwindow.cpp" line="49"/>
         <source>Style Sheets</source>
         <translation>Stilvorlagen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="58"/>
+        <location filename="../mainwindow.cpp" line="56"/>
         <source>Version: %1</source>
         <translation>Version: %1</translation>
     </message>
@@ -334,17 +332,17 @@
     <message>
         <location filename="../paletteeditdialog.cpp" line="86"/>
         <source>Bright</source>
-        <translation type="unfinished"></translation>
+        <translation>Hell</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="86"/>
         <source>Less bright</source>
-        <translation type="unfinished"></translation>
+        <translation>Weniger hell</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="86"/>
         <source>Less dark</source>
-        <translation type="unfinished"></translation>
+        <translation>Weniger dunkel</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="87"/>
@@ -359,12 +357,12 @@
     <message>
         <location filename="../paletteeditdialog.cpp" line="87"/>
         <source>Bright text</source>
-        <translation type="unfinished"></translation>
+        <translation>Heller Text</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="87"/>
         <source>Button text</source>
-        <translation>Knopftext</translation>
+        <translation>Schaltflächentext</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="87"/>
@@ -374,52 +372,52 @@
     <message>
         <location filename="../paletteeditdialog.cpp" line="87"/>
         <source>Normal background</source>
-        <translation type="unfinished"></translation>
+        <translation>Normaler Hintergrund</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="88"/>
         <source>Highlight</source>
-        <translation type="unfinished"></translation>
+        <translation>Hervorheben</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="88"/>
         <source>Highlighted text</source>
-        <translation type="unfinished"></translation>
+        <translation>Hervorgehobener Text</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="88"/>
         <source>Visited link</source>
-        <translation type="unfinished"></translation>
+        <translation>Besuchter Link</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="89"/>
         <source>Default</source>
-        <translation type="unfinished">Standard</translation>
+        <translation>Standard</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="89"/>
         <source>Tooltip background</source>
-        <translation type="unfinished"></translation>
+        <translation>Kurzinfo-Hintergrund</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="89"/>
         <source>Tooltip text</source>
-        <translation type="unfinished"></translation>
+        <translation>Kurzinfo-Text</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="88"/>
         <source>Link</source>
-        <translation type="unfinished"></translation>
+        <translation>Link</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="89"/>
         <source>Alternate background</source>
-        <translation type="unfinished"></translation>
+        <translation>Alternativer Hintergrund</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="95"/>
         <source>Select Color</source>
-        <translation>Farbe wählen</translation>
+        <translation>Farbe auswählen</translation>
     </message>
 </context>
 <context>
@@ -427,7 +425,7 @@
     <message>
         <location filename="../previewform.ui" line="14"/>
         <source>Preview Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Vorschaufenster</translation>
     </message>
     <message>
         <location filename="../previewform.ui" line="24"/>
@@ -437,7 +435,7 @@
     <message>
         <location filename="../previewform.ui" line="30"/>
         <source>PushButton</source>
-        <translation>Knopf drücken</translation>
+        <translation>Schaltfläche drücken</translation>
     </message>
     <message>
         <location filename="../previewform.ui" line="51"/>
@@ -447,7 +445,7 @@
     <message>
         <location filename="../previewform.ui" line="57"/>
         <source>RadioButton</source>
-        <translation>Radioknopf</translation>
+        <translation>Radioschaltfläche</translation>
     </message>
     <message>
         <location filename="../previewform.ui" line="64"/>
@@ -513,7 +511,7 @@
     <message>
         <location filename="../qsspage.cpp" line="108"/>
         <source>The file &quot;%1&quot; already exists</source>
-        <translation>Die Datei &quot;%1&quot; existiert bereits</translation>
+        <translation>Die Datei &quot;%1&quot; ist bereits vorhanden</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="142"/>
@@ -538,7 +536,7 @@
     <message>
         <location filename="../qsspage.cpp" line="200"/>
         <source>The style sheet &quot;%1&quot; already exists</source>
-        <translation>Die Stilvorlage »%1« existiert bereits</translation>
+        <translation>Die Stilvorlage »%1« ist bereits vorhanden</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="211"/>
