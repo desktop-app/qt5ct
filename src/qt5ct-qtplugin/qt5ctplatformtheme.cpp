@@ -34,6 +34,7 @@
 #include <QPalette>
 #include <QTimer>
 #include <QIcon>
+#include <QStyle>
 #ifdef USE_QSS
 #include <QApplication>
 #include <QWidget>
@@ -129,6 +130,8 @@ void Qt5CTPlatformTheme::updateSettings()
     applyStyleSheet();
     if(m_customPalette)
         qApp->setPalette(*m_customPalette);
+    else
+        qApp->setPalette(qApp->style()->standardPalette());
 
     foreach (QWidget *w, qApp->allWidgets())
     {
