@@ -2,7 +2,7 @@ include(../../qt5ct.pri)
 
 TEMPLATE = app
 
-QT += gui-private core-private widgets
+QT += widgets
 
 SOURCES += \
     main.cpp \
