@@ -61,6 +61,7 @@ Version 0.10
 * fixed qss path
 
 Version 0.11
+* added Polish translation (FadeMind)
 * removed private headers usage
 * imroved build scripts
 * fixed settings updating issue
