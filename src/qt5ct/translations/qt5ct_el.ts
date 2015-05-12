@@ -53,7 +53,7 @@
     <name>FontConfigDialog</name>
     <message>
         <location filename="../fontconfigdialog.ui" line="14"/>
-        <location filename="../fontconfigdialog.cpp" line="71"/>
+        <location filename="../fontconfigdialog.cpp" line="73"/>
         <source>Font Configuration</source>
         <translation>Διαμόρφωση γραμματοσειράς</translation>
     </message>
@@ -124,7 +124,7 @@
         <translation>Πλήρες</translation>
     </message>
     <message>
-        <location filename="../fontconfigdialog.cpp" line="72"/>
+        <location filename="../fontconfigdialog.cpp" line="74"/>
         <source>&lt;i&gt;%1&lt;/i&gt; already exists. Do you want to replace it?</source>
         <translation>Το αρχείο &lt;i&gt;%1&lt;/i&gt; υπάρχει ήδη. Θέλετε να το αντικαταστήσετε;</translation>
     </message>

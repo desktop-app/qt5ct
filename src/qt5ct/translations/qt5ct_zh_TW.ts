@@ -53,7 +53,7 @@
     <name>FontConfigDialog</name>
     <message>
         <location filename="../fontconfigdialog.ui" line="14"/>
-        <location filename="../fontconfigdialog.cpp" line="71"/>
+        <location filename="../fontconfigdialog.cpp" line="73"/>
         <source>Font Configuration</source>
         <translation>字型設定</translation>
     </message>
@@ -124,7 +124,7 @@
         <translation>完整</translation>
     </message>
     <message>
-        <location filename="../fontconfigdialog.cpp" line="72"/>
+        <location filename="../fontconfigdialog.cpp" line="74"/>
         <source>&lt;i&gt;%1&lt;/i&gt; already exists. Do you want to replace it?</source>
         <translation>&lt;i&gt;%1&lt;/i&gt; 已經存在。您想要取代它嗎？</translation>
     </message>
