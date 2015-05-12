@@ -43,9 +43,8 @@ HEADERS += \
     qsspage.h \
     qsseditordialog.h
 
-!equals (DISABLE_QSS,1) {
-   QT += widgets-private
-   DEFINES += USE_QSS
+!equals (DISABLE_WIDGETS,1) {
+   DEFINES += USE_WIDGETS
 }
 
 RESOURCES = translations/translations.qrc
