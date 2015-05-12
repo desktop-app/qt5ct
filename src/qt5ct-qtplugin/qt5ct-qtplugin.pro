@@ -11,7 +11,7 @@ SOURCES += \
     qt5ctplatformtheme.cpp \
     ../qt5ct/qt5ct.cpp
 
-!equals (DISABLE_QSS,1) {
+!equals (DISABLE_WIDGETS,1) {
    QT += widgets
 }
 
