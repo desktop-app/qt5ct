@@ -35,7 +35,7 @@
 #include <QPalette>
 #include <QTimer>
 #include <QIcon>
-#ifdef USE_QSS
+#ifdef QT_WIDGETS_LIB
 #include <QStyle>
 #include <QApplication>
 #include <QWidget>
@@ -46,17 +46,17 @@
 #include <qt5ct/qt5ct.h>
 #include "qt5ctplatformtheme.h"
 
-
 //QT_QPA_PLATFORMTHEME=qt5ct
 
 Qt5CTPlatformTheme::Qt5CTPlatformTheme()
 {
     m_customPalette = 0;
     readSettings();
-#ifdef USE_QSS
-    QMetaObject::invokeMethod(this, "applyStyleSheet", Qt::QueuedConnection);
-#endif
+    QMetaObject::invokeMethod(this, "applySettings", Qt::QueuedConnection);
+#ifdef QT_WIDGETS_LIB
     QMetaObject::invokeMethod(this, "cteateFSWatcher", Qt::QueuedConnection);
+#endif
+    qDebug("using qt5ct plugin");
 }
 
 Qt5CTPlatformTheme::~Qt5CTPlatformTheme()
@@ -81,13 +81,8 @@ const QFont *Qt5CTPlatformTheme::font(QPlatformTheme::Font type) const
 
 QVariant Qt5CTPlatformTheme::themeHint(QPlatformTheme::ThemeHint hint) const
 {
-    if(hint == DialogButtonBoxButtonsHaveIcons)
-        qDebug() << "icons!!!";
-
     switch (hint)
     {
-
-
     case QPlatformTheme::CursorFlashTime:
         return m_cursorFlashTime;
     case MouseDoubleClickInterval:
@@ -107,13 +102,27 @@ QVariant Qt5CTPlatformTheme::themeHint(QPlatformTheme::ThemeHint hint) const
     }
 }
 
-#ifdef USE_QSS
-void Qt5CTPlatformTheme::applyStyleSheet()
+void Qt5CTPlatformTheme::applySettings()
 {
-    qApp->setStyleSheet(m_userStyleSheet);
-}
+#ifdef QT_WIDGETS_LIB
+    if(hasWidgets())
+    {
+        qApp->setStyle(m_style);
+        qApp->setStyleSheet(m_userStyleSheet);
+        qApp->setFont(m_generalFont);
+        if(m_customPalette)
+            qApp->setPalette(*m_customPalette);
+        else
+            qApp->setPalette(qApp->style()->standardPalette());
+    }
 #endif
+    QGuiApplication::setFont(m_generalFont); //apply font
+    QIcon::setThemeName(m_iconTheme); //apply icons
+    if(m_customPalette)
+        QGuiApplication::setPalette(*m_customPalette); //apply palette
+}
 
+#ifdef QT_WIDGETS_LIB
 void Qt5CTPlatformTheme::cteateFSWatcher()
 {
     QFileSystemWatcher *watcher = new QFileSystemWatcher(this);
@@ -130,22 +139,19 @@ void Qt5CTPlatformTheme::updateSettings()
 {
     qDebug("Qt5CTPlatformTheme: updating settings..");
     readSettings();
+    applySettings();
 
-#ifdef USE_QSS
-    qApp->setStyle(m_style);
-    applyStyleSheet();
-    if(m_customPalette)
-        qApp->setPalette(*m_customPalette);
-    else
-        qApp->setPalette(qApp->style()->standardPalette());
-
-    foreach (QWidget *w, qApp->allWidgets())
+    if(hasWidgets())
     {
-        QEvent e(QEvent::ThemeChange);
-        QApplication::sendEvent(w, &e);
+        foreach (QWidget *w, qApp->allWidgets())
+        {
+            QEvent e(QEvent::ThemeChange);
+            QApplication::sendEvent(w, &e);
+        }
     }
-#endif
+
 }
+#endif
 
 void Qt5CTPlatformTheme::readSettings()
 {
@@ -218,15 +224,19 @@ void Qt5CTPlatformTheme::readSettings()
     }
 
     //load style sheets
-#ifdef USE_QSS
+#ifdef QT_WIDGETS_LIB
     QStringList qssPaths = settings.value("stylesheets").toStringList();
     m_userStyleSheet = loadStyleSheets(qssPaths);
 #endif
     settings.endGroup();
-
-    qApp->setFont(m_generalFont); //apply font
-    QIcon::setThemeName(m_iconTheme); //apply icons
 }
+
+#ifdef QT_WIDGETS_LIB
+bool Qt5CTPlatformTheme::hasWidgets()
+{
+    return qobject_cast<QApplication *> (qApp) != 0;
+}
+#endif
 
 QString Qt5CTPlatformTheme::loadStyleSheets(const QStringList &paths)
 {

@@ -13,7 +13,6 @@ SOURCES += \
 
 !equals (DISABLE_QSS,1) {
    QT += widgets
-   DEFINES += USE_QSS
 }
 
 OTHER_FILES += qt5ct.json

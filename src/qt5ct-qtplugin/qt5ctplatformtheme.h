@@ -62,14 +62,17 @@ public:
     //virtual QString standardButtonText(int button) const;
 
 private slots:
-#ifdef USE_QSS
-    void applyStyleSheet();
-#endif
+    void applySettings();
+#ifdef QT_WIDGETS_LIB
     void cteateFSWatcher();
     void updateSettings();
+#endif
 
 private:
     void readSettings();
+#ifdef QT_WIDGETS_LIB
+    bool hasWidgets();
+#endif
     QString loadStyleSheets(const QStringList &paths);
     QString m_style, m_iconTheme, m_userStyleSheet;
     QPalette *m_customPalette;
