@@ -129,9 +129,6 @@ void Qt5CTPlatformTheme::updateSettings()
     applyStyleSheet();
     if(m_customPalette)
         qApp->setPalette(*m_customPalette);
-    else
-        qApp->setPalette(*QPlatformTheme::palette(QPlatformTheme::SystemPalette));
-    //QIconLoader::instance()->updateSystemTheme();
 
     foreach (QWidget *w, qApp->allWidgets())
     {
