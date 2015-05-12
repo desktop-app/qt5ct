@@ -29,13 +29,14 @@
 #include <QVariant>
 #include <QSettings>
 #include <QGuiApplication>
+#include <QDebug>
 #include <QScreen>
 #include <QFont>
 #include <QPalette>
 #include <QTimer>
 #include <QIcon>
-#include <QStyle>
 #ifdef USE_QSS
+#include <QStyle>
 #include <QApplication>
 #include <QWidget>
 #endif
@@ -80,8 +81,13 @@ const QFont *Qt5CTPlatformTheme::font(QPlatformTheme::Font type) const
 
 QVariant Qt5CTPlatformTheme::themeHint(QPlatformTheme::ThemeHint hint) const
 {
+    if(hint == DialogButtonBoxButtonsHaveIcons)
+        qDebug() << "icons!!!";
+
     switch (hint)
     {
+
+
     case QPlatformTheme::CursorFlashTime:
         return m_cursorFlashTime;
     case MouseDoubleClickInterval:
