@@ -23,8 +23,7 @@ make install (under root)
 Add line 'export QT_QPA_PLATFORMTHEME=qt5ct' to ~/.profile and re-login.
 
 Extra build options (for advanced users only):
-qmake DISABLE_QSS=1 - disables style sheets support (removes depency of the QtWidgets
-module from the platform plugin)
+qmake DISABLE_WIDGETS=1 - compiles platform plugin without QtWidgets (useful only for QML applications)
 qmake PLUGINDIR=<custom path> - changes a path of the platform plugin (libqt5ct.so)
 
 
