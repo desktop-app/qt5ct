@@ -62,6 +62,9 @@ public:
     //virtual QString standardButtonText(int button) const;
 
 private slots:
+#ifdef USE_QSS
+    void applyStyleSheet();
+#endif
     void cteateFSWatcher();
     void updateSettings();
 

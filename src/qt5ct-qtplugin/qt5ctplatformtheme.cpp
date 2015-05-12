@@ -33,15 +33,14 @@
 #include <QFont>
 #include <QPalette>
 #include <QTimer>
+#include <QIcon>
 #ifdef USE_QSS
-#include <QStyle>
-#include <private/qapplication_p.h>
+#include <QApplication>
+#include <QWidget>
 #endif
 #include <QFile>
 #include <QFileSystemWatcher>
-#include <private/qfont_p.h>
 
-#include <private/qiconloader_p.h>
 #include <qt5ct/qt5ct.h>
 #include "qt5ctplatformtheme.h"
 
@@ -51,10 +50,10 @@
 Qt5CTPlatformTheme::Qt5CTPlatformTheme()
 {
     m_customPalette = 0;
-#ifdef USE_QSS
-    m_userStyleSheet = QApplicationPrivate::styleSheet;
-#endif
     readSettings();
+#ifdef USE_QSS
+    QMetaObject::invokeMethod(this, "applyStyleSheet", Qt::QueuedConnection);
+#endif
     QMetaObject::invokeMethod(this, "cteateFSWatcher", Qt::QueuedConnection);
 }
 
@@ -101,6 +100,13 @@ QVariant Qt5CTPlatformTheme::themeHint(QPlatformTheme::ThemeHint hint) const
     }
 }
 
+#ifdef USE_QSS
+void Qt5CTPlatformTheme::applyStyleSheet()
+{
+    qApp->setStyleSheet(m_userStyleSheet);
+}
+#endif
+
 void Qt5CTPlatformTheme::cteateFSWatcher()
 {
     QFileSystemWatcher *watcher = new QFileSystemWatcher(this);
@@ -120,12 +126,12 @@ void Qt5CTPlatformTheme::updateSettings()
 
 #ifdef USE_QSS
     qApp->setStyle(m_style);
-    qApp->setStyleSheet(QApplicationPrivate::styleSheet);
+    applyStyleSheet();
     if(m_customPalette)
         qApp->setPalette(*m_customPalette);
     else
         qApp->setPalette(*QPlatformTheme::palette(QPlatformTheme::SystemPalette));
-    QIconLoader::instance()->updateSystemTheme();
+    //QIconLoader::instance()->updateSystemTheme();
 
     foreach (QWidget *w, qApp->allWidgets())
     {
@@ -208,11 +214,12 @@ void Qt5CTPlatformTheme::readSettings()
     //load style sheets
 #ifdef USE_QSS
     QStringList qssPaths = settings.value("stylesheets").toStringList();
-    QApplicationPrivate::styleSheet = m_userStyleSheet + loadStyleSheets(qssPaths);
+    m_userStyleSheet = loadStyleSheets(qssPaths);
 #endif
     settings.endGroup();
 
     qApp->setFont(m_generalFont); //apply font
+    QIcon::setThemeName(m_iconTheme); //apply icons
 }
 
 QString Qt5CTPlatformTheme::loadStyleSheets(const QStringList &paths)
