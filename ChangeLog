@@ -59,3 +59,12 @@ Version 0.10
 * added Greek translation (Dimitrios Glentadakis)
 * moved home page to sf.net
 * fixed qss path
+
+Version 0.11
+* removed private headers usage
+* imroved build scripts
+* fixed settings updating issue
+* fixed font setting
+* fixed fonts.conf generation
+* fixed segmentation fault on "widget-less" applications
+* updated German translation (Ettore Atalan)
