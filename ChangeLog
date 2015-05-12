@@ -63,7 +63,7 @@ Version 0.10
 Version 0.11
 * added Polish translation (FadeMind)
 * removed private headers usage
-* imroved build scripts
+* improved build scripts
 * fixed settings updating issue
 * fixed font setting
 * fixed fonts.conf generation
