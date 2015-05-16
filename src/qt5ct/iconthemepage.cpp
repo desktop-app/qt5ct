@@ -95,7 +95,7 @@ void IconThemePage::loadThemes()
 
     foreach(QFileInfo info, themeFileList)
     {
-        loadTheme(info.absoluteFilePath());
+        loadTheme(info.canonicalFilePath());
     }
 }
 
@@ -192,14 +192,16 @@ QIcon IconThemePage::findIcon(const QString &themePath, int size, const QString 
 
     parents.append("hicolor"); //add fallback themes
     parents.append("gnome");
+    parents.removeDuplicates();
 
     foreach (QString parent, parents)
     {
-        QString filePath = QFileInfo(QFileInfo(themePath).path() + "/../" + parent).canonicalPath() + "/index.theme";
-        if(!QFile::exists(filePath))
+        QString parentThemePath = QDir(QFileInfo(themePath).path() + "/../" + parent).canonicalPath() + "/index.theme";
+
+        if(!QFile::exists(parentThemePath) || parentThemePath == themePath)
             continue;
 
-        QIcon icon = findIcon(filePath, size, name);
+        QIcon icon = findIcon(parentThemePath, size, name);
         if(!icon.isNull())
             return icon;
     }
