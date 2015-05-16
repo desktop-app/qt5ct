@@ -195,7 +195,7 @@ QIcon IconThemePage::findIcon(const QString &themePath, int size, const QString 
 
     foreach (QString parent, parents)
     {
-        QString filePath = QFileInfo(themePath).path() + "/../" + parent + "/index.theme";
+        QString filePath = QFileInfo(QFileInfo(themePath).path() + "/../" + parent).canonicalPath() + "/index.theme";
         if(!QFile::exists(filePath))
             continue;
 
