@@ -69,3 +69,7 @@ Version 0.11
 * fixed fonts.conf generation
 * fixed segmentation fault on "widget-less" applications
 * updated German translation (Ettore Atalan)
+
+Version 0.12
+* added Chinese Simplified translation (Cary Tian)
+* fixed infinite loop in the icon theme parser (Sergey A. Sukiyazov)
