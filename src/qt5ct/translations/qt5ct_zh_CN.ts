@@ -1,4 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="zh_CN" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="zh_CN">
 <context>
     <name>AppearancePage</name>
     <message>
@@ -51,7 +53,7 @@
     <name>FontConfigDialog</name>
     <message>
         <location filename="../fontconfigdialog.ui" line="14"/>
-        <location filename="../fontconfigdialog.cpp" line="71"/>
+        <location filename="../fontconfigdialog.cpp" line="73"/>
         <source>Font Configuration</source>
         <translation>字体配置</translation>
     </message>
@@ -122,7 +124,7 @@
         <translation>全部</translation>
     </message>
     <message>
-        <location filename="../fontconfigdialog.cpp" line="72"/>
+        <location filename="../fontconfigdialog.cpp" line="74"/>
         <source>&lt;i&gt;%1&lt;/i&gt; already exists. Do you want to replace it?</source>
         <translation>&lt;i&gt;%1&lt;/i&gt; 已经存在。您想要取代它吗？</translation>
     </message>
@@ -267,12 +269,12 @@
         <translation>界面</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="49"/>
+        <location filename="../mainwindow.cpp" line="50"/>
         <source>Style Sheets</source>
         <translation>样式表</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="56"/>
+        <location filename="../mainwindow.cpp" line="58"/>
         <source>Version: %1</source>
         <translation>版本：%1</translation>
     </message>
