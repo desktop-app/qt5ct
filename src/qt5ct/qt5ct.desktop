@@ -22,9 +22,6 @@ Name[de]=Qt5-Einstellungen
 Comment[cs]=Nástroj na nastavení Qt5
 Name[cs]=Nastavení Qt5
 
-Comment[it_IT]=Strumento di configurazione Qt5
-Name[it_IT]=Impostazioni Qt5
-
 Comment[nl_NL]=Qt5-instellingengereedschap
 Name[nl_NL]=Qt5-instellingen
 
@@ -36,6 +33,8 @@ Name[zh_CN]=Qt5 设置
 
 Comment[zh_TW]=Qt5 設定工具
 Name[zh_TW]=Qt5 設定
+
+
 
 Exec=qt5ct
 Icon=preferences-desktop-theme
