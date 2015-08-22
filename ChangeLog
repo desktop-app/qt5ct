@@ -73,3 +73,7 @@ Version 0.11
 Version 0.12
 * added Chinese Simplified translation (Cary Tian)
 * fixed infinite loop in the icon theme parser (Sergey A. Sukiyazov)
+
+Version 0.13
+* added $XDG_DATA_HOME support
+* added Italian translation (Luigi Baldoni)
