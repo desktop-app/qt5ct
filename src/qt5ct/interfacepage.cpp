@@ -59,6 +59,8 @@ void InterfacePage::writeSettings()
     settings.setValue("double_click_interval", m_ui->doubleClickIntervalSpinBox->value());
     settings.setValue("cursor_flash_time", m_ui->cursorFlashTimeSpinBox->value());
     settings.setValue("buttonbox_layout", m_ui->buttonLayoutComboBox->currentData());
+    settings.setValue("menus_have_icons", m_ui->menuIconsCheckBox->isChecked());
+    settings.setValue("dialog_buttons_have_icons", m_ui->dialogIconsCheckBox->checkState());
 
     QStringList effects;
     if(m_ui->guiEffectsCheckBox->isChecked())
@@ -69,7 +71,7 @@ void InterfacePage::writeSettings()
     else if(m_ui->menuEffectComboBox->currentIndex() == 2)
         effects << "FadeMenu";
 
-    if(m_ui->coboBoxEffectComboBox->currentIndex() == 1)
+    if(m_ui->comboBoxEffectComboBox->currentIndex() == 1)
         effects << "AnimateCombo";
 
     if(m_ui->toolTipEffectComboBox->currentIndex() == 1)
@@ -104,7 +106,7 @@ void InterfacePage::readSettings()
         m_ui->menuEffectComboBox->setCurrentIndex(2);
 
     if(qApp->isEffectEnabled(Qt::UI_AnimateCombo))
-        m_ui->coboBoxEffectComboBox->setCurrentIndex(1);
+        m_ui->comboBoxEffectComboBox->setCurrentIndex(1);
 
     if(qApp->isEffectEnabled(Qt::UI_AnimateTooltip))
         m_ui->toolTipEffectComboBox->setCurrentIndex(1);
@@ -113,6 +115,9 @@ void InterfacePage::readSettings()
 
     if(qApp->isEffectEnabled(Qt::UI_AnimateToolBox))
         m_ui->toolBoxEffectComboBox->setCurrentIndex(1);
+
+    m_ui->dialogIconsCheckBox->setCheckState((Qt::CheckState)settings.value("dialog_buttons_have_icons", Qt::PartiallyChecked).toInt());
+    m_ui->menuIconsCheckBox->setChecked(!qApp->testAttribute(Qt::AA_DontShowIconsInMenus));
 
     settings.endGroup();
 }

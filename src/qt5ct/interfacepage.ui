@@ -72,7 +72,7 @@
       </widget>
      </item>
      <item row="4" column="1">
-      <widget class="QComboBox" name="coboBoxEffectComboBox">
+      <widget class="QComboBox" name="comboBoxEffectComboBox">
        <property name="enabled">
         <bool>false</bool>
        </property>
@@ -173,6 +173,23 @@
      <item row="7" column="1">
       <widget class="QComboBox" name="buttonLayoutComboBox"/>
      </item>
+     <item row="9" column="0" colspan="2">
+      <widget class="QCheckBox" name="menuIconsCheckBox">
+       <property name="text">
+        <string>Menus have icons</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0" colspan="2">
+      <widget class="QCheckBox" name="dialogIconsCheckBox">
+       <property name="text">
+        <string>Dialog buttons have icons</string>
+       </property>
+       <property name="tristate">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
     </layout>
    </item>
    <item row="0" column="1">
@@ -224,7 +241,7 @@
   <connection>
    <sender>guiEffectsCheckBox</sender>
    <signal>toggled(bool)</signal>
-   <receiver>coboBoxEffectComboBox</receiver>
+   <receiver>comboBoxEffectComboBox</receiver>
    <slot>setEnabled(bool)</slot>
    <hints>
     <hint type="sourcelabel">

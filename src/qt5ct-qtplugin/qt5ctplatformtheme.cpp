@@ -206,6 +206,7 @@ void Qt5CTPlatformTheme::readSettings()
     m_cursorFlashTime = settings.value("cursor_flash_time", m_cursorFlashTime).toInt();
     m_buttonBoxLayout = QPlatformTheme::themeHint(QPlatformTheme::DialogButtonBoxLayout).toInt();
     m_buttonBoxLayout = settings.value("buttonbox_layout", m_buttonBoxLayout).toInt();
+    QCoreApplication::setAttribute(Qt::AA_DontShowIconsInMenus, !settings.value("menus_have_icons", true).toBool());
 
     //load effects
     m_uiEffects = QPlatformTheme::themeHint(QPlatformTheme::UiEffects).toInt();
