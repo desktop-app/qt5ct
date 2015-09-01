@@ -29,6 +29,8 @@
 #ifndef QT5CTPROXYSTYLE_H
 #define QT5CTPROXYSTYLE_H
 
+#ifdef QT_WIDGETS_LIB
+
 #include <QProxyStyle>
 
 class Qt5CTProxyStyle : public QProxyStyle
@@ -41,6 +43,11 @@ public:
 
     int styleHint(StyleHint hint, const QStyleOption *option, const QWidget *widget, QStyleHintReturn *returnData) const;
 
+private:
+    int m_dialogButtonsHaveIcons;
+
 };
+
+#endif //QT_WIDGETS_LIB
 
 #endif // QT5CTPROXYSTYLE_H

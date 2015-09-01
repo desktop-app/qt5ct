@@ -56,8 +56,7 @@ Qt5CTPlatformTheme::Qt5CTPlatformTheme()
     QMetaObject::invokeMethod(this, "applySettings", Qt::QueuedConnection);
 #ifdef QT_WIDGETS_LIB
     QMetaObject::invokeMethod(this, "cteateFSWatcher", Qt::QueuedConnection);
-    //QApplication::setStyle(new Qt5CTProxyStyle(m_style));
-    QApplication::setStyle(m_style);
+    QApplication::setStyle(new Qt5CTProxyStyle(m_style));
 #endif
     QGuiApplication::setFont(m_generalFont);
     qDebug("using qt5ct plugin");
@@ -111,8 +110,7 @@ void Qt5CTPlatformTheme::applySettings()
 #ifdef QT_WIDGETS_LIB
     if(hasWidgets())
     {
-        //qApp->setStyle(new Qt5CTProxyStyle(m_style));
-        qApp->setStyle(m_style);
+        qApp->setStyle(new Qt5CTProxyStyle(m_style));
         qApp->setFont(m_generalFont);
         if(m_customPalette)
             qApp->setPalette(*m_customPalette);

@@ -26,11 +26,17 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
+#ifdef QT_WIDGETS_LIB
+
+#include <QSettings>
+#include <qt5ct/qt5ct.h>
 #include "qt5ctproxystyle.h"
 
 Qt5CTProxyStyle::Qt5CTProxyStyle(const QString &key) :
     QProxyStyle(key)
 {
+    QSettings settings(Qt5CT::configFile(), QSettings::IniFormat);
+    m_dialogButtonsHaveIcons = settings.value("Interface/dialog_buttons_have_icons", Qt::PartiallyChecked).toInt();
 }
 
 Qt5CTProxyStyle::~Qt5CTProxyStyle()
@@ -41,7 +47,13 @@ Qt5CTProxyStyle::~Qt5CTProxyStyle()
 int Qt5CTProxyStyle::styleHint(QStyle::StyleHint hint, const QStyleOption *option, const QWidget *widget, QStyleHintReturn *returnData) const
 {
     if(hint == QStyle::SH_DialogButtonBox_ButtonsHaveIcons)
-        return 0;
-
+    {
+        if(m_dialogButtonsHaveIcons == Qt::Unchecked)
+            return 0;
+        else if(m_dialogButtonsHaveIcons == Qt::Checked)
+            return 1;
+    }
     return QProxyStyle::styleHint(hint, option, widget, returnData);
 }
+
+#endif //QT_WIDGETS_LIB
