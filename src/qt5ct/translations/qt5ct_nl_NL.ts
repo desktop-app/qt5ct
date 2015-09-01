@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="nl_NL">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="nl_NL" version="2.1">
 <context>
     <name>AppearancePage</name>
     <message>
@@ -243,12 +241,12 @@
     <message>
         <location filename="../interfacepage.ui" line="179"/>
         <source>Menus have icons</source>
-        <translation type="unfinished"></translation>
+        <translation>Menu&apos;s voorzien van pictogrammen</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="186"/>
         <source>Dialog buttons have icons</source>
-        <translation type="unfinished"></translation>
+        <translation>Dialoogvensterknoppen voorzien van pictogrammen</translation>
     </message>
 </context>
 <context>
