@@ -56,7 +56,7 @@ Qt5CTPlatformTheme::Qt5CTPlatformTheme()
     QMetaObject::invokeMethod(this, "applySettings", Qt::QueuedConnection);
 #ifdef QT_WIDGETS_LIB
     QMetaObject::invokeMethod(this, "cteateFSWatcher", Qt::QueuedConnection);
-    QApplication::setStyle(new Qt5CTProxyStyle(m_style));
+    QApplication::setStyle(new Qt5CTProxyStyle("Fusion"));
 #endif
     QGuiApplication::setFont(m_generalFont);
     qDebug("using qt5ct plugin");
