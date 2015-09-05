@@ -86,3 +86,7 @@ Version 0.14
 * updated German translation (Ettore Atalan)
 * updated Dutch (Netherlands) translation (Heimen Stoffels)
 * updated Chinese (Taiwan) translation (Jeff Huang)
+
+Version 0.15
+* fixed problem with qtcurve style
+* updated Czech translation (fri)
