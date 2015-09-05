@@ -56,6 +56,8 @@ Qt5CTPlatformTheme::Qt5CTPlatformTheme()
     QMetaObject::invokeMethod(this, "applySettings", Qt::QueuedConnection);
 #ifdef QT_WIDGETS_LIB
     QMetaObject::invokeMethod(this, "cteateFSWatcher", Qt::QueuedConnection);
+    //apply custom style hints before creating QApplication
+    //using Fusion style should avoid problems with some styles like qtcurve
     QApplication::setStyle(new Qt5CTProxyStyle("Fusion"));
 #endif
     QGuiApplication::setFont(m_generalFont);
