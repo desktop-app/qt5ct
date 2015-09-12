@@ -297,7 +297,7 @@
         <translation>Kleurenschema-bewerker</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.ui" line="43"/>
+        <location filename="../paletteeditdialog.ui" line="79"/>
         <source>Reset palette</source>
         <translation>Kleurenschema herstellen</translation>
     </message>
@@ -312,122 +312,122 @@
         <translation>Uitgeschakeld kleurenschema bouwen</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="47"/>
+        <location filename="../paletteeditdialog.cpp" line="49"/>
         <source>Active</source>
         <translation>Actief</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="47"/>
+        <location filename="../paletteeditdialog.cpp" line="49"/>
         <source>Inactive</source>
         <translation>Inactief</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="47"/>
+        <location filename="../paletteeditdialog.cpp" line="49"/>
         <source>Disabled</source>
         <translation>Uitgeschakeld</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="86"/>
+        <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Dark</source>
         <translation>Donker</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="86"/>
+        <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Window text</source>
         <translation>Venstertekst</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="86"/>
+        <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Button background</source>
         <translation>Knopachtergrond</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="86"/>
+        <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Bright</source>
         <translation>Licht</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="86"/>
+        <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Less bright</source>
         <translation>Minder licht</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="86"/>
+        <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Less dark</source>
         <translation>Minder donker</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="87"/>
+        <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Window</source>
         <translation>Venster</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="87"/>
+        <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Shadow</source>
         <translation>Schaduw</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="87"/>
+        <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Bright text</source>
         <translation>Lichte tekst</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="87"/>
+        <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Button text</source>
         <translation>Knoptekst</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="87"/>
+        <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Normal text</source>
         <translation>Normale tekst</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="87"/>
+        <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Normal background</source>
         <translation>Normale achtergrond</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="88"/>
+        <location filename="../paletteeditdialog.cpp" line="93"/>
         <source>Highlight</source>
         <translation>Markeren</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="88"/>
+        <location filename="../paletteeditdialog.cpp" line="93"/>
         <source>Highlighted text</source>
         <translation>Gemarkeerde tekst</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="88"/>
+        <location filename="../paletteeditdialog.cpp" line="93"/>
         <source>Visited link</source>
         <translation>Bezochte link</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="89"/>
+        <location filename="../paletteeditdialog.cpp" line="94"/>
         <source>Default</source>
         <translation>Standaard</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="89"/>
+        <location filename="../paletteeditdialog.cpp" line="94"/>
         <source>Tooltip background</source>
         <translation>Hulpballon-achtergrond</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="89"/>
+        <location filename="../paletteeditdialog.cpp" line="94"/>
         <source>Tooltip text</source>
         <translation>Hulpballon-tekst</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="88"/>
+        <location filename="../paletteeditdialog.cpp" line="93"/>
         <source>Link</source>
         <translation>Link</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="89"/>
+        <location filename="../paletteeditdialog.cpp" line="94"/>
         <source>Alternate background</source>
         <translation>Alternatieve achtergrond</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="95"/>
+        <location filename="../paletteeditdialog.cpp" line="106"/>
         <source>Select Color</source>
         <translation>Kleur selecteren</translation>
     </message>

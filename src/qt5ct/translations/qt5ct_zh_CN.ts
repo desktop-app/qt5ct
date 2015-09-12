@@ -1,4 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="zh_CN" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="zh_CN">
 <context>
     <name>AppearancePage</name>
     <message>
@@ -295,7 +297,7 @@
         <translation>调色板编辑器</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.ui" line="43"/>
+        <location filename="../paletteeditdialog.ui" line="79"/>
         <source>Reset palette</source>
         <translation>重置调色板</translation>
     </message>
@@ -310,122 +312,122 @@
         <translation>构建禁用状态调色板</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="47"/>
+        <location filename="../paletteeditdialog.cpp" line="49"/>
         <source>Active</source>
         <translation>激活</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="47"/>
+        <location filename="../paletteeditdialog.cpp" line="49"/>
         <source>Inactive</source>
         <translation>非激活</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="47"/>
+        <location filename="../paletteeditdialog.cpp" line="49"/>
         <source>Disabled</source>
         <translation>已禁用</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="86"/>
+        <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Dark</source>
         <translation>暗</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="86"/>
+        <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Window text</source>
         <translation>窗口文字</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="86"/>
+        <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Button background</source>
         <translation>按钮背景</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="86"/>
+        <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Bright</source>
         <translation>亮</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="86"/>
+        <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Less bright</source>
         <translation>较不亮</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="86"/>
+        <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Less dark</source>
         <translation>较不暗</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="87"/>
+        <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Window</source>
         <translation>窗口</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="87"/>
+        <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Shadow</source>
         <translation>阴影</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="87"/>
+        <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Bright text</source>
         <translation>亮文字</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="87"/>
+        <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Button text</source>
         <translation>按钮文字</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="87"/>
+        <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Normal text</source>
         <translation>普通文字</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="87"/>
+        <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Normal background</source>
         <translation>普通背景</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="88"/>
+        <location filename="../paletteeditdialog.cpp" line="93"/>
         <source>Highlight</source>
         <translation>高亮</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="88"/>
+        <location filename="../paletteeditdialog.cpp" line="93"/>
         <source>Highlighted text</source>
         <translation>高亮文字</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="88"/>
+        <location filename="../paletteeditdialog.cpp" line="93"/>
         <source>Visited link</source>
         <translation>已访问的链接</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="89"/>
+        <location filename="../paletteeditdialog.cpp" line="94"/>
         <source>Default</source>
         <translation>缺省</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="89"/>
+        <location filename="../paletteeditdialog.cpp" line="94"/>
         <source>Tooltip background</source>
         <translation>提示语背景</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="89"/>
+        <location filename="../paletteeditdialog.cpp" line="94"/>
         <source>Tooltip text</source>
         <translation>提示语文字</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="88"/>
+        <location filename="../paletteeditdialog.cpp" line="93"/>
         <source>Link</source>
         <translation>链接</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="89"/>
+        <location filename="../paletteeditdialog.cpp" line="94"/>
         <source>Alternate background</source>
         <translation>备用背景</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="95"/>
+        <location filename="../paletteeditdialog.cpp" line="106"/>
         <source>Select Color</source>
         <translation>选择颜色</translation>
     </message>

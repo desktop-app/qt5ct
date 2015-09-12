@@ -297,7 +297,7 @@
         <translation>Редактор на палитрата</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.ui" line="43"/>
+        <location filename="../paletteeditdialog.ui" line="79"/>
         <source>Reset palette</source>
         <translation>Нулиране на палитрата</translation>
     </message>
@@ -312,122 +312,122 @@
         <translation>Изграждане на изключена палитра</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="47"/>
+        <location filename="../paletteeditdialog.cpp" line="49"/>
         <source>Active</source>
         <translation>Активна</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="47"/>
+        <location filename="../paletteeditdialog.cpp" line="49"/>
         <source>Inactive</source>
         <translation>Неактивна</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="47"/>
+        <location filename="../paletteeditdialog.cpp" line="49"/>
         <source>Disabled</source>
         <translation>Изключена</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="86"/>
+        <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Dark</source>
         <translation>Тъмен</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="86"/>
+        <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Window text</source>
         <translation>Текст на прозорец</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="86"/>
+        <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Button background</source>
         <translation>Фон на бутон</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="86"/>
+        <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Bright</source>
         <translation>Светъл</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="86"/>
+        <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Less bright</source>
         <translation>По- малко светъл</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="86"/>
+        <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Less dark</source>
         <translation>По- малко тъмен</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="87"/>
+        <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Window</source>
         <translation>Прозорец</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="87"/>
+        <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Shadow</source>
         <translation>Сянка</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="87"/>
+        <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Bright text</source>
         <translation>Светъл текст</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="87"/>
+        <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Button text</source>
         <translation>Текст на бутон</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="87"/>
+        <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Normal text</source>
         <translation>Нормален текст</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="87"/>
+        <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Normal background</source>
         <translation>Нормален фон</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="88"/>
+        <location filename="../paletteeditdialog.cpp" line="93"/>
         <source>Highlight</source>
         <translation>Подчертаване</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="88"/>
+        <location filename="../paletteeditdialog.cpp" line="93"/>
         <source>Highlighted text</source>
         <translation>Подчертан текст</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="88"/>
+        <location filename="../paletteeditdialog.cpp" line="93"/>
         <source>Visited link</source>
         <translation>Посетен адрес</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="89"/>
+        <location filename="../paletteeditdialog.cpp" line="94"/>
         <source>Default</source>
         <translation>По подтазбиране</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="89"/>
+        <location filename="../paletteeditdialog.cpp" line="94"/>
         <source>Tooltip background</source>
         <translation>Фон на подсказка</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="89"/>
+        <location filename="../paletteeditdialog.cpp" line="94"/>
         <source>Tooltip text</source>
         <translation>Текст на подсказка</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="88"/>
+        <location filename="../paletteeditdialog.cpp" line="93"/>
         <source>Link</source>
         <translation>Връзка</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="89"/>
+        <location filename="../paletteeditdialog.cpp" line="94"/>
         <source>Alternate background</source>
         <translation>Алтернативен фон</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="95"/>
+        <location filename="../paletteeditdialog.cpp" line="106"/>
         <source>Select Color</source>
         <translation>Избор на цвят</translation>
     </message>

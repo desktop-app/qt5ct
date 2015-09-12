@@ -297,7 +297,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.ui" line="43"/>
+        <location filename="../paletteeditdialog.ui" line="79"/>
         <source>Reset palette</source>
         <translation type="unfinished"></translation>
     </message>
@@ -312,122 +312,122 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="47"/>
+        <location filename="../paletteeditdialog.cpp" line="49"/>
         <source>Active</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="47"/>
+        <location filename="../paletteeditdialog.cpp" line="49"/>
         <source>Inactive</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="47"/>
+        <location filename="../paletteeditdialog.cpp" line="49"/>
         <source>Disabled</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="86"/>
+        <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Dark</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="86"/>
+        <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Window text</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="86"/>
+        <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Button background</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="86"/>
+        <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Bright</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="86"/>
+        <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Less bright</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="86"/>
+        <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Less dark</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="87"/>
+        <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="87"/>
+        <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Shadow</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="87"/>
+        <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Bright text</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="87"/>
+        <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Button text</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="87"/>
+        <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Normal text</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="87"/>
+        <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Normal background</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="88"/>
+        <location filename="../paletteeditdialog.cpp" line="93"/>
         <source>Highlight</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="88"/>
+        <location filename="../paletteeditdialog.cpp" line="93"/>
         <source>Highlighted text</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="88"/>
+        <location filename="../paletteeditdialog.cpp" line="93"/>
         <source>Visited link</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="89"/>
+        <location filename="../paletteeditdialog.cpp" line="94"/>
         <source>Default</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="89"/>
+        <location filename="../paletteeditdialog.cpp" line="94"/>
         <source>Tooltip background</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="89"/>
+        <location filename="../paletteeditdialog.cpp" line="94"/>
         <source>Tooltip text</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="88"/>
+        <location filename="../paletteeditdialog.cpp" line="93"/>
         <source>Link</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="89"/>
+        <location filename="../paletteeditdialog.cpp" line="94"/>
         <source>Alternate background</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="95"/>
+        <location filename="../paletteeditdialog.cpp" line="106"/>
         <source>Select Color</source>
         <translation type="unfinished"></translation>
     </message>
