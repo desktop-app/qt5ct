@@ -57,6 +57,7 @@ private slots:
 
 private:
     void setPalette(const QPalette &palette);
+    void hideEvent(QHideEvent *);
     Ui::PaletteEditDialog *m_ui;
     QStyle *m_currentStyle;
 };

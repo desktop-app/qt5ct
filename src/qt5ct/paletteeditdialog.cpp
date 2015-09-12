@@ -28,6 +28,8 @@
 
 #include <QPalette>
 #include <QColorDialog>
+#include <QSettings>
+#include "qt5ct.h"
 #include "paletteeditdialog.h"
 #include "ui_paletteeditdialog.h"
 
@@ -47,6 +49,9 @@ PaletteEditDialog::PaletteEditDialog(const QPalette &palette, QStyle *currentSty
     labels << tr("Active") << tr("Inactive") << tr("Disabled");
     m_ui->tableWidget->setHorizontalHeaderLabels(labels);
     setPalette(palette);
+
+    QSettings settings(Qt5CT::configFile(), QSettings::IniFormat);
+    restoreGeometry(settings.value("PaletteEditor/geometry").toByteArray());
 }
 
 PaletteEditDialog::~PaletteEditDialog()
@@ -88,6 +93,12 @@ void PaletteEditDialog::setPalette(const QPalette &palette)
            << tr("Highlight") << tr("Highlighted text")  << tr("Link")  << tr("Visited link")
            << tr("Alternate background") << tr("Default") << tr("Tooltip background")  << tr("Tooltip text");
     m_ui->tableWidget->setVerticalHeaderLabels(labels);
+}
+
+void PaletteEditDialog::hideEvent(QHideEvent *)
+{
+    QSettings settings(Qt5CT::configFile(), QSettings::IniFormat);
+    settings.setValue("PaletteEditor/geometry", saveGeometry());
 }
 
 void PaletteEditDialog::on_tableWidget_itemClicked(QTableWidgetItem *item)
