@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="zh_CN">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="zh_CN" version="2.1">
 <context>
     <name>AppearancePage</name>
     <message>
@@ -243,12 +241,12 @@
     <message>
         <location filename="../interfacepage.ui" line="179"/>
         <source>Menus have icons</source>
-        <translation type="unfinished"></translation>
+        <translation>有图标的菜单</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="186"/>
         <source>Dialog buttons have icons</source>
-        <translation type="unfinished"></translation>
+        <translation>有图标的对话框按钮</translation>
     </message>
 </context>
 <context>
