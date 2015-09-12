@@ -90,3 +90,9 @@ Version 0.14
 Version 0.15
 * fixed problem with qtcurve style
 * updated Czech translation (fri)
+
+Version 0.16
+* added feature to save palette editor geometry
+* changed palette editor layout
+* updated Chinese Simplified translation (Cary Tian)
+
