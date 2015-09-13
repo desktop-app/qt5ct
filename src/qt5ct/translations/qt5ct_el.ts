@@ -244,12 +244,12 @@
     <message>
         <location filename="../interfacepage.ui" line="179"/>
         <source>Menus have icons</source>
-        <translation type="unfinished"></translation>
+        <translation>Τα μενού διαθέτουν εικονίδια</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="186"/>
         <source>Dialog buttons have icons</source>
-        <translation type="unfinished"></translation>
+        <translation>Τα κουμπιά των διαλόγων διαθέτουν εικονίδια</translation>
     </message>
 </context>
 <context>
