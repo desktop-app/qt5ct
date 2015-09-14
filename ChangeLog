@@ -96,3 +96,6 @@ Version 0.16
 * changed palette editor layout
 * updated Chinese Simplified translation (Cary Tian)
 
+Version 0.17
+* fixed crash in qupzilla
+* updated Greek translation (Dimitrios Glentadakis)
