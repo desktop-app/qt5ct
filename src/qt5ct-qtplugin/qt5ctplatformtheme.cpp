@@ -112,7 +112,9 @@ void Qt5CTPlatformTheme::applySettings()
 #ifdef QT_WIDGETS_LIB
     if(hasWidgets())
     {
-        qApp->setStyle(new Qt5CTProxyStyle(m_style));
+        //do not override proxy style (fixes crash in qupzilla)
+        QProxyStyle *proxyStyle = qobject_cast<QProxyStyle *>(qApp->style());
+        proxyStyle ? proxyStyle->setBaseStyle(0) : qApp->setStyle(new Qt5CTProxyStyle(m_style));
         qApp->setFont(m_generalFont);
         if(m_customPalette)
             qApp->setPalette(*m_customPalette);
