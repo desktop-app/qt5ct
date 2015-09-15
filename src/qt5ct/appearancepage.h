@@ -50,8 +50,12 @@ public:
 
 private slots:
     void on_styleComboBox_activated(const QString &text);
-    void updatePalette();
     void on_changePaletteButton_clicked();
+    void on_colorSchemeComboBox_activated(const QString &arg1);
+    void on_addSchemeButton_clicked();
+    void on_changeSchemeButton_clicked();
+    void on_removeSchemeButton_clicked();
+    void updatePalette();
 
 private:
     void readSettings();

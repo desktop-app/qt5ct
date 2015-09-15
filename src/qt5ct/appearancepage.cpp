@@ -104,6 +104,36 @@ void AppearancePage::on_styleComboBox_activated(const QString &text)
     updatePalette();
 }
 
+void AppearancePage::on_changePaletteButton_clicked()
+{
+    PaletteEditDialog d(m_customPalette, m_selectedStyle, this);
+    if(d.exec() == QDialog::Accepted)
+    {
+        m_customPalette = d.selectedPalette();
+        updatePalette();
+    }
+}
+
+void AppearancePage::on_colorSchemeComboBox_activated(const QString &arg1)
+{
+
+}
+
+void AppearancePage::on_addSchemeButton_clicked()
+{
+
+}
+
+void AppearancePage::on_changeSchemeButton_clicked()
+{
+
+}
+
+void AppearancePage::on_removeSchemeButton_clicked()
+{
+
+}
+
 void AppearancePage::updatePalette()
 {
     if(!m_selectedStyle)
@@ -188,14 +218,4 @@ void AppearancePage::setPalette(QWidget *w, QPalette p)
         }
     }
     w->setPalette(p);
-}
-
-void AppearancePage::on_changePaletteButton_clicked()
-{
-    PaletteEditDialog d(m_customPalette, m_selectedStyle, this);
-    if(d.exec() == QDialog::Accepted)
-    {
-        m_customPalette = d.selectedPalette();
-        updatePalette();
-    }
 }
