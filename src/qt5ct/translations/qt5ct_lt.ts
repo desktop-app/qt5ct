@@ -29,23 +29,38 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="75"/>
+        <location filename="../appearancepage.ui" line="91"/>
         <source>Palette</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="81"/>
+        <location filename="../appearancepage.ui" line="102"/>
         <source>Default</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="91"/>
+        <location filename="../appearancepage.ui" line="112"/>
         <source>Custom</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="101"/>
+        <location filename="../appearancepage.ui" line="139"/>
+        <source>Color scheme:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../appearancepage.ui" line="156"/>
+        <source>Add</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../appearancepage.ui" line="166"/>
         <source>Change...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../appearancepage.ui" line="176"/>
+        <source>Remove</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

@@ -29,24 +29,39 @@
         <translation>失效状态的调色板</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="75"/>
+        <location filename="../appearancepage.ui" line="91"/>
         <source>Palette</source>
         <translation>调色板</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="81"/>
+        <location filename="../appearancepage.ui" line="102"/>
         <source>Default</source>
         <translation>缺省</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="91"/>
+        <location filename="../appearancepage.ui" line="112"/>
         <source>Custom</source>
         <translation>自定义</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="101"/>
+        <location filename="../appearancepage.ui" line="139"/>
+        <source>Color scheme:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../appearancepage.ui" line="156"/>
+        <source>Add</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../appearancepage.ui" line="166"/>
         <source>Change...</source>
         <translation>改变调色板</translation>
+    </message>
+    <message>
+        <location filename="../appearancepage.ui" line="176"/>
+        <source>Remove</source>
+        <translation type="unfinished">删除</translation>
     </message>
 </context>
 <context>
