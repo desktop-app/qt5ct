@@ -117,7 +117,7 @@
         <location filename="../appearancepage.cpp" line="143"/>
         <location filename="../appearancepage.cpp" line="165"/>
         <location filename="../appearancepage.cpp" line="219"/>
-        <source>The color scheme &quot;%s&quot; is read only</source>
+        <source>The color scheme &quot;%1&quot; is read only</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
