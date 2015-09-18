@@ -46,94 +46,94 @@
     <message>
         <location filename="../appearancepage.ui" line="139"/>
         <source>Color scheme:</source>
-        <translation type="unfinished"></translation>
+        <translation>Schemat kolorów:</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="162"/>
         <source>...</source>
-        <translation type="unfinished">...</translation>
+        <translation>...</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="64"/>
         <source>Create</source>
-        <translation type="unfinished"></translation>
+        <translation>Stwórz</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="65"/>
         <source>Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Edycja</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="66"/>
         <source>Create a Copy</source>
-        <translation type="unfinished"></translation>
+        <translation>Stwórz kopię</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="67"/>
         <source>Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Zmień nazwę</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="69"/>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Usuń</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="116"/>
         <location filename="../appearancepage.cpp" line="189"/>
         <location filename="../appearancepage.cpp" line="224"/>
         <source>Enter Color Scheme Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Wprowadź nazwę schematu kolorów</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="116"/>
         <location filename="../appearancepage.cpp" line="189"/>
         <location filename="../appearancepage.cpp" line="224"/>
         <source>File name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Nazwa pliku:</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="125"/>
         <location filename="../appearancepage.cpp" line="200"/>
         <location filename="../appearancepage.cpp" line="234"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Błąd</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="125"/>
         <location filename="../appearancepage.cpp" line="200"/>
         <location filename="../appearancepage.cpp" line="234"/>
         <source>The color scheme &quot;%1&quot; already exists</source>
-        <translation type="unfinished"></translation>
+        <translation>Schemat kolorów &quot;%1&quot; już istnieje</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="143"/>
         <location filename="../appearancepage.cpp" line="165"/>
         <location filename="../appearancepage.cpp" line="219"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>Ostrzeżenie</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="143"/>
         <location filename="../appearancepage.cpp" line="165"/>
         <location filename="../appearancepage.cpp" line="219"/>
         <source>The color scheme &quot;%1&quot; is read only</source>
-        <translation type="unfinished"></translation>
+        <translation>Schemat kolorów &quot;%1&quot; jest tylko do odczytu</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="170"/>
         <source>Confirm Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Potwierdź usunięcie</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="171"/>
         <source>Are you shure you want to remove color scheme &quot;%1&quot;?</source>
-        <translation type="unfinished"></translation>
+        <translation>Czy na pewno chcesz usunąć schemat koloru &quot;%1&quot;?</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="191"/>
         <source>%1 (copy)</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 (copy)</translation>
     </message>
 </context>
 <context>
@@ -234,7 +234,7 @@
     <message>
         <location filename="../fontspage.ui" line="94"/>
         <source>Fixed width:</source>
-        <translation type="unfinished"></translation>
+        <translation>Stała szerokość:</translation>
     </message>
     <message>
         <location filename="../fontspage.ui" line="119"/>
@@ -320,22 +320,22 @@
     <message>
         <location filename="../interfacepage.ui" line="162"/>
         <source>Enable gui effects</source>
-        <translation type="unfinished"></translation>
+        <translation>Włącz efekty interfejsu</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="169"/>
         <source>Dialog buttons layout:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ułożenie przycisków okna dialogowego</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="179"/>
         <source>Menus have icons</source>
-        <translation type="unfinished"></translation>
+        <translation>Opcje menu mają ikony</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="186"/>
         <source>Dialog buttons have icons</source>
-        <translation type="unfinished"></translation>
+        <translation>Przyciski okien dialogowych mają ikony</translation>
     </message>
 </context>
 <context>
@@ -343,12 +343,12 @@
     <message>
         <location filename="../mainwindow.ui" line="14"/>
         <source>Qt5 Configuration Tool</source>
-        <translation type="unfinished"></translation>
+        <translation>Narzędzie konfiguracji Qt5</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="45"/>
         <source>Appearance</source>
-        <translation type="unfinished"></translation>
+        <translation>Wygląd</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="46"/>
@@ -368,7 +368,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="50"/>
         <source>Style Sheets</source>
-        <translation type="unfinished"></translation>
+        <translation>Arkusze stylów</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="58"/>
@@ -391,132 +391,132 @@
     <message>
         <location filename="../paletteeditdialog.ui" line="29"/>
         <source>Build inactive palette</source>
-        <translation type="unfinished"></translation>
+        <translation>Buduj nieaktywną paletę</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.ui" line="36"/>
         <source>Build disabled palette</source>
-        <translation type="unfinished"></translation>
+        <translation>Buduj wyłączoną paletę</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="49"/>
         <source>Active</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktywna</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="49"/>
         <source>Inactive</source>
-        <translation type="unfinished"></translation>
+        <translation>Nieaktywna</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="49"/>
         <source>Disabled</source>
-        <translation type="unfinished"></translation>
+        <translation>Wyłączony</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Dark</source>
-        <translation type="unfinished"></translation>
+        <translation>Ciemny</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Window text</source>
-        <translation type="unfinished"></translation>
+        <translation>Tekst okna</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Button background</source>
-        <translation type="unfinished"></translation>
+        <translation>Tło przycisku</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Bright</source>
-        <translation type="unfinished"></translation>
+        <translation>Jasność</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Less bright</source>
-        <translation type="unfinished"></translation>
+        <translation>Zmniejsz jasność</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Less dark</source>
-        <translation type="unfinished"></translation>
+        <translation>Zmniejsz ciemność</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Okno</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Shadow</source>
-        <translation type="unfinished"></translation>
+        <translation>Cień</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Bright text</source>
-        <translation type="unfinished"></translation>
+        <translation>Jasny tekst</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Button text</source>
-        <translation type="unfinished"></translation>
+        <translation>Tekst przycisku</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Normal text</source>
-        <translation type="unfinished"></translation>
+        <translation>Normalny tekst</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Normal background</source>
-        <translation type="unfinished"></translation>
+        <translation>Normalne tło</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="93"/>
         <source>Highlight</source>
-        <translation type="unfinished"></translation>
+        <translation>Podświetlenie</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="93"/>
         <source>Highlighted text</source>
-        <translation type="unfinished"></translation>
+        <translation>Podświetlony tekst</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="93"/>
         <source>Visited link</source>
-        <translation type="unfinished"></translation>
+        <translation>Odwiedzone linki</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="94"/>
         <source>Default</source>
-        <translation type="unfinished">Domyślnie</translation>
+        <translation>Domyślnie</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="94"/>
         <source>Tooltip background</source>
-        <translation type="unfinished"></translation>
+        <translation>Tło podpowiedzi</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="94"/>
         <source>Tooltip text</source>
-        <translation type="unfinished"></translation>
+        <translation>Tekst podpowiedzi</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="93"/>
         <source>Link</source>
-        <translation type="unfinished"></translation>
+        <translation>Link</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="94"/>
         <source>Alternate background</source>
-        <translation type="unfinished"></translation>
+        <translation>Alternatywne tło</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="106"/>
         <source>Select Color</source>
-        <translation type="unfinished"></translation>
+        <translation>Wybrany kolor</translation>
     </message>
 </context>
 <context>
@@ -524,32 +524,32 @@
     <message>
         <location filename="../previewform.ui" line="14"/>
         <source>Preview Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Podgląd okna</translation>
     </message>
     <message>
         <location filename="../previewform.ui" line="24"/>
         <source>Tab 1</source>
-        <translation type="unfinished"></translation>
+        <translation>Tab 1</translation>
     </message>
     <message>
         <location filename="../previewform.ui" line="30"/>
         <source>PushButton</source>
-        <translation type="unfinished"></translation>
+        <translation>PushButton</translation>
     </message>
     <message>
         <location filename="../previewform.ui" line="51"/>
         <source>Tab 2</source>
-        <translation type="unfinished"></translation>
+        <translation>Tab 2</translation>
     </message>
     <message>
         <location filename="../previewform.ui" line="57"/>
         <source>RadioButton</source>
-        <translation type="unfinished"></translation>
+        <translation>RadioButton</translation>
     </message>
     <message>
         <location filename="../previewform.ui" line="64"/>
         <source>CheckBox</source>
-        <translation type="unfinished"></translation>
+        <translation>CheckBox</translation>
     </message>
 </context>
 <context>
@@ -557,12 +557,12 @@
     <message>
         <location filename="../qsseditordialog.cpp" line="43"/>
         <source>%1 - Style Sheet Editor</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 - Edytor arkuszy stylów</translation>
     </message>
     <message>
         <location filename="../qsseditordialog.ui" line="14"/>
         <source>Style Sheet Editor</source>
-        <translation type="unfinished"></translation>
+        <translation>Edytor arkuszy stylów</translation>
     </message>
 </context>
 <context>
@@ -570,77 +570,77 @@
     <message>
         <location filename="../qsspage.ui" line="23"/>
         <source>Create</source>
-        <translation type="unfinished"></translation>
+        <translation>Stwórz</translation>
     </message>
     <message>
         <location filename="../qsspage.ui" line="66"/>
         <location filename="../qsspage.cpp" line="51"/>
         <source>Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Edycja</translation>
     </message>
     <message>
         <location filename="../qsspage.ui" line="76"/>
         <location filename="../qsspage.cpp" line="52"/>
         <source>Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Zmień nazwę</translation>
     </message>
     <message>
         <location filename="../qsspage.ui" line="33"/>
         <location filename="../qsspage.cpp" line="54"/>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Usuń</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="97"/>
         <source>File name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Nazwa pliku:</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="97"/>
         <source>Enter Style Sheet Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Wpisz nazwę arkusza stylów</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="108"/>
         <location filename="../qsspage.cpp" line="200"/>
         <location filename="../qsspage.cpp" line="211"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Błąd</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="108"/>
         <source>The file &quot;%1&quot; already exists</source>
-        <translation type="unfinished"></translation>
+        <translation>Plik &quot;%1&quot; istnieje</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="142"/>
         <source>Confirm Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Potwierdź usunięcie</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="143"/>
         <source>Are you shure you want to remove style sheet &quot;%1&quot;?</source>
-        <translation type="unfinished"></translation>
+        <translation>Usunąć arkusz stylów &quot;%1&quot;?</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="193"/>
         <source>Rename Style Sheet</source>
-        <translation type="unfinished"></translation>
+        <translation>Zmień nazwę arkusza stylów</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="193"/>
         <source>Style sheet name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Nazwa arkusza stylów:</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="200"/>
         <source>The style sheet &quot;%1&quot; already exists</source>
-        <translation type="unfinished"></translation>
+        <translation>Arkusz stylów &quot;%1&quot; już istnieje</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="211"/>
         <source>Unable to rename file</source>
-        <translation type="unfinished"></translation>
+        <translation>Nie można zmienić nazwy pliku</translation>
     </message>
 </context>
 </TS>
