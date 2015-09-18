@@ -58,6 +58,7 @@ private slots:
     void copyColorScheme();
     void renameColorScheme();
     void updatePalette();
+    void updateActions();
 
 private:
     void readSettings();

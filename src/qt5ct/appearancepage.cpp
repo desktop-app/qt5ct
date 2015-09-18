@@ -67,8 +67,8 @@ AppearancePage::AppearancePage(QWidget *parent) :
     m_renameColorSchemeAction = menu->addAction(tr("Rename"), this, SLOT(renameColorScheme()));
     menu->addSeparator();
     m_removeColorSchemeAction = menu->addAction(tr("Remove"), this, SLOT(removeColorScheme()));
-
     m_ui->colorSchemeButton->setMenu(menu);
+    connect(menu, SIGNAL(aboutToShow()), SLOT(updateActions()));
 
     readSettings();
 }
@@ -120,8 +120,17 @@ void AppearancePage::createColorScheme()
     if(!name.endsWith(".conf", Qt::CaseInsensitive))
         name.append(".conf");
 
-    createColorScheme(name, palette());
-    m_ui->colorSchemeComboBox->addItem(name.section('.',0,0), Qt5CT::userColorSchemePath() + "/" + name);
+    if(m_ui->colorSchemeComboBox->findText(name.section('.',0,0)) != -1)
+    {
+        QMessageBox::warning(this, tr("Error"), tr("The color scheme \"%1\" already exists")
+                             .arg(name.section('.',0,0)));
+        return;
+    }
+
+    QString schemePath = Qt5CT::userColorSchemePath() + "/" + name;
+
+    createColorScheme(schemePath, palette());
+    m_ui->colorSchemeComboBox->addItem(name.section('.',0,0), schemePath);
 }
 
 void AppearancePage::changeColorScheme()
@@ -129,11 +138,18 @@ void AppearancePage::changeColorScheme()
     if(m_ui->colorSchemeComboBox->currentIndex() < 0)
         return;
 
+    if(!QFileInfo(m_ui->colorSchemeComboBox->currentData().toString()).isWritable())
+    {
+        QMessageBox::information(this, tr("Warning"), tr("The color scheme \"%s\" is read only")
+                                 .arg(m_ui->colorSchemeComboBox->currentText()));
+        return;
+    }
+
     PaletteEditDialog d(m_customPalette, m_selectedStyle, this);
     if(d.exec() == QDialog::Accepted)
     {
         m_customPalette = d.selectedPalette();
-        createColorScheme(m_ui->colorSchemeComboBox->currentText() + ".conf", m_customPalette);
+        createColorScheme(m_ui->colorSchemeComboBox->currentData().toString(), m_customPalette);
         updatePalette();
     }
 }
@@ -143,6 +159,13 @@ void AppearancePage::removeColorScheme()
     int index = m_ui->colorSchemeComboBox->currentIndex();
     if(index < 0 || m_ui->colorSchemeComboBox->count() <= 1)
         return;
+
+    if(!QFileInfo(m_ui->colorSchemeComboBox->currentData().toString()).isWritable())
+    {
+        QMessageBox::information(this, tr("Warning"), tr("The color scheme \"%s\" is read only")
+                                 .arg(m_ui->colorSchemeComboBox->currentText()));
+        return;
+    }
 
     int button = QMessageBox::question(this, tr("Confirm Remove"),
                                        tr("Are you shure you want to remove color scheme \"%1\"?")
@@ -160,12 +183,63 @@ void AppearancePage::removeColorScheme()
 
 void AppearancePage::copyColorScheme()
 {
+    if(m_ui->colorSchemeComboBox->currentIndex() < 0)
+        return;
 
+    QString name = QInputDialog::getText(this, tr("Enter Color Scheme Name"), tr("File name:"),
+                                         QLineEdit::Normal,
+                                         tr("%1 (Copy)").arg(m_ui->colorSchemeComboBox->currentText()));
+    if(name.isEmpty() || name == m_ui->colorSchemeComboBox->currentText())
+        return;
+
+    if(!name.endsWith(".conf", Qt::CaseInsensitive))
+        name.append(".conf");
+
+    if(m_ui->colorSchemeComboBox->findText(name.section('.',0,0)) != -1)
+    {
+        QMessageBox::warning(this, tr("Error"), tr("The color scheme \"%1\" already exists")
+                             .arg(name.section('.',0,0)));
+        return;
+    }
+
+    QString newPath =  Qt5CT::userColorSchemePath() + "/" + name;
+    QFile::copy(m_ui->colorSchemeComboBox->currentData().toString(), newPath);
+    m_ui->colorSchemeComboBox->addItem(name.section('.',0,0), newPath);
 }
 
 void AppearancePage::renameColorScheme()
 {
+    int index = m_ui->colorSchemeComboBox->currentIndex();
 
+    if(index < 0)
+        return;
+
+    if(!QFileInfo(m_ui->colorSchemeComboBox->currentData().toString()).isWritable())
+    {
+        QMessageBox::information(this, tr("Warning"), tr("The color scheme \"%s\" is read only")
+                                 .arg(m_ui->colorSchemeComboBox->currentText()));
+        return;
+    }
+
+    QString name = QInputDialog::getText(this, tr("Enter Color Scheme Name"), tr("File name:"),
+                                         QLineEdit::Normal, m_ui->colorSchemeComboBox->currentText());
+    if(name.isEmpty() || name == m_ui->colorSchemeComboBox->currentText())
+        return;
+
+    if(!name.endsWith(".conf", Qt::CaseInsensitive))
+        name.append(".conf");
+
+    if(m_ui->colorSchemeComboBox->findText(name.section('.',0,0)) != -1)
+    {
+        QMessageBox::warning(this, tr("Error"), tr("The color scheme \"%1\" already exists")
+                             .arg(name.section('.',0,0)));
+        return;
+    }
+
+    QString newPath =  Qt5CT::userColorSchemePath() + "/" + name;
+    QFile::rename(m_ui->colorSchemeComboBox->currentData().toString(), newPath);
+    m_ui->colorSchemeComboBox->setItemText(index, name.section('.',0,0));
+    m_ui->colorSchemeComboBox->setItemData(index, newPath);
 }
 
 void AppearancePage::updatePalette()
@@ -195,6 +269,23 @@ void AppearancePage::updatePalette()
     }
 
     setPalette(m_ui->mdiArea, previewPalette);
+}
+
+void AppearancePage::updateActions()
+{
+    if(m_ui->colorSchemeComboBox->count() == 0 ||
+            !QFileInfo(m_ui->colorSchemeComboBox->currentData().toString()).isWritable())
+    {
+        m_changeColorSchemeAction->setVisible(false);
+        m_renameColorSchemeAction->setVisible(false);
+        m_removeColorSchemeAction->setVisible(false);
+    }
+    else
+    {
+        m_changeColorSchemeAction->setVisible(true);
+        m_renameColorSchemeAction->setVisible(true);
+        m_removeColorSchemeAction->setVisible(m_ui->colorSchemeComboBox->count() > 1);
+    }
 }
 
 void AppearancePage::readSettings()
@@ -296,7 +387,7 @@ QPalette AppearancePage::loadColorScheme(const QString &filePath)
 
 void AppearancePage::createColorScheme(const QString &name, const QPalette &palette)
 {
-    QSettings settings(Qt5CT::userColorSchemePath() + "/" + name, QSettings::IniFormat);
+    QSettings settings(name, QSettings::IniFormat);
     settings.beginGroup("ColorScheme");
 
     QStringList activeColors, inactiveColors, disabledColors;
