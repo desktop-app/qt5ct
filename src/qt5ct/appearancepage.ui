@@ -145,35 +145,27 @@
           <property name="enabled">
            <bool>false</bool>
           </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="addSchemeButton">
-          <property name="enabled">
-           <bool>false</bool>
-          </property>
-          <property name="text">
-           <string>Add</string>
+          <property name="minimumSize">
+           <size>
+            <width>150</width>
+            <height>0</height>
+           </size>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="changeSchemeButton">
+         <widget class="QToolButton" name="colorSchemeButton">
           <property name="enabled">
            <bool>false</bool>
           </property>
           <property name="text">
-           <string>Change...</string>
+           <string>...</string>
           </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="removeSchemeButton">
-          <property name="enabled">
-           <bool>false</bool>
+          <property name="popupMode">
+           <enum>QToolButton::InstantPopup</enum>
           </property>
-          <property name="text">
-           <string>Remove</string>
+          <property name="arrowType">
+           <enum>Qt::NoArrow</enum>
           </property>
          </widget>
         </item>
@@ -234,48 +226,16 @@
   <connection>
    <sender>customPaletteButton</sender>
    <signal>toggled(bool)</signal>
-   <receiver>addSchemeButton</receiver>
+   <receiver>colorSchemeButton</receiver>
    <slot>setEnabled(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>166</x>
-     <y>72</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>252</x>
-     <y>106</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>customPaletteButton</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>changeSchemeButton</receiver>
-   <slot>setEnabled(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>174</x>
+     <x>177</x>
      <y>78</y>
     </hint>
     <hint type="destinationlabel">
-     <x>332</x>
-     <y>100</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>customPaletteButton</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>removeSchemeButton</receiver>
-   <slot>setEnabled(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>171</x>
-     <y>71</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>433</x>
-     <y>103</y>
+     <x>288</x>
+     <y>116</y>
     </hint>
    </hints>
   </connection>

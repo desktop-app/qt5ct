@@ -37,6 +37,7 @@ class PreviewForm;
 }
 
 class QStyle;
+class QAction;
 
 class AppearancePage : public TabPage
 {
@@ -51,9 +52,11 @@ public:
 private slots:
     void on_styleComboBox_activated(const QString &text);
     void on_colorSchemeComboBox_activated(int);
-    void on_addSchemeButton_clicked();
-    void on_changeSchemeButton_clicked();
-    void on_removeSchemeButton_clicked();
+    void createColorScheme();
+    void changeColorScheme();
+    void removeColorScheme();
+    void copyColorScheme();
+    void renameColorScheme();
     void updatePalette();
 
 private:
@@ -67,6 +70,7 @@ private:
     QStyle *m_selectedStyle;
     QPalette m_customPalette;
     QWidget *m_previewWidget;
+    QAction *m_changeColorSchemeAction, *m_renameColorSchemeAction, *m_removeColorSchemeAction;
     Ui::PreviewForm *m_previewUi;
 };
 

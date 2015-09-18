@@ -32,6 +32,7 @@
 #include <QDir>
 #include <QInputDialog>
 #include <QMessageBox>
+#include <QMenu>
 #include "qt5ct.h"
 #include "appearancepage.h"
 #include "paletteeditdialog.h"
@@ -59,6 +60,16 @@ AppearancePage::AppearancePage(QWidget *parent) :
                                                    | Qt::WindowTitleHint);
     w->move(10, 10);
 
+    QMenu *menu = new QMenu(this);
+    menu->addAction(tr("Create"), this, SLOT(createColorScheme()));
+    m_changeColorSchemeAction = menu->addAction(tr("Edit"), this, SLOT(changeColorScheme()));
+    menu->addAction(tr("Create a Copy"), this, SLOT(copyColorScheme()));
+    m_renameColorSchemeAction = menu->addAction(tr("Rename"), this, SLOT(renameColorScheme()));
+    menu->addSeparator();
+    m_removeColorSchemeAction = menu->addAction(tr("Remove"), this, SLOT(removeColorScheme()));
+
+    m_ui->colorSchemeButton->setMenu(menu);
+
     readSettings();
 }
 
@@ -76,8 +87,7 @@ void AppearancePage::writeSettings()
     settings.beginGroup("Appearance");
     settings.setValue("style", m_ui->styleComboBox->currentText());
     settings.setValue("custom_palette", m_ui->customPaletteButton->isChecked());
-    settings.setValue("color_scheme", m_ui->paletteComboBox->currentText());
-
+    settings.setValue("color_scheme", m_ui->colorSchemeComboBox->currentData().toString());
     settings.endGroup();
 }
 
@@ -101,7 +111,7 @@ void AppearancePage::on_colorSchemeComboBox_activated(int)
     updatePalette();
 }
 
-void AppearancePage::on_addSchemeButton_clicked()
+void AppearancePage::createColorScheme()
 {
     QString name = QInputDialog::getText(this, tr("Enter Color Scheme Name"), tr("File name:"));
     if(name.isEmpty())
@@ -111,10 +121,10 @@ void AppearancePage::on_addSchemeButton_clicked()
         name.append(".conf");
 
     createColorScheme(name, palette());
-    m_ui->colorSchemeComboBox->addItem(name, Qt5CT::userColorSchemePath() + "/" + name);
+    m_ui->colorSchemeComboBox->addItem(name.section('.',0,0), Qt5CT::userColorSchemePath() + "/" + name);
 }
 
-void AppearancePage::on_changeSchemeButton_clicked()
+void AppearancePage::changeColorScheme()
 {
     if(m_ui->colorSchemeComboBox->currentIndex() < 0)
         return;
@@ -123,12 +133,12 @@ void AppearancePage::on_changeSchemeButton_clicked()
     if(d.exec() == QDialog::Accepted)
     {
         m_customPalette = d.selectedPalette();
-        createColorScheme(m_ui->colorSchemeComboBox->currentText(), m_customPalette);
+        createColorScheme(m_ui->colorSchemeComboBox->currentText() + ".conf", m_customPalette);
         updatePalette();
     }
 }
 
-void AppearancePage::on_removeSchemeButton_clicked()
+void AppearancePage::removeColorScheme()
 {
     int index = m_ui->colorSchemeComboBox->currentIndex();
     if(index < 0 || m_ui->colorSchemeComboBox->count() <= 1)
@@ -146,6 +156,16 @@ void AppearancePage::on_removeSchemeButton_clicked()
         m_ui->colorSchemeComboBox->removeItem(index);
         on_colorSchemeComboBox_activated(0);
     }
+}
+
+void AppearancePage::copyColorScheme()
+{
+
+}
+
+void AppearancePage::renameColorScheme()
+{
+
 }
 
 void AppearancePage::updatePalette()
@@ -185,7 +205,7 @@ void AppearancePage::readSettings()
     m_ui->styleComboBox->setCurrentText(style);
 
     m_ui->customPaletteButton->setChecked(settings.value("custom_palette", false).toBool());
-    QString colorSchemeName = settings.value("color_scheme").toString();
+    QString colorSchemePath = settings.value("color_scheme").toString();
 
     QDir("/").mkpath(Qt5CT::userColorSchemePath());
     findColorSchemes(Qt5CT::userColorSchemePath());
@@ -197,7 +217,7 @@ void AppearancePage::readSettings()
     }
     else
     {
-        int index = m_ui->colorSchemeComboBox->findText(colorSchemeName);
+        int index = m_ui->colorSchemeComboBox->findData(colorSchemePath);
         if(index >= 0)
             m_ui->colorSchemeComboBox->setCurrentIndex(index);
         m_customPalette = loadColorScheme(m_ui->colorSchemeComboBox->currentData().toString());
@@ -240,7 +260,7 @@ void AppearancePage::findColorSchemes(const QString &path)
 
     foreach (QFileInfo info, dir.entryInfoList())
     {
-        m_ui->colorSchemeComboBox->addItem(info.fileName(), info.filePath());
+        m_ui->colorSchemeComboBox->addItem(info.baseName(), info.filePath());
     }
 }
 
@@ -248,9 +268,11 @@ QPalette AppearancePage::loadColorScheme(const QString &filePath)
 {
     QPalette customPalette;
     QSettings settings(filePath, QSettings::IniFormat);
+    settings.beginGroup("ColorScheme");
     QStringList activeColors = settings.value("active_colors").toStringList();
     QStringList inactiveColors = settings.value("inactive_colors").toStringList();
     QStringList disabledColors = settings.value("disabled_colors").toStringList();
+    settings.endGroup();
 
     if(activeColors.count() == QPalette::NColorRoles &&
             inactiveColors.count() == QPalette::NColorRoles &&
@@ -275,6 +297,7 @@ QPalette AppearancePage::loadColorScheme(const QString &filePath)
 void AppearancePage::createColorScheme(const QString &name, const QPalette &palette)
 {
     QSettings settings(Qt5CT::userColorSchemePath() + "/" + name, QSettings::IniFormat);
+    settings.beginGroup("ColorScheme");
 
     QStringList activeColors, inactiveColors, disabledColors;
     for (int i = 0; i < QPalette::NColorRoles; i++)
