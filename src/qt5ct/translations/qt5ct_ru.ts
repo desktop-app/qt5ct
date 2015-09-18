@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="ru">
+<TS version="2.0" language="ru">
 <context>
     <name>AppearancePage</name>
     <message>
@@ -128,7 +128,7 @@
     <message>
         <location filename="../appearancepage.cpp" line="171"/>
         <source>Are you sure you want to remove color scheme &quot;%1&quot;?</source>
-        <translation type="unfinished"></translation>
+        <translation>Вы уверены, что хотите удалить цветовую схему &quot;%1&quot;?</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="191"/>
@@ -620,7 +620,7 @@
     <message>
         <location filename="../qsspage.cpp" line="143"/>
         <source>Are you sure you want to remove style sheet &quot;%1&quot;?</source>
-        <translation type="unfinished"></translation>
+        <translation>Вы уверены, что хотите удалить таблицу стилей &quot;%1&quot;?</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="193"/>
