@@ -140,7 +140,7 @@ void QSSPage::on_removeButton_clicked()
         return;
 
     int button = QMessageBox::question(this, tr("Confirm Remove"),
-                                       tr("Are you shure you want to remove style sheet \"%1\"?")
+                                       tr("Are you sure you want to remove style sheet \"%1\"?")
                                        .arg(item->text()),
                                        QMessageBox::Yes | QMessageBox::No);
     if(button == QMessageBox::Yes)

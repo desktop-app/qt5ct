@@ -168,7 +168,7 @@ void AppearancePage::removeColorScheme()
     }
 
     int button = QMessageBox::question(this, tr("Confirm Remove"),
-                                       tr("Are you shure you want to remove color scheme \"%1\"?")
+                                       tr("Are you sure you want to remove color scheme \"%1\"?")
                                        .arg(m_ui->colorSchemeComboBox->currentText()),
                                        QMessageBox::Yes | QMessageBox::No);
     if(button != QMessageBox::Yes)
