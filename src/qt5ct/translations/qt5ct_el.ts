@@ -132,7 +132,7 @@
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="191"/>
-        <source>%1 (Copy)</source>
+        <source>%1 (copy)</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

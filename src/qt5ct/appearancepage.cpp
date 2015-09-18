@@ -188,7 +188,7 @@ void AppearancePage::copyColorScheme()
 
     QString name = QInputDialog::getText(this, tr("Enter Color Scheme Name"), tr("File name:"),
                                          QLineEdit::Normal,
-                                         tr("%1 (Copy)").arg(m_ui->colorSchemeComboBox->currentText()));
+                                         tr("%1 (copy)").arg(m_ui->colorSchemeComboBox->currentText()));
     if(name.isEmpty() || name == m_ui->colorSchemeComboBox->currentText())
         return;
 
