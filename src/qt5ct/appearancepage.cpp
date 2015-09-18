@@ -140,7 +140,7 @@ void AppearancePage::changeColorScheme()
 
     if(!QFileInfo(m_ui->colorSchemeComboBox->currentData().toString()).isWritable())
     {
-        QMessageBox::information(this, tr("Warning"), tr("The color scheme \"%s\" is read only")
+        QMessageBox::information(this, tr("Warning"), tr("The color scheme \"%1\" is read only")
                                  .arg(m_ui->colorSchemeComboBox->currentText()));
         return;
     }
@@ -216,7 +216,7 @@ void AppearancePage::renameColorScheme()
 
     if(!QFileInfo(m_ui->colorSchemeComboBox->currentData().toString()).isWritable())
     {
-        QMessageBox::information(this, tr("Warning"), tr("The color scheme \"%s\" is read only")
+        QMessageBox::information(this, tr("Warning"), tr("The color scheme \"%1\" is read only")
                                  .arg(m_ui->colorSchemeComboBox->currentText()));
         return;
     }
