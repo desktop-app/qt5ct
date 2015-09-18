@@ -87,7 +87,7 @@ void AppearancePage::writeSettings()
     settings.beginGroup("Appearance");
     settings.setValue("style", m_ui->styleComboBox->currentText());
     settings.setValue("custom_palette", m_ui->customPaletteButton->isChecked());
-    settings.setValue("color_scheme", m_ui->colorSchemeComboBox->currentData().toString());
+    settings.setValue("color_scheme_path", m_ui->colorSchemeComboBox->currentData().toString());
     settings.endGroup();
 }
 
@@ -296,7 +296,7 @@ void AppearancePage::readSettings()
     m_ui->styleComboBox->setCurrentText(style);
 
     m_ui->customPaletteButton->setChecked(settings.value("custom_palette", false).toBool());
-    QString colorSchemePath = settings.value("color_scheme").toString();
+    QString colorSchemePath = settings.value("color_scheme_path").toString();
 
     QDir("/").mkpath(Qt5CT::userColorSchemePath());
     findColorSchemes(Qt5CT::userColorSchemePath());

@@ -32,6 +32,7 @@
 #include <qpa/qplatformtheme.h>
 #include <QObject>
 #include <QFont>
+#include <QPalette>
 
 class QPalette;
 
@@ -74,6 +75,7 @@ private:
     bool hasWidgets();
 #endif
     QString loadStyleSheets(const QStringList &paths);
+    QPalette loadColorScheme(const QString &filePath);
     QString m_style, m_iconTheme, m_userStyleSheet;
     QPalette *m_customPalette;
     QFont m_generalFont, m_fixedFont;
