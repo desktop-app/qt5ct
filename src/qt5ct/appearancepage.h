@@ -50,8 +50,7 @@ public:
 
 private slots:
     void on_styleComboBox_activated(const QString &text);
-    void on_changePaletteButton_clicked();
-    void on_colorSchemeComboBox_activated(const QString &arg1);
+    void on_colorSchemeComboBox_activated(int);
     void on_addSchemeButton_clicked();
     void on_changeSchemeButton_clicked();
     void on_removeSchemeButton_clicked();
@@ -61,6 +60,9 @@ private:
     void readSettings();
     void setStyle(QWidget *w, QStyle *s);
     void setPalette(QWidget *w, QPalette p);
+    void findColorSchemes(const QString &path);
+    QPalette loadColorScheme(const QString &filePath);
+    void createColorScheme(const QString &name, const QPalette &palette);
     Ui::AppearancePage *m_ui;
     QStyle *m_selectedStyle;
     QPalette m_customPalette;

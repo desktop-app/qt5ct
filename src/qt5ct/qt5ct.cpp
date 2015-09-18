@@ -90,6 +90,16 @@ QString Qt5CT::sharedStyleSheetPath()
     return QT5CT_DATADIR"/qt5ct/qss/";
 }
 
+QString Qt5CT::userColorSchemePath()
+{
+    return configPath() + "colors/";
+}
+
+QString Qt5CT::sharedColorSchemePath()
+{
+    return QT5CT_DATADIR"/qt5ct/colors/";
+}
+
 QString Qt5CT::systemLanguageID()
 {
 #ifdef Q_OS_UNIX
