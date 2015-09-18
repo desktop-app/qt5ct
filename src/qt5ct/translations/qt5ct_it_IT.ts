@@ -127,7 +127,7 @@
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="171"/>
-        <source>Are you shure you want to remove color scheme &quot;%1&quot;?</source>
+        <source>Are you sure you want to remove color scheme &quot;%1&quot;?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -619,8 +619,8 @@
     </message>
     <message>
         <location filename="../qsspage.cpp" line="143"/>
-        <source>Are you shure you want to remove style sheet &quot;%1&quot;?</source>
-        <translation>Sei sicuro di voler rimuovere il foglio di stile &quot;%1&quot;?</translation>
+        <source>Are you sure you want to remove style sheet &quot;%1&quot;?</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="193"/>
