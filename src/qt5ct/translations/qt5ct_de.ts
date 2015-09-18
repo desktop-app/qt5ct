@@ -49,38 +49,90 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="156"/>
-        <source>Add</source>
+        <location filename="../appearancepage.ui" line="162"/>
+        <source>...</source>
+        <translation type="unfinished">...</translation>
+    </message>
+    <message>
+        <location filename="../appearancepage.cpp" line="64"/>
+        <source>Create</source>
+        <translation type="unfinished">Erstellen</translation>
+    </message>
+    <message>
+        <location filename="../appearancepage.cpp" line="65"/>
+        <source>Edit</source>
+        <translation type="unfinished">Bearbeiten</translation>
+    </message>
+    <message>
+        <location filename="../appearancepage.cpp" line="66"/>
+        <source>Create a Copy</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="166"/>
-        <source>Change...</source>
-        <translation>Ändern …</translation>
+        <location filename="../appearancepage.cpp" line="67"/>
+        <source>Rename</source>
+        <translation type="unfinished">Umbenennen</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="176"/>
+        <location filename="../appearancepage.cpp" line="69"/>
         <source>Remove</source>
         <translation type="unfinished">Entfernen</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="106"/>
+        <location filename="../appearancepage.cpp" line="116"/>
+        <location filename="../appearancepage.cpp" line="189"/>
+        <location filename="../appearancepage.cpp" line="224"/>
         <source>Enter Color Scheme Name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="106"/>
+        <location filename="../appearancepage.cpp" line="116"/>
+        <location filename="../appearancepage.cpp" line="189"/>
+        <location filename="../appearancepage.cpp" line="224"/>
         <source>File name:</source>
         <translation type="unfinished">Dateiname:</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="137"/>
+        <location filename="../appearancepage.cpp" line="125"/>
+        <location filename="../appearancepage.cpp" line="200"/>
+        <location filename="../appearancepage.cpp" line="234"/>
+        <source>Error</source>
+        <translation type="unfinished">Fehler</translation>
+    </message>
+    <message>
+        <location filename="../appearancepage.cpp" line="125"/>
+        <location filename="../appearancepage.cpp" line="200"/>
+        <location filename="../appearancepage.cpp" line="234"/>
+        <source>The color scheme &quot;%1&quot; already exists</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../appearancepage.cpp" line="143"/>
+        <location filename="../appearancepage.cpp" line="165"/>
+        <location filename="../appearancepage.cpp" line="219"/>
+        <source>Warning</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../appearancepage.cpp" line="143"/>
+        <location filename="../appearancepage.cpp" line="165"/>
+        <location filename="../appearancepage.cpp" line="219"/>
+        <source>The color scheme &quot;%s&quot; is read only</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../appearancepage.cpp" line="170"/>
         <source>Confirm Remove</source>
         <translation type="unfinished">Entfernen bestätigen</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="138"/>
+        <location filename="../appearancepage.cpp" line="171"/>
         <source>Are you shure you want to remove color scheme &quot;%1&quot;?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../appearancepage.cpp" line="191"/>
+        <source>%1 (Copy)</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
