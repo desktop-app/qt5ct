@@ -16,9 +16,6 @@ Name[el]=Ρυθμίσεις Qt5
 Comment[ru]=Программа для настройки Qt5
 Name[ru]=Настройки Qt5
 
-Comment[de]=Qt5-Konfigurationswerkzeug
-Name[de]=Qt5-Einstellungen
-
 Comment[cs]=Nástroj na nastavení Qt5
 Name[cs]=Nastavení Qt5
 
@@ -33,7 +30,6 @@ Name[zh_CN]=Qt5 设置
 
 Comment[zh_TW]=Qt5 設定工具
 Name[zh_TW]=Qt5 設定
-
 
 
 Exec=qt5ct
