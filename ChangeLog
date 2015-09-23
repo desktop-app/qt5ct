@@ -107,3 +107,9 @@ Version 0.18
 * updated Polish translation (FadeMind)
 * updated Chinese (Taiwan) translation (Jeff Huang)
 * updated Russian translation
+
+Version 0.19
+* fixed qt5ct.desktop
+* updated Greek translation (Dimitrios Glentadakis)
+* updated Czech translation (fri)
+* updated Chinese Simplified translation (Cary Tian)
