@@ -109,6 +109,7 @@ Version 0.18
 * updated Russian translation
 
 Version 0.19
+* added feature to save geometry of the style sheet editor
 * fixed qt5ct.desktop
 * updated Greek translation (Dimitrios Glentadakis)
 * updated Czech translation (fri)
