@@ -51,6 +51,7 @@ private slots:
 
 private:
     void save();
+    void hideEvent(QHideEvent *);
     Ui::QSSEditorDialog *m_ui;
     QString m_filePath;
 };
