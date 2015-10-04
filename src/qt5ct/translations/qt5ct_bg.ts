@@ -1,4 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="bg" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="bg">
 <context>
     <name>AppearancePage</name>
     <message>
@@ -553,7 +555,7 @@
 <context>
     <name>QSSEditorDialog</name>
     <message>
-        <location filename="../qsseditordialog.cpp" line="43"/>
+        <location filename="../qsseditordialog.cpp" line="45"/>
         <source>%1 - Style Sheet Editor</source>
         <translation>%1 - Редактор на стила на страница</translation>
     </message>

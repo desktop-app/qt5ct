@@ -556,7 +556,7 @@
 <context>
     <name>QSSEditorDialog</name>
     <message>
-        <location filename="../qsseditordialog.cpp" line="43"/>
+        <location filename="../qsseditordialog.cpp" line="45"/>
         <source>%1 - Style Sheet Editor</source>
         <translation>%1 - Επεξεργαστής φύλλου αισθητικής επικάλυψης</translation>
     </message>
