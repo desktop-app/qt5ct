@@ -128,6 +128,17 @@ void Qt5CTPlatformTheme::applySettings()
     QIcon::setThemeName(m_iconTheme); //apply icons
     if(m_customPalette)
         QGuiApplication::setPalette(*m_customPalette); //apply palette
+
+#ifdef QT_WIDGETS_LIB
+    if(hasWidgets())
+    {
+        foreach (QWidget *w, qApp->allWidgets())
+        {
+            QEvent e(QEvent::ThemeChange);
+            QApplication::sendEvent(w, &e);
+        }
+    }
+#endif
 }
 
 #ifdef QT_WIDGETS_LIB
@@ -148,15 +159,6 @@ void Qt5CTPlatformTheme::updateSettings()
     qDebug("Qt5CTPlatformTheme: updating settings..");
     readSettings();
     applySettings();
-
-    if(hasWidgets())
-    {
-        foreach (QWidget *w, qApp->allWidgets())
-        {
-            QEvent e(QEvent::ThemeChange);
-            QApplication::sendEvent(w, &e);
-        }
-    }
 }
 #endif
 
