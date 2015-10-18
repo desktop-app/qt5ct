@@ -55,7 +55,7 @@ Qt5CTPlatformTheme::Qt5CTPlatformTheme()
     readSettings();
     QMetaObject::invokeMethod(this, "applySettings", Qt::QueuedConnection);
 #ifdef QT_WIDGETS_LIB
-    QMetaObject::invokeMethod(this, "cteateFSWatcher", Qt::QueuedConnection);
+    QMetaObject::invokeMethod(this, "createFSWatcher", Qt::QueuedConnection);
     //apply custom style hints before creating QApplication
     //using Fusion style should avoid problems with some styles like qtcurve
     QApplication::setStyle(new Qt5CTProxyStyle("Fusion"));
@@ -142,7 +142,7 @@ void Qt5CTPlatformTheme::applySettings()
 }
 
 #ifdef QT_WIDGETS_LIB
-void Qt5CTPlatformTheme::cteateFSWatcher()
+void Qt5CTPlatformTheme::createFSWatcher()
 {
     QFileSystemWatcher *watcher = new QFileSystemWatcher(this);
     watcher->addPath(Qt5CT::configPath());

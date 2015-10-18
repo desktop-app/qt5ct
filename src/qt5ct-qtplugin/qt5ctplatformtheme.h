@@ -65,7 +65,7 @@ public:
 private slots:
     void applySettings();
 #ifdef QT_WIDGETS_LIB
-    void cteateFSWatcher();
+    void createFSWatcher();
     void updateSettings();
 #endif
 
