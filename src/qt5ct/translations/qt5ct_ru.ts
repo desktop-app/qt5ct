@@ -339,7 +339,7 @@
     </message>
     <message>
         <location filename="../interfacepage.ui" line="209"/>
-        <source>Activate item on signle-click</source>
+        <source>Activate item on single-click</source>
         <translation>Активировать элементы списка одним щелчком</translation>
     </message>
 </context>
