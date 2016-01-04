@@ -260,82 +260,87 @@
 <context>
     <name>InterfacePage</name>
     <message>
-        <location filename="../interfacepage.ui" line="22"/>
+        <location filename="../interfacepage.ui" line="35"/>
         <source>Double click interval:</source>
         <translation>Interval pro dvojité klepnutí:</translation>
     </message>
     <message>
-        <location filename="../interfacepage.ui" line="29"/>
+        <location filename="../interfacepage.ui" line="42"/>
         <source>Cursor flash time:</source>
         <translation>Doba blikání ukazovátka:</translation>
     </message>
     <message>
-        <location filename="../interfacepage.ui" line="36"/>
+        <location filename="../interfacepage.ui" line="49"/>
         <source>ComboBox effect:</source>
         <translation>Efekt rozbalovacího seznamu:</translation>
     </message>
     <message>
-        <location filename="../interfacepage.ui" line="43"/>
+        <location filename="../interfacepage.ui" line="56"/>
         <source>ToolTip effect:</source>
         <translation>Efekt bublinové nápovědy:</translation>
     </message>
     <message>
-        <location filename="../interfacepage.ui" line="50"/>
+        <location filename="../interfacepage.ui" line="63"/>
         <source>ToolBox effect:</source>
         <translation>Efekt nástrojové sady:</translation>
     </message>
     <message>
-        <location filename="../interfacepage.ui" line="57"/>
-        <location filename="../interfacepage.ui" line="67"/>
+        <location filename="../interfacepage.ui" line="70"/>
+        <location filename="../interfacepage.ui" line="80"/>
         <source> ms</source>
         <translation> ms</translation>
     </message>
     <message>
-        <location filename="../interfacepage.ui" line="81"/>
-        <location filename="../interfacepage.ui" line="98"/>
-        <location filename="../interfacepage.ui" line="120"/>
-        <location filename="../interfacepage.ui" line="144"/>
+        <location filename="../interfacepage.ui" line="94"/>
+        <location filename="../interfacepage.ui" line="111"/>
+        <location filename="../interfacepage.ui" line="133"/>
+        <location filename="../interfacepage.ui" line="157"/>
         <source>Disable</source>
         <translation>Zakázat</translation>
     </message>
     <message>
-        <location filename="../interfacepage.ui" line="86"/>
-        <location filename="../interfacepage.ui" line="103"/>
-        <location filename="../interfacepage.ui" line="125"/>
-        <location filename="../interfacepage.ui" line="149"/>
+        <location filename="../interfacepage.ui" line="99"/>
+        <location filename="../interfacepage.ui" line="116"/>
+        <location filename="../interfacepage.ui" line="138"/>
+        <location filename="../interfacepage.ui" line="162"/>
         <source>Animate</source>
         <translation>Animovat</translation>
     </message>
     <message>
-        <location filename="../interfacepage.ui" line="108"/>
-        <location filename="../interfacepage.ui" line="154"/>
+        <location filename="../interfacepage.ui" line="121"/>
+        <location filename="../interfacepage.ui" line="167"/>
         <source>Fade</source>
         <translation>Blednutí</translation>
     </message>
     <message>
-        <location filename="../interfacepage.ui" line="133"/>
+        <location filename="../interfacepage.ui" line="146"/>
         <source>Menu effect:</source>
         <translation>Efekt nabídky:</translation>
     </message>
     <message>
-        <location filename="../interfacepage.ui" line="162"/>
+        <location filename="../interfacepage.ui" line="175"/>
         <source>Enable gui effects</source>
         <translation>Povolit efekty rozhraní</translation>
     </message>
     <message>
-        <location filename="../interfacepage.ui" line="169"/>
+        <location filename="../interfacepage.ui" line="182"/>
         <source>Dialog buttons layout:</source>
         <translation>Rozvržení tlačítek dialogu:</translation>
     </message>
     <message>
-        <location filename="../interfacepage.ui" line="179"/>
+        <location filename="../interfacepage.ui" line="192"/>
         <source>Menus have icons</source>
         <translation>Nabídky mají ikony</translation>
     </message>
     <message>
-        <location filename="../interfacepage.ui" line="186"/>
+        <location filename="../interfacepage.ui" line="199"/>
         <source>Dialog buttons have icons</source>
         <translation>Dialogová tlačítka mají ikony</translation>
+    </message>
+    <message>
+        <location filename="../interfacepage.ui" line="209"/>
+        <source>Activate item on signle-click</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
