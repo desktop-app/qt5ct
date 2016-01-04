@@ -13,6 +13,9 @@ Name[de]=Qt5-Einstellungen
 Comment[el]=Εργαλείο διαμόρφωσης της Qt5
 Name[el]=Ρυθμίσεις Qt5
 
+Comment[es_ES]=Herramienta de configuración de QT5
+Name[es_ES]=Ajustes QT5
+
 Comment[ru]=Программа для настройки Qt5
 Name[ru]=Настройки Qt5
 
@@ -28,8 +31,8 @@ Name[nl_NL]=Qt5-instellingen
 Comment[pl]=Narzędzie konfiguracji Qt5
 Name[pl]=Ustawienia Qt5
 
-Comment[es_ES]=Herramienta de configuración de QT5
-Name[es_ES]=Ajustes QT5
+Comment[sk]=Qt5 konfiguračný nástroj
+Name[sk]=Qt5 nastavenia
 
 Comment[zh_CN]=Qt5 配置工具
 Name[zh_CN]=Qt5 设置

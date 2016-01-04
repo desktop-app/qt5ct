@@ -1,139 +1,139 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="sk_SK">
+<TS version="2.1" language="sk">
 <context>
     <name>AppearancePage</name>
     <message>
         <location filename="../appearancepage.ui" line="20"/>
         <source>Style:</source>
-        <translation type="unfinished"></translation>
+        <translation>Štýl:</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="27"/>
         <source>Preview</source>
-        <translation type="unfinished"></translation>
+        <translation>Náhľad</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="34"/>
         <source>Active palette</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktívna paleta</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="39"/>
         <source>Inactive palette</source>
-        <translation type="unfinished"></translation>
+        <translation>Neaktívna paleta</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="44"/>
         <source>Disabled palette</source>
-        <translation type="unfinished"></translation>
+        <translation>Zakázaná paleta</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="91"/>
         <source>Palette</source>
-        <translation type="unfinished"></translation>
+        <translation>Paleta</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="102"/>
         <source>Default</source>
-        <translation type="unfinished"></translation>
+        <translation>Výchozia</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="112"/>
         <source>Custom</source>
-        <translation type="unfinished"></translation>
+        <translation>Vlastná</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="139"/>
         <source>Color scheme:</source>
-        <translation type="unfinished"></translation>
+        <translation>Farebná schéma:</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="162"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation>...</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="64"/>
         <source>Create</source>
-        <translation type="unfinished"></translation>
+        <translation>Vytvoriť</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="65"/>
         <source>Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Upraviť</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="66"/>
         <source>Create a Copy</source>
-        <translation type="unfinished"></translation>
+        <translation>Vytvoriť kópiu</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="67"/>
         <source>Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Premenovať</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="69"/>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Odstrániť</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="116"/>
         <location filename="../appearancepage.cpp" line="189"/>
         <location filename="../appearancepage.cpp" line="224"/>
         <source>Enter Color Scheme Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Zadajte názov farebnej schémy</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="116"/>
         <location filename="../appearancepage.cpp" line="189"/>
         <location filename="../appearancepage.cpp" line="224"/>
         <source>File name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Názov súboru:</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="125"/>
         <location filename="../appearancepage.cpp" line="200"/>
         <location filename="../appearancepage.cpp" line="234"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Chyba</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="125"/>
         <location filename="../appearancepage.cpp" line="200"/>
         <location filename="../appearancepage.cpp" line="234"/>
         <source>The color scheme &quot;%1&quot; already exists</source>
-        <translation type="unfinished"></translation>
+        <translation>Farebná schéma &quot;%1&quot; už existuje</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="143"/>
         <location filename="../appearancepage.cpp" line="165"/>
         <location filename="../appearancepage.cpp" line="219"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>Varovanie</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="143"/>
         <location filename="../appearancepage.cpp" line="165"/>
         <location filename="../appearancepage.cpp" line="219"/>
         <source>The color scheme &quot;%1&quot; is read only</source>
-        <translation type="unfinished"></translation>
+        <translation>Farebná schéma &quot;%1&quot; je len na čítanie</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="170"/>
         <source>Confirm Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Potvrdiť odstránenie</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="171"/>
         <source>Are you sure you want to remove color scheme &quot;%1&quot;?</source>
-        <translation type="unfinished"></translation>
+        <translation>Ste si istý, že chcete odstrániť farebnú schému &quot;%1&quot;?</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="191"/>
         <source>%1 (copy)</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 (kópia)</translation>
     </message>
 </context>
 <context>
@@ -142,78 +142,78 @@
         <location filename="../fontconfigdialog.ui" line="14"/>
         <location filename="../fontconfigdialog.cpp" line="73"/>
         <source>Font Configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>Nastavenie písma</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="29"/>
         <source>Disable automatic hinting for bold fonts</source>
-        <translation type="unfinished"></translation>
+        <translation>Zakázať automatický hinting hrubých písiem</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="36"/>
         <source>LCD filter:</source>
-        <translation type="unfinished"></translation>
+        <translation>LCD filter:</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="43"/>
         <source>Automatic hinting</source>
-        <translation type="unfinished"></translation>
+        <translation>Automatický hinting</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="50"/>
         <source>Hinting</source>
-        <translation type="unfinished"></translation>
+        <translation>Hinting</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="67"/>
         <source>Font resolution:</source>
-        <translation type="unfinished"></translation>
+        <translation>Rozlíšenie písma:</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="110"/>
         <source> dpi</source>
-        <translation type="unfinished"></translation>
+        <translation> dpi</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="83"/>
         <source>Subpixel geometry:</source>
-        <translation type="unfinished"></translation>
+        <translation>Geometria subpixelov:</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="90"/>
         <source>Antialiasing</source>
-        <translation type="unfinished"></translation>
+        <translation>Vyhladzovanie</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="97"/>
         <source>Hinting style:</source>
-        <translation type="unfinished"></translation>
+        <translation>Štýl hintingu:</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.cpp" line="42"/>
         <location filename="../fontconfigdialog.cpp" line="47"/>
         <source>None</source>
-        <translation type="unfinished"></translation>
+        <translation>Žiadny</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.cpp" line="43"/>
         <source>Slight</source>
-        <translation type="unfinished"></translation>
+        <translation>Slabý</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.cpp" line="44"/>
         <source>Medium</source>
-        <translation type="unfinished"></translation>
+        <translation>Stredný</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.cpp" line="45"/>
         <source>Full</source>
-        <translation type="unfinished"></translation>
+        <translation>Plný</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.cpp" line="74"/>
         <source>&lt;i&gt;%1&lt;/i&gt; already exists. Do you want to replace it?</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;i&gt;%1&lt;/i&gt; už existuje. Chcete ho nahradiť?</translation>
     </message>
 </context>
 <context>
@@ -224,37 +224,37 @@
         <location filename="../fontspage.ui" line="80"/>
         <location filename="../fontspage.ui" line="87"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation>...</translation>
     </message>
     <message>
         <location filename="../fontspage.ui" line="57"/>
         <source>General:</source>
-        <translation type="unfinished"></translation>
+        <translation>Všeobecné:</translation>
     </message>
     <message>
         <location filename="../fontspage.ui" line="94"/>
         <source>Fixed width:</source>
-        <translation type="unfinished"></translation>
+        <translation>S pevnou šírkou:</translation>
     </message>
     <message>
         <location filename="../fontspage.ui" line="119"/>
         <source>Create  fonts.conf</source>
-        <translation type="unfinished"></translation>
+        <translation>Vytvoriť fonts.conf</translation>
     </message>
     <message>
         <location filename="../fontspage.ui" line="126"/>
         <source>Remove fonts.conf</source>
-        <translation type="unfinished"></translation>
+        <translation>Odstrániť fonts.conf</translation>
     </message>
     <message>
         <location filename="../fontspage.cpp" line="111"/>
         <source>Remove Font Configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>Odstrániť nastavenie písma</translation>
     </message>
     <message>
         <location filename="../fontspage.cpp" line="112"/>
         <source>Are you sure you want to delete &lt;i&gt;%1&lt;/i&gt;?</source>
-        <translation type="unfinished"></translation>
+        <translation>Naozaj chcete vymazať &lt;i&gt;%1&lt;/i&gt;?</translation>
     </message>
 </context>
 <context>
@@ -262,33 +262,33 @@
     <message>
         <location filename="../interfacepage.ui" line="35"/>
         <source>Double click interval:</source>
-        <translation type="unfinished"></translation>
+        <translation>Interval pre dvojklik:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="42"/>
         <source>Cursor flash time:</source>
-        <translation type="unfinished"></translation>
+        <translation>Doba blikania kurzoru:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="49"/>
         <source>ComboBox effect:</source>
-        <translation type="unfinished"></translation>
+        <translation>Efekt rozbaľovacieho zoznamu:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="56"/>
         <source>ToolTip effect:</source>
-        <translation type="unfinished"></translation>
+        <translation>Efekt tooltipu:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="63"/>
         <source>ToolBox effect:</source>
-        <translation type="unfinished"></translation>
+        <translation>Efekt toolboxu:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="70"/>
         <location filename="../interfacepage.ui" line="80"/>
         <source> ms</source>
-        <translation type="unfinished"></translation>
+        <translation> ms</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="94"/>
@@ -296,7 +296,7 @@
         <location filename="../interfacepage.ui" line="133"/>
         <location filename="../interfacepage.ui" line="157"/>
         <source>Disable</source>
-        <translation type="unfinished"></translation>
+        <translation>Zakázať</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="99"/>
@@ -304,38 +304,38 @@
         <location filename="../interfacepage.ui" line="138"/>
         <location filename="../interfacepage.ui" line="162"/>
         <source>Animate</source>
-        <translation type="unfinished"></translation>
+        <translation>Animovať</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="121"/>
         <location filename="../interfacepage.ui" line="167"/>
         <source>Fade</source>
-        <translation type="unfinished"></translation>
+        <translation>Blednutie</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="146"/>
         <source>Menu effect:</source>
-        <translation type="unfinished"></translation>
+        <translation>Efekt menu:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="175"/>
         <source>Enable gui effects</source>
-        <translation type="unfinished"></translation>
+        <translation>Povoliť efekty rozhrania</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="182"/>
         <source>Dialog buttons layout:</source>
-        <translation type="unfinished"></translation>
+        <translation>Rozmiestnenie tlačítok dialógu:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="192"/>
         <source>Menus have icons</source>
-        <translation type="unfinished"></translation>
+        <translation>Menu majú ikonky</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="199"/>
         <source>Dialog buttons have icons</source>
-        <translation type="unfinished"></translation>
+        <translation>Dialógové tlačítka majú ikonky</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="209"/>
@@ -348,37 +348,37 @@
     <message>
         <location filename="../mainwindow.ui" line="14"/>
         <source>Qt5 Configuration Tool</source>
-        <translation type="unfinished"></translation>
+        <translation>Qt5 konfiguračný nástroj</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="45"/>
         <source>Appearance</source>
-        <translation type="unfinished"></translation>
+        <translation>Vzhľad</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="46"/>
         <source>Fonts</source>
-        <translation type="unfinished"></translation>
+        <translation>Písma</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="47"/>
         <source>Icon Theme</source>
-        <translation type="unfinished"></translation>
+        <translation>Téma ikon</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="48"/>
         <source>Interface</source>
-        <translation type="unfinished"></translation>
+        <translation>Rozhranie</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="50"/>
         <source>Style Sheets</source>
-        <translation type="unfinished"></translation>
+        <translation>Štýly</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="58"/>
         <source>Version: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Verzia: %1</translation>
     </message>
 </context>
 <context>
@@ -386,142 +386,142 @@
     <message>
         <location filename="../paletteeditdialog.ui" line="14"/>
         <source>Palette Editor</source>
-        <translation type="unfinished"></translation>
+        <translation>Editor palety</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.ui" line="79"/>
         <source>Reset palette</source>
-        <translation type="unfinished"></translation>
+        <translation>Nastaviť paletu znovu</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.ui" line="29"/>
         <source>Build inactive palette</source>
-        <translation type="unfinished"></translation>
+        <translation>Vytvoriť nečinnú paletu</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.ui" line="36"/>
         <source>Build disabled palette</source>
-        <translation type="unfinished"></translation>
+        <translation>Vytvoriť zakázanú paletu</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="49"/>
         <source>Active</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktívna</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="49"/>
         <source>Inactive</source>
-        <translation type="unfinished"></translation>
+        <translation>Neaktívna</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="49"/>
         <source>Disabled</source>
-        <translation type="unfinished"></translation>
+        <translation>Zakázaná</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Dark</source>
-        <translation type="unfinished"></translation>
+        <translation>Tmavé</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Window text</source>
-        <translation type="unfinished"></translation>
+        <translation>Text okna</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Button background</source>
-        <translation type="unfinished"></translation>
+        <translation>Pozadie tlačítka</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Bright</source>
-        <translation type="unfinished"></translation>
+        <translation>Svetlé</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Less bright</source>
-        <translation type="unfinished"></translation>
+        <translation>Menej svetlé</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Less dark</source>
-        <translation type="unfinished"></translation>
+        <translation>Tmavé</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Okno</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Shadow</source>
-        <translation type="unfinished"></translation>
+        <translation>Tieň</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Bright text</source>
-        <translation type="unfinished"></translation>
+        <translation>Svetlý text</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Button text</source>
-        <translation type="unfinished"></translation>
+        <translation>Text tlačítka</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Normal text</source>
-        <translation type="unfinished"></translation>
+        <translation>Normálny text</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Normal background</source>
-        <translation type="unfinished"></translation>
+        <translation>Normálne pozadie</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="93"/>
         <source>Highlight</source>
-        <translation type="unfinished"></translation>
+        <translation>Zvýraznenie</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="93"/>
         <source>Highlighted text</source>
-        <translation type="unfinished"></translation>
+        <translation>Zvýraznený text</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="93"/>
         <source>Visited link</source>
-        <translation type="unfinished"></translation>
+        <translation>Navštívený odkaz</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="94"/>
         <source>Default</source>
-        <translation type="unfinished"></translation>
+        <translation>Výchozia</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="94"/>
         <source>Tooltip background</source>
-        <translation type="unfinished"></translation>
+        <translation>Pozadie tooltipu</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="94"/>
         <source>Tooltip text</source>
-        <translation type="unfinished"></translation>
+        <translation>Text tooltipu</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="93"/>
         <source>Link</source>
-        <translation type="unfinished"></translation>
+        <translation>Odkaz</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="94"/>
         <source>Alternate background</source>
-        <translation type="unfinished"></translation>
+        <translation>Striedajúce pozadie</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="106"/>
         <source>Select Color</source>
-        <translation type="unfinished"></translation>
+        <translation>Vybrať farbu</translation>
     </message>
 </context>
 <context>
@@ -529,32 +529,32 @@
     <message>
         <location filename="../previewform.ui" line="14"/>
         <source>Preview Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Okno náhľadu</translation>
     </message>
     <message>
         <location filename="../previewform.ui" line="24"/>
         <source>Tab 1</source>
-        <translation type="unfinished"></translation>
+        <translation>Karta 1</translation>
     </message>
     <message>
         <location filename="../previewform.ui" line="30"/>
         <source>PushButton</source>
-        <translation type="unfinished"></translation>
+        <translation>Tlačítko</translation>
     </message>
     <message>
         <location filename="../previewform.ui" line="51"/>
         <source>Tab 2</source>
-        <translation type="unfinished"></translation>
+        <translation>Karta 2</translation>
     </message>
     <message>
         <location filename="../previewform.ui" line="57"/>
         <source>RadioButton</source>
-        <translation type="unfinished"></translation>
+        <translation>Prepínač</translation>
     </message>
     <message>
         <location filename="../previewform.ui" line="64"/>
         <source>CheckBox</source>
-        <translation type="unfinished"></translation>
+        <translation>Zaškrtávacie políčko</translation>
     </message>
 </context>
 <context>
@@ -562,12 +562,12 @@
     <message>
         <location filename="../qsseditordialog.cpp" line="45"/>
         <source>%1 - Style Sheet Editor</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 - Editor štýlov</translation>
     </message>
     <message>
         <location filename="../qsseditordialog.ui" line="14"/>
         <source>Style Sheet Editor</source>
-        <translation type="unfinished"></translation>
+        <translation>Editor štýlu</translation>
     </message>
 </context>
 <context>
@@ -575,77 +575,77 @@
     <message>
         <location filename="../qsspage.ui" line="23"/>
         <source>Create</source>
-        <translation type="unfinished"></translation>
+        <translation>Vytvoriť</translation>
     </message>
     <message>
         <location filename="../qsspage.ui" line="66"/>
         <location filename="../qsspage.cpp" line="51"/>
         <source>Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Upraviť</translation>
     </message>
     <message>
         <location filename="../qsspage.ui" line="76"/>
         <location filename="../qsspage.cpp" line="52"/>
         <source>Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Premenovať</translation>
     </message>
     <message>
         <location filename="../qsspage.ui" line="33"/>
         <location filename="../qsspage.cpp" line="54"/>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Odstrániť</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="97"/>
         <source>File name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Názov súboru:</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="97"/>
         <source>Enter Style Sheet Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Zadajte názov štýlu</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="108"/>
         <location filename="../qsspage.cpp" line="200"/>
         <location filename="../qsspage.cpp" line="211"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Chyba</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="108"/>
         <source>The file &quot;%1&quot; already exists</source>
-        <translation type="unfinished"></translation>
+        <translation>Súbor &quot;%1&quot; už existuje</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="142"/>
         <source>Confirm Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Potvrdiť odstránenie</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="143"/>
         <source>Are you sure you want to remove style sheet &quot;%1&quot;?</source>
-        <translation type="unfinished"></translation>
+        <translation>Ste si istý, že chcete odstrániť štýl &quot;%1&quot;?</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="193"/>
         <source>Rename Style Sheet</source>
-        <translation type="unfinished"></translation>
+        <translation>Premenovať štýl</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="193"/>
         <source>Style sheet name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Názov štýlu:</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="200"/>
         <source>The style sheet &quot;%1&quot; already exists</source>
-        <translation type="unfinished"></translation>
+        <translation>Štýl &quot;%1&quot; už existuje</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="211"/>
         <source>Unable to rename file</source>
-        <translation type="unfinished"></translation>
+        <translation>Nedá sa premenovať súbor</translation>
     </message>
 </context>
 </TS>
