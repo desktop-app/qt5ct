@@ -206,7 +206,7 @@
      <item row="2" column="0" colspan="2">
       <widget class="QCheckBox" name="singleClickCheckBox">
        <property name="text">
-        <string>Activate item on signle-click</string>
+        <string>Activate item on single-click</string>
        </property>
        <property name="tristate">
         <bool>true</bool>
