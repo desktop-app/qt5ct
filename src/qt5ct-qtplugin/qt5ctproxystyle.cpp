@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2014-2015, Ilya Kotov <forkotov02@hotmail.ru>
+ * Copyright (c) 2014-2016, Ilya Kotov <forkotov02@hotmail.ru>
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are
@@ -37,6 +37,7 @@ Qt5CTProxyStyle::Qt5CTProxyStyle(const QString &key) :
 {
     QSettings settings(Qt5CT::configFile(), QSettings::IniFormat);
     m_dialogButtonsHaveIcons = settings.value("Interface/dialog_buttons_have_icons", Qt::PartiallyChecked).toInt();
+    m_activateItemOnSingleClick = settings.value("Interface/activate_item_on_single_click", Qt::PartiallyChecked).toInt();
 }
 
 Qt5CTProxyStyle::~Qt5CTProxyStyle()
@@ -51,6 +52,13 @@ int Qt5CTProxyStyle::styleHint(QStyle::StyleHint hint, const QStyleOption *optio
         if(m_dialogButtonsHaveIcons == Qt::Unchecked)
             return 0;
         else if(m_dialogButtonsHaveIcons == Qt::Checked)
+            return 1;
+    }
+    else if(hint == QStyle::QStyle::SH_ItemView_ActivateItemOnSingleClick)
+    {
+        if(m_activateItemOnSingleClick == Qt::Unchecked)
+            return 0;
+        else if(m_activateItemOnSingleClick == Qt::Checked)
             return 1;
     }
     return QProxyStyle::styleHint(hint, option, widget, returnData);
