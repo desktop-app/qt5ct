@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="ru">
+<TS version="2.0" language="ru">
 <context>
     <name>AppearancePage</name>
     <message>
@@ -340,7 +340,7 @@
     <message>
         <location filename="../interfacepage.ui" line="209"/>
         <source>Activate item on signle-click</source>
-        <translation type="unfinished"></translation>
+        <translation>Активировать элементы списка одним щелчком</translation>
     </message>
 </context>
 <context>
