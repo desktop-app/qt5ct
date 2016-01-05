@@ -340,7 +340,7 @@
     <message>
         <location filename="../interfacepage.ui" line="209"/>
         <source>Activate item on single-click</source>
-        <translation type="unfinished"></translation>
+        <translation>Item activeren met enkele klik</translation>
     </message>
 </context>
 <context>
