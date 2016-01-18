@@ -21,6 +21,11 @@ make
 make install (under root)
 
 Add line 'export QT_QPA_PLATFORMTHEME=qt5ct' to ~/.profile and re-login.
+Alternatively, execute the following command (under root):
+
+export "QT_QPA_PLATFORMTHEME=qt5ct" > /etc/X11/Xsession.d/101-qt5ct
+
+and restart X11 server.
 
 Extra build options (for advanced users only):
 qmake DISABLE_WIDGETS=1 - compiles platform plugin without QtWidgets (useful only for QML applications)
