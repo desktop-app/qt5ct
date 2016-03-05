@@ -1,139 +1,137 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="he_IL">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="he" version="2.1">
 <context>
     <name>AppearancePage</name>
     <message>
         <location filename="../appearancepage.ui" line="20"/>
         <source>Style:</source>
-        <translation type="unfinished"></translation>
+        <translation>סגנון:</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="27"/>
         <source>Preview</source>
-        <translation type="unfinished"></translation>
+        <translation>תצוגה מקדימה</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="34"/>
         <source>Active palette</source>
-        <translation type="unfinished"></translation>
+        <translation>לוח צבעים פעיל</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="39"/>
         <source>Inactive palette</source>
-        <translation type="unfinished"></translation>
+        <translation>לוח צבעים לא פעיל</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="44"/>
         <source>Disabled palette</source>
-        <translation type="unfinished"></translation>
+        <translation>לוח צבעים מנוטרל</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="91"/>
         <source>Palette</source>
-        <translation type="unfinished"></translation>
+        <translation>לוח צבעים</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="102"/>
         <source>Default</source>
-        <translation type="unfinished"></translation>
+        <translation>שגרתי</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="112"/>
         <source>Custom</source>
-        <translation type="unfinished"></translation>
+        <translation>מותאם</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="139"/>
         <source>Color scheme:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="162"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="64"/>
         <source>Create</source>
-        <translation type="unfinished"></translation>
+        <translation>צור</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="65"/>
         <source>Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>ערוך</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="66"/>
         <source>Create a Copy</source>
-        <translation type="unfinished"></translation>
+        <translation>צור העתק</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="67"/>
         <source>Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>שנה שם</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="69"/>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>הסר</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="116"/>
         <location filename="../appearancepage.cpp" line="189"/>
         <location filename="../appearancepage.cpp" line="224"/>
         <source>Enter Color Scheme Name</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="116"/>
         <location filename="../appearancepage.cpp" line="189"/>
         <location filename="../appearancepage.cpp" line="224"/>
         <source>File name:</source>
-        <translation type="unfinished"></translation>
+        <translation>שם קובץ:</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="125"/>
         <location filename="../appearancepage.cpp" line="200"/>
         <location filename="../appearancepage.cpp" line="234"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>שגיאה</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="125"/>
         <location filename="../appearancepage.cpp" line="200"/>
         <location filename="../appearancepage.cpp" line="234"/>
         <source>The color scheme &quot;%1&quot; already exists</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="143"/>
         <location filename="../appearancepage.cpp" line="165"/>
         <location filename="../appearancepage.cpp" line="219"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>אזהרה</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="143"/>
         <location filename="../appearancepage.cpp" line="165"/>
         <location filename="../appearancepage.cpp" line="219"/>
         <source>The color scheme &quot;%1&quot; is read only</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="170"/>
         <source>Confirm Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>אימות הסרה</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="171"/>
         <source>Are you sure you want to remove color scheme &quot;%1&quot;?</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="191"/>
         <source>%1 (copy)</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 (עותק)</translation>
     </message>
 </context>
 <context>
@@ -142,78 +140,78 @@
         <location filename="../fontconfigdialog.ui" line="14"/>
         <location filename="../fontconfigdialog.cpp" line="73"/>
         <source>Font Configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>תצורת גופן</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="29"/>
         <source>Disable automatic hinting for bold fonts</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="36"/>
         <source>LCD filter:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="43"/>
         <source>Automatic hinting</source>
-        <translation type="unfinished"></translation>
+        <translation>רמיזה אוטומטית</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="50"/>
         <source>Hinting</source>
-        <translation type="unfinished"></translation>
+        <translation>רמיזה</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="67"/>
         <source>Font resolution:</source>
-        <translation type="unfinished"></translation>
+        <translation>רזולוציית גופן:</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="110"/>
         <source> dpi</source>
-        <translation type="unfinished"></translation>
+        <translation> dpi</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="83"/>
         <source>Subpixel geometry:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="90"/>
         <source>Antialiasing</source>
-        <translation type="unfinished"></translation>
+        <translation>החלקת קצוות</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="97"/>
         <source>Hinting style:</source>
-        <translation type="unfinished"></translation>
+        <translation>סגנון רמיזה:</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.cpp" line="42"/>
         <location filename="../fontconfigdialog.cpp" line="47"/>
         <source>None</source>
-        <translation type="unfinished"></translation>
+        <translation>ללא</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.cpp" line="43"/>
         <source>Slight</source>
-        <translation type="unfinished"></translation>
+        <translation>מועט</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.cpp" line="44"/>
         <source>Medium</source>
-        <translation type="unfinished"></translation>
+        <translation>בינוני</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.cpp" line="45"/>
         <source>Full</source>
-        <translation type="unfinished"></translation>
+        <translation>מלא</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.cpp" line="74"/>
         <source>&lt;i&gt;%1&lt;/i&gt; already exists. Do you want to replace it?</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;i&gt;%1&lt;/i&gt; כבר קיים. האם ברצונך להחליפו?</translation>
     </message>
 </context>
 <context>
@@ -224,37 +222,37 @@
         <location filename="../fontspage.ui" line="80"/>
         <location filename="../fontspage.ui" line="87"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../fontspage.ui" line="57"/>
         <source>General:</source>
-        <translation type="unfinished"></translation>
+        <translation>כללי:</translation>
     </message>
     <message>
         <location filename="../fontspage.ui" line="94"/>
         <source>Fixed width:</source>
-        <translation type="unfinished"></translation>
+        <translation>רוחב מקובע:</translation>
     </message>
     <message>
         <location filename="../fontspage.ui" line="119"/>
         <source>Create  fonts.conf</source>
-        <translation type="unfinished"></translation>
+        <translation>צור  fonts.conf</translation>
     </message>
     <message>
         <location filename="../fontspage.ui" line="126"/>
         <source>Remove fonts.conf</source>
-        <translation type="unfinished"></translation>
+        <translation>הסר fonts.conf</translation>
     </message>
     <message>
         <location filename="../fontspage.cpp" line="111"/>
         <source>Remove Font Configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>הסר תצרת גופן</translation>
     </message>
     <message>
         <location filename="../fontspage.cpp" line="112"/>
         <source>Are you sure you want to delete &lt;i&gt;%1&lt;/i&gt;?</source>
-        <translation type="unfinished"></translation>
+        <translation>האם אתה בטוח כי ברצונך למחוק את &lt;i&gt;%1&lt;/i&gt;?</translation>
     </message>
 </context>
 <context>
@@ -262,33 +260,33 @@
     <message>
         <location filename="../interfacepage.ui" line="35"/>
         <source>Double click interval:</source>
-        <translation type="unfinished"></translation>
+        <translation>תדירות לחיצה כפולה:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="42"/>
         <source>Cursor flash time:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="49"/>
         <source>ComboBox effect:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="56"/>
         <source>ToolTip effect:</source>
-        <translation type="unfinished"></translation>
+        <translation>אפקט תיבה צצה:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="63"/>
         <source>ToolBox effect:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="70"/>
         <location filename="../interfacepage.ui" line="80"/>
         <source> ms</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="94"/>
@@ -296,7 +294,7 @@
         <location filename="../interfacepage.ui" line="133"/>
         <location filename="../interfacepage.ui" line="157"/>
         <source>Disable</source>
-        <translation type="unfinished"></translation>
+        <translation>נטרל</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="99"/>
@@ -304,43 +302,43 @@
         <location filename="../interfacepage.ui" line="138"/>
         <location filename="../interfacepage.ui" line="162"/>
         <source>Animate</source>
-        <translation type="unfinished"></translation>
+        <translation>הנפש</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="121"/>
         <location filename="../interfacepage.ui" line="167"/>
         <source>Fade</source>
-        <translation type="unfinished"></translation>
+        <translation>עמעם</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="146"/>
         <source>Menu effect:</source>
-        <translation type="unfinished"></translation>
+        <translation>אפקט תפריט:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="175"/>
         <source>Enable gui effects</source>
-        <translation type="unfinished"></translation>
+        <translation>אפשר אפקטי ממשק</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="182"/>
         <source>Dialog buttons layout:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="192"/>
         <source>Menus have icons</source>
-        <translation type="unfinished"></translation>
+        <translation>תפריטים בעלי סמלים</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="199"/>
         <source>Dialog buttons have icons</source>
-        <translation type="unfinished"></translation>
+        <translation>לחצני דו שיח בעלי סמלים</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="209"/>
         <source>Activate item on single-click</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -348,37 +346,37 @@
     <message>
         <location filename="../mainwindow.ui" line="14"/>
         <source>Qt5 Configuration Tool</source>
-        <translation type="unfinished"></translation>
+        <translation>כלי תצורה Qt5</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="45"/>
         <source>Appearance</source>
-        <translation type="unfinished"></translation>
+        <translation>הופעה</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="46"/>
         <source>Fonts</source>
-        <translation type="unfinished"></translation>
+        <translation>גופנים</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="47"/>
         <source>Icon Theme</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="48"/>
         <source>Interface</source>
-        <translation type="unfinished"></translation>
+        <translation>ממשק</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="50"/>
         <source>Style Sheets</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="58"/>
         <source>Version: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>גרסא: %1</translation>
     </message>
 </context>
 <context>
@@ -386,142 +384,142 @@
     <message>
         <location filename="../paletteeditdialog.ui" line="14"/>
         <source>Palette Editor</source>
-        <translation type="unfinished"></translation>
+        <translation>עורך לוח צבעים</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.ui" line="79"/>
         <source>Reset palette</source>
-        <translation type="unfinished"></translation>
+        <translation>אפס לוח צבעים</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.ui" line="29"/>
         <source>Build inactive palette</source>
-        <translation type="unfinished"></translation>
+        <translation>בנה לוח צבעים לא פעיל</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.ui" line="36"/>
         <source>Build disabled palette</source>
-        <translation type="unfinished"></translation>
+        <translation>בנה לוח צבעים מנוטרל</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="49"/>
         <source>Active</source>
-        <translation type="unfinished"></translation>
+        <translation>פעיל</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="49"/>
         <source>Inactive</source>
-        <translation type="unfinished"></translation>
+        <translation>לא פעיל</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="49"/>
         <source>Disabled</source>
-        <translation type="unfinished"></translation>
+        <translation>מנוטרל</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Dark</source>
-        <translation type="unfinished"></translation>
+        <translation>אפל</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Window text</source>
-        <translation type="unfinished"></translation>
+        <translation>טקסט חלון</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Button background</source>
-        <translation type="unfinished"></translation>
+        <translation>רקע לחצן</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Bright</source>
-        <translation type="unfinished"></translation>
+        <translation>בהיר</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Less bright</source>
-        <translation type="unfinished"></translation>
+        <translation>בהיר פחות</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Less dark</source>
-        <translation type="unfinished"></translation>
+        <translation>אפל פחות</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Window</source>
-        <translation type="unfinished"></translation>
+        <translation>חלון</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Shadow</source>
-        <translation type="unfinished"></translation>
+        <translation>צל</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Bright text</source>
-        <translation type="unfinished"></translation>
+        <translation>טקסט בהיר</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Button text</source>
-        <translation type="unfinished"></translation>
+        <translation>טקסט לחצן</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Normal text</source>
-        <translation type="unfinished"></translation>
+        <translation>טקסט רגיל</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Normal background</source>
-        <translation type="unfinished"></translation>
+        <translation>רקע רגיל</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="93"/>
         <source>Highlight</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="93"/>
         <source>Highlighted text</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="93"/>
         <source>Visited link</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="94"/>
         <source>Default</source>
-        <translation type="unfinished"></translation>
+        <translation>שגרתי</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="94"/>
         <source>Tooltip background</source>
-        <translation type="unfinished"></translation>
+        <translation>רקע תיבה צצה</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="94"/>
         <source>Tooltip text</source>
-        <translation type="unfinished"></translation>
+        <translation>טקסט תיבה צצה</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="93"/>
         <source>Link</source>
-        <translation type="unfinished"></translation>
+        <translation>קישור</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="94"/>
         <source>Alternate background</source>
-        <translation type="unfinished"></translation>
+        <translation>רקע חליפי</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="106"/>
         <source>Select Color</source>
-        <translation type="unfinished"></translation>
+        <translation>בחר צבע</translation>
     </message>
 </context>
 <context>
@@ -529,32 +527,32 @@
     <message>
         <location filename="../previewform.ui" line="14"/>
         <source>Preview Window</source>
-        <translation type="unfinished"></translation>
+        <translation>חלון תצוגה מקדימה</translation>
     </message>
     <message>
         <location filename="../previewform.ui" line="24"/>
         <source>Tab 1</source>
-        <translation type="unfinished"></translation>
+        <translation>כרטיסייה 1</translation>
     </message>
     <message>
         <location filename="../previewform.ui" line="30"/>
         <source>PushButton</source>
-        <translation type="unfinished"></translation>
+        <translation>לחצן דחיפה</translation>
     </message>
     <message>
         <location filename="../previewform.ui" line="51"/>
         <source>Tab 2</source>
-        <translation type="unfinished"></translation>
+        <translation>כרטיסייה 2</translation>
     </message>
     <message>
         <location filename="../previewform.ui" line="57"/>
         <source>RadioButton</source>
-        <translation type="unfinished"></translation>
+        <translation>לחצן רדיו</translation>
     </message>
     <message>
         <location filename="../previewform.ui" line="64"/>
         <source>CheckBox</source>
-        <translation type="unfinished"></translation>
+        <translation>תיבת סימון</translation>
     </message>
 </context>
 <context>
@@ -562,12 +560,12 @@
     <message>
         <location filename="../qsseditordialog.cpp" line="45"/>
         <source>%1 - Style Sheet Editor</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../qsseditordialog.ui" line="14"/>
         <source>Style Sheet Editor</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -575,77 +573,77 @@
     <message>
         <location filename="../qsspage.ui" line="23"/>
         <source>Create</source>
-        <translation type="unfinished"></translation>
+        <translation>צור</translation>
     </message>
     <message>
         <location filename="../qsspage.ui" line="66"/>
         <location filename="../qsspage.cpp" line="51"/>
         <source>Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>ערוך</translation>
     </message>
     <message>
         <location filename="../qsspage.ui" line="76"/>
         <location filename="../qsspage.cpp" line="52"/>
         <source>Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>שנה שם</translation>
     </message>
     <message>
         <location filename="../qsspage.ui" line="33"/>
         <location filename="../qsspage.cpp" line="54"/>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>הסר</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="97"/>
         <source>File name:</source>
-        <translation type="unfinished"></translation>
+        <translation>שם קובץ:</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="97"/>
         <source>Enter Style Sheet Name</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="108"/>
         <location filename="../qsspage.cpp" line="200"/>
         <location filename="../qsspage.cpp" line="211"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>שגיאה</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="108"/>
         <source>The file &quot;%1&quot; already exists</source>
-        <translation type="unfinished"></translation>
+        <translation>הקובץ &quot;%1&quot; כבר קיים</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="142"/>
         <source>Confirm Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>אימות הסרה</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="143"/>
         <source>Are you sure you want to remove style sheet &quot;%1&quot;?</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="193"/>
         <source>Rename Style Sheet</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="193"/>
         <source>Style sheet name:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="200"/>
         <source>The style sheet &quot;%1&quot; already exists</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="211"/>
         <source>Unable to rename file</source>
-        <translation type="unfinished"></translation>
+        <translation>לא מסוגל לשנות שם קובץ</translation>
     </message>
 </context>
 </TS>
