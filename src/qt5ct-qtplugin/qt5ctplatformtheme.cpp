@@ -121,7 +121,11 @@ void Qt5CTPlatformTheme::applySettings()
         else
             qApp->setPalette(qApp->style()->standardPalette());
 
-        qApp->setStyleSheet(m_userStyleSheet);
+        if(m_prevStyleSheet == qApp->styleSheet())
+            qApp->setStyleSheet(m_userStyleSheet);
+        else
+            qDebug("qt5ct: custom style sheet is disabled");
+        m_prevStyleSheet = m_userStyleSheet;
     }
 #endif
     QGuiApplication::setFont(m_generalFont); //apply font

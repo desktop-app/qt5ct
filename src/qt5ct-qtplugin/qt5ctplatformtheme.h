@@ -76,7 +76,7 @@ private:
 #endif
     QString loadStyleSheets(const QStringList &paths);
     QPalette loadColorScheme(const QString &filePath);
-    QString m_style, m_iconTheme, m_userStyleSheet;
+    QString m_style, m_iconTheme, m_userStyleSheet, m_prevStyleSheet;
     QPalette *m_customPalette;
     QFont m_generalFont, m_fixedFont;
     int m_doubleClickInterval;
