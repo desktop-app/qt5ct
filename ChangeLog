@@ -129,3 +129,10 @@ Version 0.21
 * updated Dutch (Netherlands) translation (Heimen Stoffels)
 * updated Czech translation (fri)
 * updated Chinese (Taiwan) translation (Jeff Huang)
+
+Version 0.22
+* disabled html mode in the qss editor
+* fixed issue with overriding stylesheets
+* added Hebrew translation (Genghis Khan)
+* updated Italian translation (Luigi Baldoni)
+* updated documentation
