@@ -52,6 +52,8 @@
 Qt5CTPlatformTheme::Qt5CTPlatformTheme()
 {
     m_customPalette = 0;
+    m_update = false;
+    m_usePalette = true;
     readSettings();
     QMetaObject::invokeMethod(this, "applySettings", Qt::QueuedConnection);
 #ifdef QT_WIDGETS_LIB
@@ -72,7 +74,7 @@ Qt5CTPlatformTheme::~Qt5CTPlatformTheme()
 
 const QPalette *Qt5CTPlatformTheme::palette(QPlatformTheme::Palette type) const
 {
-    if(m_customPalette)
+    if(m_customPalette && m_usePalette)
         return m_customPalette;
     return QPlatformTheme::palette(type);
 }
@@ -109,6 +111,17 @@ QVariant Qt5CTPlatformTheme::themeHint(QPlatformTheme::ThemeHint hint) const
 
 void Qt5CTPlatformTheme::applySettings()
 {
+    if(!m_update)
+    {
+        //do not override application palette
+        if(QCoreApplication::testAttribute(Qt::AA_SetPalette))
+        {
+            m_usePalette = false;
+            qDebug("qt5ct: palette support is disabled");
+        }
+        m_update = true;
+    }
+
 #ifdef QT_WIDGETS_LIB
     if(hasWidgets())
     {
@@ -116,11 +129,16 @@ void Qt5CTPlatformTheme::applySettings()
         QProxyStyle *proxyStyle = qobject_cast<QProxyStyle *>(qApp->style());
         proxyStyle ? proxyStyle->setBaseStyle(0) : qApp->setStyle(new Qt5CTProxyStyle(m_style));
         qApp->setFont(m_generalFont);
-        if(m_customPalette)
-            qApp->setPalette(*m_customPalette);
-        else
-            qApp->setPalette(qApp->style()->standardPalette());
 
+        if(m_usePalette)
+        {
+            if(m_customPalette)
+                qApp->setPalette(*m_customPalette);
+            else
+                qApp->setPalette(qApp->style()->standardPalette());
+        }
+
+        //do not override application style
         if(m_prevStyleSheet == qApp->styleSheet())
             qApp->setStyleSheet(m_userStyleSheet);
         else
@@ -130,7 +148,7 @@ void Qt5CTPlatformTheme::applySettings()
 #endif
     QGuiApplication::setFont(m_generalFont); //apply font
     QIcon::setThemeName(m_iconTheme); //apply icons
-    if(m_customPalette)
+    if(m_customPalette && m_usePalette)
         QGuiApplication::setPalette(*m_customPalette); //apply palette
 
 #ifdef QT_WIDGETS_LIB

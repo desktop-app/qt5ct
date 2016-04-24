@@ -83,6 +83,8 @@ private:
     int m_cursorFlashTime;
     int m_uiEffects;
     int m_buttonBoxLayout;
+    bool m_update;
+    bool m_usePalette;
 };
 
 #endif // QT5CTPLATFORMTHEME_H
