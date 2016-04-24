@@ -24,7 +24,7 @@ do
        qrc_file="${tr_dir}/translations.qrc"
 
 
-     /opt/qt55/bin/lupdate -no-obsolete -silent -extensions "cpp,ui" ${tr_dir}/../ -ts ${ts_files}
+     /opt/qt56/bin/lupdate -no-obsolete -silent -extensions "cpp,ui" ${tr_dir}/../ -ts ${ts_files}
 
 
 
