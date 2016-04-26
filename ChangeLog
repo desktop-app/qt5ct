@@ -132,7 +132,12 @@ Version 0.21
 
 Version 0.22
 * disabled html mode in the qss editor
-* fixed issue with overriding stylesheets
+* fixed issue with overriding style sheets
 * added Hebrew translation (Genghis Khan)
 * updated Italian translation (Luigi Baldoni)
 * updated documentation
+
+Version 0.23
+* added support for single line comments in the style sheets
+* fixed issue with overriding application palette
+* updated Bulgarian translation (Kiril Kirilov)
