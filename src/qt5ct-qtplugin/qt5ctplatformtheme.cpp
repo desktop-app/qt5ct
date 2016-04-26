@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2014-2015, Ilya Kotov <forkotov02@hotmail.ru>
+ * Copyright (c) 2014-2016, Ilya Kotov <forkotov02@hotmail.ru>
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are
@@ -35,6 +35,7 @@
 #include <QPalette>
 #include <QTimer>
 #include <QIcon>
+#include <QRegExp>
 #ifdef QT_WIDGETS_LIB
 #include <QStyle>
 #include <QApplication>
@@ -267,6 +268,9 @@ QString Qt5CTPlatformTheme::loadStyleSheets(const QStringList &paths)
         file.open(QIODevice::ReadOnly);
         content.append(file.readAll());
     }
+    QRegExp regExp("//.*(\\n|$)");
+    regExp.setMinimal(true);
+    content.remove(regExp);
     return content;
 }
 
