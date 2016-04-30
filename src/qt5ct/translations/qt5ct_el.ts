@@ -6,7 +6,7 @@
     <message>
         <location filename="../appearancepage.ui" line="20"/>
         <source>Style:</source>
-        <translation>Στιλ:</translation>
+        <translation>Ύφος:</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="27"/>
@@ -341,7 +341,7 @@
     <message>
         <location filename="../interfacepage.ui" line="209"/>
         <source>Activate item on single-click</source>
-        <translation type="unfinished"></translation>
+        <translation>Ενεργοποίηση του αντικειμένου με μονό κλικ</translation>
     </message>
 </context>
 <context>
