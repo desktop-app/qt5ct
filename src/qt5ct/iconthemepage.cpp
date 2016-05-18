@@ -158,6 +158,7 @@ QIcon IconThemePage::findIcon(const QString &themePath, int size, const QString 
     config.beginGroup("Icon Theme");
     QStringList dirs = config.value("Directories").toStringList();
     QStringList parents = config.value("Inherits").toStringList();
+    bool haveInherits = config.contains("Inherits");
     config.endGroup();
 
     foreach (QString dir, dirs)
@@ -189,6 +190,9 @@ QIcon IconThemePage::findIcon(const QString &themePath, int size, const QString 
         }
         config.endGroup();
     }
+
+    if (!haveInherits)
+        return QIcon();
 
     parents.append("hicolor"); //add fallback themes
     parents.append("gnome");
