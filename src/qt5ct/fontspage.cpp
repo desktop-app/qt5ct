@@ -52,6 +52,10 @@ FontsPage::FontsPage(QWidget *parent) :
     connect(mapper, SIGNAL(mapped(QWidget*)), SLOT(onFontChangeRequested(QWidget*)));
 
     readSettings();
+
+    //icons
+    m_ui->createFontsConfButton->setIcon(QIcon::fromTheme("document-new"));
+    m_ui->removeFontsConfButton->setIcon(QIcon::fromTheme("edit-delete"));
 }
 
 FontsPage::~FontsPage()

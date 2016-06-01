@@ -33,6 +33,7 @@
 #include <QInputDialog>
 #include <QMessageBox>
 #include <QMenu>
+#include <QIcon>
 #include "qt5ct.h"
 #include "appearancepage.h"
 #include "paletteeditdialog.h"
@@ -61,13 +62,16 @@ AppearancePage::AppearancePage(QWidget *parent) :
     w->move(10, 10);
 
     QMenu *menu = new QMenu(this);
-    menu->addAction(tr("Create"), this, SLOT(createColorScheme()));
+    menu->addAction(QIcon::fromTheme("list-add"), tr("Create"), this, SLOT(createColorScheme()));
     m_changeColorSchemeAction = menu->addAction(tr("Edit"), this, SLOT(changeColorScheme()));
     menu->addAction(tr("Create a Copy"), this, SLOT(copyColorScheme()));
     m_renameColorSchemeAction = menu->addAction(tr("Rename"), this, SLOT(renameColorScheme()));
     menu->addSeparator();
     m_removeColorSchemeAction = menu->addAction(tr("Remove"), this, SLOT(removeColorScheme()));
     m_ui->colorSchemeButton->setMenu(menu);
+
+    m_changeColorSchemeAction->setIcon(QIcon::fromTheme("accessories-text-editor"));
+    m_removeColorSchemeAction->setIcon(QIcon::fromTheme("list-remove"));
     connect(menu, SIGNAL(aboutToShow()), SLOT(updateActions()));
 
     readSettings();

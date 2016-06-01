@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2014-2015, Ilya Kotov <forkotov02@hotmail.ru>
+ * Copyright (c) 2014-2016, Ilya Kotov <forkotov02@hotmail.ru>
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are
@@ -48,12 +48,17 @@ QSSPage::QSSPage(QWidget *parent) :
     QDir("/").mkpath(Qt5CT::userStyleSheetPath());
 
     m_menu = new QMenu(this);
-    m_menu->addAction(tr("Edit"), this, SLOT(on_editButton_clicked()));
+    m_menu->addAction(QIcon::fromTheme("accessories-text-editor"), tr("Edit"), this, SLOT(on_editButton_clicked()));
     m_menu->addAction(tr("Rename"), this, SLOT(on_renameButton_clicked()));
     m_menu->addSeparator();
-    m_menu->addAction(tr("Remove"), this, SLOT(on_removeButton_clicked()));
+    m_menu->addAction(QIcon::fromTheme("edit-delete"), tr("Remove"), this, SLOT(on_removeButton_clicked()));
 
     readSettings();
+
+    //icons
+    m_ui->createButton->setIcon(QIcon::fromTheme("document-new"));
+    m_ui->editButton->setIcon(QIcon::fromTheme("accessories-text-editor"));
+    m_ui->removeButton->setIcon(QIcon::fromTheme("edit-delete"));
 }
 
 QSSPage::~QSSPage()
