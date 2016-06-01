@@ -141,3 +141,10 @@ Version 0.23
 * added support for single line comments in the style sheets
 * fixed issue with overriding application palette
 * updated Bulgarian translation (Kiril Kirilov)
+
+Version 0.24
+* added feature to preview color scheme on edit
+* fixed palette editor
+* fixed documentation
+* fixed infinite recursion in the icon theme parser (patch by Sergey A. Sukiyazov)
+* updated Greek translation (Dimitrios Glentadakis)
