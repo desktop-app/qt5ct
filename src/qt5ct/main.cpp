@@ -31,6 +31,8 @@
 #include <QLocale>
 #include "qt5ct.h"
 #include <QTranslator>
+#include <QMessageBox>
+#include <QProcessEnvironment>
 #include "mainwindow.h"
 
 int main(int argc, char **argv)
@@ -48,6 +50,27 @@ int main(int argc, char **argv)
 
     qDebug("Configuration path: %s", qPrintable(Qt5CT::configPath()));
     qDebug("Shared QSS path: %s", qPrintable(Qt5CT::sharedStyleSheetPath()));
+
+    //checking environment
+    QStringList errorMessages;
+    QProcessEnvironment env = QProcessEnvironment::systemEnvironment();
+
+    if(env.contains("QT_STYLE_OVERRIDE"))
+    {
+        errorMessages << app.translate("main", "Please remove the <b>QT_STYLE_OVERRIDE</b> environment variable");
+    }
+
+    if(env.value("QT_QPA_PLATFORMTHEME") != "qt5ct")
+    {
+        errorMessages << app.translate("main", "The <b>QT_QPA_PLATFORMTHEME</b> environment "
+                                               "variable is not set correctly");
+    }
+
+    if(!errorMessages.isEmpty())
+    {
+        QMessageBox::critical(0, app.translate("main", "Error"), errorMessages.join("<br><br>"));
+        return 0;
+    }
 
     MainWindow w;
     w.show();
