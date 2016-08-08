@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="de">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="de" version="2.1">
 <context>
     <name>AppearancePage</name>
     <message>
@@ -340,7 +338,7 @@
     <message>
         <location filename="../interfacepage.ui" line="209"/>
         <source>Activate item on single-click</source>
-        <translation type="unfinished"></translation>
+        <translation>Eintrag mit einem Einfachklick aktivieren</translation>
     </message>
 </context>
 <context>
@@ -653,17 +651,17 @@
     <message>
         <location filename="../main.cpp" line="60"/>
         <source>Please remove the &lt;b&gt;QT_STYLE_OVERRIDE&lt;/b&gt; environment variable</source>
-        <translation type="unfinished"></translation>
+        <translation>Bitte entfernen Sie die Umgebungsvariable &lt;b&gt;QT_STYLE_OVERRIDE&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="65"/>
         <source>The &lt;b&gt;QT_QPA_PLATFORMTHEME&lt;/b&gt; environment variable is not set correctly</source>
-        <translation type="unfinished"></translation>
+        <translation>Die Umgebungsvariable &lt;b&gt;QT_QPA_PLATFORMTHEME&lt;/b&gt; ist nicht korrekt festgelegt</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="71"/>
         <source>Error</source>
-        <translation type="unfinished">Fehler</translation>
+        <translation>Fehler</translation>
     </message>
 </context>
 </TS>
