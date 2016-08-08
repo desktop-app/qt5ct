@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="ru">
+<TS version="2.0" language="ru">
 <context>
     <name>AppearancePage</name>
     <message>
@@ -653,17 +653,17 @@
     <message>
         <location filename="../main.cpp" line="60"/>
         <source>Please remove the &lt;b&gt;QT_STYLE_OVERRIDE&lt;/b&gt; environment variable</source>
-        <translation type="unfinished"></translation>
+        <translation>Пожалуйста, удалите переменную среды &lt;b&gt;QT_STYLE_OVERRIDE&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="65"/>
         <source>The &lt;b&gt;QT_QPA_PLATFORMTHEME&lt;/b&gt; environment variable is not set correctly</source>
-        <translation type="unfinished"></translation>
+        <translation>Переменная среды  &lt;b&gt;QT_QPA_PLATFORMTHEME&lt;/b&gt; установлена неправильно</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="71"/>
         <source>Error</source>
-        <translation type="unfinished">Ошибка</translation>
+        <translation>Ошибка</translation>
     </message>
 </context>
 </TS>
