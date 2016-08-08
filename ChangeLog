@@ -149,3 +149,12 @@ Version 0.24
 * fixed documentation
 * fixed infinite recursion in the icon theme parser (patch by Sergey A. Sukiyazov)
 * updated Greek translation (Dimitrios Glentadakis)
+
+Version 0.25
+* added check for environment variables
+* added Frensh translation (Geiger David)
+* updated Slovak translation (Ján Ďanovský)
+* updated Russian translation
+* updated Czech translation (fri)
+* updated German translation (Ettore Atalan)
+* updated  Dutch (Netherlands) translation (Heimen Stoffels)
