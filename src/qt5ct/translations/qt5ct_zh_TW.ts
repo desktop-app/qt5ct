@@ -653,17 +653,17 @@
     <message>
         <location filename="../main.cpp" line="60"/>
         <source>Please remove the &lt;b&gt;QT_STYLE_OVERRIDE&lt;/b&gt; environment variable</source>
-        <translation type="unfinished"></translation>
+        <translation>請移除 &lt;b&gt;QT_STYLE_OVERRIDE&lt;/b&gt; 環境變數</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="65"/>
         <source>The &lt;b&gt;QT_QPA_PLATFORMTHEME&lt;/b&gt; environment variable is not set correctly</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;QT_QPA_PLATFORMTHEME&lt;/b&gt; 環境變數未正確設定</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="71"/>
         <source>Error</source>
-        <translation type="unfinished">錯誤</translation>
+        <translation>錯誤</translation>
     </message>
 </context>
 </TS>
