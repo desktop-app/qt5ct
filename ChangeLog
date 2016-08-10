@@ -151,7 +151,7 @@ Version 0.24
 * updated Greek translation (Dimitrios Glentadakis)
 
 Version 0.25
-* added check for environment variables
+* added environment variables verification
 * added Frensh translation (Geiger David)
 * updated Slovak translation (Ján Ďanovský)
 * updated Russian translation
