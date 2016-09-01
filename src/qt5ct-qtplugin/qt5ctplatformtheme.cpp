@@ -55,15 +55,18 @@ Qt5CTPlatformTheme::Qt5CTPlatformTheme()
     m_customPalette = 0;
     m_update = false;
     m_usePalette = true;
-    readSettings();
-    QMetaObject::invokeMethod(this, "applySettings", Qt::QueuedConnection);
+    if(QGuiApplication::desktopSettingsAware())
+    {
+        readSettings();
+        QMetaObject::invokeMethod(this, "applySettings", Qt::QueuedConnection);
 #ifdef QT_WIDGETS_LIB
-    QMetaObject::invokeMethod(this, "createFSWatcher", Qt::QueuedConnection);
-    //apply custom style hints before creating QApplication
-    //using Fusion style should avoid problems with some styles like qtcurve
-    QApplication::setStyle(new Qt5CTProxyStyle("Fusion"));
+        QMetaObject::invokeMethod(this, "createFSWatcher", Qt::QueuedConnection);
+        //apply custom style hints before creating QApplication
+        //using Fusion style should avoid problems with some styles like qtcurve
+        QApplication::setStyle(new Qt5CTProxyStyle("Fusion"));
 #endif
-    QGuiApplication::setFont(m_generalFont);
+        QGuiApplication::setFont(m_generalFont);
+    }
     qDebug("using qt5ct plugin");
 }
 
@@ -112,6 +115,9 @@ QVariant Qt5CTPlatformTheme::themeHint(QPlatformTheme::ThemeHint hint) const
 
 void Qt5CTPlatformTheme::applySettings()
 {
+    if(!QGuiApplication::desktopSettingsAware())
+        return;
+
     if(!m_update)
     {
         //do not override application palette
