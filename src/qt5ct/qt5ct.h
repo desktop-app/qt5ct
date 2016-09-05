@@ -30,7 +30,7 @@
 #define QT5CT_H
 
 #define QT5CT_VERSION_MAJOR 0
-#define QT5CT_VERSION_MINOR 26
+#define QT5CT_VERSION_MINOR 27
 
 #define QT5CT_TOSTRING(s) #s
 #define QT5CT_STRINGIFY(s)         QT5CT_TOSTRING(s)
