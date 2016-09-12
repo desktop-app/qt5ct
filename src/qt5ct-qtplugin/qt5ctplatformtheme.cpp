@@ -43,6 +43,7 @@
 #endif
 #include <QFile>
 #include <QFileSystemWatcher>
+#include <private/qdbustrayicon_p.h>
 
 #include <qt5ct/qt5ct.h>
 #include "qt5ctproxystyle.h"
@@ -55,6 +56,10 @@ Qt5CTPlatformTheme::Qt5CTPlatformTheme()
     m_customPalette = 0;
     m_update = false;
     m_usePalette = true;
+#if !defined(QT_NO_DBUS) && !defined(QT_NO_SYSTEMTRAYICON)
+    m_dbusTrayAvailable = false;
+    m_checkDBusTray = true;
+#endif
     if(QGuiApplication::desktopSettingsAware())
     {
         readSettings();
@@ -75,6 +80,20 @@ Qt5CTPlatformTheme::~Qt5CTPlatformTheme()
     if(m_customPalette)
         delete m_customPalette;
 }
+
+#if !defined(QT_NO_DBUS) && !defined(QT_NO_SYSTEMTRAYICON)
+QPlatformSystemTrayIcon *Qt5CTPlatformTheme::createPlatformSystemTrayIcon() const
+{
+    if(m_checkDBusTray)
+    {
+        QDBusMenuConnection conn;
+        m_dbusTrayAvailable = conn.isStatusNotifierHostRegistered();
+        m_checkDBusTray = false;
+        qDebug("D-Bus system tray: %s", m_dbusTrayAvailable ? "yes" : "no");
+    }
+    return (m_dbusTrayAvailable ? new QDBusTrayIcon() : 0);
+}
+#endif
 
 const QPalette *Qt5CTPlatformTheme::palette(QPlatformTheme::Palette type) const
 {

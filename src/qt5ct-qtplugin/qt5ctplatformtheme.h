@@ -35,6 +35,7 @@
 #include <QPalette>
 
 class QPalette;
+class QPlatformSystemTrayIcon;
 
 class Qt5CTPlatformTheme : public QObject, public QPlatformTheme
 {
@@ -51,6 +52,9 @@ public:
     //virtual void showPlatformMenuBar() {}
     //virtual bool usePlatformNativeDialog(DialogType type) const;
     //virtual QPlatformDialogHelper *createPlatformDialogHelper(DialogType type) const;
+#if !defined(QT_NO_DBUS) && !defined(QT_NO_SYSTEMTRAYICON)
+    virtual QPlatformSystemTrayIcon *createPlatformSystemTrayIcon() const;
+#endif
     virtual const QPalette *palette(Palette type = SystemPalette) const;
     virtual const QFont *font(Font type = SystemFont) const;
     virtual QVariant themeHint(ThemeHint hint) const;
@@ -85,6 +89,11 @@ private:
     int m_buttonBoxLayout;
     bool m_update;
     bool m_usePalette;
+#if !defined(QT_NO_DBUS) && !defined(QT_NO_SYSTEMTRAYICON)
+    mutable bool m_dbusTrayAvailable;
+    mutable bool m_checkDBusTray;
+#endif
+
 };
 
 #endif // QT5CTPLATFORMTHEME_H
