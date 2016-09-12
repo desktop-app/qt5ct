@@ -51,6 +51,8 @@
 #include "qt5ctproxystyle.h"
 #include "qt5ctplatformtheme.h"
 
+Q_LOGGING_CATEGORY(lqt5ct, "qt5ct")
+
 //QT_QPA_PLATFORMTHEME=qt5ct
 
 Qt5CTPlatformTheme::Qt5CTPlatformTheme()
@@ -74,7 +76,7 @@ Qt5CTPlatformTheme::Qt5CTPlatformTheme()
 #endif
         QGuiApplication::setFont(m_generalFont);
     }
-    qDebug("using qt5ct plugin");
+    qCDebug(lqt5ct) << "using qt5ct plugin";
 }
 
 Qt5CTPlatformTheme::~Qt5CTPlatformTheme()
@@ -91,7 +93,7 @@ QPlatformSystemTrayIcon *Qt5CTPlatformTheme::createPlatformSystemTrayIcon() cons
         QDBusMenuConnection conn;
         m_dbusTrayAvailable = conn.isStatusNotifierHostRegistered();
         m_checkDBusTray = false;
-        qDebug("D-Bus system tray: %s", m_dbusTrayAvailable ? "yes" : "no");
+        qCDebug(lqt5ct) << "D-Bus system tray:" << (m_dbusTrayAvailable ? "yes" : "no");
     }
     return (m_dbusTrayAvailable ? new QDBusTrayIcon() : 0);
 }

@@ -33,6 +33,7 @@
 #include <QObject>
 #include <QFont>
 #include <QPalette>
+#include <QLoggingCategory>
 
 class QPalette;
 class QPlatformSystemTrayIcon;
@@ -95,5 +96,7 @@ private:
 #endif
 
 };
+
+Q_DECLARE_LOGGING_CATEGORY(lqt5ct)
 
 #endif // QT5CTPLATFORMTHEME_H
