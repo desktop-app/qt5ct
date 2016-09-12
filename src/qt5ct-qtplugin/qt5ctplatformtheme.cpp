@@ -43,7 +43,9 @@
 #endif
 #include <QFile>
 #include <QFileSystemWatcher>
+#if !defined(QT_NO_DBUS) && !defined(QT_NO_SYSTEMTRAYICON)
 #include <private/qdbustrayicon_p.h>
+#endif
 
 #include <qt5ct/qt5ct.h>
 #include "qt5ctproxystyle.h"
