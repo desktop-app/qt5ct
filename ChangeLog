@@ -165,3 +165,8 @@ Version 0.26
 * fixed stellarium compatibility
 * updated French translation (Geiger David)
 * updated Greek translation (Dimitrios Glentadakis)
+
+Version 0.27
+* added D-Bus tray support
+* added feature to disable debug output
+* updated documentation
