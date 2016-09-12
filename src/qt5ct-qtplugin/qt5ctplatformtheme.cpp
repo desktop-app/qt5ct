@@ -29,7 +29,6 @@
 #include <QVariant>
 #include <QSettings>
 #include <QGuiApplication>
-#include <QDebug>
 #include <QScreen>
 #include <QFont>
 #include <QPalette>
@@ -147,7 +146,7 @@ void Qt5CTPlatformTheme::applySettings()
         if(QCoreApplication::testAttribute(Qt::AA_SetPalette))
         {
             m_usePalette = false;
-            qDebug("qt5ct: palette support is disabled");
+            qCDebug(lqt5ct) << "palette support is disabled";
         }
         m_update = true;
     }
@@ -172,7 +171,7 @@ void Qt5CTPlatformTheme::applySettings()
         if(m_prevStyleSheet == qApp->styleSheet())
             qApp->setStyleSheet(m_userStyleSheet);
         else
-            qDebug("qt5ct: custom style sheet is disabled");
+            qCDebug(lqt5ct) << "custom style sheet is disabled";
         m_prevStyleSheet = m_userStyleSheet;
     }
 #endif
@@ -208,7 +207,7 @@ void Qt5CTPlatformTheme::createFSWatcher()
 
 void Qt5CTPlatformTheme::updateSettings()
 {
-    qDebug("Qt5CTPlatformTheme: updating settings..");
+    qCDebug(lqt5ct) << "updating settings..";
     readSettings();
     applySettings();
 }
