@@ -31,8 +31,17 @@ Extra build options (for advanced users only):
 qmake DISABLE_WIDGETS=1 - compiles platform plugin without QtWidgets (useful for QML applications only)
 qmake PLUGINDIR=<custom path> - changes the install path of the platform plugin (libqt5ct.so)
 
+Debug Messages:
 
-Files and directories:
+By default, platform plugin prints debug information to stderr. To disable this behaviour, you should
+export the following environment variable:
+
+export QT_LOGGIN_RULES="qt5ct.debug=false"
+
+Another way is to change qtlogging.ini file. See Qt documentation for details:
+http://doc.qt.io/qt-5/qloggingcategory.html (paragraph "Configuring Categories")
+
+Files and Directories:
 
 qt5ct - Qt5 configuration tool
 libqt5ct.so - qt5ct platform plugin
