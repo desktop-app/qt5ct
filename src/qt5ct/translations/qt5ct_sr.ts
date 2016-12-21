@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="bg">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="sr" version="2.1">
 <context>
     <name>AppearancePage</name>
     <message>
@@ -11,42 +9,42 @@
     <message>
         <location filename="../appearancepage.ui" line="27"/>
         <source>Preview</source>
-        <translation>Преглед:</translation>
+        <translation>Преглед</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="34"/>
         <source>Active palette</source>
-        <translation>Активна палитра</translation>
+        <translation>Активна палета</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="39"/>
         <source>Inactive palette</source>
-        <translation>Неактивна палитра</translation>
+        <translation>Неактивна палета</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="44"/>
         <source>Disabled palette</source>
-        <translation>Изключена палитра</translation>
+        <translation>Искључена палета</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="91"/>
         <source>Palette</source>
-        <translation>Палитра</translation>
+        <translation>Палета</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="102"/>
         <source>Default</source>
-        <translation>По подразбиране</translation>
+        <translation>Подразумевано</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="112"/>
         <source>Custom</source>
-        <translation>Потребителски</translation>
+        <translation>Прилагођено</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="139"/>
         <source>Color scheme:</source>
-        <translation>Цветова схема:</translation>
+        <translation>Шема боја:</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="162"/>
@@ -56,41 +54,41 @@
     <message>
         <location filename="../appearancepage.cpp" line="65"/>
         <source>Create</source>
-        <translation>Създаване</translation>
+        <translation>Креирај</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="66"/>
         <source>Edit</source>
-        <translation>Редактиране</translation>
+        <translation>Измени</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="67"/>
         <source>Create a Copy</source>
-        <translation>Създаване на копие</translation>
+        <translation>Креирај копију</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="68"/>
         <source>Rename</source>
-        <translation>Преименуване</translation>
+        <translation>Преименуј</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="70"/>
         <source>Remove</source>
-        <translation>Премахване</translation>
+        <translation>Обриши</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="120"/>
         <location filename="../appearancepage.cpp" line="194"/>
         <location filename="../appearancepage.cpp" line="229"/>
         <source>Enter Color Scheme Name</source>
-        <translation>Въведете име на цветовата схема</translation>
+        <translation>Унеси име шеме боја</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="120"/>
         <location filename="../appearancepage.cpp" line="194"/>
         <location filename="../appearancepage.cpp" line="229"/>
         <source>File name:</source>
-        <translation>Име на файл:</translation>
+        <translation>Име фајла:</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="129"/>
@@ -104,36 +102,36 @@
         <location filename="../appearancepage.cpp" line="205"/>
         <location filename="../appearancepage.cpp" line="239"/>
         <source>The color scheme &quot;%1&quot; already exists</source>
-        <translation>Цветовата схема &quot;%1&quot; вече съществува</translation>
+        <translation>Шема боја &quot;%1&quot; већ постоји</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="147"/>
         <location filename="../appearancepage.cpp" line="170"/>
         <location filename="../appearancepage.cpp" line="224"/>
         <source>Warning</source>
-        <translation>Внимание</translation>
+        <translation>Упозорење</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="147"/>
         <location filename="../appearancepage.cpp" line="170"/>
         <location filename="../appearancepage.cpp" line="224"/>
         <source>The color scheme &quot;%1&quot; is read only</source>
-        <translation>Цветовата схема &quot;%1&quot; е само за четене</translation>
+        <translation>Шема боја је &quot;%1&quot; само за читање</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="175"/>
         <source>Confirm Remove</source>
-        <translation>Потвърждаване на премахването</translation>
+        <translation>Потврди брисање</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="176"/>
         <source>Are you sure you want to remove color scheme &quot;%1&quot;?</source>
-        <translation>Сигурен ли сте, че искате да премахнете цветова схема &quot;%1&quot;?</translation>
+        <translation>Да ли сте сигурни да желите брисање шеме боја &quot;%1&quot;?</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="196"/>
         <source>%1 (copy)</source>
-        <translation>%1 (копиране)</translation>
+        <translation>%1 (копирај)</translation>
     </message>
 </context>
 <context>
@@ -142,78 +140,78 @@
         <location filename="../fontconfigdialog.ui" line="14"/>
         <location filename="../fontconfigdialog.cpp" line="73"/>
         <source>Font Configuration</source>
-        <translation>Конфигурация на шрифтовете</translation>
+        <translation>Поставке фонта</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="29"/>
         <source>Disable automatic hinting for bold fonts</source>
-        <translation>Изключване на автоматичното подсказване за удебелените шрифтове</translation>
+        <translation>Искључи аутоматски наговештај за подебљане фонтове</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="36"/>
         <source>LCD filter:</source>
-        <translation>LCD филтър:</translation>
+        <translation>LCD филтер:</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="43"/>
         <source>Automatic hinting</source>
-        <translation>Автоматично подсказване</translation>
+        <translation>Аутоматски наговештај</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="50"/>
         <source>Hinting</source>
-        <translation>Подсказване</translation>
+        <translation>Наговештај</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="67"/>
         <source>Font resolution:</source>
-        <translation>Резолюция на шрифт:</translation>
+        <translation>Резолуција фонта:</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="110"/>
         <source> dpi</source>
-        <translation>точки на инч</translation>
+        <translation> dpi</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="83"/>
         <source>Subpixel geometry:</source>
-        <translation>Подпикселна подредба:</translation>
+        <translation>Субпиксел геометрија:</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="90"/>
         <source>Antialiasing</source>
-        <translation>Заглаждане</translation>
+        <translation>Антиалиас</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="97"/>
         <source>Hinting style:</source>
-        <translation>Стил на подсказване:</translation>
+        <translation>Стил наговештаја:</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.cpp" line="42"/>
         <location filename="../fontconfigdialog.cpp" line="47"/>
         <source>None</source>
-        <translation>Без</translation>
+        <translation>Ништа</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.cpp" line="43"/>
         <source>Slight</source>
-        <translation>Тънък</translation>
+        <translation>Танак</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.cpp" line="44"/>
         <source>Medium</source>
-        <translation>Среден</translation>
+        <translation>Средњи</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.cpp" line="45"/>
         <source>Full</source>
-        <translation>Пълен</translation>
+        <translation>Пун</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.cpp" line="74"/>
         <source>&lt;i&gt;%1&lt;/i&gt; already exists. Do you want to replace it?</source>
-        <translation>&lt;i&gt;%1&lt;/i&gt; вече съществува. Искате ли да го замените?</translation>
+        <translation>&lt;i&gt;%1&lt;/i&gt; већ постоји. Да ли желите да замените?</translation>
     </message>
 </context>
 <context>
@@ -229,32 +227,32 @@
     <message>
         <location filename="../fontspage.ui" line="57"/>
         <source>General:</source>
-        <translation>Общи:</translation>
+        <translation>Опште:</translation>
     </message>
     <message>
         <location filename="../fontspage.ui" line="94"/>
         <source>Fixed width:</source>
-        <translation>Фиксирана ширина:</translation>
+        <translation>Одређена ширина:</translation>
     </message>
     <message>
         <location filename="../fontspage.ui" line="119"/>
         <source>Create  fonts.conf</source>
-        <translation>Създаване на  fonts.conf</translation>
+        <translation>Креирај  fonts.conf</translation>
     </message>
     <message>
         <location filename="../fontspage.ui" line="126"/>
         <source>Remove fonts.conf</source>
-        <translation>Премахване на  fonts.conf</translation>
+        <translation>Обриши fonts.conf</translation>
     </message>
     <message>
         <location filename="../fontspage.cpp" line="115"/>
         <source>Remove Font Configuration</source>
-        <translation>Премахване на конфигурацията на шрифта</translation>
+        <translation>Обриши поставке фонта</translation>
     </message>
     <message>
         <location filename="../fontspage.cpp" line="116"/>
         <source>Are you sure you want to delete &lt;i&gt;%1&lt;/i&gt;?</source>
-        <translation>Наистина ли искате да изтриете &lt;i&gt;%1&lt;/i&gt;?</translation>
+        <translation>Да ли сте сигурни да желите брисање &lt;i&gt;%1&lt;/i&gt;?</translation>
     </message>
 </context>
 <context>
@@ -262,33 +260,33 @@
     <message>
         <location filename="../interfacepage.ui" line="35"/>
         <source>Double click interval:</source>
-        <translation>Интервал при двойно кликване:</translation>
+        <translation>Интервал дуплог клика:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="42"/>
         <source>Cursor flash time:</source>
-        <translation>Време за мигане на курсора:</translation>
+        <translation>Време за курсор:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="49"/>
         <source>ComboBox effect:</source>
-        <translation>ComboBox ефект:</translation>
+        <translation>ComboBox ефекат:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="56"/>
         <source>ToolTip effect:</source>
-        <translation>ToolTip ефект:</translation>
+        <translation>ToolTip ефекат:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="63"/>
         <source>ToolBox effect:</source>
-        <translation>ToolBox ефект:</translation>
+        <translation>ToolBox ефекат:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="70"/>
         <location filename="../interfacepage.ui" line="80"/>
         <source> ms</source>
-        <translation>мс</translation>
+        <translation> ms</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="94"/>
@@ -296,7 +294,7 @@
         <location filename="../interfacepage.ui" line="133"/>
         <location filename="../interfacepage.ui" line="157"/>
         <source>Disable</source>
-        <translation>Изключване</translation>
+        <translation>Искључи</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="99"/>
@@ -304,43 +302,43 @@
         <location filename="../interfacepage.ui" line="138"/>
         <location filename="../interfacepage.ui" line="162"/>
         <source>Animate</source>
-        <translation>Анимиран</translation>
+        <translation>Анимирај</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="121"/>
         <location filename="../interfacepage.ui" line="167"/>
         <source>Fade</source>
-        <translation>Избледняващ</translation>
+        <translation>Избледи</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="146"/>
         <source>Menu effect:</source>
-        <translation>Ефект на меню:</translation>
+        <translation>Мени ефекат:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="175"/>
         <source>Enable gui effects</source>
-        <translation>Включи графичните ефекти</translation>
+        <translation>Омогући ефекте сучеља</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="182"/>
         <source>Dialog buttons layout:</source>
-        <translation>Подредба на диалоговите бутони:</translation>
+        <translation>Изглед дијалога за дугмиће:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="192"/>
         <source>Menus have icons</source>
-        <translation>Икони в менютата</translation>
+        <translation>Мени са иконама</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="199"/>
         <source>Dialog buttons have icons</source>
-        <translation>Икони в диалоговите бутони</translation>
+        <translation>Дијалог дугмића са иконама</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="209"/>
         <source>Activate item on single-click</source>
-        <translation>Активиране на елемент с еднократно кликване</translation>
+        <translation>Активирај ставку на један клик</translation>
     </message>
 </context>
 <context>
@@ -348,37 +346,37 @@
     <message>
         <location filename="../mainwindow.ui" line="14"/>
         <source>Qt5 Configuration Tool</source>
-        <translation>Инструмент за настройка на Qt5</translation>
+        <translation>Qt5 конфигурациони алат</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="45"/>
         <source>Appearance</source>
-        <translation>Външен вид</translation>
+        <translation>Изглед</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="46"/>
         <source>Fonts</source>
-        <translation>Шрифтове</translation>
+        <translation>Фонтови</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="47"/>
         <source>Icon Theme</source>
-        <translation>Тема за икони</translation>
+        <translation>Тема икона</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="48"/>
         <source>Interface</source>
-        <translation>Интерфейс</translation>
+        <translation>Сучеље</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="50"/>
         <source>Style Sheets</source>
-        <translation>Стил на страниците</translation>
+        <translation>Стил листова</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="58"/>
         <source>Version: %1</source>
-        <translation>Версия: %1</translation>
+        <translation>Верзија: %1</translation>
     </message>
 </context>
 <context>
@@ -386,22 +384,22 @@
     <message>
         <location filename="../paletteeditdialog.ui" line="14"/>
         <source>Palette Editor</source>
-        <translation>Редактор на палитрата</translation>
+        <translation>Едитор палете</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.ui" line="79"/>
         <source>Reset palette</source>
-        <translation>Нулиране на палитрата</translation>
+        <translation>Ресетуј палету</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.ui" line="29"/>
         <source>Build inactive palette</source>
-        <translation>Изграждане на неактивна палитра</translation>
+        <translation>Оформи неактивну палету</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.ui" line="36"/>
         <source>Build disabled palette</source>
-        <translation>Изграждане на изключена палитра</translation>
+        <translation>Оформи искључену палету</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="49"/>
@@ -416,112 +414,112 @@
     <message>
         <location filename="../paletteeditdialog.cpp" line="49"/>
         <source>Disabled</source>
-        <translation>Изключена</translation>
+        <translation>Искључена</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Dark</source>
-        <translation>Тъмен</translation>
+        <translation>Тамно</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Window text</source>
-        <translation>Текст на прозорец</translation>
+        <translation>Текст прозора</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Button background</source>
-        <translation>Фон на бутон</translation>
+        <translation>Позадина дугмића</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Bright</source>
-        <translation>Светъл</translation>
+        <translation>Светло</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Less bright</source>
-        <translation>По- малко светъл</translation>
+        <translation>Мање светло</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Less dark</source>
-        <translation>По- малко тъмен</translation>
+        <translation>Мање тамно</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Window</source>
-        <translation>Прозорец</translation>
+        <translation>Прозор</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Shadow</source>
-        <translation>Сянка</translation>
+        <translation>Сенка</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Bright text</source>
-        <translation>Светъл текст</translation>
+        <translation>Светли текст</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Button text</source>
-        <translation>Текст на бутон</translation>
+        <translation>Текст дугмића</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Normal text</source>
-        <translation>Нормален текст</translation>
+        <translation>Нормалан текст</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Normal background</source>
-        <translation>Нормален фон</translation>
+        <translation>Нормална позадина</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="93"/>
         <source>Highlight</source>
-        <translation>Подчертаване</translation>
+        <translation>Истакнуто</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="93"/>
         <source>Highlighted text</source>
-        <translation>Подчертан текст</translation>
+        <translation>Истакнут текст</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="93"/>
         <source>Visited link</source>
-        <translation>Посетен адрес</translation>
+        <translation>Посећени линк</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="94"/>
         <source>Default</source>
-        <translation>По подтазбиране</translation>
+        <translation>Подразумевано</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="94"/>
         <source>Tooltip background</source>
-        <translation>Фон на подсказка</translation>
+        <translation>Позадина искачућег прозора</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="94"/>
         <source>Tooltip text</source>
-        <translation>Текст на подсказка</translation>
+        <translation>Текст искачућег прозора</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="93"/>
         <source>Link</source>
-        <translation>Връзка</translation>
+        <translation>Линк</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="94"/>
         <source>Alternate background</source>
-        <translation>Алтернативен фон</translation>
+        <translation>Алтернативна позадина</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="106"/>
         <source>Select Color</source>
-        <translation>Избор на цвят</translation>
+        <translation>Одабери боју</translation>
     </message>
 </context>
 <context>
@@ -529,32 +527,32 @@
     <message>
         <location filename="../previewform.ui" line="14"/>
         <source>Preview Window</source>
-        <translation>Прозорец за преглед</translation>
+        <translation>Прозор за преглед</translation>
     </message>
     <message>
         <location filename="../previewform.ui" line="24"/>
         <source>Tab 1</source>
-        <translation>Раздел 1</translation>
+        <translation>Таб 1</translation>
     </message>
     <message>
         <location filename="../previewform.ui" line="30"/>
         <source>PushButton</source>
-        <translation>PushButton</translation>
+        <translation>Дугме</translation>
     </message>
     <message>
         <location filename="../previewform.ui" line="51"/>
         <source>Tab 2</source>
-        <translation>Раздел 2</translation>
+        <translation>Таб 2</translation>
     </message>
     <message>
         <location filename="../previewform.ui" line="57"/>
         <source>RadioButton</source>
-        <translation>RadioButton</translation>
+        <translation>Радио дугме</translation>
     </message>
     <message>
         <location filename="../previewform.ui" line="64"/>
         <source>CheckBox</source>
-        <translation>CheckBox</translation>
+        <translation>Поље за ознаку</translation>
     </message>
 </context>
 <context>
@@ -562,12 +560,12 @@
     <message>
         <location filename="../qsseditordialog.cpp" line="45"/>
         <source>%1 - Style Sheet Editor</source>
-        <translation>%1 - Редактор на стила на страница</translation>
+        <translation>%1 - Едитор стила</translation>
     </message>
     <message>
         <location filename="../qsseditordialog.ui" line="14"/>
         <source>Style Sheet Editor</source>
-        <translation>Редактор на стила на страница</translation>
+        <translation>Едитор стила</translation>
     </message>
 </context>
 <context>
@@ -575,35 +573,35 @@
     <message>
         <location filename="../qsspage.ui" line="23"/>
         <source>Create</source>
-        <translation>Създаване</translation>
+        <translation>Креирај</translation>
     </message>
     <message>
         <location filename="../qsspage.ui" line="66"/>
         <location filename="../qsspage.cpp" line="51"/>
         <source>Edit</source>
-        <translation>Редактиране</translation>
+        <translation>Измени</translation>
     </message>
     <message>
         <location filename="../qsspage.ui" line="76"/>
         <location filename="../qsspage.cpp" line="52"/>
         <source>Rename</source>
-        <translation>Преименуване</translation>
+        <translation>Преименуј</translation>
     </message>
     <message>
         <location filename="../qsspage.ui" line="33"/>
         <location filename="../qsspage.cpp" line="54"/>
         <source>Remove</source>
-        <translation>Премахване</translation>
+        <translation>Обриши</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="102"/>
         <source>File name:</source>
-        <translation>Име на файл:</translation>
+        <translation>Име фајла</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="102"/>
         <source>Enter Style Sheet Name</source>
-        <translation>Въведете име на стила на страница</translation>
+        <translation>Унесите име за стил</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="113"/>
@@ -615,37 +613,37 @@
     <message>
         <location filename="../qsspage.cpp" line="113"/>
         <source>The file &quot;%1&quot; already exists</source>
-        <translation>Файлът &quot;%1&quot; вече съществува</translation>
+        <translation>Фајл &quot;%1&quot; већ постоји</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="147"/>
         <source>Confirm Remove</source>
-        <translation>Потвърждение на премахването</translation>
+        <translation>Потврди брисање</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="148"/>
         <source>Are you sure you want to remove style sheet &quot;%1&quot;?</source>
-        <translation>Сигурен ли сте, че искате да премахнете стил на страница &quot;%1&quot;?</translation>
+        <translation>Да ли сте сигурни да желите брисање стила &quot;%1&quot;?</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="198"/>
         <source>Rename Style Sheet</source>
-        <translation>Преименуване на стил на страница</translation>
+        <translation>Преименуј стил</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="198"/>
         <source>Style sheet name:</source>
-        <translation>Име на стил на страница:</translation>
+        <translation>Име стила:</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="205"/>
         <source>The style sheet &quot;%1&quot; already exists</source>
-        <translation>Стилът на страница &quot;%1&quot; вече съществува</translation>
+        <translation>Стил &quot;%1&quot; већ постоји</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="216"/>
         <source>Unable to rename file</source>
-        <translation>Файлът не може да бъде преименуван</translation>
+        <translation>Није могуће преименовати фајл</translation>
     </message>
 </context>
 <context>
@@ -653,12 +651,12 @@
     <message>
         <location filename="../main.cpp" line="60"/>
         <source>Please remove the &lt;b&gt;QT_STYLE_OVERRIDE&lt;/b&gt; environment variable</source>
-        <translation>Моля, премахнете променливата &lt;b&gt;QT_STYLE_OVERRIDE&lt;/b&gt; </translation>
+        <translation>Молим обришите &lt;b&gt;QT_STYLE_OVERRIDE&lt;/b&gt; променљиву окружења</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="65"/>
         <source>The &lt;b&gt;QT_QPA_PLATFORMTHEME&lt;/b&gt; environment variable is not set correctly</source>
-        <translation>Променливата &lt;b&gt;QT_QPA_PLATFORMTHEME&lt;/b&gt; не е зададена правилно</translation>
+        <translation>Променљива&lt;b&gt;QT_QPA_PLATFORMTHEME&lt;/b&gt; окружења није подешена исправно</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="71"/>

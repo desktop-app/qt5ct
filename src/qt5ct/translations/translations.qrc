@@ -29,5 +29,6 @@
     <file>qt5ct_bg.qm</file>
     <file>qt5ct_nl_NL.qm</file>
     <file>qt5ct_el.qm</file>
+    <file>qt5ct_sr.qm</file>
   </qresource>
 </RCC>
