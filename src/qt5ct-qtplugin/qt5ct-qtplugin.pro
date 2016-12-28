@@ -4,7 +4,11 @@ TEMPLATE = lib
 TARGET = qt5ct
 CONFIG += plugin
 
-QT += gui-private platformsupport-private
+greaterThan(QT_MINOR_VERSION, 7) {
+  QT += gui-private theme_support-private
+} else {
+  QT += gui-private platformsupport-private
+}
 
 SOURCES += \
     main.cpp \
