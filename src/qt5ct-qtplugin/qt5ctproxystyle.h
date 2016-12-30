@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2014-2016, Ilya Kotov <forkotov02@hotmail.ru>
+ * Copyright (c) 2014-2017, Ilya Kotov <forkotov02@hotmail.ru>
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are
