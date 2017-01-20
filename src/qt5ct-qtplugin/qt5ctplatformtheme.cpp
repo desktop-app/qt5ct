@@ -37,6 +37,7 @@
 #include <QRegExp>
 #ifdef QT_WIDGETS_LIB
 #include <QStyle>
+#include <QStyleFactory>
 #include <QApplication>
 #include <QWidget>
 #endif
@@ -47,7 +48,6 @@
 #endif
 
 #include <qt5ct/qt5ct.h>
-#include "qt5ctproxystyle.h"
 #include "qt5ctplatformtheme.h"
 
 Q_LOGGING_CATEGORY(lqt5ct, "qt5ct")
@@ -69,13 +69,14 @@ Qt5CTPlatformTheme::Qt5CTPlatformTheme()
         QMetaObject::invokeMethod(this, "applySettings", Qt::QueuedConnection);
 #ifdef QT_WIDGETS_LIB
         QMetaObject::invokeMethod(this, "createFSWatcher", Qt::QueuedConnection);
-        //apply custom style hints before creating QApplication
-        //using Fusion style should avoid problems with some styles like qtcurve
-        QApplication::setStyle(new Qt5CTProxyStyle("Fusion"));
 #endif
         QGuiApplication::setFont(m_generalFont);
     }
     qCDebug(lqt5ct) << "using qt5ct plugin";
+#ifdef QT_WIDGETS_LIB
+    if(!QStyleFactory::keys().contains("qt5ct-style"))
+        qCCritical(lqt5ct) << "unable to find qt5ct proxy style";
+#endif
 }
 
 Qt5CTPlatformTheme::~Qt5CTPlatformTheme()
@@ -123,7 +124,7 @@ QVariant Qt5CTPlatformTheme::themeHint(QPlatformTheme::ThemeHint hint) const
     case QPlatformTheme::SystemIconThemeName:
         return m_iconTheme;
     case QPlatformTheme::StyleNames:
-        return QStringList() << m_style;
+        return QStringList() << "qt5ct-style";
     case QPlatformTheme::IconThemeSearchPaths:
         return Qt5CT::iconPaths();
     case DialogButtonBoxLayout:
@@ -148,15 +149,11 @@ void Qt5CTPlatformTheme::applySettings()
             m_usePalette = false;
             qCDebug(lqt5ct) << "palette support is disabled";
         }
-        m_update = true;
     }
 
 #ifdef QT_WIDGETS_LIB
     if(hasWidgets())
     {
-        //do not override proxy style (fixes crash in qupzilla)
-        QProxyStyle *proxyStyle = qobject_cast<QProxyStyle *>(qApp->style());
-        proxyStyle ? proxyStyle->setBaseStyle(0) : qApp->setStyle(new Qt5CTProxyStyle(m_style));
         qApp->setFont(m_generalFont);
 
         if(m_usePalette)
@@ -166,6 +163,9 @@ void Qt5CTPlatformTheme::applySettings()
             else
                 qApp->setPalette(qApp->style()->standardPalette());
         }
+
+        if(m_update && qApp->style()->objectName() == "qt5ct-style") //ignore application style
+            qApp->setStyle("qt5ct-style"); //recreate style object
 
         //do not override application style
         if(m_prevStyleSheet == qApp->styleSheet())
@@ -190,6 +190,9 @@ void Qt5CTPlatformTheme::applySettings()
         }
     }
 #endif
+
+    if(!m_update)
+        m_update = true;
 }
 
 #ifdef QT_WIDGETS_LIB

@@ -26,42 +26,25 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifdef QT_WIDGETS_LIB
+#ifndef QT5CTPROXYSTYLE_H
+#define QT5CTPROXYSTYLE_H
 
-#include <QSettings>
-#include <qt5ct/qt5ct.h>
-#include "qt5ctproxystyle.h"
+#include <QProxyStyle>
 
-Qt5CTProxyStyle::Qt5CTProxyStyle(const QString &key) :
-    QProxyStyle(key)
+class Qt5CTProxyStyle : public QProxyStyle
 {
-    QSettings settings(Qt5CT::configFile(), QSettings::IniFormat);
-    m_dialogButtonsHaveIcons = settings.value("Interface/dialog_buttons_have_icons", Qt::PartiallyChecked).toInt();
-    m_activateItemOnSingleClick = settings.value("Interface/activate_item_on_single_click", Qt::PartiallyChecked).toInt();
-}
+    Q_OBJECT
+public:
+    explicit Qt5CTProxyStyle(const QString &key);
 
-Qt5CTProxyStyle::~Qt5CTProxyStyle()
-{
-    //qDebug("%s", Q_FUNC_INFO);
-}
+    virtual ~Qt5CTProxyStyle();
 
-int Qt5CTProxyStyle::styleHint(QStyle::StyleHint hint, const QStyleOption *option, const QWidget *widget, QStyleHintReturn *returnData) const
-{
-    if(hint == QStyle::SH_DialogButtonBox_ButtonsHaveIcons)
-    {
-        if(m_dialogButtonsHaveIcons == Qt::Unchecked)
-            return 0;
-        else if(m_dialogButtonsHaveIcons == Qt::Checked)
-            return 1;
-    }
-    else if(hint == QStyle::QStyle::SH_ItemView_ActivateItemOnSingleClick)
-    {
-        if(m_activateItemOnSingleClick == Qt::Unchecked)
-            return 0;
-        else if(m_activateItemOnSingleClick == Qt::Checked)
-            return 1;
-    }
-    return QProxyStyle::styleHint(hint, option, widget, returnData);
-}
+    int styleHint(StyleHint hint, const QStyleOption *option, const QWidget *widget, QStyleHintReturn *returnData) const;
 
-#endif //QT_WIDGETS_LIB
+private:
+    int m_dialogButtonsHaveIcons;
+    int m_activateItemOnSingleClick;
+
+};
+
+#endif // QT5CTPROXYSTYLE_H

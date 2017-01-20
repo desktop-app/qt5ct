@@ -38,7 +38,6 @@
 int main(int argc, char **argv)
 {
     QApplication app(argc, argv);
-
     QTranslator translator;
     QString locale = Qt5CT::systemLanguageID();
     translator.load(QString(":/qt5ct_") + locale);

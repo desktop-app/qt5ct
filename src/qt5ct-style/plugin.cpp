@@ -26,29 +26,31 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef QT5CTPROXYSTYLE_H
-#define QT5CTPROXYSTYLE_H
+#include <QStylePlugin>
+#include <QSettings>
+#include <qt5ct/qt5ct.h>
+#include "qt5ctproxystyle.h"
 
-#ifdef QT_WIDGETS_LIB
-
-#include <QProxyStyle>
-
-class Qt5CTProxyStyle : public QProxyStyle
+class Qt5CTStylePlugin : public QStylePlugin
 {
     Q_OBJECT
+    Q_PLUGIN_METADATA(IID "org.qt-project.Qt.QStyleFactoryInterface" FILE "qt5ct.json")
+
 public:
-    explicit Qt5CTProxyStyle(const QString &key);
-
-    virtual ~Qt5CTProxyStyle();
-
-    int styleHint(StyleHint hint, const QStyleOption *option, const QWidget *widget, QStyleHintReturn *returnData) const;
-
-private:
-    int m_dialogButtonsHaveIcons;
-    int m_activateItemOnSingleClick;
-
+    QStyle *create(const QString &key);
 };
 
-#endif //QT_WIDGETS_LIB
+QStyle *Qt5CTStylePlugin::create(const QString &key)
+{
+    if (key == "qt5ct-style")
+    {
+        QSettings settings(Qt5CT::configFile(), QSettings::IniFormat);
+        QString style = settings.value("Appearance/style", "Fusion").toString();
+        if(key == style)
+            style = "Fusion";
+        return new Qt5CTProxyStyle(style);
+    }
+    return 0;
+}
 
-#endif // QT5CTPROXYSTYLE_H
+#include "plugin.moc"
