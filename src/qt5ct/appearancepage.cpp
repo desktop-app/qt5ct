@@ -47,7 +47,9 @@ AppearancePage::AppearancePage(QWidget *parent) :
     m_selectedStyle = 0;
 
     m_ui->setupUi(this);
-    m_ui->styleComboBox->addItems(QStyleFactory::keys());
+    QStringList keys = QStyleFactory::keys();
+    keys.removeAll("qt5ct-style"); //hide qt5ct proxy style
+    m_ui->styleComboBox->addItems(keys);
 
     connect(m_ui->paletteComboBox, SIGNAL(activated(int)), SLOT(updatePalette()));
     connect(m_ui->customPaletteButton, SIGNAL(clicked()), SLOT(updatePalette()));
