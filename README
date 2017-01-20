@@ -45,6 +45,7 @@ Files and Directories:
 
 qt5ct - Qt5 configuration tool
 libqt5ct.so - qt5ct platform plugin
+libqt5ct-style.so - qt5ct proxy style plugin
 ~/.config/qt5ct/qt5ct.conf - configuration file
 ~/.config/qt5ct/qss/ - style sheets
 
