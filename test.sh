@@ -2,8 +2,6 @@
 
 MYDIR=$(dirname $0)
 
-echo ${MYDIR}
-
 mkdir -p ${MYDIR}/src/qt5ct/styles
 ln -s "../../qt5ct-style/libqt5ct-style.so" "${MYDIR}/src/qt5ct/styles/"
 export QT_DEBUG_PLUGINS=1
