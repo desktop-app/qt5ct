@@ -170,3 +170,15 @@ Version 0.27
 * added D-Bus tray support
 * added feature to disable debug output
 * updated documentation
+
+Version 0.28
+* added Qt 5.8 support
+* added qt5ct proxy-style plugin
+* added Serbian translation (markosm)
+* updated Bulgarian translation (Kiril Kirilov)
+* updated Italian translation (Luigi Baldoni)
+* updated Russian translation
+* updated Dutch (Netherlands) translation (Heimen Stoffels)
+* updated Czech translation (fri)
+* updated German translation (Atalanttore)
+* updated Chinese (Taiwan) translation (Jeff Huang)
