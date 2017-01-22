@@ -156,16 +156,16 @@ void Qt5CTPlatformTheme::applySettings()
     {
         qApp->setFont(m_generalFont);
 
-        if(m_usePalette)
+        if(m_update && qApp->style()->objectName() == "qt5ct-style") //ignore application style
+            qApp->setStyle("qt5ct-style"); //recreate style object
+            
+        if(m_update && m_usePalette)
         {
             if(m_customPalette)
                 qApp->setPalette(*m_customPalette);
             else
                 qApp->setPalette(qApp->style()->standardPalette());
         }
-
-        if(m_update && qApp->style()->objectName() == "qt5ct-style") //ignore application style
-            qApp->setStyle("qt5ct-style"); //recreate style object
 
         //do not override application style
         if(m_prevStyleSheet == qApp->styleSheet())
