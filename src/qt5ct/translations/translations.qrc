@@ -30,5 +30,6 @@
     <file>qt5ct_nl_NL.qm</file>
     <file>qt5ct_el.qm</file>
     <file>qt5ct_sr.qm</file>
+    <file>qt5ct_ca.qm</file>
   </qresource>
 </RCC>
