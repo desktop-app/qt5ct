@@ -10,7 +10,7 @@ unix {
     PREFIX = /usr
   }
   isEmpty(PLUGINDIR) {
-    PLUGINDIR = $$[QT_INSTALL_PLUGINS]/platformthemes
+    PLUGINDIR = $$[QT_INSTALL_PLUGINS]
   }
 
   BINDIR = $$PREFIX/bin
