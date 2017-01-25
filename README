@@ -29,7 +29,7 @@ Now restart X11 server to take the changes effect.
 
 Extra build options (for advanced users only):
 qmake DISABLE_WIDGETS=1 - compiles platform plugin without QtWidgets (useful for QML applications only)
-qmake PLUGINDIR=<custom path> - changes the install path of the platform plugin (libqt5ct.so)
+qmake PLUGINDIR=<custom path> - changes the default installation path of the plugins (libqt5ct.so and libqt5ct-style.so)
 
 Debug Messages:
 
