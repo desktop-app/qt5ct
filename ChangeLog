@@ -182,3 +182,7 @@ Version 0.28
 * updated Czech translation (fri)
 * updated German translation (Atalanttore)
 * updated Chinese (Taiwan) translation (Jeff Huang)
+
+Version 0.29
+* fixed libqt5ct-style.so installation path (Philip Müller)
+* updated Greek translation (Dimitrios Glentadakis)
