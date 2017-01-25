@@ -663,7 +663,7 @@
     <message>
         <location filename="../main.cpp" line="71"/>
         <source>Unable to find &lt;b&gt;libqt5ct-style.so&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>Не може да бъде намерен &lt;b&gt;libqt5ct-style.so&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="76"/>
