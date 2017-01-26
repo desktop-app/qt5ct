@@ -101,9 +101,8 @@ QPlatformSystemTrayIcon *Qt5CTPlatformTheme::createPlatformSystemTrayIcon() cons
 
 const QPalette *Qt5CTPlatformTheme::palette(QPlatformTheme::Palette type) const
 {
-    if(m_customPalette && m_usePalette)
-        return m_customPalette;
-    return QPlatformTheme::palette(type);
+    Q_UNUSED(type);
+    return (m_usePalette ? m_customPalette : 0);
 }
 
 const QFont *Qt5CTPlatformTheme::font(QPlatformTheme::Font type) const
