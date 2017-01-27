@@ -186,3 +186,9 @@ Version 0.28
 Version 0.29
 * fixed libqt5ct-style.so installation path (Philip Müller)
 * updated Greek translation (Dimitrios Glentadakis)
+
+Version 0.30
+* fixed issue with KDE color schemes
+* updated documentation
+* updated  Bulgarian translation (Kiril Kirilov)
+* updated French translation (Geiger David)
