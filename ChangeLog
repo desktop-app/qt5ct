@@ -194,7 +194,7 @@ Version 0.30
 * updated French translation (Geiger David)
 
 Version 0.31
-* fixed segmentation fault
+* fixed crash on nonexistent style in qt5ct.conf
 * fixed issue with KDE color themes
 * updated documentation
 * updated  Bulgarian translation (Kiril Kirilov)
