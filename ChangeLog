@@ -192,3 +192,10 @@ Version 0.30
 * updated documentation
 * updated  Bulgarian translation (Kiril Kirilov)
 * updated French translation (Geiger David)
+
+Version 0.31
+* fixed segmentation fault
+* fixed issue with KDE color themes
+* updated documentation
+* updated  Bulgarian translation (Kiril Kirilov)
+* updated French translation (Geiger David)
