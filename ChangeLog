@@ -188,14 +188,8 @@ Version 0.29
 * updated Greek translation (Dimitrios Glentadakis)
 
 Version 0.30
-* fixed issue with KDE color schemes
-* updated documentation
-* updated  Bulgarian translation (Kiril Kirilov)
-* updated French translation (Geiger David)
-
-Version 0.31
 * fixed crash on nonexistent style in qt5ct.conf
 * fixed issue with KDE color themes
 * updated documentation
-* updated  Bulgarian translation (Kiril Kirilov)
+* updated Bulgarian translation (Kiril Kirilov)
 * updated French translation (Geiger David)
