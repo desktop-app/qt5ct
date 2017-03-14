@@ -44,8 +44,6 @@ AppearancePage::AppearancePage(QWidget *parent) :
     TabPage(parent),
     m_ui(new Ui::AppearancePage)
 {
-    m_selectedStyle = 0;
-
     m_ui->setupUi(this);
     QStringList keys = QStyleFactory::keys();
     keys.removeAll("qt5ct-style"); //hide qt5ct proxy style

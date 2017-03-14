@@ -56,14 +56,6 @@ Q_LOGGING_CATEGORY(lqt5ct, "qt5ct")
 
 Qt5CTPlatformTheme::Qt5CTPlatformTheme()
 {
-    m_customPalette = 0;
-    m_update = false;
-    m_usePalette = true;
-    m_toolButtonStyle = Qt::ToolButtonFollowStyle;
-#if !defined(QT_NO_DBUS) && !defined(QT_NO_SYSTEMTRAYICON)
-    m_dbusTrayAvailable = false;
-    m_checkDBusTray = true;
-#endif
     if(QGuiApplication::desktopSettingsAware())
     {
         readSettings();

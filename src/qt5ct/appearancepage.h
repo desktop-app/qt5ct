@@ -69,7 +69,7 @@ private:
     QPalette loadColorScheme(const QString &filePath);
     void createColorScheme(const QString &name, const QPalette &palette);
     Ui::AppearancePage *m_ui;
-    QStyle *m_selectedStyle;
+    QStyle *m_selectedStyle = nullptr;
     QPalette m_customPalette;
     QWidget *m_previewWidget;
     QAction *m_changeColorSchemeAction, *m_renameColorSchemeAction, *m_removeColorSchemeAction;
