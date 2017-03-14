@@ -342,6 +342,36 @@
         <source>Activate item on single-click</source>
         <translation>Активиране на елемент с еднократно кликване</translation>
     </message>
+    <message>
+        <location filename="../interfacepage.ui" line="219"/>
+        <source>Toolbar button style:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../interfacepage.cpp" line="47"/>
+        <source>Only display the icon</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../interfacepage.cpp" line="48"/>
+        <source>Only display the text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../interfacepage.cpp" line="49"/>
+        <source>The text appears beside the icon</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../interfacepage.cpp" line="50"/>
+        <source>The text appears under the icon</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../interfacepage.cpp" line="51"/>
+        <source>Follow the application style</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
