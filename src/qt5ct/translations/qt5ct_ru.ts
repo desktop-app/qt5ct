@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="ru">
+<TS version="2.0" language="ru">
 <context>
     <name>AppearancePage</name>
     <message>
@@ -345,32 +345,32 @@
     <message>
         <location filename="../interfacepage.ui" line="219"/>
         <source>Toolbar button style:</source>
-        <translation type="unfinished"></translation>
+        <translation>Стиль кнопок панелей инструментов:</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="47"/>
         <source>Only display the icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Отображать только значок</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="48"/>
         <source>Only display the text</source>
-        <translation type="unfinished"></translation>
+        <translation>Отображать только текст</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="49"/>
         <source>The text appears beside the icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Отображать текст рядом со значком</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="50"/>
         <source>The text appears under the icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Отображать текст под значком</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="51"/>
         <source>Follow the application style</source>
-        <translation type="unfinished"></translation>
+        <translation>Определяется стилем приложения</translation>
     </message>
 </context>
 <context>
