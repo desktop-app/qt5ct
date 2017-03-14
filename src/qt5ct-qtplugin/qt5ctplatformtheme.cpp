@@ -43,12 +43,13 @@
 #endif
 #include <QFile>
 #include <QFileSystemWatcher>
+
+#include <qt5ct/qt5ct.h>
+#include "qt5ctplatformtheme.h"
 #if !defined(QT_NO_DBUS) && !defined(QT_NO_SYSTEMTRAYICON)
 #include <private/qdbustrayicon_p.h>
 #endif
 
-#include <qt5ct/qt5ct.h>
-#include "qt5ctplatformtheme.h"
 
 Q_LOGGING_CATEGORY(lqt5ct, "qt5ct")
 
@@ -139,6 +140,7 @@ void Qt5CTPlatformTheme::applySettings()
     if(!QGuiApplication::desktopSettingsAware())
         return;
 
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 5, 0))
     if(!m_update)
     {
         //do not override application palette
@@ -148,6 +150,7 @@ void Qt5CTPlatformTheme::applySettings()
             qCDebug(lqt5ct) << "palette support is disabled";
         }
     }
+#endif
 
 #ifdef QT_WIDGETS_LIB
     if(hasWidgets())

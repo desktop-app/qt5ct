@@ -35,6 +35,12 @@
 #include <QPalette>
 #include <QLoggingCategory>
 
+#if (QT_VERSION < QT_VERSION_CHECK(5, 5, 0))
+#ifndef QT_NO_SYSTEMTRAYICON
+#define QT_NO_SYSTEMTRAYICON
+#endif
+#endif
+
 class QPalette;
 class QPlatformSystemTrayIcon;
 
