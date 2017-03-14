@@ -4,6 +4,16 @@ MOC_DIR=./.build/moc/
 OBJECTS_DIR=./.build/obj
 RCC_DIR=./.build/rcc
 
+CONFIG += c++14
+
+!isEqual (QT_MAJOR_VERSION, 5) {
+  error("Use Qt 5.4.0 or higher.")
+}
+
+!greaterThan(QT_MINOR_VERSION, 3) {
+  error("Use Qt 5.4.0 or higher.")
+}
+
 #Install paths
 unix {
   isEmpty(PREFIX) {
