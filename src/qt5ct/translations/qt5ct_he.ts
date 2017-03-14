@@ -54,84 +54,84 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="67"/>
+        <location filename="../appearancepage.cpp" line="65"/>
         <source>Create</source>
         <translation>צור</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="68"/>
+        <location filename="../appearancepage.cpp" line="66"/>
         <source>Edit</source>
         <translation>ערוך</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="69"/>
+        <location filename="../appearancepage.cpp" line="67"/>
         <source>Create a Copy</source>
         <translation>צור העתק</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="70"/>
+        <location filename="../appearancepage.cpp" line="68"/>
         <source>Rename</source>
         <translation>שנה שם</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="72"/>
+        <location filename="../appearancepage.cpp" line="70"/>
         <source>Remove</source>
         <translation>הסר</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="122"/>
-        <location filename="../appearancepage.cpp" line="196"/>
-        <location filename="../appearancepage.cpp" line="231"/>
+        <location filename="../appearancepage.cpp" line="120"/>
+        <location filename="../appearancepage.cpp" line="194"/>
+        <location filename="../appearancepage.cpp" line="229"/>
         <source>Enter Color Scheme Name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="122"/>
-        <location filename="../appearancepage.cpp" line="196"/>
-        <location filename="../appearancepage.cpp" line="231"/>
+        <location filename="../appearancepage.cpp" line="120"/>
+        <location filename="../appearancepage.cpp" line="194"/>
+        <location filename="../appearancepage.cpp" line="229"/>
         <source>File name:</source>
         <translation>שם קובץ:</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="131"/>
-        <location filename="../appearancepage.cpp" line="207"/>
-        <location filename="../appearancepage.cpp" line="241"/>
+        <location filename="../appearancepage.cpp" line="129"/>
+        <location filename="../appearancepage.cpp" line="205"/>
+        <location filename="../appearancepage.cpp" line="239"/>
         <source>Error</source>
         <translation>שגיאה</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="131"/>
-        <location filename="../appearancepage.cpp" line="207"/>
-        <location filename="../appearancepage.cpp" line="241"/>
+        <location filename="../appearancepage.cpp" line="129"/>
+        <location filename="../appearancepage.cpp" line="205"/>
+        <location filename="../appearancepage.cpp" line="239"/>
         <source>The color scheme &quot;%1&quot; already exists</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="149"/>
-        <location filename="../appearancepage.cpp" line="172"/>
-        <location filename="../appearancepage.cpp" line="226"/>
+        <location filename="../appearancepage.cpp" line="147"/>
+        <location filename="../appearancepage.cpp" line="170"/>
+        <location filename="../appearancepage.cpp" line="224"/>
         <source>Warning</source>
         <translation>אזהרה</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="149"/>
-        <location filename="../appearancepage.cpp" line="172"/>
-        <location filename="../appearancepage.cpp" line="226"/>
+        <location filename="../appearancepage.cpp" line="147"/>
+        <location filename="../appearancepage.cpp" line="170"/>
+        <location filename="../appearancepage.cpp" line="224"/>
         <source>The color scheme &quot;%1&quot; is read only</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="177"/>
+        <location filename="../appearancepage.cpp" line="175"/>
         <source>Confirm Remove</source>
         <translation>אימות הסרה</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="178"/>
+        <location filename="../appearancepage.cpp" line="176"/>
         <source>Are you sure you want to remove color scheme &quot;%1&quot;?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="198"/>
+        <location filename="../appearancepage.cpp" line="196"/>
         <source>%1 (copy)</source>
         <translation>%1 (עותק)</translation>
     </message>
