@@ -91,6 +91,7 @@ private:
     bool m_update;
     bool m_usePalette;
     int m_toolButtonStyle;
+    int m_wheelScrollLines;
 #if !defined(QT_NO_DBUS) && !defined(QT_NO_SYSTEMTRAYICON)
     mutable bool m_dbusTrayAvailable;
     mutable bool m_checkDBusTray;

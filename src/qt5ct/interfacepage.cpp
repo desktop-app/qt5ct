@@ -69,6 +69,7 @@ void InterfacePage::writeSettings()
     settings.setValue("activate_item_on_single_click", m_ui->singleClickCheckBox->checkState());
     settings.setValue("dialog_buttons_have_icons", m_ui->dialogIconsCheckBox->checkState());
     settings.setValue("toolbutton_style", m_ui->toolButtonStyleComboBox->currentData());
+    settings.setValue("wheel_scroll_lines", m_ui->wheelScrollLinesSpinBox->value());
 
     QStringList effects;
     if(m_ui->guiEffectsCheckBox->isChecked())
@@ -132,6 +133,8 @@ void InterfacePage::readSettings()
     index = m_ui->toolButtonStyleComboBox->findData(toolbarStyle);
     if(index >= 0)
         m_ui->toolButtonStyleComboBox->setCurrentIndex(index);
+
+    m_ui->wheelScrollLinesSpinBox->setValue(settings.value("wheel_scroll_lines", 3).toInt());
 
     settings.endGroup();
 }

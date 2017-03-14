@@ -133,6 +133,10 @@ QVariant Qt5CTPlatformTheme::themeHint(QPlatformTheme::ThemeHint hint) const
         return m_buttonBoxLayout;
     case QPlatformTheme::UiEffects:
         return m_uiEffects;
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 6, 0))
+    case QPlatformTheme::WheelScrollLines:
+        return m_wheelScrollLines;
+#endif
     default:
         return QPlatformTheme::themeHint(hint);
     }
@@ -157,6 +161,15 @@ void Qt5CTPlatformTheme::applySettings()
     if(hasWidgets())
     {
         qApp->setFont(m_generalFont);
+
+        //Qt 5.6 or higher should be use themeHint function on application startup.
+        //So, there is no need to call this function first time.
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 6, 0))
+        if(m_update)
+            qApp->setWheelScrollLines(m_wheelScrollLines);
+#else
+        qApp->setWheelScrollLines(m_wheelScrollLines);
+#endif
 
         if(m_update && qApp->style()->objectName() == "qt5ct-style") //ignore application style
             qApp->setStyle("qt5ct-style"); //recreate style object
@@ -252,6 +265,7 @@ void Qt5CTPlatformTheme::readSettings()
     m_buttonBoxLayout = settings.value("buttonbox_layout", m_buttonBoxLayout).toInt();
     QCoreApplication::setAttribute(Qt::AA_DontShowIconsInMenus, !settings.value("menus_have_icons", true).toBool());
     m_toolButtonStyle = settings.value("toolbutton_style", Qt::ToolButtonFollowStyle).toInt();
+    m_wheelScrollLines = settings.value("wheel_scroll_lines", 3).toInt();
 
     //load effects
     m_uiEffects = QPlatformTheme::themeHint(QPlatformTheme::UiEffects).toInt();
