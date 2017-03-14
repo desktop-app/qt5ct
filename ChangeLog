@@ -193,3 +193,11 @@ Version 0.30
 * updated documentation
 * updated Bulgarian translation (Kiril Kirilov)
 * updated French translation (Geiger David)
+
+Version 0.31
+* added option "Toolbar button style"
+* added option "Wheel scroll lines"
+* added test for minimal Qt version
+* using c++11 for source code
+* fixed Qt 5.4 support
+* updated Russian translation
