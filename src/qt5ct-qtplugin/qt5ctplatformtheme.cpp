@@ -59,6 +59,7 @@ Qt5CTPlatformTheme::Qt5CTPlatformTheme()
     m_customPalette = 0;
     m_update = false;
     m_usePalette = true;
+    m_toolButtonStyle = Qt::ToolButtonFollowStyle;
 #if !defined(QT_NO_DBUS) && !defined(QT_NO_SYSTEMTRAYICON)
     m_dbusTrayAvailable = false;
     m_checkDBusTray = true;
@@ -120,6 +121,8 @@ QVariant Qt5CTPlatformTheme::themeHint(QPlatformTheme::ThemeHint hint) const
         return m_cursorFlashTime;
     case MouseDoubleClickInterval:
         return m_doubleClickInterval;
+    case QPlatformTheme::ToolButtonStyle:
+        return m_toolButtonStyle;
     case QPlatformTheme::SystemIconThemeName:
         return m_iconTheme;
     case QPlatformTheme::StyleNames:
@@ -157,7 +160,7 @@ void Qt5CTPlatformTheme::applySettings()
 
         if(m_update && qApp->style()->objectName() == "qt5ct-style") //ignore application style
             qApp->setStyle("qt5ct-style"); //recreate style object
-            
+
         if(m_update && m_usePalette)
         {
             if(m_customPalette)
@@ -248,6 +251,7 @@ void Qt5CTPlatformTheme::readSettings()
     m_buttonBoxLayout = QPlatformTheme::themeHint(QPlatformTheme::DialogButtonBoxLayout).toInt();
     m_buttonBoxLayout = settings.value("buttonbox_layout", m_buttonBoxLayout).toInt();
     QCoreApplication::setAttribute(Qt::AA_DontShowIconsInMenus, !settings.value("menus_have_icons", true).toBool());
+    m_toolButtonStyle = settings.value("toolbutton_style", Qt::ToolButtonFollowStyle).toInt();
 
     //load effects
     m_uiEffects = QPlatformTheme::themeHint(QPlatformTheme::UiEffects).toInt();

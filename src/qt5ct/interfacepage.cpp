@@ -44,6 +44,12 @@ InterfacePage::InterfacePage(QWidget *parent) :
     m_ui->buttonLayoutComboBox->addItem("KDE", QDialogButtonBox::KdeLayout);
     m_ui->buttonLayoutComboBox->addItem("GNOME", QDialogButtonBox::GnomeLayout);
 
+    m_ui->toolButtonStyleComboBox->addItem(tr("Only display the icon"), Qt::ToolButtonIconOnly);
+    m_ui->toolButtonStyleComboBox->addItem(tr("Only display the text"), Qt::ToolButtonTextOnly);
+    m_ui->toolButtonStyleComboBox->addItem(tr("The text appears beside the icon"), Qt::ToolButtonTextBesideIcon);
+    m_ui->toolButtonStyleComboBox->addItem(tr("The text appears under the icon"), Qt::ToolButtonTextUnderIcon);
+    m_ui->toolButtonStyleComboBox->addItem(tr("Follow the application style"), Qt::ToolButtonFollowStyle);
+
     readSettings();
 }
 
@@ -62,6 +68,7 @@ void InterfacePage::writeSettings()
     settings.setValue("menus_have_icons", m_ui->menuIconsCheckBox->isChecked());
     settings.setValue("activate_item_on_single_click", m_ui->singleClickCheckBox->checkState());
     settings.setValue("dialog_buttons_have_icons", m_ui->dialogIconsCheckBox->checkState());
+    settings.setValue("toolbutton_style", m_ui->toolButtonStyleComboBox->currentData());
 
     QStringList effects;
     if(m_ui->guiEffectsCheckBox->isChecked())
@@ -120,6 +127,11 @@ void InterfacePage::readSettings()
     m_ui->singleClickCheckBox->setCheckState((Qt::CheckState)settings.value("activate_item_on_single_click", Qt::PartiallyChecked).toInt());
     m_ui->dialogIconsCheckBox->setCheckState((Qt::CheckState)settings.value("dialog_buttons_have_icons", Qt::PartiallyChecked).toInt());
     m_ui->menuIconsCheckBox->setChecked(!qApp->testAttribute(Qt::AA_DontShowIconsInMenus));
+
+    int toolbarStyle = settings.value("toolbutton_style", Qt::ToolButtonFollowStyle).toInt();
+    index = m_ui->toolButtonStyleComboBox->findData(toolbarStyle);
+    if(index >= 0)
+        m_ui->toolButtonStyleComboBox->setCurrentIndex(index);
 
     settings.endGroup();
 }
