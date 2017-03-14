@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="ru">
+<TS version="2.1" language="ru">
 <context>
     <name>AppearancePage</name>
     <message>
@@ -346,6 +346,11 @@
         <location filename="../interfacepage.ui" line="219"/>
         <source>Toolbar button style:</source>
         <translation>Стиль кнопок панелей инструментов:</translation>
+    </message>
+    <message>
+        <location filename="../interfacepage.ui" line="229"/>
+        <source>Mouse wheel scroll lines:</source>
+        <translation>Колёсико мыши перематывает строк:</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="47"/>

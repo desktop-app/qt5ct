@@ -348,6 +348,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../interfacepage.ui" line="229"/>
+        <source>Mouse wheel scroll lines:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../interfacepage.cpp" line="47"/>
         <source>Only display the icon</source>
         <translation type="unfinished"></translation>
