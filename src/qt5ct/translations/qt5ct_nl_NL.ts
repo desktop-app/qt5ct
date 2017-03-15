@@ -71,7 +71,7 @@
     <message>
         <location filename="../appearancepage.cpp" line="68"/>
         <source>Rename</source>
-        <translation>Hernoemen</translation>
+        <translation>Naam wijzigen</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="70"/>
@@ -128,7 +128,7 @@
     <message>
         <location filename="../appearancepage.cpp" line="176"/>
         <source>Are you sure you want to remove color scheme &quot;%1&quot;?</source>
-        <translation>Weet u zeker dat kleurenschema &quot;%1&quot; wilt verwijderen?</translation>
+        <translation>Weet u zeker dat u het kleurenschema &quot;%1&quot; wilt verwijderen?</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="196"/>
@@ -142,7 +142,7 @@
         <location filename="../fontconfigdialog.ui" line="14"/>
         <location filename="../fontconfigdialog.cpp" line="73"/>
         <source>Font Configuration</source>
-        <translation>Lettertypeconfiguratie</translation>
+        <translation>Lettertype-instellingen</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="29"/>
@@ -182,7 +182,7 @@
     <message>
         <location filename="../fontconfigdialog.ui" line="90"/>
         <source>Antialiasing</source>
-        <translation>Anti-aliasing</translation>
+        <translation>Anti-kartelvorming</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="97"/>
@@ -304,7 +304,7 @@
         <location filename="../interfacepage.ui" line="138"/>
         <location filename="../interfacepage.ui" line="162"/>
         <source>Animate</source>
-        <translation>Effect</translation>
+        <translation>Uitschuiven</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="121"/>
@@ -320,7 +320,7 @@
     <message>
         <location filename="../interfacepage.ui" line="175"/>
         <source>Enable gui effects</source>
-        <translation>GUI-effecten inschakelen</translation>
+        <translation>Applicatie-effecten inschakelen</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="182"/>
@@ -345,37 +345,37 @@
     <message>
         <location filename="../interfacepage.ui" line="219"/>
         <source>Toolbar button style:</source>
-        <translation type="unfinished"></translation>
+        <translation>Werkbalkknop-stijl:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="229"/>
         <source>Mouse wheel scroll lines:</source>
-        <translation type="unfinished"></translation>
+        <translation>Aantal te scrollen regels met muis:</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="47"/>
         <source>Only display the icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Alleen pictogram weergeven</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="48"/>
         <source>Only display the text</source>
-        <translation type="unfinished"></translation>
+        <translation>Alleen tekst weergeven</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="49"/>
         <source>The text appears beside the icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Tekst naast het pictogram weergeven</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="50"/>
         <source>The text appears under the icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Tekst onder het pictogram weergeven</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="51"/>
         <source>Follow the application style</source>
-        <translation type="unfinished"></translation>
+        <translation>Applicatiestijl volgen</translation>
     </message>
 </context>
 <context>
@@ -426,7 +426,7 @@
     <message>
         <location filename="../paletteeditdialog.ui" line="79"/>
         <source>Reset palette</source>
-        <translation>Kleurenschema herstellen</translation>
+        <translation>Standaardwaarden</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.ui" line="29"/>
@@ -622,7 +622,7 @@
         <location filename="../qsspage.ui" line="76"/>
         <location filename="../qsspage.cpp" line="52"/>
         <source>Rename</source>
-        <translation>Hernoemen</translation>
+        <translation>Naam wijzigen</translation>
     </message>
     <message>
         <location filename="../qsspage.ui" line="33"/>
@@ -638,7 +638,7 @@
     <message>
         <location filename="../qsspage.cpp" line="102"/>
         <source>Enter Style Sheet Name</source>
-        <translation>Vul naam in voor stijlblad</translation>
+        <translation>Voer een naam in voor dit stijlblad</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="113"/>
@@ -660,17 +660,17 @@
     <message>
         <location filename="../qsspage.cpp" line="148"/>
         <source>Are you sure you want to remove style sheet &quot;%1&quot;?</source>
-        <translation>Weet u zeker dat u stijlblad &quot;%1&quot; wilt verwijderen?</translation>
+        <translation>Weet u zeker dat u het stijlblad &quot;%1&quot; wilt verwijderen?</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="198"/>
         <source>Rename Style Sheet</source>
-        <translation>Stijlblad hernoemen</translation>
+        <translation>Stijlbladnaam wijzigen</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="198"/>
         <source>Style sheet name:</source>
-        <translation>Naam van stijlblad:</translation>
+        <translation>Stijlbladnaam:</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="205"/>
@@ -680,7 +680,7 @@
     <message>
         <location filename="../qsspage.cpp" line="216"/>
         <source>Unable to rename file</source>
-        <translation>Hernoemen van bestand mislukt</translation>
+        <translation>Het wijzigen van de bestandsnaam is mislukt</translation>
     </message>
 </context>
 <context>
