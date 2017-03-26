@@ -4,6 +4,9 @@ Name=Qt5 Settings
 
 Comment=Qt5 Configuration Tool
 
+Comment[ar]= أداة اعداد Qt5
+Name[ar]=إعدادات Qt5 
+
 Comment[bg]=Инструмент за настройка на Qt5
 Name[bg]=Настройки на Qt5
 
