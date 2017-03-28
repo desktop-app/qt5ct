@@ -196,7 +196,7 @@ Version 0.30
 
 Version 0.31
 * added option "Toolbar button style"
-* added option "Wheel scroll lines"
+* added option "Mouse wheel scroll lines"
 * added test for minimal Qt version
 * added Arabic translation (abouzakaria kov)
 * using c++11 for source code

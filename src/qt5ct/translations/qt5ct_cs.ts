@@ -345,7 +345,7 @@
     <message>
         <location filename="../interfacepage.ui" line="219"/>
         <source>Toolbar button style:</source>
-        <translation type="unfinished"></translation>
+        <translation>Styl tlačítka v nástrojovém pruhu:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="229"/>
@@ -355,27 +355,27 @@
     <message>
         <location filename="../interfacepage.cpp" line="47"/>
         <source>Only display the icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Zobrazit pouze ikonu</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="48"/>
         <source>Only display the text</source>
-        <translation type="unfinished"></translation>
+        <translation>Zobrazit pouze text</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="49"/>
         <source>The text appears beside the icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Text se objeví vedle ikony</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="50"/>
         <source>The text appears under the icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Text se objeví pod ikonou</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="51"/>
         <source>Follow the application style</source>
-        <translation type="unfinished"></translation>
+        <translation>Následovat styl programu</translation>
     </message>
 </context>
 <context>
