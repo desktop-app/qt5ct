@@ -346,37 +346,37 @@
     <message>
         <location filename="../interfacepage.ui" line="219"/>
         <source>Toolbar button style:</source>
-        <translation type="unfinished"></translation>
+        <translation>Τεχνοτροπία των κουμπιών της γραμμής εργαλείων:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="229"/>
         <source>Mouse wheel scroll lines:</source>
-        <translation type="unfinished"></translation>
+        <translation>Γραμμές κύλισης τροχού ποντικιού:</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="47"/>
         <source>Only display the icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Εμφάνιση μόνον του εικονιδίου</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="48"/>
         <source>Only display the text</source>
-        <translation type="unfinished"></translation>
+        <translation>Εμφάνιση μόνον του κειμένου</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="49"/>
         <source>The text appears beside the icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Το κείμενο εμφανίζεται δίπλα από το εικονίδιο</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="50"/>
         <source>The text appears under the icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Το κείμενο εμφανίζεται κάτω από το εικονίδιο</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="51"/>
         <source>Follow the application style</source>
-        <translation type="unfinished"></translation>
+        <translation>Ακολούθηση της τεχνοτροπίας της εφαρμογής</translation>
     </message>
 </context>
 <context>
