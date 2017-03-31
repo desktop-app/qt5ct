@@ -350,7 +350,7 @@
     <message>
         <location filename="../interfacepage.ui" line="229"/>
         <source>Mouse wheel scroll lines:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kolečko myši projíždí řádky:</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="47"/>
