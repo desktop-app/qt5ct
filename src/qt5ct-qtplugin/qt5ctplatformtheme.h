@@ -42,7 +42,13 @@
 #endif
 
 class QPalette;
+#if !defined(QT_NO_DBUS) && !defined(QT_NO_SYSTEMTRAYICON)
 class QPlatformSystemTrayIcon;
+#endif
+
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 6, 0)) && !defined(QT_NO_DBUS)
+class QPlatformMenuBar;
+#endif
 
 class Qt5CTPlatformTheme : public QObject, public QPlatformTheme
 {
@@ -55,7 +61,9 @@ public:
 
     //virtual QPlatformMenuItem* createPlatformMenuItem() const;
     //virtual QPlatformMenu* createPlatformMenu() const;
-    //virtual QPlatformMenuBar* createPlatformMenuBar() const;
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 6, 0)) && !defined(QT_NO_DBUS)
+    virtual QPlatformMenuBar* createPlatformMenuBar() const;
+#endif
     //virtual void showPlatformMenuBar() {}
     //virtual bool usePlatformNativeDialog(DialogType type) const;
     //virtual QPlatformDialogHelper *createPlatformDialogHelper(DialogType type) const;
@@ -98,6 +106,10 @@ private:
     bool m_usePalette = true;
     int m_toolButtonStyle = Qt::ToolButtonFollowStyle;
     int m_wheelScrollLines = 3;
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 6, 0)) && !defined(QT_NO_DBUS)
+    mutable bool m_dbusGlobalMenuAvailable = false;
+    mutable bool m_checkDBusGlobalMenu = true;
+#endif
 #if !defined(QT_NO_DBUS) && !defined(QT_NO_SYSTEMTRAYICON)
     mutable bool m_dbusTrayAvailable = false;
     mutable bool m_checkDBusTray = true;

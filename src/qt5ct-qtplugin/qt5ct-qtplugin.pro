@@ -10,6 +10,8 @@ greaterThan(QT_MINOR_VERSION, 7) {
   QT += gui-private platformsupport-private
 }
 
+greaterThan(QT_MINOR_VERSION, 5): QT += dbus
+
 SOURCES += \
     main.cpp \
     qt5ctplatformtheme.cpp \

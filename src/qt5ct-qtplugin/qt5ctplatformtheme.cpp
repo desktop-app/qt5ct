@@ -46,9 +46,14 @@
 
 #include <qt5ct/qt5ct.h>
 #include "qt5ctplatformtheme.h"
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 6, 0)) && !defined(QT_NO_DBUS)
+#include <private/qdbusmenubar_p.h>
+#endif
 #if !defined(QT_NO_DBUS) && !defined(QT_NO_SYSTEMTRAYICON)
+#include <QDBusArgument>
 #include <private/qdbustrayicon_p.h>
 #endif
+
 
 
 Q_LOGGING_CATEGORY(lqt5ct, "qt5ct")
@@ -78,6 +83,19 @@ Qt5CTPlatformTheme::~Qt5CTPlatformTheme()
     if(m_customPalette)
         delete m_customPalette;
 }
+
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 6, 0)) && !defined(QT_NO_DBUS)
+QPlatformMenuBar *Qt5CTPlatformTheme::createPlatformMenuBar() const
+{
+    if(m_checkDBusGlobalMenu)
+    {
+        QDBusConnection conn = QDBusConnection::sessionBus();
+        m_dbusGlobalMenuAvailable = conn.interface()->isServiceRegistered("com.canonical.AppMenu.Registrar");
+        qCDebug(lqt5ct) << "D-Bus global menu:" << (m_dbusGlobalMenuAvailable ? "yes" : "no");
+    }
+    return (m_dbusGlobalMenuAvailable ? new QDBusMenuBar() : nullptr);
+}
+#endif
 
 #if !defined(QT_NO_DBUS) && !defined(QT_NO_SYSTEMTRAYICON)
 QPlatformSystemTrayIcon *Qt5CTPlatformTheme::createPlatformSystemTrayIcon() const
