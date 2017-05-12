@@ -107,14 +107,14 @@ QPlatformSystemTrayIcon *Qt5CTPlatformTheme::createPlatformSystemTrayIcon() cons
         m_checkDBusTray = false;
         qCDebug(lqt5ct) << "D-Bus system tray:" << (m_dbusTrayAvailable ? "yes" : "no");
     }
-    return (m_dbusTrayAvailable ? new QDBusTrayIcon() : 0);
+    return (m_dbusTrayAvailable ? new QDBusTrayIcon() : nullptr);
 }
 #endif
 
 const QPalette *Qt5CTPlatformTheme::palette(QPlatformTheme::Palette type) const
 {
     Q_UNUSED(type);
-    return (m_usePalette ? m_customPalette : 0);
+    return (m_usePalette ? m_customPalette : nullptr);
 }
 
 const QFont *Qt5CTPlatformTheme::font(QPlatformTheme::Font type) const
@@ -313,7 +313,7 @@ void Qt5CTPlatformTheme::readSettings()
 #ifdef QT_WIDGETS_LIB
 bool Qt5CTPlatformTheme::hasWidgets()
 {
-    return qobject_cast<QApplication *> (qApp) != 0;
+    return qobject_cast<QApplication *> (qApp) != nullptr;
 }
 #endif
 
