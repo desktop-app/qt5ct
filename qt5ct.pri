@@ -4,6 +4,9 @@ MOC_DIR=./.build/moc/
 OBJECTS_DIR=./.build/obj
 RCC_DIR=./.build/rcc
 
+QMAKE_DISTCLEAN += -r .build
+QMAKE_DISTCLEAN += translations/*.qm
+
 CONFIG += c++11
 
 !isEqual (QT_MAJOR_VERSION, 5) {
