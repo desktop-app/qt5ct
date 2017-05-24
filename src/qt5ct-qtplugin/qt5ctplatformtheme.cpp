@@ -46,7 +46,7 @@
 
 #include <qt5ct/qt5ct.h>
 #include "qt5ctplatformtheme.h"
-#if (QT_VERSION >= QT_VERSION_CHECK(5, 6, 0)) && !defined(QT_NO_DBUS)
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 7, 0)) && !defined(QT_NO_DBUS)
 #include <private/qdbusmenubar_p.h>
 #endif
 #if !defined(QT_NO_DBUS) && !defined(QT_NO_SYSTEMTRAYICON)
@@ -84,7 +84,7 @@ Qt5CTPlatformTheme::~Qt5CTPlatformTheme()
         delete m_customPalette;
 }
 
-#if (QT_VERSION >= QT_VERSION_CHECK(5, 6, 0)) && !defined(QT_NO_DBUS)
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 7, 0)) && !defined(QT_NO_DBUS)
 QPlatformMenuBar *Qt5CTPlatformTheme::createPlatformMenuBar() const
 {
     if(m_checkDBusGlobalMenu)

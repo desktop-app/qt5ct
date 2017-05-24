@@ -46,7 +46,7 @@ class QPalette;
 class QPlatformSystemTrayIcon;
 #endif
 
-#if (QT_VERSION >= QT_VERSION_CHECK(5, 6, 0)) && !defined(QT_NO_DBUS)
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 7, 0)) && !defined(QT_NO_DBUS)
 class QPlatformMenuBar;
 #endif
 
@@ -61,7 +61,7 @@ public:
 
     //virtual QPlatformMenuItem* createPlatformMenuItem() const;
     //virtual QPlatformMenu* createPlatformMenu() const;
-#if (QT_VERSION >= QT_VERSION_CHECK(5, 6, 0)) && !defined(QT_NO_DBUS)
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 7, 0)) && !defined(QT_NO_DBUS)
     virtual QPlatformMenuBar* createPlatformMenuBar() const;
 #endif
     //virtual void showPlatformMenuBar() {}
