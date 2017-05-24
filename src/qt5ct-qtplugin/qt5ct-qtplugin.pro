@@ -33,4 +33,3 @@ HEADERS += \
 
 target.path = $$PLUGINDIR/platformthemes
 INSTALLS += target
-
