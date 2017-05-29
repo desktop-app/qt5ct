@@ -46,12 +46,12 @@
     <message>
         <location filename="../appearancepage.ui" line="139"/>
         <source>Color scheme:</source>
-        <translation type="unfinished"></translation>
+        <translation>ערכת צבעים:</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="162"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation>...</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="65"/>
@@ -83,7 +83,7 @@
         <location filename="../appearancepage.cpp" line="194"/>
         <location filename="../appearancepage.cpp" line="229"/>
         <source>Enter Color Scheme Name</source>
-        <translation type="unfinished"></translation>
+        <translation>הזן שם של ערכת הצבעים</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="120"/>
@@ -104,7 +104,7 @@
         <location filename="../appearancepage.cpp" line="205"/>
         <location filename="../appearancepage.cpp" line="239"/>
         <source>The color scheme &quot;%1&quot; already exists</source>
-        <translation type="unfinished"></translation>
+        <translation>ערכת הצבעים &quot;%1&quot; כבר קיימת </translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="147"/>
@@ -118,7 +118,7 @@
         <location filename="../appearancepage.cpp" line="170"/>
         <location filename="../appearancepage.cpp" line="224"/>
         <source>The color scheme &quot;%1&quot; is read only</source>
-        <translation type="unfinished"></translation>
+        <translation>ערכת הצבעים &quot;%1&quot; הינה לקריאה בלבד </translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="175"/>
@@ -128,7 +128,7 @@
     <message>
         <location filename="../appearancepage.cpp" line="176"/>
         <source>Are you sure you want to remove color scheme &quot;%1&quot;?</source>
-        <translation type="unfinished"></translation>
+        <translation>להסיר את ערכת הצבעים &quot;%1&quot;?</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="196"/>
@@ -224,7 +224,7 @@
         <location filename="../fontspage.ui" line="80"/>
         <location filename="../fontspage.ui" line="87"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation>...</translation>
     </message>
     <message>
         <location filename="../fontspage.ui" line="57"/>
@@ -288,7 +288,7 @@
         <location filename="../interfacepage.ui" line="70"/>
         <location filename="../interfacepage.ui" line="80"/>
         <source> ms</source>
-        <translation type="unfinished"></translation>
+        <translation>מילישניות</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="94"/>
@@ -325,7 +325,7 @@
     <message>
         <location filename="../interfacepage.ui" line="182"/>
         <source>Dialog buttons layout:</source>
-        <translation type="unfinished"></translation>
+        <translation>פריסת לחצני דו־שיח</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="192"/>
@@ -340,42 +340,42 @@
     <message>
         <location filename="../interfacepage.ui" line="209"/>
         <source>Activate item on single-click</source>
-        <translation type="unfinished"></translation>
+        <translation>הפעל פריטים בלחיצה יחידה</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="219"/>
         <source>Toolbar button style:</source>
-        <translation type="unfinished"></translation>
+        <translation>עיצוב לחצן סרגל כלים </translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="229"/>
         <source>Mouse wheel scroll lines:</source>
-        <translation type="unfinished"></translation>
+        <translation>גלגלת העכבר גוללת (שורות):</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="47"/>
         <source>Only display the icon</source>
-        <translation type="unfinished"></translation>
+        <translation>הצג רק את הסמל</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="48"/>
         <source>Only display the text</source>
-        <translation type="unfinished"></translation>
+        <translation>הצג רק את הטקסט</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="49"/>
         <source>The text appears beside the icon</source>
-        <translation type="unfinished"></translation>
+        <translation>טקסט ליד הסמל</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="50"/>
         <source>The text appears under the icon</source>
-        <translation type="unfinished"></translation>
+        <translation>טקסט מתחת לסמל</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="51"/>
         <source>Follow the application style</source>
-        <translation type="unfinished"></translation>
+        <translation>לפי עיצוב היישום עצמו</translation>
     </message>
 </context>
 <context>
@@ -398,7 +398,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="47"/>
         <source>Icon Theme</source>
-        <translation type="unfinished"></translation>
+        <translation>ערכת סמלים</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="48"/>
@@ -516,17 +516,17 @@
     <message>
         <location filename="../paletteeditdialog.cpp" line="93"/>
         <source>Highlight</source>
-        <translation type="unfinished"></translation>
+        <translation>הבלט</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="93"/>
         <source>Highlighted text</source>
-        <translation type="unfinished"></translation>
+        <translation>הבלט טקסט</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="93"/>
         <source>Visited link</source>
-        <translation type="unfinished"></translation>
+        <translation>קישורים שנצפו</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="94"/>
@@ -688,22 +688,22 @@
     <message>
         <location filename="../main.cpp" line="60"/>
         <source>Please remove the &lt;b&gt;QT_STYLE_OVERRIDE&lt;/b&gt; environment variable</source>
-        <translation type="unfinished"></translation>
+        <translation>נא הסר את משתנה הסביבה &lt;b&gt;QT_STYLE_OVERRIDE&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="65"/>
         <source>The &lt;b&gt;QT_QPA_PLATFORMTHEME&lt;/b&gt; environment variable is not set correctly</source>
-        <translation type="unfinished"></translation>
+        <translation>משתנה הסביבה &lt;b&gt;QT_QPA_PLATFORMTHEME&lt;/b&gt; אינו מוגדר כראוי</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="71"/>
         <source>Unable to find &lt;b&gt;libqt5ct-style.so&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>לא ניתן למצוא את &lt;b&gt;libqt5ct-style.so&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="76"/>
         <source>Error</source>
-        <translation type="unfinished">שגיאה</translation>
+        <translation>שגיאה</translation>
     </message>
 </context>
 </TS>
