@@ -218,3 +218,4 @@ Version 0.32
 Version 0.33
 * fixed build without dbus support (coacher)
 * fixed Qt 5.6 support (coacher)
+* updated Hebrew translation (Elkana Birdugo)
