@@ -219,30 +219,30 @@
 <context>
     <name>FontsPage</name>
     <message>
-        <location filename="../fontspage.ui" line="44"/>
-        <location filename="../fontspage.ui" line="64"/>
-        <location filename="../fontspage.ui" line="80"/>
-        <location filename="../fontspage.ui" line="87"/>
+        <location filename="../fontspage.ui" line="47"/>
+        <location filename="../fontspage.ui" line="67"/>
+        <location filename="../fontspage.ui" line="86"/>
+        <location filename="../fontspage.ui" line="93"/>
         <source>...</source>
         <translation>...</translation>
     </message>
     <message>
-        <location filename="../fontspage.ui" line="57"/>
+        <location filename="../fontspage.ui" line="60"/>
         <source>General:</source>
         <translation>Опште:</translation>
     </message>
     <message>
-        <location filename="../fontspage.ui" line="94"/>
+        <location filename="../fontspage.ui" line="100"/>
         <source>Fixed width:</source>
         <translation>Одређена ширина:</translation>
     </message>
     <message>
-        <location filename="../fontspage.ui" line="119"/>
+        <location filename="../fontspage.ui" line="125"/>
         <source>Create  fonts.conf</source>
         <translation>Креирај  fonts.conf</translation>
     </message>
     <message>
-        <location filename="../fontspage.ui" line="126"/>
+        <location filename="../fontspage.ui" line="132"/>
         <source>Remove fonts.conf</source>
         <translation>Обриши fonts.conf</translation>
     </message>
@@ -351,6 +351,11 @@
         <location filename="../interfacepage.ui" line="229"/>
         <source>Mouse wheel scroll lines:</source>
         <translation>Линије точкића миша:</translation>
+    </message>
+    <message>
+        <location filename="../interfacepage.ui" line="246"/>
+        <source>Show shortcut underlines</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="47"/>
