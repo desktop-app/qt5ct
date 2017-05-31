@@ -52,7 +52,7 @@ int Qt5CTProxyStyle::styleHint(QStyle::StyleHint hint, const QStyleOption *optio
         else if(m_dialogButtonsHaveIcons == Qt::Checked)
             return 1;
     }
-    else if(hint == QStyle::QStyle::SH_ItemView_ActivateItemOnSingleClick)
+    else if(hint == QStyle::SH_ItemView_ActivateItemOnSingleClick)
     {
         if(m_activateItemOnSingleClick == Qt::Unchecked)
             return 0;
