@@ -66,6 +66,7 @@ void InterfacePage::writeSettings()
     settings.setValue("cursor_flash_time", m_ui->cursorFlashTimeSpinBox->value());
     settings.setValue("buttonbox_layout", m_ui->buttonLayoutComboBox->currentData());
     settings.setValue("menus_have_icons", m_ui->menuIconsCheckBox->isChecked());
+    settings.setValue("underline_shortcut", m_ui->shortcutUnderlineCheckBox->checkState());
     settings.setValue("activate_item_on_single_click", m_ui->singleClickCheckBox->checkState());
     settings.setValue("dialog_buttons_have_icons", m_ui->dialogIconsCheckBox->checkState());
     settings.setValue("toolbutton_style", m_ui->toolButtonStyleComboBox->currentData());
@@ -125,8 +126,10 @@ void InterfacePage::readSettings()
     if(qApp->isEffectEnabled(Qt::UI_AnimateToolBox))
         m_ui->toolBoxEffectComboBox->setCurrentIndex(1);
 
-    m_ui->singleClickCheckBox->setCheckState((Qt::CheckState)settings.value("activate_item_on_single_click", Qt::PartiallyChecked).toInt());
-    m_ui->dialogIconsCheckBox->setCheckState((Qt::CheckState)settings.value("dialog_buttons_have_icons", Qt::PartiallyChecked).toInt());
+    m_ui->singleClickCheckBox->setCheckState(Qt::CheckState(settings.value("activate_item_on_single_click", Qt::PartiallyChecked).toInt()));
+    m_ui->dialogIconsCheckBox->setCheckState(Qt::CheckState(settings.value("dialog_buttons_have_icons", Qt::PartiallyChecked).toInt()));
+    m_ui->shortcutUnderlineCheckBox->setCheckState(Qt::CheckState(settings.value("underline_shortcut", Qt::PartiallyChecked).toInt()));
+
     m_ui->menuIconsCheckBox->setChecked(!qApp->testAttribute(Qt::AA_DontShowIconsInMenus));
 
     int toolbarStyle = settings.value("toolbutton_style", Qt::ToolButtonFollowStyle).toInt();

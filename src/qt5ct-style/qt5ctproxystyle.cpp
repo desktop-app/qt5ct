@@ -36,6 +36,7 @@ Qt5CTProxyStyle::Qt5CTProxyStyle(const QString &key) :
     QSettings settings(Qt5CT::configFile(), QSettings::IniFormat);
     m_dialogButtonsHaveIcons = settings.value("Interface/dialog_buttons_have_icons", Qt::PartiallyChecked).toInt();
     m_activateItemOnSingleClick = settings.value("Interface/activate_item_on_single_click", Qt::PartiallyChecked).toInt();
+    m_underlineShortcut = settings.value("Interface/underline_shortcut", Qt::PartiallyChecked).toInt();
 }
 
 Qt5CTProxyStyle::~Qt5CTProxyStyle()
@@ -57,6 +58,13 @@ int Qt5CTProxyStyle::styleHint(QStyle::StyleHint hint, const QStyleOption *optio
         if(m_activateItemOnSingleClick == Qt::Unchecked)
             return 0;
         else if(m_activateItemOnSingleClick == Qt::Checked)
+            return 1;
+    }
+    else if(hint == QStyle::SH_UnderlineShortcut)
+    {
+        if(m_underlineShortcut == Qt::Unchecked)
+            return 0;
+        else if(m_underlineShortcut == Qt::Checked)
             return 1;
     }
     return QProxyStyle::styleHint(hint, option, widget, returnData);
