@@ -50,7 +50,6 @@
 #include <private/qdbusmenubar_p.h>
 #endif
 #if !defined(QT_NO_DBUS) && !defined(QT_NO_SYSTEMTRAYICON)
-#include <QDBusArgument>
 #include <private/qdbustrayicon_p.h>
 #endif
 
