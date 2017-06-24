@@ -90,6 +90,7 @@ QPlatformMenuBar *Qt5CTPlatformTheme::createPlatformMenuBar() const
     {
         QDBusConnection conn = QDBusConnection::sessionBus();
         m_dbusGlobalMenuAvailable = conn.interface()->isServiceRegistered("com.canonical.AppMenu.Registrar");
+        m_checkDBusGlobalMenu = false;
         qCDebug(lqt5ct) << "D-Bus global menu:" << (m_dbusGlobalMenuAvailable ? "yes" : "no");
     }
     return (m_dbusGlobalMenuAvailable ? new QDBusMenuBar() : nullptr);
