@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="zh_TW">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="zh_TW" version="2.1">
 <context>
     <name>AppearancePage</name>
     <message>
@@ -355,7 +353,7 @@
     <message>
         <location filename="../interfacepage.ui" line="246"/>
         <source>Show shortcut underlines</source>
-        <translation type="unfinished"></translation>
+        <translation>顯示快捷鍵底線</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="47"/>
