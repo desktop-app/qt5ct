@@ -350,12 +350,12 @@
     <message>
         <location filename="../interfacepage.ui" line="229"/>
         <source>Mouse wheel scroll lines:</source>
-        <translation>Kolečko myši projíždí řádky:</translation>
+        <translation>Kolečko myši posunuje řádky:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="246"/>
         <source>Show shortcut underlines</source>
-        <translation type="unfinished"></translation>
+        <translation>Ukázat podtržení zkratek</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="47"/>
