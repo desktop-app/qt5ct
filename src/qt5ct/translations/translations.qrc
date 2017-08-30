@@ -32,5 +32,6 @@
     <file>qt5ct_sr.qm</file>
     <file>qt5ct_ca.qm</file>
     <file>qt5ct_ar.qm</file>
+    <file>qt5ct_da.qm</file>
   </qresource>
 </RCC>
