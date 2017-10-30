@@ -28,6 +28,7 @@
 
 #include <QDir>
 #include <QLocale>
+#include <QStandardPaths>
 #include "qt5ct.h"
 
 #ifndef QT5CT_DATADIR
@@ -37,7 +38,7 @@
 
 QString Qt5CT::configPath()
 {
-    return QDir::homePath() + "/.config/qt5ct/";
+    return QStandardPaths::writableLocation(QStandardPaths::ConfigLocation) + "/qt5ct/";
 }
 
 QString Qt5CT::configFile()
