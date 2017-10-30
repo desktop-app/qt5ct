@@ -48,28 +48,13 @@ QString Qt5CT::configFile()
 
 QStringList Qt5CT::iconPaths()
 {
-    QString xdgDataDirs = qgetenv("XDG_DATA_DIRS");
-    QString xdgDataHome = qgetenv("XDG_DATA_HOME");
-
     QStringList paths;
     paths << QDir::homePath() + "/.icons/";
 
-    if(xdgDataDirs.isEmpty())
+    foreach (QString p, QStandardPaths::standardLocations(QStandardPaths::GenericDataLocation))
     {
-        paths << "/usr/share/icons";
-        paths << "/usr/local/share/icons";
+        paths << (p + "/icons");
     }
-    else
-    {
-        foreach (QString p, xdgDataDirs.split(":"))
-            paths << QDir(p + "/icons/").absolutePath();
-    }
-
-    if(xdgDataHome.isEmpty())
-        xdgDataHome = QDir::homePath() + "/.local/share";
-
-    paths << "/usr/share/pixmaps";
-    paths << xdgDataHome + "/icons";
     paths.removeDuplicates();
 
     //remove invalid
