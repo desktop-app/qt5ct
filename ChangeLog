@@ -219,3 +219,17 @@ Version 0.33
 * fixed build without dbus support (coacher)
 * fixed Qt 5.6 support (coacher)
 * updated Hebrew translation (Elkana Birdugo)
+
+Version 0.34
+* added feature to disable shortcut underlines
+* added Danish translation (scootergrisen)
+* improved global menu checking
+* fixed font settings
+* fixed Qt 5.5 support
+* updated Russian translation
+* updated Czech translation (fri)
+* updated Dutch (Netherlands) translation (Heimen Stoffels)
+* updated Chinese (Taiwan) translation (Jeff Huang)
+* updated German translation (Ettore Atalan)
+* updated Italian translation (Luigi Baldoni)
+* updated Bulgarian translation (Kiril Kirilov)
