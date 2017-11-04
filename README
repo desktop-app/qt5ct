@@ -39,7 +39,7 @@ export the following environment variable:
 export QT_LOGGIN_RULES="qt5ct.debug=false"
 
 Another way is to change qtlogging.ini file. See Qt documentation for details:
-http://doc.qt.io/qt-5/qloggingcategory.html (paragraph "Configuring Categories")
+https://doc.qt.io/qt-5/qloggingcategory.html (paragraph "Configuring Categories")
 
 Files and Directories:
 
@@ -47,8 +47,14 @@ qt5ct - Qt5 configuration tool
 libqt5ct.so - qt5ct platform plugin
 libqt5ct-style.so - qt5ct proxy style plugin
 ~/.config/qt5ct/qt5ct.conf - configuration file
-~/.config/qt5ct/qss/ - style sheets
-
+~/.config/qt5ct/qss, 
+~/.local/share/qt5ct/qss, 
+/usr/share/qt5ct/qss,
+/usr/local/share/qt5ct/qss - style sheets
+~/.config/qt5ct/colors, 
+~/.local/share/qt5ct/colors,
+/usr/share/qt5ct/colors,
+/usr/local/share/qt5ct/colors - color schemes
 
 Translation:
 
