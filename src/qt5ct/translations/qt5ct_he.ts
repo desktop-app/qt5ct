@@ -647,8 +647,8 @@
     </message>
     <message>
         <location filename="../qsspage.cpp" line="113"/>
-        <location filename="../qsspage.cpp" line="205"/>
-        <location filename="../qsspage.cpp" line="216"/>
+        <location filename="../qsspage.cpp" line="211"/>
+        <location filename="../qsspage.cpp" line="222"/>
         <source>Error</source>
         <translation>שגיאה</translation>
     </message>
@@ -668,22 +668,22 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="198"/>
+        <location filename="../qsspage.cpp" line="204"/>
         <source>Rename Style Sheet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="198"/>
+        <location filename="../qsspage.cpp" line="204"/>
         <source>Style sheet name:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="205"/>
+        <location filename="../qsspage.cpp" line="211"/>
         <source>The style sheet &quot;%1&quot; already exists</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="216"/>
+        <location filename="../qsspage.cpp" line="222"/>
         <source>Unable to rename file</source>
         <translation>לא מסוגל לשנות שם קובץ</translation>
     </message>
@@ -691,22 +691,22 @@
 <context>
     <name>main</name>
     <message>
-        <location filename="../main.cpp" line="60"/>
+        <location filename="../main.cpp" line="62"/>
         <source>Please remove the &lt;b&gt;QT_STYLE_OVERRIDE&lt;/b&gt; environment variable</source>
         <translation>נא הסר את משתנה הסביבה &lt;b&gt;QT_STYLE_OVERRIDE&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="65"/>
+        <location filename="../main.cpp" line="67"/>
         <source>The &lt;b&gt;QT_QPA_PLATFORMTHEME&lt;/b&gt; environment variable is not set correctly</source>
         <translation>משתנה הסביבה &lt;b&gt;QT_QPA_PLATFORMTHEME&lt;/b&gt; אינו מוגדר כראוי</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="71"/>
+        <location filename="../main.cpp" line="73"/>
         <source>Unable to find &lt;b&gt;libqt5ct-style.so&lt;/b&gt;</source>
         <translation>לא ניתן למצוא את &lt;b&gt;libqt5ct-style.so&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="76"/>
+        <location filename="../main.cpp" line="78"/>
         <source>Error</source>
         <translation>שגיאה</translation>
     </message>

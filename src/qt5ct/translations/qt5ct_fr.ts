@@ -647,8 +647,8 @@
     </message>
     <message>
         <location filename="../qsspage.cpp" line="113"/>
-        <location filename="../qsspage.cpp" line="205"/>
-        <location filename="../qsspage.cpp" line="216"/>
+        <location filename="../qsspage.cpp" line="211"/>
+        <location filename="../qsspage.cpp" line="222"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
@@ -668,22 +668,22 @@
         <translation>Êtes-vous sûr de vouloir supprimer la feuille de style &quot;%1&quot; ?</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="198"/>
+        <location filename="../qsspage.cpp" line="204"/>
         <source>Rename Style Sheet</source>
         <translation>Renommer la feuille de style</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="198"/>
+        <location filename="../qsspage.cpp" line="204"/>
         <source>Style sheet name:</source>
         <translation>Nom de la feuille de style :</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="205"/>
+        <location filename="../qsspage.cpp" line="211"/>
         <source>The style sheet &quot;%1&quot; already exists</source>
         <translation>La feuille de style &quot;%1&quot; existe déjà</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="216"/>
+        <location filename="../qsspage.cpp" line="222"/>
         <source>Unable to rename file</source>
         <translation>Impossible de renommer le fichier</translation>
     </message>
@@ -691,22 +691,22 @@
 <context>
     <name>main</name>
     <message>
-        <location filename="../main.cpp" line="60"/>
+        <location filename="../main.cpp" line="62"/>
         <source>Please remove the &lt;b&gt;QT_STYLE_OVERRIDE&lt;/b&gt; environment variable</source>
         <translation>Merci de retirer la variable d&apos;environement &lt;b&gt;QT_STYLE_OVERRIDE&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="65"/>
+        <location filename="../main.cpp" line="67"/>
         <source>The &lt;b&gt;QT_QPA_PLATFORMTHEME&lt;/b&gt; environment variable is not set correctly</source>
         <translation>La variable d&apos;environnement &lt;b&gt;QT_QPA_PLATFORMTHEME&lt;/b&gt; n&apos;est pas définie correctement</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="71"/>
+        <location filename="../main.cpp" line="73"/>
         <source>Unable to find &lt;b&gt;libqt5ct-style.so&lt;/b&gt;</source>
         <translation>Impossible de trouver &lt;b&gt;libqt5ct-style.so&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="76"/>
+        <location filename="../main.cpp" line="78"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
