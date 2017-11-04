@@ -224,6 +224,7 @@ Version 0.34
 * added feature to disable shortcut underlines
 * added Danish translation (scootergrisen)
 * improved global menu checking
+* improved XDG support
 * fixed font settings
 * fixed Qt 5.5 support
 * updated Russian translation
