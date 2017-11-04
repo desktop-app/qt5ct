@@ -160,7 +160,7 @@ void QSSPage::readSettings()
     //load stylesheets
     m_ui->qssListWidget->clear();
     findStyleSheets(Qt5CT::userStyleSheetPath());
-    findStyleSheets(Qt5CT::sharedStyleSheetPath());
+    findStyleSheets(Qt5CT::sharedStyleSheetPaths());
 
     QSettings settings(Qt5CT::configFile(), QSettings::IniFormat);
     QStringList styleSheets = settings.value("Interface/stylesheets").toStringList();
@@ -187,6 +187,12 @@ void QSSPage::findStyleSheets(const QString &path)
         item->setData(QSS_FULL_PATH_ROLE, info.filePath());
         item->setData(QSS_WRITABLE_ROLE, info.isWritable());
     }
+}
+
+void QSSPage::findStyleSheets(const QStringList &paths)
+{
+    foreach (QString p, paths)
+        findStyleSheets(p);
 }
 
 void QSSPage::on_renameButton_clicked()

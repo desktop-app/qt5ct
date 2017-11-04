@@ -28,6 +28,7 @@
 
 #include <QDir>
 #include <QLocale>
+#include <QLatin1String>
 #include <QStandardPaths>
 #include "qt5ct.h"
 
@@ -38,22 +39,22 @@
 
 QString Qt5CT::configPath()
 {
-    return QStandardPaths::writableLocation(QStandardPaths::ConfigLocation) + "/qt5ct/";
+    return QStandardPaths::writableLocation(QStandardPaths::ConfigLocation) + QLatin1String("/qt5ct");
 }
 
 QString Qt5CT::configFile()
 {
-    return configPath() + "qt5ct.conf";
+    return configPath() + QLatin1String("/qt5ct.conf");
 }
 
 QStringList Qt5CT::iconPaths()
 {
     QStringList paths;
-    paths << QDir::homePath() + "/.icons/";
+    paths << QDir::homePath() + QLatin1String("/.icons");
 
     foreach (QString p, QStandardPaths::standardLocations(QStandardPaths::GenericDataLocation))
     {
-        paths << (p + "/icons");
+        paths << (p + QLatin1String("/icons"));
     }
     paths.removeDuplicates();
 
@@ -68,22 +69,36 @@ QStringList Qt5CT::iconPaths()
 
 QString Qt5CT::userStyleSheetPath()
 {
-    return configPath() + "qss/";
+    return configPath() + QLatin1String("/qss");
 }
 
-QString Qt5CT::sharedStyleSheetPath()
+QStringList Qt5CT::sharedStyleSheetPaths()
 {
-    return QT5CT_DATADIR"/qt5ct/qss/";
+    QStringList paths;
+    foreach (QString p, QStandardPaths::standardLocations(QStandardPaths::GenericDataLocation))
+    {
+        paths << (p + QLatin1String("/qt5ct/qss"));
+    }
+    paths << QLatin1String(QT5CT_DATADIR"/qt5ct/qss");
+    paths.removeDuplicates();
+    return paths;
 }
 
 QString Qt5CT::userColorSchemePath()
 {
-    return configPath() + "colors/";
+    return configPath() + QLatin1String("/colors");
 }
 
-QString Qt5CT::sharedColorSchemePath()
+QStringList Qt5CT::sharedColorSchemePaths()
 {
-    return QT5CT_DATADIR"/qt5ct/colors/";
+    QStringList paths;
+    foreach (QString p, QStandardPaths::standardLocations(QStandardPaths::GenericDataLocation))
+    {
+        paths << (p + QLatin1String("/qt5ct/colors"));
+    }
+    paths << QLatin1String(QT5CT_DATADIR"/qt5ct/colors");
+    paths.removeDuplicates();
+    return paths;
 }
 
 QString Qt5CT::systemLanguageID()

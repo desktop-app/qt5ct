@@ -34,6 +34,7 @@
 #include <QMessageBox>
 #include <QProcessEnvironment>
 #include <QStyleFactory>
+#include <QtDebug>
 #include "mainwindow.h"
 
 int main(int argc, char **argv)
@@ -48,8 +49,8 @@ int main(int argc, char **argv)
     qt_translator.load(QLibraryInfo::location (QLibraryInfo::TranslationsPath) + "/qtbase_" + locale);
     app.installTranslator(&qt_translator);
 
-    qDebug("Configuration path: %s", qPrintable(Qt5CT::configPath()));
-    qDebug("Shared QSS path: %s", qPrintable(Qt5CT::sharedStyleSheetPath()));
+    qDebug() << "Configuration paths:" << Qt5CT::configPath();
+    qDebug() << "Shared QSS path:" << Qt5CT::sharedStyleSheetPaths();
 
     //checking environment
     QStringList errorMessages;

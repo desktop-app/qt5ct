@@ -310,7 +310,7 @@ void AppearancePage::readSettings()
 
     QDir("/").mkpath(Qt5CT::userColorSchemePath());
     findColorSchemes(Qt5CT::userColorSchemePath());
-    findColorSchemes(Qt5CT::sharedColorSchemePath());
+    findColorSchemes(Qt5CT::sharedColorSchemePaths());
 
     if(m_ui->colorSchemeComboBox->count() == 0)
     {
@@ -363,6 +363,12 @@ void AppearancePage::findColorSchemes(const QString &path)
     {
         m_ui->colorSchemeComboBox->addItem(info.baseName(), info.filePath());
     }
+}
+
+void AppearancePage::findColorSchemes(const QStringList &paths)
+{
+    foreach (QString p, paths)
+        findColorSchemes(p);
 }
 
 QPalette AppearancePage::loadColorScheme(const QString &filePath)
