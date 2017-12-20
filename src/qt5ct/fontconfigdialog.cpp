@@ -98,13 +98,13 @@ void FontConfigDialog::accept()
 
     stream.writeStartElement("match");
     stream.writeAttribute("target", "font");
-    writeOption(&stream, "antialias", "bool", m_ui->antialisingCheckBox->isChecked() ? "true" : "false");
-    writeOption(&stream, "hinting", "bool", m_ui->hintingCheckBox->isChecked() ? "true" : "false");
-    writeOption(&stream, "hintstyle", "const", m_ui->hintingStyleComboBox->currentData().toString());
-    writeOption(&stream, "rgba", "const", m_ui->rgbaComboBox->currentData().toString());
-    writeOption(&stream, "autohint", "bool", m_ui->autohinterCheckBox->isChecked() ? "true" : "false");
-    writeOption(&stream, "lcdfilter", "const", m_ui->lcdFilterComboBox->currentText());
-    writeOption(&stream, "dpi", "double", QString::number(m_ui->dpiSpinBox->value()));
+    writeOption(&stream, "antialias", m_ui->antialisingCheckBox->isChecked());
+    writeOption(&stream, "hinting", m_ui->hintingCheckBox->isChecked());
+    writeOption(&stream, "hintstyle", m_ui->hintingStyleComboBox->currentData().toString());
+    writeOption(&stream, "rgba", m_ui->rgbaComboBox->currentData().toString());
+    writeOption(&stream, "autohint", m_ui->autohinterCheckBox->isChecked());
+    writeOption(&stream, "lcdfilter", m_ui->lcdFilterComboBox->currentText());
+    writeOption(&stream, "dpi", m_ui->dpiSpinBox->value());
     stream.writeEndElement();
 
     if(m_ui->disableBoldAutohintCheckBox->isChecked())
@@ -118,7 +118,7 @@ void FontConfigDialog::accept()
         stream.writeTextElement("const", "medium");
         stream.writeEndElement();
 
-        writeOption(&stream, "autohint", "bool", m_ui->autohinterCheckBox->isChecked() ? "true" : "false");
+        writeOption(&stream, "autohint", m_ui->autohinterCheckBox->isChecked());
 
         stream.writeEndElement();
     }
@@ -128,11 +128,16 @@ void FontConfigDialog::accept()
     QDialog::accept();
 }
 
-void FontConfigDialog::writeOption(QXmlStreamWriter *stream, const QString &name, const QString &type, const QString &value)
+void FontConfigDialog::writeOption(QXmlStreamWriter *stream, const QString &name, const QVariant &value)
 {
     stream->writeStartElement("edit");
     stream->writeAttribute("name", name);
     stream->writeAttribute("mode", "assign");
-    stream->writeTextElement(type, value);
+    if(value.type() == QVariant::String)
+        stream->writeTextElement("const", value.toString());
+    else if(value.type() == QVariant::Int)
+        stream->writeTextElement("double", QString::number(value.toInt()));
+    else if(value.type() == QVariant::Bool)
+        stream->writeTextElement("bool", value.toBool() ? QStringLiteral("true") : QStringLiteral("false"));
     stream->writeEndElement();
 }

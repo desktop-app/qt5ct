@@ -41,10 +41,10 @@ class IconThemePage : public TabPage
     Q_OBJECT
 
 public:
-    explicit IconThemePage(QWidget *parent = 0);
+    explicit IconThemePage(QWidget *parent = nullptr);
     ~IconThemePage();
 
-    void writeSettings();
+    void writeSettings() override;
 
 private:
     void readSettings();

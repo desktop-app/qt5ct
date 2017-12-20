@@ -43,10 +43,10 @@ class QSSPage : public TabPage
     Q_OBJECT
 
 public:
-    explicit QSSPage(QWidget *parent = 0);
+    explicit QSSPage(QWidget *parent = nullptr);
     ~QSSPage();
 
-    void writeSettings();
+    void writeSettings() override;
 
 private slots:
     void on_qssListWidget_currentItemChanged(QListWidgetItem *current, QListWidgetItem *);

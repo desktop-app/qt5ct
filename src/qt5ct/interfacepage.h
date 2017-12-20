@@ -40,10 +40,10 @@ class InterfacePage : public TabPage
     Q_OBJECT
 
 public:
-    explicit InterfacePage(QWidget *parent = 0);
+    explicit InterfacePage(QWidget *parent = nullptr);
     ~InterfacePage();
 
-    void writeSettings();
+    void writeSettings() override;
 
 private:
     void readSettings();

@@ -249,7 +249,7 @@ void Qt5CTPlatformTheme::readSettings()
     if(m_customPalette)
     {
         delete m_customPalette;
-        m_customPalette = 0;
+        m_customPalette = nullptr;
     }
 
     QSettings settings(Qt5CT::configFile(), QSettings::IniFormat);
@@ -327,7 +327,7 @@ QString Qt5CTPlatformTheme::loadStyleSheets(const QStringList &paths)
 
         QFile file(path);
         file.open(QIODevice::ReadOnly);
-        content.append(file.readAll());
+        content.append(QString::fromUtf8(file.readAll()));
     }
     QRegExp regExp("//.*(\\n|$)");
     regExp.setMinimal(true);

@@ -44,10 +44,10 @@ class AppearancePage : public TabPage
     Q_OBJECT
 
 public:
-    explicit AppearancePage(QWidget *parent = 0);
+    explicit AppearancePage(QWidget *parent = nullptr);
     ~AppearancePage();
 
-    void writeSettings();
+    void writeSettings() override;
 
 private slots:
     void on_styleComboBox_activated(const QString &text);

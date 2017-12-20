@@ -43,7 +43,7 @@ class QSSEditorDialog : public QDialog
     Q_OBJECT
 
 public:
-    explicit QSSEditorDialog(const QString &filePath, QWidget *parent = 0);
+    explicit QSSEditorDialog(const QString &filePath, QWidget *parent = nullptr);
     ~QSSEditorDialog();
 
 private slots:
@@ -51,7 +51,7 @@ private slots:
 
 private:
     void save();
-    void hideEvent(QHideEvent *);
+    void hideEvent(QHideEvent *) override;
     Ui::QSSEditorDialog *m_ui;
     QString m_filePath;
 };

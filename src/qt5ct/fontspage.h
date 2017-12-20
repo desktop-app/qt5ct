@@ -43,10 +43,10 @@ class FontsPage : public TabPage
     Q_OBJECT
 
 public:
-    explicit FontsPage(QWidget *parent = 0);
+    explicit FontsPage(QWidget *parent = nullptr);
     ~FontsPage();
 
-    void writeSettings();
+    void writeSettings() override;
 
 private slots:
     void onFontChangeRequested(QWidget *widget);

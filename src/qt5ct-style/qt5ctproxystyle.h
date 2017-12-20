@@ -39,7 +39,7 @@ public:
 
     virtual ~Qt5CTProxyStyle();
 
-    int styleHint(StyleHint hint, const QStyleOption *option, const QWidget *widget, QStyleHintReturn *returnData) const;
+    int styleHint(StyleHint hint, const QStyleOption *option, const QWidget *widget, QStyleHintReturn *returnData) const override;
 
 private:
     int m_dialogButtonsHaveIcons;

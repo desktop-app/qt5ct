@@ -44,7 +44,7 @@ class PaletteEditDialog : public QDialog
     Q_OBJECT
 
 public:
-    explicit PaletteEditDialog(const QPalette &palette, QStyle *currentStyle, QWidget *parent = 0);
+    explicit PaletteEditDialog(const QPalette &palette, QStyle *currentStyle, QWidget *parent = nullptr);
     ~PaletteEditDialog();
 
     QPalette selectedPalette() const;
@@ -60,7 +60,7 @@ private slots:
 
 private:
     void setPalette(const QPalette &palette);
-    void hideEvent(QHideEvent *);
+    void hideEvent(QHideEvent *) override;
     Ui::PaletteEditDialog *m_ui;
     QStyle *m_currentStyle;
 };

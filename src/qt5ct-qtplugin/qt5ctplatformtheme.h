@@ -62,17 +62,17 @@ public:
     //virtual QPlatformMenuItem* createPlatformMenuItem() const;
     //virtual QPlatformMenu* createPlatformMenu() const;
 #if (QT_VERSION >= QT_VERSION_CHECK(5, 7, 0)) && !defined(QT_NO_DBUS)
-    virtual QPlatformMenuBar* createPlatformMenuBar() const;
+    virtual QPlatformMenuBar* createPlatformMenuBar() const override;
 #endif
     //virtual void showPlatformMenuBar() {}
     //virtual bool usePlatformNativeDialog(DialogType type) const;
     //virtual QPlatformDialogHelper *createPlatformDialogHelper(DialogType type) const;
 #if !defined(QT_NO_DBUS) && !defined(QT_NO_SYSTEMTRAYICON)
-    virtual QPlatformSystemTrayIcon *createPlatformSystemTrayIcon() const;
+    virtual QPlatformSystemTrayIcon *createPlatformSystemTrayIcon() const override;
 #endif
-    virtual const QPalette *palette(Palette type = SystemPalette) const;
-    virtual const QFont *font(Font type = SystemFont) const;
-    virtual QVariant themeHint(ThemeHint hint) const;
+    virtual const QPalette *palette(Palette type = SystemPalette) const override;
+    virtual const QFont *font(Font type = SystemFont) const override;
+    virtual QVariant themeHint(ThemeHint hint) const override;
     //virtual QPixmap standardPixmap(StandardPixmap sp, const QSizeF &size) const;
     //virtual QPixmap fileIconPixmap(const QFileInfo &fileInfo, const QSizeF &size,
     //                               QPlatformTheme::IconOptions iconOptions = 0) const;

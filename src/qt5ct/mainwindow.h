@@ -42,14 +42,14 @@ class MainWindow : public QWidget
     Q_OBJECT
 
 public:
-    explicit MainWindow(QWidget *parent = 0);
+    explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
 private slots:
     void on_buttonBox_clicked(QAbstractButton *button);
 
 private:
-    void closeEvent(QCloseEvent *);
+    void closeEvent(QCloseEvent *) override;
 
     Ui::MainWindow *m_ui;
 };

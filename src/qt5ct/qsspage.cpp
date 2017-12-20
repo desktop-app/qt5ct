@@ -202,7 +202,7 @@ void QSSPage::on_renameButton_clicked()
         return;
 
     QString name = QInputDialog::getText(this, tr("Rename Style Sheet"), tr("Style sheet name:"),
-                          QLineEdit::Normal, item->text(), 0);
+                          QLineEdit::Normal, item->text(), nullptr);
     if(name.isEmpty())
         return;
 

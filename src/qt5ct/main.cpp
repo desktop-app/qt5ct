@@ -75,7 +75,7 @@ int main(int argc, char **argv)
 
     if(!errorMessages.isEmpty())
     {
-        QMessageBox::critical(0, app.translate("main", "Error"), errorMessages.join("<br><br>"));
+        QMessageBox::critical(nullptr, app.translate("main", "Error"), errorMessages.join("<br><br>"));
         return 0;
     }
 

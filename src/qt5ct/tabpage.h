@@ -35,7 +35,7 @@ class TabPage : public QWidget
 {
     Q_OBJECT
 public:
-    explicit TabPage(QWidget *parent = 0);
+    explicit TabPage(QWidget *parent = nullptr);
 
     virtual void writeSettings() = 0;
 };

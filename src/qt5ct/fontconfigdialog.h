@@ -42,12 +42,12 @@ class FontConfigDialog : public QDialog
     Q_OBJECT
 
 public:
-    explicit FontConfigDialog(QWidget *parent = 0);
+    explicit FontConfigDialog(QWidget *parent = nullptr);
     ~FontConfigDialog();
 
 public slots:
-    void accept();
-    void writeOption(QXmlStreamWriter *stream, const QString &name, const QString &type, const QString &value);
+    void accept() override;
+    void writeOption(QXmlStreamWriter *stream, const QString &name, const QVariant &value);
 
 private:
     Ui::FontConfigDialog *m_ui;

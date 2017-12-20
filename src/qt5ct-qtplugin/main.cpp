@@ -36,7 +36,7 @@ class Qt5CTPlatformThemePlugin: public QPlatformThemePlugin
     Q_OBJECT
     Q_PLUGIN_METADATA(IID "org.qt-project.Qt.QPA.QPlatformThemeFactoryInterface.5.1" FILE "qt5ct.json")
 public:
-    QPlatformTheme *create(const QString &key, const QStringList &params);
+    QPlatformTheme *create(const QString &key, const QStringList &params) override;
 };
 
 QPlatformTheme *Qt5CTPlatformThemePlugin::create(const QString &key, const QStringList &params)

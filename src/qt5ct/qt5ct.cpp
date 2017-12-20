@@ -110,7 +110,7 @@ QString Qt5CT::systemLanguageID()
     if (v.isEmpty())
         v = qgetenv ("LANG");
     if (!v.isEmpty())
-        return QLocale (v).name();
+        return QLocale (QString::fromLatin1(v)).name();
 #endif
     return  QLocale::system().name();
 }
