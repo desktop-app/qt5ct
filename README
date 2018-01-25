@@ -9,7 +9,7 @@ Requirements:
 
 - GNU Linux or FreeBSD
 - qtbase >= 5.4.0
-- qtsvg >= 5.4.0 (For svg icons)
+- qtsvg >= 5.4.0 (Runtime dependency for the SVG icons support)
 - qttools >= 5.4.0 (For build only)
 
 
@@ -47,13 +47,8 @@ qt5ct - Qt5 configuration tool
 libqt5ct.so - qt5ct platform plugin
 libqt5ct-style.so - qt5ct proxy style plugin
 ~/.config/qt5ct/qt5ct.conf - configuration file
-~/.config/qt5ct/qss, 
-~/.local/share/qt5ct/qss, 
-/usr/share/qt5ct/qss,
-/usr/local/share/qt5ct/qss - style sheets
-~/.config/qt5ct/colors, 
-~/.local/share/qt5ct/colors,
-/usr/share/qt5ct/colors,
+~/.config/qt5ct/qss, ~/.local/share/qt5ct/qss, /usr/share/qt5ct/qss, /usr/local/share/qt5ct/qss - style sheets
+~/.config/qt5ct/colors,~/.local/share/qt5ct/colors, /usr/share/qt5ct/colors,
 /usr/local/share/qt5ct/colors - color schemes
 
 Translation:
