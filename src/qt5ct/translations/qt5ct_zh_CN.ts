@@ -600,7 +600,7 @@
 <context>
     <name>QSSEditorDialog</name>
     <message>
-        <location filename="../qsseditordialog.cpp" line="45"/>
+        <location filename="../qsseditordialog.cpp" line="46"/>
         <source>%1 - Style Sheet Editor</source>
         <translation>%1 - 样式表编辑器</translation>
     </message>
@@ -620,6 +620,7 @@
     <message>
         <location filename="../qsspage.ui" line="66"/>
         <location filename="../qsspage.cpp" line="51"/>
+        <location filename="../qsspage.cpp" line="86"/>
         <source>Edit</source>
         <translation>编辑</translation>
     </message>
@@ -636,54 +637,54 @@
         <translation>删除</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="102"/>
+        <location filename="../qsspage.cpp" line="105"/>
         <source>File name:</source>
         <translation>文件名：</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="102"/>
+        <location filename="../qsspage.cpp" line="105"/>
         <source>Enter Style Sheet Name</source>
         <translation>输入样式表名称</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="113"/>
-        <location filename="../qsspage.cpp" line="211"/>
-        <location filename="../qsspage.cpp" line="222"/>
+        <location filename="../qsspage.cpp" line="116"/>
+        <location filename="../qsspage.cpp" line="214"/>
+        <location filename="../qsspage.cpp" line="225"/>
         <source>Error</source>
         <translation>错误</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="113"/>
+        <location filename="../qsspage.cpp" line="116"/>
         <source>The file &quot;%1&quot; already exists</source>
         <translation>文件 “%1”  已经存在</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="147"/>
+        <location filename="../qsspage.cpp" line="150"/>
         <source>Confirm Remove</source>
         <translation>确定删除</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="148"/>
+        <location filename="../qsspage.cpp" line="151"/>
         <source>Are you sure you want to remove style sheet &quot;%1&quot;?</source>
         <translation>您确定要移除样式表 &quot;%1&quot; 吗？</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="204"/>
+        <location filename="../qsspage.cpp" line="207"/>
         <source>Rename Style Sheet</source>
         <translation>重命名样式表</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="204"/>
+        <location filename="../qsspage.cpp" line="207"/>
         <source>Style sheet name:</source>
         <translation>样式表名称：</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="211"/>
+        <location filename="../qsspage.cpp" line="214"/>
         <source>The style sheet &quot;%1&quot; already exists</source>
         <translation>样式表 “%1” 已经存在</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="222"/>
+        <location filename="../qsspage.cpp" line="225"/>
         <source>Unable to rename file</source>
         <translation>无法重命名文件</translation>
     </message>

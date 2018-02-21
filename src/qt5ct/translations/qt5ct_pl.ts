@@ -600,7 +600,7 @@
 <context>
     <name>QSSEditorDialog</name>
     <message>
-        <location filename="../qsseditordialog.cpp" line="45"/>
+        <location filename="../qsseditordialog.cpp" line="46"/>
         <source>%1 - Style Sheet Editor</source>
         <translation>%1 - Edytor arkuszy stylów</translation>
     </message>
@@ -620,6 +620,7 @@
     <message>
         <location filename="../qsspage.ui" line="66"/>
         <location filename="../qsspage.cpp" line="51"/>
+        <location filename="../qsspage.cpp" line="86"/>
         <source>Edit</source>
         <translation>Edycja</translation>
     </message>
@@ -636,54 +637,54 @@
         <translation>Usuń</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="102"/>
+        <location filename="../qsspage.cpp" line="105"/>
         <source>File name:</source>
         <translation>Nazwa pliku:</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="102"/>
+        <location filename="../qsspage.cpp" line="105"/>
         <source>Enter Style Sheet Name</source>
         <translation>Wpisz nazwę arkusza stylów</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="113"/>
-        <location filename="../qsspage.cpp" line="211"/>
-        <location filename="../qsspage.cpp" line="222"/>
+        <location filename="../qsspage.cpp" line="116"/>
+        <location filename="../qsspage.cpp" line="214"/>
+        <location filename="../qsspage.cpp" line="225"/>
         <source>Error</source>
         <translation>Błąd</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="113"/>
+        <location filename="../qsspage.cpp" line="116"/>
         <source>The file &quot;%1&quot; already exists</source>
         <translation>Plik &quot;%1&quot; istnieje</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="147"/>
+        <location filename="../qsspage.cpp" line="150"/>
         <source>Confirm Remove</source>
         <translation>Potwierdź usunięcie</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="148"/>
+        <location filename="../qsspage.cpp" line="151"/>
         <source>Are you sure you want to remove style sheet &quot;%1&quot;?</source>
         <translation>Czy na pewno chcesz usunąć arkusz stylów &quot;%1&quot;?</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="204"/>
+        <location filename="../qsspage.cpp" line="207"/>
         <source>Rename Style Sheet</source>
         <translation>Zmień nazwę arkusza stylów</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="204"/>
+        <location filename="../qsspage.cpp" line="207"/>
         <source>Style sheet name:</source>
         <translation>Nazwa arkusza stylów:</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="211"/>
+        <location filename="../qsspage.cpp" line="214"/>
         <source>The style sheet &quot;%1&quot; already exists</source>
         <translation>Arkusz stylów &quot;%1&quot; już istnieje</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="222"/>
+        <location filename="../qsspage.cpp" line="225"/>
         <source>Unable to rename file</source>
         <translation>Nie można zmienić nazwy pliku</translation>
     </message>

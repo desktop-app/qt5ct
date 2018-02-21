@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="ru">
+<TS version="2.1" language="ru">
 <context>
     <name>AppearancePage</name>
     <message>
@@ -600,7 +600,7 @@
 <context>
     <name>QSSEditorDialog</name>
     <message>
-        <location filename="../qsseditordialog.cpp" line="45"/>
+        <location filename="../qsseditordialog.cpp" line="46"/>
         <source>%1 - Style Sheet Editor</source>
         <translation>%1 - Редактор таблиц стилей</translation>
     </message>
@@ -620,6 +620,7 @@
     <message>
         <location filename="../qsspage.ui" line="66"/>
         <location filename="../qsspage.cpp" line="51"/>
+        <location filename="../qsspage.cpp" line="86"/>
         <source>Edit</source>
         <translation>Изменить</translation>
     </message>
@@ -636,54 +637,54 @@
         <translation>Удалить</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="102"/>
+        <location filename="../qsspage.cpp" line="105"/>
         <source>File name:</source>
         <translation>Имя файла:</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="102"/>
+        <location filename="../qsspage.cpp" line="105"/>
         <source>Enter Style Sheet Name</source>
         <translation>Введите имя таблицы стилей</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="113"/>
-        <location filename="../qsspage.cpp" line="211"/>
-        <location filename="../qsspage.cpp" line="222"/>
+        <location filename="../qsspage.cpp" line="116"/>
+        <location filename="../qsspage.cpp" line="214"/>
+        <location filename="../qsspage.cpp" line="225"/>
         <source>Error</source>
         <translation>Ошибка</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="113"/>
+        <location filename="../qsspage.cpp" line="116"/>
         <source>The file &quot;%1&quot; already exists</source>
         <translation>Файл &quot;%1&quot; уже существует</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="147"/>
+        <location filename="../qsspage.cpp" line="150"/>
         <source>Confirm Remove</source>
         <translation>Подтвердите удаление</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="148"/>
+        <location filename="../qsspage.cpp" line="151"/>
         <source>Are you sure you want to remove style sheet &quot;%1&quot;?</source>
         <translation>Вы уверены, что хотите удалить таблицу стилей &quot;%1&quot;?</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="204"/>
+        <location filename="../qsspage.cpp" line="207"/>
         <source>Rename Style Sheet</source>
         <translation>Переименовать таблицу стилей</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="204"/>
+        <location filename="../qsspage.cpp" line="207"/>
         <source>Style sheet name:</source>
         <translation>Имя таблицы стилей:</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="211"/>
+        <location filename="../qsspage.cpp" line="214"/>
         <source>The style sheet &quot;%1&quot; already exists</source>
         <translation>Таблица стилей с именем &quot;%1&quot; уже существует</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="222"/>
+        <location filename="../qsspage.cpp" line="225"/>
         <source>Unable to rename file</source>
         <translation>Невозможно переименовать файл</translation>
     </message>

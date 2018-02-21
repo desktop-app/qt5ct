@@ -601,7 +601,7 @@
 <context>
     <name>QSSEditorDialog</name>
     <message>
-        <location filename="../qsseditordialog.cpp" line="45"/>
+        <location filename="../qsseditordialog.cpp" line="46"/>
         <source>%1 - Style Sheet Editor</source>
         <translation>%1 - Επεξεργαστής φύλλου αισθητικής επικάλυψης</translation>
     </message>
@@ -621,6 +621,7 @@
     <message>
         <location filename="../qsspage.ui" line="66"/>
         <location filename="../qsspage.cpp" line="51"/>
+        <location filename="../qsspage.cpp" line="86"/>
         <source>Edit</source>
         <translation>Επεξεργασία</translation>
     </message>
@@ -637,54 +638,54 @@
         <translation>Αφαίρεση</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="102"/>
+        <location filename="../qsspage.cpp" line="105"/>
         <source>File name:</source>
         <translation>Όνομα αρχείου:</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="102"/>
+        <location filename="../qsspage.cpp" line="105"/>
         <source>Enter Style Sheet Name</source>
         <translation>Εισάγετε το όνομα του φύλλου αισθητικής επικάλυψης</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="113"/>
-        <location filename="../qsspage.cpp" line="211"/>
-        <location filename="../qsspage.cpp" line="222"/>
+        <location filename="../qsspage.cpp" line="116"/>
+        <location filename="../qsspage.cpp" line="214"/>
+        <location filename="../qsspage.cpp" line="225"/>
         <source>Error</source>
         <translation>Σφάλμα</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="113"/>
+        <location filename="../qsspage.cpp" line="116"/>
         <source>The file &quot;%1&quot; already exists</source>
         <translation>Το αρχείο «%1» υπάρχει ήδη</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="147"/>
+        <location filename="../qsspage.cpp" line="150"/>
         <source>Confirm Remove</source>
         <translation>Επικύρωση της αφαίρεσης</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="148"/>
+        <location filename="../qsspage.cpp" line="151"/>
         <source>Are you sure you want to remove style sheet &quot;%1&quot;?</source>
         <translation>Είστε σίγουρος-η ότι θέλετε να αφαιρέσετε το φύλλο αισθητικής επικάλυψης «%1»;</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="204"/>
+        <location filename="../qsspage.cpp" line="207"/>
         <source>Rename Style Sheet</source>
         <translation>Μετονομασία φύλλου αισθητικής επικάλυψης</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="204"/>
+        <location filename="../qsspage.cpp" line="207"/>
         <source>Style sheet name:</source>
         <translation>Όνομα του φύλλου αισθητικής επικάλυψης:</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="211"/>
+        <location filename="../qsspage.cpp" line="214"/>
         <source>The style sheet &quot;%1&quot; already exists</source>
         <translation>Το φύλλο αισθητικής επικάλυψης «%1» υπάρχει ήδη</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="222"/>
+        <location filename="../qsspage.cpp" line="225"/>
         <source>Unable to rename file</source>
         <translation>Αδυναμία μετονομασία του αρχείου</translation>
     </message>
