@@ -30,8 +30,16 @@ win32:system(for /r %B in (*.ts) do $$LRELEASE_EXECUTABLE %B)
 
 include(qt5ct.pri)
 
+qss.files = qss/*.qss
+qss.path = $$DATADIR/qt5ct/qss
+
+colors.files = colors/*.conf
+colors.path = $$DATADIR/qt5ct/colors
+
+INSTALLS += qss colors
+
 message (PREFIX=$$PREFIX)
 message (BINDIR=$$BINDIR)
 message (DATADIR=$$DATADIR)
 message (PLUGINDIR=$$PLUGINDIR)
-equals (DISABLE_WIDGETS,1):message ("QtWidgets are disabled!")
+equals (DISABLE_WIDGETS,1):message ("Qt Widgets are disabled!")
