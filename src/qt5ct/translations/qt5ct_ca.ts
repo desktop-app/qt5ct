@@ -637,6 +637,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qsspage.cpp" line="91"/>
+        <source>View</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../qsspage.cpp" line="105"/>
         <source>Enter Style Sheet Name</source>
         <translation type="unfinished"></translation>

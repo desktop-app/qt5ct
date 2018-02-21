@@ -88,7 +88,7 @@ void QSSPage::on_qssListWidget_currentItemChanged(QListWidgetItem *current, QLis
     {
         m_ui->editButton->setEnabled(true);
         if(!current->data(QSS_WRITABLE_ROLE).toBool())
-            m_ui->editButton->setText("View");
+            m_ui->editButton->setText(tr("View"));
         m_ui->removeButton->setEnabled(current->data(QSS_WRITABLE_ROLE).toBool());
         m_ui->renameButton->setEnabled(current->data(QSS_WRITABLE_ROLE).toBool());
     }

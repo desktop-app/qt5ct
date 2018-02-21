@@ -637,6 +637,11 @@
         <translation>Удалить</translation>
     </message>
     <message>
+        <location filename="../qsspage.cpp" line="91"/>
+        <source>View</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../qsspage.cpp" line="105"/>
         <source>File name:</source>
         <translation>Имя файла:</translation>
