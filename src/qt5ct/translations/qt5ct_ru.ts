@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="ru">
+<TS version="2.0" language="ru">
 <context>
     <name>AppearancePage</name>
     <message>
@@ -602,12 +602,12 @@
     <message>
         <location filename="../qsseditordialog.cpp" line="45"/>
         <source>%1 - Style Sheet Editor</source>
-        <translation>%1 - Редактор Таблицы Стилей</translation>
+        <translation>%1 - Редактор таблиц стилей</translation>
     </message>
     <message>
         <location filename="../qsseditordialog.ui" line="14"/>
         <source>Style Sheet Editor</source>
-        <translation>Редактор Таблицы Стилей</translation>
+        <translation>Редактор таблиц стилей</translation>
     </message>
 </context>
 <context>
