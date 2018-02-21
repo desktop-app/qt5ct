@@ -28,6 +28,7 @@
 
 #include <QFile>
 #include <QSettings>
+#include <QFileInfo>
 #include "qt5ct.h"
 #include "qsseditordialog.h"
 #include "ui_qsseditordialog.h"
@@ -43,6 +44,13 @@ QSSEditorDialog::QSSEditorDialog(const QString &filePath, QWidget *parent) :
     file.open(QIODevice::ReadOnly);
     m_ui->textEdit->setPlainText(QString::fromUtf8(file.readAll()));
     setWindowTitle(tr("%1 - Style Sheet Editor").arg(file.fileName()));
+
+    QFileInfo info(filePath);
+    if(!info.isWritable())
+    {
+        m_ui->buttonBox->setStandardButtons(QDialogButtonBox::Close);
+        m_ui->textEdit->setReadOnly(true);
+    }
 
     QSettings settings(Qt5CT::configFile(), QSettings::IniFormat);
     restoreGeometry(settings.value("QSSEditor/geometry").toByteArray());
