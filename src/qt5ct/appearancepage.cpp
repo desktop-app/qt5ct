@@ -229,7 +229,11 @@ void AppearancePage::copyColorScheme()
     }
 
     QString newPath =  Qt5CT::userColorSchemePath() + QLatin1String("/") + name;
-    QFile::copy(m_ui->colorSchemeComboBox->currentData().toString(), newPath);
+    if(!QFile::copy(m_ui->colorSchemeComboBox->currentData().toString(), newPath))
+    {
+        QMessageBox::warning(this, tr("Error"), tr("Unable to copy file"));
+        return;
+    }
     m_ui->colorSchemeComboBox->addItem(name.section('.',0,0), newPath);
 }
 
