@@ -57,7 +57,7 @@
     <message>
         <location filename="../appearancepage.ui" line="209"/>
         <source>Standard dialogs:</source>
-        <translation type="unfinished"></translation>
+        <translation>Стандартные диалоги:</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="69"/>
