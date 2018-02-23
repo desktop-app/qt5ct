@@ -228,7 +228,7 @@ void AppearancePage::copyColorScheme()
         return;
     }
 
-    QString newPath =  Qt5CT::userColorSchemePath() + "/" + name;
+    QString newPath =  Qt5CT::userColorSchemePath() + QLatin1String("/") + name;
     QFile::copy(m_ui->colorSchemeComboBox->currentData().toString(), newPath);
     m_ui->colorSchemeComboBox->addItem(name.section('.',0,0), newPath);
 }
@@ -262,7 +262,7 @@ void AppearancePage::renameColorScheme()
         return;
     }
 
-    QString newPath =  Qt5CT::userColorSchemePath() + "/" + name;
+    QString newPath =  Qt5CT::userColorSchemePath() + QLatin1String("/") + name;
     QFile::rename(m_ui->colorSchemeComboBox->currentData().toString(), newPath);
     m_ui->colorSchemeComboBox->setItemText(index, name.section('.',0,0));
     m_ui->colorSchemeComboBox->setItemData(index, newPath);
