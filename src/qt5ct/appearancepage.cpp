@@ -152,7 +152,7 @@ void AppearancePage::createColorScheme()
         return;
     }
 
-    QString schemePath = Qt5CT::userColorSchemePath() + "/" + name;
+    QString schemePath = Qt5CT::userColorSchemePath() + QLatin1String("/") + name;
 
     createColorScheme(schemePath, palette());
     m_ui->colorSchemeComboBox->addItem(name.section('.',0,0), schemePath);

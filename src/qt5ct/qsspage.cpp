@@ -110,7 +110,7 @@ void QSSPage::on_createButton_clicked()
     if(!name.endsWith(".qss", Qt::CaseInsensitive))
         name.append(".qss");
 
-    QString filePath = Qt5CT::userStyleSheetPath() + name;
+    QString filePath = Qt5CT::userStyleSheetPath() + QLatin1String("/") + name;
 
     if(QFile::exists(filePath))
     {
