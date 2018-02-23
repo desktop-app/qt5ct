@@ -55,6 +55,7 @@ private slots:
     void on_removeButton_clicked();
     void on_renameButton_clicked();
     void on_qssListWidget_customContextMenuRequested(const QPoint &pos);
+    void copyStyleSheet();
 
 private:
     void readSettings();
