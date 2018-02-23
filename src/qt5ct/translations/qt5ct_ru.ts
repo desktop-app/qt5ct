@@ -145,7 +145,7 @@
     <message>
         <location filename="../appearancepage.cpp" line="234"/>
         <source>Unable to copy file</source>
-        <translation type="unfinished"></translation>
+        <translation>Невозможно скопировать файл</translation>
     </message>
 </context>
 <context>
@@ -651,7 +651,7 @@
     <message>
         <location filename="../qsspage.cpp" line="52"/>
         <source>Create a Copy</source>
-        <translation type="unfinished">Создать копию</translation>
+        <translation>Создать копию</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="92"/>
@@ -718,12 +718,12 @@
     <message>
         <location filename="../qsspage.cpp" line="253"/>
         <source>%1 (copy).qss</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 (копия).qss</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="271"/>
         <source>Unable to copy file</source>
-        <translation type="unfinished"></translation>
+        <translation>Невозможно скопировать файл</translation>
     </message>
 </context>
 <context>
