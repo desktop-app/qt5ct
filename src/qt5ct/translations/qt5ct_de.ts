@@ -87,42 +87,43 @@
     <message>
         <location filename="../appearancepage.cpp" line="141"/>
         <location filename="../appearancepage.cpp" line="215"/>
-        <location filename="../appearancepage.cpp" line="250"/>
+        <location filename="../appearancepage.cpp" line="254"/>
         <source>Enter Color Scheme Name</source>
         <translation>Farbschemaname eingeben</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="141"/>
         <location filename="../appearancepage.cpp" line="215"/>
-        <location filename="../appearancepage.cpp" line="250"/>
+        <location filename="../appearancepage.cpp" line="254"/>
         <source>File name:</source>
         <translation>Dateiname:</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="150"/>
         <location filename="../appearancepage.cpp" line="226"/>
-        <location filename="../appearancepage.cpp" line="260"/>
+        <location filename="../appearancepage.cpp" line="234"/>
+        <location filename="../appearancepage.cpp" line="264"/>
         <source>Error</source>
         <translation>Fehler</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="150"/>
         <location filename="../appearancepage.cpp" line="226"/>
-        <location filename="../appearancepage.cpp" line="260"/>
+        <location filename="../appearancepage.cpp" line="264"/>
         <source>The color scheme &quot;%1&quot; already exists</source>
         <translation>Das Farbschema »%1« ist bereits vorhanden</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="168"/>
         <location filename="../appearancepage.cpp" line="191"/>
-        <location filename="../appearancepage.cpp" line="245"/>
+        <location filename="../appearancepage.cpp" line="249"/>
         <source>Warning</source>
         <translation>Warnung</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="168"/>
         <location filename="../appearancepage.cpp" line="191"/>
-        <location filename="../appearancepage.cpp" line="245"/>
+        <location filename="../appearancepage.cpp" line="249"/>
         <source>The color scheme &quot;%1&quot; is read only</source>
         <translation>Das Farbschema »%1« ist schreibgeschützt</translation>
     </message>
@@ -140,6 +141,11 @@
         <location filename="../appearancepage.cpp" line="217"/>
         <source>%1 (copy)</source>
         <translation>%1 (kopieren)</translation>
+    </message>
+    <message>
+        <location filename="../appearancepage.cpp" line="234"/>
+        <source>Unable to copy file</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -626,78 +632,98 @@
     <message>
         <location filename="../qsspage.ui" line="66"/>
         <location filename="../qsspage.cpp" line="51"/>
-        <location filename="../qsspage.cpp" line="86"/>
+        <location filename="../qsspage.cpp" line="87"/>
         <source>Edit</source>
         <translation>Bearbeiten</translation>
     </message>
     <message>
         <location filename="../qsspage.ui" line="76"/>
-        <location filename="../qsspage.cpp" line="52"/>
+        <location filename="../qsspage.cpp" line="53"/>
         <source>Rename</source>
         <translation>Umbenennen</translation>
     </message>
     <message>
         <location filename="../qsspage.ui" line="33"/>
-        <location filename="../qsspage.cpp" line="54"/>
+        <location filename="../qsspage.cpp" line="55"/>
         <source>Remove</source>
         <translation>Entfernen</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="91"/>
+        <location filename="../qsspage.cpp" line="52"/>
+        <source>Create a Copy</source>
+        <translation type="unfinished">Erstellen Sie eine Kopie</translation>
+    </message>
+    <message>
+        <location filename="../qsspage.cpp" line="92"/>
         <source>View</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="105"/>
+        <location filename="../qsspage.cpp" line="106"/>
+        <location filename="../qsspage.cpp" line="251"/>
         <source>File name:</source>
         <translation>Dateiname:</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="105"/>
+        <location filename="../qsspage.cpp" line="106"/>
+        <location filename="../qsspage.cpp" line="251"/>
         <source>Enter Style Sheet Name</source>
         <translation>Stilvorlagenname eingeben</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="116"/>
-        <location filename="../qsspage.cpp" line="214"/>
-        <location filename="../qsspage.cpp" line="225"/>
+        <location filename="../qsspage.cpp" line="117"/>
+        <location filename="../qsspage.cpp" line="218"/>
+        <location filename="../qsspage.cpp" line="226"/>
+        <location filename="../qsspage.cpp" line="263"/>
+        <location filename="../qsspage.cpp" line="271"/>
         <source>Error</source>
         <translation>Fehler</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="116"/>
+        <location filename="../qsspage.cpp" line="117"/>
         <source>The file &quot;%1&quot; already exists</source>
         <translation>Die Datei &quot;%1&quot; ist bereits vorhanden</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="150"/>
+        <location filename="../qsspage.cpp" line="151"/>
         <source>Confirm Remove</source>
         <translation>Entfernen bestätigen</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="151"/>
+        <location filename="../qsspage.cpp" line="152"/>
         <source>Are you sure you want to remove style sheet &quot;%1&quot;?</source>
         <translation>Sind Sie sicher, dass Sie die Stilvorlage »%1« entfernen möchten?</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="207"/>
+        <location filename="../qsspage.cpp" line="208"/>
         <source>Rename Style Sheet</source>
         <translation>Stilvorlage umbenennen</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="207"/>
+        <location filename="../qsspage.cpp" line="208"/>
         <source>Style sheet name:</source>
         <translation>Stilvorlagenname:</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="214"/>
+        <location filename="../qsspage.cpp" line="218"/>
+        <location filename="../qsspage.cpp" line="263"/>
         <source>The style sheet &quot;%1&quot; already exists</source>
         <translation>Die Stilvorlage »%1« ist bereits vorhanden</translation>
     </message>
     <message>
-        <location filename="../qsspage.cpp" line="225"/>
+        <location filename="../qsspage.cpp" line="226"/>
         <source>Unable to rename file</source>
         <translation>Datei konnte nicht umbenannt werden</translation>
+    </message>
+    <message>
+        <location filename="../qsspage.cpp" line="253"/>
+        <source>%1 (copy).qss</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qsspage.cpp" line="271"/>
+        <source>Unable to copy file</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
