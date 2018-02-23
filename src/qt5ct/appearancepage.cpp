@@ -66,12 +66,12 @@ AppearancePage::AppearancePage(QWidget *parent) :
     w->move(10, 10);
 
     QMenu *menu = new QMenu(this);
-    menu->addAction(QIcon::fromTheme("list-add"), tr("Create"), this, SLOT(createColorScheme()));
-    m_changeColorSchemeAction = menu->addAction(tr("Edit"), this, SLOT(changeColorScheme()));
-    menu->addAction(tr("Create a Copy"), this, SLOT(copyColorScheme()));
+    menu->addAction(QIcon::fromTheme("document-new"), tr("Create"), this, SLOT(createColorScheme()));
+    m_changeColorSchemeAction = menu->addAction(QIcon::fromTheme("accessories-text-editor"), tr("Edit"), this, SLOT(changeColorScheme()));
+    menu->addAction(QIcon::fromTheme("edit-copy"), tr("Create a Copy"), this, SLOT(copyColorScheme()));
     m_renameColorSchemeAction = menu->addAction(tr("Rename"), this, SLOT(renameColorScheme()));
     menu->addSeparator();
-    m_removeColorSchemeAction = menu->addAction(tr("Remove"), this, SLOT(removeColorScheme()));
+    m_removeColorSchemeAction = menu->addAction(QIcon::fromTheme("edit-delete"), tr("Remove"), this, SLOT(removeColorScheme()));
     m_ui->colorSchemeButton->setMenu(menu);
 
     m_changeColorSchemeAction->setIcon(QIcon::fromTheme("accessories-text-editor"));
