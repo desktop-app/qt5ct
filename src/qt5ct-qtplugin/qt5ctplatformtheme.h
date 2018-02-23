@@ -34,6 +34,7 @@
 #include <QFont>
 #include <QPalette>
 #include <QLoggingCategory>
+#include <QScopedPointer>
 
 #if (QT_VERSION < QT_VERSION_CHECK(5, 5, 0))
 #ifndef QT_NO_SYSTEMTRAYICON
@@ -65,8 +66,10 @@ public:
     virtual QPlatformMenuBar* createPlatformMenuBar() const override;
 #endif
     //virtual void showPlatformMenuBar() {}
-    //virtual bool usePlatformNativeDialog(DialogType type) const;
-    //virtual QPlatformDialogHelper *createPlatformDialogHelper(DialogType type) const;
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 9, 0))
+    virtual bool usePlatformNativeDialog(DialogType type) const override;
+    virtual QPlatformDialogHelper *createPlatformDialogHelper(DialogType type) const override;
+#endif
 #if !defined(QT_NO_DBUS) && !defined(QT_NO_SYSTEMTRAYICON)
     virtual QPlatformSystemTrayIcon *createPlatformSystemTrayIcon() const override;
 #endif
@@ -113,6 +116,10 @@ private:
 #if !defined(QT_NO_DBUS) && !defined(QT_NO_SYSTEMTRAYICON)
     mutable bool m_dbusTrayAvailable = false;
     mutable bool m_checkDBusTray = true;
+#endif
+
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 9, 0))
+    QScopedPointer<QPlatformTheme> m_theme;
 #endif
 
 };

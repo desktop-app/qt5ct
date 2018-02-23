@@ -4,6 +4,10 @@ TEMPLATE = app
 
 QT += widgets
 
+greaterThan(QT_MINOR_VERSION, 8) {
+  QT += gui-private theme_support-private
+}
+
 SOURCES += \
     main.cpp \
     mainwindow.cpp \

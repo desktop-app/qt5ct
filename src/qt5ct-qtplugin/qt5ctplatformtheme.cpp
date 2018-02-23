@@ -53,7 +53,10 @@
 #include <private/qdbustrayicon_p.h>
 #endif
 
-
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 9, 0))
+#include <QStringList>
+#include <qpa/qplatformthemefactory_p.h>
+#endif
 
 Q_LOGGING_CATEGORY(lqt5ct, "qt5ct")
 
@@ -81,6 +84,7 @@ Qt5CTPlatformTheme::~Qt5CTPlatformTheme()
 {
     if(m_customPalette)
         delete m_customPalette;
+
 }
 
 #if (QT_VERSION >= QT_VERSION_CHECK(5, 7, 0)) && !defined(QT_NO_DBUS)
@@ -94,6 +98,20 @@ QPlatformMenuBar *Qt5CTPlatformTheme::createPlatformMenuBar() const
         qCDebug(lqt5ct) << "D-Bus global menu:" << (m_dbusGlobalMenuAvailable ? "yes" : "no");
     }
     return (m_dbusGlobalMenuAvailable ? new QDBusMenuBar() : nullptr);
+}
+#endif
+
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 9, 0))
+bool Qt5CTPlatformTheme::usePlatformNativeDialog(DialogType type) const
+{
+    return m_theme ? m_theme->usePlatformNativeDialog(type) :
+                     QPlatformTheme::usePlatformNativeDialog(type);
+}
+
+QPlatformDialogHelper *Qt5CTPlatformTheme::createPlatformDialogHelper(DialogType type) const
+{
+    return m_theme ? m_theme->createPlatformDialogHelper(type) :
+                     QPlatformTheme::createPlatformDialogHelper(type);
 }
 #endif
 
@@ -262,6 +280,21 @@ void Qt5CTPlatformTheme::readSettings()
         m_customPalette = new QPalette(loadColorScheme(schemePath));
     }
     m_iconTheme = settings.value("icon_theme").toString();
+    //load dialogs
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 9, 0))
+    if(!m_update)
+    {
+        QStringList keys = QPlatformThemeFactory::keys();
+        QString name = settings.value("standard_dialogs", "default").toString();
+        if(keys.contains(name))
+            m_theme.reset(QPlatformThemeFactory::create(name));
+        else if(name == QLatin1String("gtk2") && keys.contains("qt5gtk2"))
+            m_theme.reset(QPlatformThemeFactory::create("qt5gtk2"));
+        else if(name == QLatin1String("gtk3") && keys.contains("qt5gtk3"))
+            m_theme.reset(QPlatformThemeFactory::create("qt5gtk3"));
+    }
+#endif
+
     settings.endGroup();
 
     settings.beginGroup("Fonts");
@@ -307,6 +340,7 @@ void Qt5CTPlatformTheme::readSettings()
     QStringList qssPaths = settings.value("stylesheets").toStringList();
     m_userStyleSheet = loadStyleSheets(qssPaths);
 #endif
+
     settings.endGroup();
 }
 
