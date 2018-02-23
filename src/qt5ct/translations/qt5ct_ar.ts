@@ -9,129 +9,135 @@
         <translation>أسلوب:</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="27"/>
+        <location filename="../appearancepage.ui" line="59"/>
         <source>Preview</source>
         <translation>مشاهدة</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="34"/>
+        <location filename="../appearancepage.ui" line="66"/>
         <source>Active palette</source>
         <translation>اللوحة النشطة</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="39"/>
+        <location filename="../appearancepage.ui" line="71"/>
         <source>Inactive palette</source>
         <translation>اللوحة الغير نشطة</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="44"/>
+        <location filename="../appearancepage.ui" line="76"/>
         <source>Disabled palette</source>
         <translation>اللوحة الغير مفعلة</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="91"/>
+        <location filename="../appearancepage.ui" line="107"/>
         <source>Palette</source>
         <translation>لوحة الالوان</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="102"/>
+        <location filename="../appearancepage.ui" line="118"/>
+        <location filename="../appearancepage.cpp" line="86"/>
         <source>Default</source>
         <translation>افتراضي</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="112"/>
+        <location filename="../appearancepage.ui" line="128"/>
         <source>Custom</source>
         <translation>تخصيص</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="139"/>
+        <location filename="../appearancepage.ui" line="155"/>
         <source>Color scheme:</source>
         <translation>نظام الألوان:</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="162"/>
+        <location filename="../appearancepage.ui" line="178"/>
         <source>...</source>
         <translation>...</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="65"/>
+        <location filename="../appearancepage.ui" line="209"/>
+        <source>Standard dialogs:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../appearancepage.cpp" line="69"/>
         <source>Create</source>
         <translation>إنشاء</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="66"/>
+        <location filename="../appearancepage.cpp" line="70"/>
         <source>Edit</source>
         <translation>تحرير</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="67"/>
+        <location filename="../appearancepage.cpp" line="71"/>
         <source>Create a Copy</source>
         <translation>انشئ نسخة</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="68"/>
+        <location filename="../appearancepage.cpp" line="72"/>
         <source>Rename</source>
         <translation>اعد التسمية</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="70"/>
+        <location filename="../appearancepage.cpp" line="74"/>
         <source>Remove</source>
         <translation>حذف</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="120"/>
-        <location filename="../appearancepage.cpp" line="194"/>
-        <location filename="../appearancepage.cpp" line="229"/>
+        <location filename="../appearancepage.cpp" line="141"/>
+        <location filename="../appearancepage.cpp" line="215"/>
+        <location filename="../appearancepage.cpp" line="250"/>
         <source>Enter Color Scheme Name</source>
         <translation>ادخل إسما لنظام الالوان</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="120"/>
-        <location filename="../appearancepage.cpp" line="194"/>
-        <location filename="../appearancepage.cpp" line="229"/>
+        <location filename="../appearancepage.cpp" line="141"/>
+        <location filename="../appearancepage.cpp" line="215"/>
+        <location filename="../appearancepage.cpp" line="250"/>
         <source>File name:</source>
         <translation>اسم الملف</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="129"/>
-        <location filename="../appearancepage.cpp" line="205"/>
-        <location filename="../appearancepage.cpp" line="239"/>
+        <location filename="../appearancepage.cpp" line="150"/>
+        <location filename="../appearancepage.cpp" line="226"/>
+        <location filename="../appearancepage.cpp" line="260"/>
         <source>Error</source>
         <translation>خطأ</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="129"/>
-        <location filename="../appearancepage.cpp" line="205"/>
-        <location filename="../appearancepage.cpp" line="239"/>
+        <location filename="../appearancepage.cpp" line="150"/>
+        <location filename="../appearancepage.cpp" line="226"/>
+        <location filename="../appearancepage.cpp" line="260"/>
         <source>The color scheme &quot;%1&quot; already exists</source>
         <translation>نظام الالوان &quot;%1&quot; موجود أصلا</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="147"/>
-        <location filename="../appearancepage.cpp" line="170"/>
-        <location filename="../appearancepage.cpp" line="224"/>
+        <location filename="../appearancepage.cpp" line="168"/>
+        <location filename="../appearancepage.cpp" line="191"/>
+        <location filename="../appearancepage.cpp" line="245"/>
         <source>Warning</source>
         <translation>تحذير</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="147"/>
-        <location filename="../appearancepage.cpp" line="170"/>
-        <location filename="../appearancepage.cpp" line="224"/>
+        <location filename="../appearancepage.cpp" line="168"/>
+        <location filename="../appearancepage.cpp" line="191"/>
+        <location filename="../appearancepage.cpp" line="245"/>
         <source>The color scheme &quot;%1&quot; is read only</source>
         <translation>نظام الالوان &quot;%1&quot; للقراءة فقط</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="175"/>
+        <location filename="../appearancepage.cpp" line="196"/>
         <source>Confirm Remove</source>
         <translation>تأكيد الحذف</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="176"/>
+        <location filename="../appearancepage.cpp" line="197"/>
         <source>Are you sure you want to remove color scheme &quot;%1&quot;?</source>
         <translation>هل أنت متأكد أنك تريد إزالة نظام الألوان &quot;%1&quot;؟</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="196"/>
+        <location filename="../appearancepage.cpp" line="217"/>
         <source>%1 (copy)</source>
         <translation>%1 (نسخة)</translation>
     </message>

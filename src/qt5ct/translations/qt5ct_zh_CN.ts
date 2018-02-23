@@ -9,129 +9,135 @@
         <translation>风格：</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="27"/>
+        <location filename="../appearancepage.ui" line="59"/>
         <source>Preview</source>
         <translation>预览</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="34"/>
+        <location filename="../appearancepage.ui" line="66"/>
         <source>Active palette</source>
         <translation>激活状态的调色板</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="39"/>
+        <location filename="../appearancepage.ui" line="71"/>
         <source>Inactive palette</source>
         <translation>非激活状态的调色板</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="44"/>
+        <location filename="../appearancepage.ui" line="76"/>
         <source>Disabled palette</source>
         <translation>失效状态的调色板</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="91"/>
+        <location filename="../appearancepage.ui" line="107"/>
         <source>Palette</source>
         <translation>调色板</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="102"/>
+        <location filename="../appearancepage.ui" line="118"/>
+        <location filename="../appearancepage.cpp" line="86"/>
         <source>Default</source>
         <translation>缺省</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="112"/>
+        <location filename="../appearancepage.ui" line="128"/>
         <source>Custom</source>
         <translation>自定义</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="139"/>
+        <location filename="../appearancepage.ui" line="155"/>
         <source>Color scheme:</source>
         <translation>颜色方案：</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="162"/>
+        <location filename="../appearancepage.ui" line="178"/>
         <source>...</source>
         <translation>...</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="65"/>
+        <location filename="../appearancepage.ui" line="209"/>
+        <source>Standard dialogs:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../appearancepage.cpp" line="69"/>
         <source>Create</source>
         <translation>创建</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="66"/>
+        <location filename="../appearancepage.cpp" line="70"/>
         <source>Edit</source>
         <translation>编辑</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="67"/>
+        <location filename="../appearancepage.cpp" line="71"/>
         <source>Create a Copy</source>
         <translation>创建副本</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="68"/>
+        <location filename="../appearancepage.cpp" line="72"/>
         <source>Rename</source>
         <translation>重命名</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="70"/>
+        <location filename="../appearancepage.cpp" line="74"/>
         <source>Remove</source>
         <translation>移除</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="120"/>
-        <location filename="../appearancepage.cpp" line="194"/>
-        <location filename="../appearancepage.cpp" line="229"/>
+        <location filename="../appearancepage.cpp" line="141"/>
+        <location filename="../appearancepage.cpp" line="215"/>
+        <location filename="../appearancepage.cpp" line="250"/>
         <source>Enter Color Scheme Name</source>
         <translation>输入颜色方案名称</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="120"/>
-        <location filename="../appearancepage.cpp" line="194"/>
-        <location filename="../appearancepage.cpp" line="229"/>
+        <location filename="../appearancepage.cpp" line="141"/>
+        <location filename="../appearancepage.cpp" line="215"/>
+        <location filename="../appearancepage.cpp" line="250"/>
         <source>File name:</source>
         <translation>文件名：</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="129"/>
-        <location filename="../appearancepage.cpp" line="205"/>
-        <location filename="../appearancepage.cpp" line="239"/>
+        <location filename="../appearancepage.cpp" line="150"/>
+        <location filename="../appearancepage.cpp" line="226"/>
+        <location filename="../appearancepage.cpp" line="260"/>
         <source>Error</source>
         <translation>错误</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="129"/>
-        <location filename="../appearancepage.cpp" line="205"/>
-        <location filename="../appearancepage.cpp" line="239"/>
+        <location filename="../appearancepage.cpp" line="150"/>
+        <location filename="../appearancepage.cpp" line="226"/>
+        <location filename="../appearancepage.cpp" line="260"/>
         <source>The color scheme &quot;%1&quot; already exists</source>
         <translation>颜色方案 &quot;%1&quot; 已经存在</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="147"/>
-        <location filename="../appearancepage.cpp" line="170"/>
-        <location filename="../appearancepage.cpp" line="224"/>
+        <location filename="../appearancepage.cpp" line="168"/>
+        <location filename="../appearancepage.cpp" line="191"/>
+        <location filename="../appearancepage.cpp" line="245"/>
         <source>Warning</source>
         <translation>警告</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="147"/>
-        <location filename="../appearancepage.cpp" line="170"/>
-        <location filename="../appearancepage.cpp" line="224"/>
+        <location filename="../appearancepage.cpp" line="168"/>
+        <location filename="../appearancepage.cpp" line="191"/>
+        <location filename="../appearancepage.cpp" line="245"/>
         <source>The color scheme &quot;%1&quot; is read only</source>
         <translation>颜色方案 &quot;%1&quot; 是只读状态</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="175"/>
+        <location filename="../appearancepage.cpp" line="196"/>
         <source>Confirm Remove</source>
         <translation>确认移除</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="176"/>
+        <location filename="../appearancepage.cpp" line="197"/>
         <source>Are you sure you want to remove color scheme &quot;%1&quot;?</source>
         <translation>您确定要移除颜色方案 &quot;%1&quot; 吗？</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="196"/>
+        <location filename="../appearancepage.cpp" line="217"/>
         <source>%1 (copy)</source>
         <translation>%1(拷贝)</translation>
     </message>
