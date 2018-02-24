@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="nl_NL">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="nl_NL" version="2.1">
 <context>
     <name>AppearancePage</name>
     <message>
@@ -57,7 +55,7 @@
     <message>
         <location filename="../appearancepage.ui" line="209"/>
         <source>Standard dialogs:</source>
-        <translation type="unfinished"></translation>
+        <translation>Standaard dialoogvensters:</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="69"/>
@@ -130,7 +128,7 @@
     <message>
         <location filename="../appearancepage.cpp" line="196"/>
         <source>Confirm Remove</source>
-        <translation>Verwijderen bevestigen</translation>
+        <translation>Verwijdering bevestigen</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="197"/>
@@ -145,7 +143,7 @@
     <message>
         <location filename="../appearancepage.cpp" line="234"/>
         <source>Unable to copy file</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopiëren van bestand is niet mogelijk</translation>
     </message>
 </context>
 <context>
@@ -225,7 +223,7 @@
     <message>
         <location filename="../fontconfigdialog.cpp" line="74"/>
         <source>&lt;i&gt;%1&lt;/i&gt; already exists. Do you want to replace it?</source>
-        <translation>&lt;i&gt;%1&lt;/i&gt; bestaat al. Wilt u deze vervangen?</translation>
+        <translation>&lt;i&gt;%1&lt;/i&gt; bestaat al. Wilt u het vervangen?</translation>
     </message>
 </context>
 <context>
@@ -400,7 +398,7 @@
     <message>
         <location filename="../mainwindow.ui" line="14"/>
         <source>Qt5 Configuration Tool</source>
-        <translation>Qt5-instellingengereedschap</translation>
+        <translation>Qt5-instellingen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="45"/>
@@ -568,7 +566,7 @@
     <message>
         <location filename="../paletteeditdialog.cpp" line="94"/>
         <source>Alternate background</source>
-        <translation>Alternatieve achtergrond</translation>
+        <translation>Afwisselende achtergrond</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="106"/>
@@ -651,12 +649,12 @@
     <message>
         <location filename="../qsspage.cpp" line="52"/>
         <source>Create a Copy</source>
-        <translation type="unfinished">Een kopie creëren</translation>
+        <translation>Kopie creëren</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="92"/>
         <source>View</source>
-        <translation type="unfinished"></translation>
+        <translation>Weergave</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="106"/>
@@ -687,7 +685,7 @@
     <message>
         <location filename="../qsspage.cpp" line="151"/>
         <source>Confirm Remove</source>
-        <translation>Verwijderen bevestigen</translation>
+        <translation>Verwijdering bevestigen</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="152"/>
@@ -718,12 +716,12 @@
     <message>
         <location filename="../qsspage.cpp" line="253"/>
         <source>%1 (copy).qss</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 (kopie).qss</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="271"/>
         <source>Unable to copy file</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopiëren van bestand is niet mogelijk</translation>
     </message>
 </context>
 <context>
