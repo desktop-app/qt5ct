@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="de">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="de" version="2.1">
 <context>
     <name>AppearancePage</name>
     <message>
@@ -57,7 +55,7 @@
     <message>
         <location filename="../appearancepage.ui" line="209"/>
         <source>Standard dialogs:</source>
-        <translation type="unfinished"></translation>
+        <translation>Standarddialoge:</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="69"/>
@@ -145,7 +143,7 @@
     <message>
         <location filename="../appearancepage.cpp" line="234"/>
         <source>Unable to copy file</source>
-        <translation type="unfinished"></translation>
+        <translation>Datei konnte nicht kopiert werden</translation>
     </message>
 </context>
 <context>
@@ -651,12 +649,12 @@
     <message>
         <location filename="../qsspage.cpp" line="52"/>
         <source>Create a Copy</source>
-        <translation type="unfinished">Erstellen Sie eine Kopie</translation>
+        <translation>Erstellen Sie eine Kopie</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="92"/>
         <source>View</source>
-        <translation type="unfinished"></translation>
+        <translation>Ansicht</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="106"/>
@@ -718,12 +716,12 @@
     <message>
         <location filename="../qsspage.cpp" line="253"/>
         <source>%1 (copy).qss</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 (Kopie).qss</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="271"/>
         <source>Unable to copy file</source>
-        <translation type="unfinished"></translation>
+        <translation>Datei konnte nicht kopiert werden</translation>
     </message>
 </context>
 <context>
