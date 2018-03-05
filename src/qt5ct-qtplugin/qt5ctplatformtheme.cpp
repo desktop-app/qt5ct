@@ -46,10 +46,10 @@
 
 #include <qt5ct/qt5ct.h>
 #include "qt5ctplatformtheme.h"
-#if (QT_VERSION >= QT_VERSION_CHECK(5, 7, 0)) && !defined(QT_NO_DBUS)
+#ifdef GLOBAL_MENU
 #include <private/qdbusmenubar_p.h>
 #endif
-#if !defined(QT_NO_DBUS) && !defined(QT_NO_SYSTEMTRAYICON)
+#ifdef DBUS_TRAY
 #include <private/qdbustrayicon_p.h>
 #endif
 
@@ -87,7 +87,7 @@ Qt5CTPlatformTheme::~Qt5CTPlatformTheme()
 
 }
 
-#if (QT_VERSION >= QT_VERSION_CHECK(5, 7, 0)) && !defined(QT_NO_DBUS)
+#ifdef GLOBAL_MENU
 QPlatformMenuBar *Qt5CTPlatformTheme::createPlatformMenuBar() const
 {
     if(m_checkDBusGlobalMenu)
@@ -115,7 +115,7 @@ QPlatformDialogHelper *Qt5CTPlatformTheme::createPlatformDialogHelper(DialogType
 }
 #endif
 
-#if !defined(QT_NO_DBUS) && !defined(QT_NO_SYSTEMTRAYICON)
+#ifdef DBUS_TRAY
 QPlatformSystemTrayIcon *Qt5CTPlatformTheme::createPlatformSystemTrayIcon() const
 {
     if(m_checkDBusTray)

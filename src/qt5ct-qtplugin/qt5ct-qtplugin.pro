@@ -10,8 +10,11 @@ greaterThan(QT_MINOR_VERSION, 7) {
   QT += gui-private platformsupport-private
 }
 
-!contains(DEFINES, QT_NO_DBUS):greaterThan(QT_MINOR_VERSION, 5) {
+!contains(CONFIG, DISABLE_DBUS):!contains(DEFINES, QT_NO_DBUS):greaterThan(QT_MINOR_VERSION, 5) {
     QT += dbus
+    message(D-Bus support: Enabled)
+} else {
+    message(D-Bus support: Disabled)
 }
 
 SOURCES += \

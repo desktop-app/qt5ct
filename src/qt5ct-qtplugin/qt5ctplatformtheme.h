@@ -36,18 +36,24 @@
 #include <QLoggingCategory>
 #include <QScopedPointer>
 
-#if (QT_VERSION < QT_VERSION_CHECK(5, 5, 0))
-#ifndef QT_NO_SYSTEMTRAYICON
-#define QT_NO_SYSTEMTRAYICON
+#if !defined(QT_NO_DBUS) && defined(QT_DBUS_LIB)
+
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 5, 0)) && !defined(QT_NO_SYSTEMTRAYICON)
+#define DBUS_TRAY
 #endif
+
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 7, 0))
+#define GLOBAL_MENU
+#endif
+
 #endif
 
 class QPalette;
-#if !defined(QT_NO_DBUS) && !defined(QT_NO_SYSTEMTRAYICON)
+#ifdef DBUS_TRAY
 class QPlatformSystemTrayIcon;
 #endif
 
-#if (QT_VERSION >= QT_VERSION_CHECK(5, 7, 0)) && !defined(QT_NO_DBUS)
+#ifdef GLOBAL_MENU
 class QPlatformMenuBar;
 #endif
 
@@ -62,7 +68,7 @@ public:
 
     //virtual QPlatformMenuItem* createPlatformMenuItem() const;
     //virtual QPlatformMenu* createPlatformMenu() const;
-#if (QT_VERSION >= QT_VERSION_CHECK(5, 7, 0)) && !defined(QT_NO_DBUS)
+#ifdef GLOBAL_MENU
     virtual QPlatformMenuBar* createPlatformMenuBar() const override;
 #endif
     //virtual void showPlatformMenuBar() {}
@@ -70,7 +76,7 @@ public:
     virtual bool usePlatformNativeDialog(DialogType type) const override;
     virtual QPlatformDialogHelper *createPlatformDialogHelper(DialogType type) const override;
 #endif
-#if !defined(QT_NO_DBUS) && !defined(QT_NO_SYSTEMTRAYICON)
+#ifdef DBUS_TRAY
     virtual QPlatformSystemTrayIcon *createPlatformSystemTrayIcon() const override;
 #endif
     virtual const QPalette *palette(Palette type = SystemPalette) const override;
@@ -109,11 +115,11 @@ private:
     bool m_usePalette = true;
     int m_toolButtonStyle = Qt::ToolButtonFollowStyle;
     int m_wheelScrollLines = 3;
-#if (QT_VERSION >= QT_VERSION_CHECK(5, 6, 0)) && !defined(QT_NO_DBUS)
+#ifdef GLOBAL_MENU
     mutable bool m_dbusGlobalMenuAvailable = false;
     mutable bool m_checkDBusGlobalMenu = true;
 #endif
-#if !defined(QT_NO_DBUS) && !defined(QT_NO_SYSTEMTRAYICON)
+#ifdef DBUS_TRAY
     mutable bool m_dbusTrayAvailable = false;
     mutable bool m_checkDBusTray = true;
 #endif
