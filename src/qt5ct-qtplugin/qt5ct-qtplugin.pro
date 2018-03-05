@@ -10,7 +10,7 @@ greaterThan(QT_MINOR_VERSION, 7) {
   QT += gui-private platformsupport-private
 }
 
-!contains(CONFIG, DISABLE_DBUS):!contains(DEFINES, QT_NO_DBUS):greaterThan(QT_MINOR_VERSION, 5) {
+!equals(DISABLE_DBUS, 1):qtHaveModule(dbus):greaterThan(QT_MINOR_VERSION, 5) {
     QT += dbus
     message(D-Bus support: Enabled)
 } else {
@@ -22,7 +22,7 @@ SOURCES += \
     qt5ctplatformtheme.cpp \
     ../qt5ct/qt5ct.cpp
 
-!equals (DISABLE_WIDGETS,1) {
+!equals(DISABLE_WIDGETS,1) {
    QT += widgets
 }
 
