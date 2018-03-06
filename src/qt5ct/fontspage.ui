@@ -135,6 +135,12 @@
    </item>
   </layout>
  </widget>
+ <tabstops>
+  <tabstop>changeGeneralFontButton</tabstop>
+  <tabstop>changeFixedWidthFontButton</tabstop>
+  <tabstop>createFontsConfButton</tabstop>
+  <tabstop>removeFontsConfButton</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

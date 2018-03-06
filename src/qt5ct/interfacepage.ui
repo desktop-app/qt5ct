@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>498</width>
-    <height>449</height>
+    <height>463</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -267,6 +267,22 @@
    </item>
   </layout>
  </widget>
+ <tabstops>
+  <tabstop>doubleClickIntervalSpinBox</tabstop>
+  <tabstop>cursorFlashTimeSpinBox</tabstop>
+  <tabstop>singleClickCheckBox</tabstop>
+  <tabstop>guiEffectsCheckBox</tabstop>
+  <tabstop>menuEffectComboBox</tabstop>
+  <tabstop>comboBoxEffectComboBox</tabstop>
+  <tabstop>toolTipEffectComboBox</tabstop>
+  <tabstop>toolBoxEffectComboBox</tabstop>
+  <tabstop>buttonLayoutComboBox</tabstop>
+  <tabstop>dialogIconsCheckBox</tabstop>
+  <tabstop>menuIconsCheckBox</tabstop>
+  <tabstop>shortcutUnderlineCheckBox</tabstop>
+  <tabstop>toolButtonStyleComboBox</tabstop>
+  <tabstop>wheelScrollLinesSpinBox</tabstop>
+ </tabstops>
  <resources/>
  <connections>
   <connection>

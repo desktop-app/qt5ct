@@ -82,6 +82,13 @@
    </item>
   </layout>
  </widget>
+ <tabstops>
+  <tabstop>tableWidget</tabstop>
+  <tabstop>buildInactiveButton</tabstop>
+  <tabstop>buildDisabledButton</tabstop>
+  <tabstop>resetPaletteButton</tabstop>
+  <tabstop>buttonBox</tabstop>
+ </tabstops>
  <resources/>
  <connections>
   <connection>

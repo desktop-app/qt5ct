@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>349</width>
-    <height>286</height>
+    <height>295</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -122,6 +122,17 @@
    </item>
   </layout>
  </widget>
+ <tabstops>
+  <tabstop>antialisingCheckBox</tabstop>
+  <tabstop>hintingCheckBox</tabstop>
+  <tabstop>hintingStyleComboBox</tabstop>
+  <tabstop>rgbaComboBox</tabstop>
+  <tabstop>autohinterCheckBox</tabstop>
+  <tabstop>disableBoldAutohintCheckBox</tabstop>
+  <tabstop>lcdFilterComboBox</tabstop>
+  <tabstop>dpiSpinBox</tabstop>
+  <tabstop>buttonBox</tabstop>
+ </tabstops>
  <resources/>
  <connections>
   <connection>
@@ -131,8 +142,8 @@
    <slot>accept()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>248</x>
-     <y>254</y>
+     <x>254</x>
+     <y>288</y>
     </hint>
     <hint type="destinationlabel">
      <x>157</x>

@@ -215,6 +215,15 @@
    </item>
   </layout>
  </widget>
+ <tabstops>
+  <tabstop>styleComboBox</tabstop>
+  <tabstop>dialogComboBox</tabstop>
+  <tabstop>defaultPaletteButton</tabstop>
+  <tabstop>customPaletteButton</tabstop>
+  <tabstop>colorSchemeComboBox</tabstop>
+  <tabstop>colorSchemeButton</tabstop>
+  <tabstop>paletteComboBox</tabstop>
+ </tabstops>
  <resources/>
  <connections>
   <connection>

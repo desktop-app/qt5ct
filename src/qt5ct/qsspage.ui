@@ -79,6 +79,13 @@
    </item>
   </layout>
  </widget>
+ <tabstops>
+  <tabstop>qssListWidget</tabstop>
+  <tabstop>createButton</tabstop>
+  <tabstop>editButton</tabstop>
+  <tabstop>renameButton</tabstop>
+  <tabstop>removeButton</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>
