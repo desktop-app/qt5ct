@@ -241,7 +241,9 @@ Version 0.35
 * added feature to use GTK/KDE dialogs (requires Qt 5.9 or higher)
 * added feature to copy style sheets
 * added some error messages
+* added feature to compile without D-Bus support 
 * fixed style sheet list editing
+* fixed tab order
 * updated Russian translation
 * updated Greek translation (Dimitrios Glentadakis)
 * updated Dutch (Netherlands) translation (Heimen Stoffels)
