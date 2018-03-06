@@ -63,6 +63,11 @@ MainWindow::~MainWindow()
     delete m_ui;
 }
 
+void MainWindow::showEvent(QShowEvent *)
+{
+    m_ui->tabWidget->setFocus();
+}
+
 void MainWindow::closeEvent(QCloseEvent *)
 {
     QSettings settings(Qt5CT::configFile(), QSettings::IniFormat);

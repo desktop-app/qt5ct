@@ -60,9 +60,11 @@ AppearancePage::AppearancePage(QWidget *parent) :
     m_previewWidget = new QWidget(this);
     m_previewUi = new Ui::PreviewForm();
     m_previewUi->setupUi(m_previewWidget);
-    QMdiSubWindow *w = m_ui->mdiArea->addSubWindow(m_previewWidget, Qt::CustomizeWindowHint
+    QMdiSubWindow *w = m_ui->mdiArea->addSubWindow(m_previewWidget, Qt::SubWindow | Qt::CustomizeWindowHint
                                                    | Qt::WindowMinMaxButtonsHint
-                                                   | Qt::WindowTitleHint);
+                                                   | Qt::WindowTitleHint
+                                                   | Qt::WindowDoesNotAcceptFocus);
+    w->setFocusPolicy(Qt::NoFocus);
     w->move(10, 10);
 
     QMenu *menu = new QMenu(this);

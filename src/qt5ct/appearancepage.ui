@@ -61,6 +61,9 @@
      <layout class="QGridLayout" name="gridLayout">
       <item row="0" column="0">
        <widget class="QComboBox" name="paletteComboBox">
+        <property name="focusPolicy">
+         <enum>Qt::TabFocus</enum>
+        </property>
         <item>
          <property name="text">
           <string>Active palette</string>
@@ -93,6 +96,9 @@
       </item>
       <item row="1" column="0" colspan="2">
        <widget class="QMdiArea" name="mdiArea">
+        <property name="activationOrder">
+         <enum>QMdiArea::ActivationHistoryOrder</enum>
+        </property>
         <property name="tabsMovable">
          <bool>false</bool>
         </property>
@@ -166,6 +172,9 @@
             <width>150</width>
             <height>0</height>
            </size>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::TabFocus</enum>
           </property>
          </widget>
         </item>

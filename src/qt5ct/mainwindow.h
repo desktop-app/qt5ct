@@ -49,6 +49,7 @@ private slots:
     void on_buttonBox_clicked(QAbstractButton *button);
 
 private:
+    void showEvent(QShowEvent *) override;
     void closeEvent(QCloseEvent *) override;
 
     Ui::MainWindow *m_ui;
