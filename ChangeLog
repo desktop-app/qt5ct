@@ -237,7 +237,8 @@ Version 0.34
 * updated Greek translation (Dimitrios Glentadakis)
 
 Version 0.35
-* added color themes and style scheets from Lumina project
+* added color themes and style sheets from Lumina DE
+* added some fixes for Qt Fusion style (burak)
 * added feature to use GTK/KDE dialogs (requires Qt 5.9 or higher)
 * added feature to copy style sheets
 * added some error messages
