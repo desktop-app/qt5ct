@@ -4,13 +4,14 @@ TEMPLATE = lib
 TARGET = qt5ct
 CONFIG += plugin
 
-greaterThan(QT_MINOR_VERSION, 7) {
-  QT += gui-private theme_support-private
-} else {
-  QT += gui-private platformsupport-private
-}
+QT += gui-private
 
 !equals(DISABLE_DBUS, 1):qtHaveModule(dbus):greaterThan(QT_MINOR_VERSION, 5) {
+    greaterThan(QT_MINOR_VERSION, 7) {
+        QT += theme_support-private
+    } else {
+        QT += platformsupport-private
+    }
     QT += dbus
     message(D-Bus support: Enabled)
 } else {
