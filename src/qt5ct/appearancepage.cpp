@@ -86,10 +86,10 @@ AppearancePage::AppearancePage(QWidget *parent) :
 #else
     keys = QPlatformThemeFactory::keys();
     m_ui->dialogComboBox->addItem(tr("Default"), "default");
-    if(keys.contains("gtk3") || keys.contains("qt5gtk3"))
-        m_ui->dialogComboBox->addItem("GTK3", "gtk3");
     if(keys.contains("gtk2") || keys.contains("qt5gtk2"))
         m_ui->dialogComboBox->addItem("GTK2", "gtk2");
+    else if(keys.contains("gtk3") || keys.contains("qt5gtk3"))
+        m_ui->dialogComboBox->addItem("GTK3", "gtk3");
     if(keys.contains("kde"))
         m_ui->dialogComboBox->addItem("KDE", "kde");
 #endif

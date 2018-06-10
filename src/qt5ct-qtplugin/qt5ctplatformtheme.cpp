@@ -284,8 +284,14 @@ void Qt5CTPlatformTheme::readSettings()
 #if (QT_VERSION >= QT_VERSION_CHECK(5, 9, 0))
     if(!m_update)
     {
+        //do not mix gtk2 style and gtk3 dialogs
         QStringList keys = QPlatformThemeFactory::keys();
         QString name = settings.value("standard_dialogs", "default").toString();
+        if((m_style == QLatin1String("gtk2") || m_style == QLatin1String("qt5gtk2")) &&
+                (name == QLatin1String("gtk3") || name == QLatin1String("qt5gtk3")))
+        {
+            name = QLatin1String("gtk2");
+        }
         if(keys.contains(name))
             m_theme.reset(QPlatformThemeFactory::create(name));
         else if(name == QLatin1String("gtk2") && keys.contains("qt5gtk2"))
