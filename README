@@ -44,7 +44,7 @@ Debug Messages:
 By default, platform plugin prints debug information to stderr. To disable this behaviour, you should
 export the following environment variable:
 
-export QT_LOGGIN_RULES="qt5ct.debug=false"
+export QT_LOGGING_RULES="qt5ct.debug=false"
 
 Another way is to change qtlogging.ini file. See Qt documentation for details:
 https://doc.qt.io/qt-5/qloggingcategory.html (paragraph "Configuring Categories")
