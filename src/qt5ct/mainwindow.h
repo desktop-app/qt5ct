@@ -30,6 +30,7 @@
 #define MAINWINDOW_H
 
 #include <QWidget>
+#include <QStringList>
 
 class QAbstractButton;
 
@@ -47,12 +48,15 @@ public:
 
 private slots:
     void on_buttonBox_clicked(QAbstractButton *button);
+    void on_infoButton_clicked();
 
 private:
     void showEvent(QShowEvent *) override;
     void closeEvent(QCloseEvent *) override;
+    void checkConfiguration();
 
     Ui::MainWindow *m_ui;
+    QStringList m_errors;
 };
 
 #endif // MAINWINDOW_H

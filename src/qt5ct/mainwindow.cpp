@@ -28,6 +28,10 @@
 
 #include <QApplication>
 #include <QSettings>
+#include <QStyle>
+#include <QProcessEnvironment>
+#include <QMessageBox>
+#include <QStyleFactory>
 #include "qt5ct.h"
 #include "mainwindow.h"
 #include "appearancepage.h"
@@ -56,6 +60,10 @@ MainWindow::MainWindow(QWidget *parent) :
     setWindowIcon(QIcon::fromTheme("preferences-desktop-theme"));
 
     m_ui->versionLabel->setText(tr("Version: %1").arg(QT5CT_VERSION_STR));
+    m_ui->warningIconLabel->setPixmap(qApp->style()->standardIcon(QStyle::SP_MessageBoxWarning).pixmap(16, 16));
+
+    checkConfiguration();
+    m_ui->warningFrame->setVisible(!m_errors.isEmpty());
 }
 
 MainWindow::~MainWindow()
@@ -91,5 +99,37 @@ void MainWindow::on_buttonBox_clicked(QAbstractButton *button)
     {
         close();
         qApp->quit();
+    }
+}
+
+void MainWindow::on_infoButton_clicked()
+{
+    QMessageBox::warning(this, tr("Warning"), m_errors.join("<br><br>"));
+}
+
+void MainWindow::checkConfiguration()
+{
+    QProcessEnvironment env = QProcessEnvironment::systemEnvironment();
+
+    if(env.contains("QT_STYLE_OVERRIDE"))
+    {
+        m_errors << tr("Please remove the <b>QT_STYLE_OVERRIDE</b> environment variable (current value: %1).")
+                    .arg(env.value("QT_STYLE_OVERRIDE"));
+    }
+
+    if(!env.contains("QT_QPA_PLATFORMTHEME"))
+    {
+        m_errors << tr("The <b>QT_QPA_PLATFORMTHEME</b> environment variable is not set (required value: <b>qt5ct</b>).");
+    }
+    else if(env.value("QT_QPA_PLATFORMTHEME") != "qt5ct")
+    {
+        m_errors << tr("The <b>QT_QPA_PLATFORMTHEME</b> environment variable is not set correctly "
+                       "(current value: <b>%1</b>, required value: <b>qt5ct</b>).")
+                    .arg(env.value("QT_QPA_PLATFORMTHEME"));
+    }
+
+    if(!QStyleFactory::keys().contains("qt5ct-style"))
+    {
+        m_errors << tr("Unable to find <b>libqt5ct-style.so</b>");
     }
 }

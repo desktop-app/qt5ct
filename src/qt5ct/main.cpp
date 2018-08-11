@@ -31,9 +31,6 @@
 #include <QLocale>
 #include "qt5ct.h"
 #include <QTranslator>
-#include <QMessageBox>
-#include <QProcessEnvironment>
-#include <QStyleFactory>
 #include <QtDebug>
 #include "mainwindow.h"
 
@@ -52,32 +49,6 @@ int main(int argc, char **argv)
     qDebug() << "Configuration path:" << Qt5CT::configPath();
     qDebug() << "Shared QSS paths:" << Qt5CT::sharedStyleSheetPaths();
     qDebug() << "Shared color scheme paths:" << Qt5CT::sharedColorSchemePaths();
-
-    //checking environment
-    QStringList errorMessages;
-    QProcessEnvironment env = QProcessEnvironment::systemEnvironment();
-
-    if(env.contains("QT_STYLE_OVERRIDE"))
-    {
-        errorMessages << app.translate("main", "Please remove the <b>QT_STYLE_OVERRIDE</b> environment variable");
-    }
-
-    if(env.value("QT_QPA_PLATFORMTHEME") != "qt5ct")
-    {
-        errorMessages << app.translate("main", "The <b>QT_QPA_PLATFORMTHEME</b> environment "
-                                               "variable is not set correctly");
-    }
-
-    if(!QStyleFactory::keys().contains("qt5ct-style"))
-    {
-        errorMessages << app.translate("main", "Unable to find <b>libqt5ct-style.so</b>");
-    }
-
-    if(!errorMessages.isEmpty())
-    {
-        QMessageBox::critical(nullptr, app.translate("main", "Error"), errorMessages.join("<br><br>"));
-        return 0;
-    }
 
     MainWindow w;
     w.show();
