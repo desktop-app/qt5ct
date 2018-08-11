@@ -14,136 +14,136 @@
         <translation>预览</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="66"/>
+        <location filename="../appearancepage.ui" line="69"/>
         <source>Active palette</source>
         <translation>激活状态的调色板</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="71"/>
+        <location filename="../appearancepage.ui" line="74"/>
         <source>Inactive palette</source>
         <translation>非激活状态的调色板</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="76"/>
+        <location filename="../appearancepage.ui" line="79"/>
         <source>Disabled palette</source>
         <translation>失效状态的调色板</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="107"/>
+        <location filename="../appearancepage.ui" line="113"/>
         <source>Palette</source>
         <translation>调色板</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="118"/>
-        <location filename="../appearancepage.cpp" line="86"/>
+        <location filename="../appearancepage.ui" line="124"/>
+        <location filename="../appearancepage.cpp" line="88"/>
         <source>Default</source>
         <translation>缺省</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="128"/>
+        <location filename="../appearancepage.ui" line="134"/>
         <source>Custom</source>
         <translation>自定义</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="155"/>
+        <location filename="../appearancepage.ui" line="161"/>
         <source>Color scheme:</source>
         <translation>颜色方案：</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="178"/>
+        <location filename="../appearancepage.ui" line="187"/>
         <source>...</source>
         <translation>...</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="209"/>
+        <location filename="../appearancepage.ui" line="218"/>
         <source>Standard dialogs:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="69"/>
+        <location filename="../appearancepage.cpp" line="71"/>
         <source>Create</source>
         <translation>创建</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="70"/>
+        <location filename="../appearancepage.cpp" line="72"/>
         <source>Edit</source>
         <translation>编辑</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="71"/>
+        <location filename="../appearancepage.cpp" line="73"/>
         <source>Create a Copy</source>
         <translation>创建副本</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="72"/>
+        <location filename="../appearancepage.cpp" line="74"/>
         <source>Rename</source>
         <translation>重命名</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="74"/>
+        <location filename="../appearancepage.cpp" line="76"/>
         <source>Remove</source>
         <translation>移除</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="141"/>
-        <location filename="../appearancepage.cpp" line="215"/>
-        <location filename="../appearancepage.cpp" line="254"/>
+        <location filename="../appearancepage.cpp" line="143"/>
+        <location filename="../appearancepage.cpp" line="217"/>
+        <location filename="../appearancepage.cpp" line="256"/>
         <source>Enter Color Scheme Name</source>
         <translation>输入颜色方案名称</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="141"/>
-        <location filename="../appearancepage.cpp" line="215"/>
-        <location filename="../appearancepage.cpp" line="254"/>
+        <location filename="../appearancepage.cpp" line="143"/>
+        <location filename="../appearancepage.cpp" line="217"/>
+        <location filename="../appearancepage.cpp" line="256"/>
         <source>File name:</source>
         <translation>文件名：</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="150"/>
-        <location filename="../appearancepage.cpp" line="226"/>
-        <location filename="../appearancepage.cpp" line="234"/>
-        <location filename="../appearancepage.cpp" line="264"/>
+        <location filename="../appearancepage.cpp" line="152"/>
+        <location filename="../appearancepage.cpp" line="228"/>
+        <location filename="../appearancepage.cpp" line="236"/>
+        <location filename="../appearancepage.cpp" line="266"/>
         <source>Error</source>
         <translation>错误</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="150"/>
-        <location filename="../appearancepage.cpp" line="226"/>
-        <location filename="../appearancepage.cpp" line="264"/>
+        <location filename="../appearancepage.cpp" line="152"/>
+        <location filename="../appearancepage.cpp" line="228"/>
+        <location filename="../appearancepage.cpp" line="266"/>
         <source>The color scheme &quot;%1&quot; already exists</source>
         <translation>颜色方案 &quot;%1&quot; 已经存在</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="168"/>
-        <location filename="../appearancepage.cpp" line="191"/>
-        <location filename="../appearancepage.cpp" line="249"/>
+        <location filename="../appearancepage.cpp" line="170"/>
+        <location filename="../appearancepage.cpp" line="193"/>
+        <location filename="../appearancepage.cpp" line="251"/>
         <source>Warning</source>
         <translation>警告</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="168"/>
-        <location filename="../appearancepage.cpp" line="191"/>
-        <location filename="../appearancepage.cpp" line="249"/>
+        <location filename="../appearancepage.cpp" line="170"/>
+        <location filename="../appearancepage.cpp" line="193"/>
+        <location filename="../appearancepage.cpp" line="251"/>
         <source>The color scheme &quot;%1&quot; is read only</source>
         <translation>颜色方案 &quot;%1&quot; 是只读状态</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="196"/>
+        <location filename="../appearancepage.cpp" line="198"/>
         <source>Confirm Remove</source>
         <translation>确认移除</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="197"/>
+        <location filename="../appearancepage.cpp" line="199"/>
         <source>Are you sure you want to remove color scheme &quot;%1&quot;?</source>
         <translation>您确定要移除颜色方案 &quot;%1&quot; 吗？</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="217"/>
+        <location filename="../appearancepage.cpp" line="219"/>
         <source>%1 (copy)</source>
         <translation>%1(拷贝)</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="234"/>
+        <location filename="../appearancepage.cpp" line="236"/>
         <source>Unable to copy file</source>
         <translation type="unfinished"></translation>
     </message>
@@ -403,34 +403,74 @@
         <translation>Qt5 配置工具</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="45"/>
+        <location filename="../mainwindow.ui" line="45"/>
+        <source>The application is not configured correctly.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="52"/>
+        <source>Information</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="59"/>
+        <source>Hide</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="49"/>
         <source>Appearance</source>
         <translation>外观</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="46"/>
+        <location filename="../mainwindow.cpp" line="50"/>
         <source>Fonts</source>
         <translation>字体</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="47"/>
+        <location filename="../mainwindow.cpp" line="51"/>
         <source>Icon Theme</source>
         <translation>图标主题</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="48"/>
+        <location filename="../mainwindow.cpp" line="52"/>
         <source>Interface</source>
         <translation>界面</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="50"/>
+        <location filename="../mainwindow.cpp" line="54"/>
         <source>Style Sheets</source>
         <translation>样式表</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="58"/>
+        <location filename="../mainwindow.cpp" line="62"/>
         <source>Version: %1</source>
         <translation>版本：%1</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="107"/>
+        <source>Warning</source>
+        <translation type="unfinished">警告</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="116"/>
+        <source>Please remove the &lt;b&gt;QT_STYLE_OVERRIDE&lt;/b&gt; environment variable (current value: %1).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="122"/>
+        <source>The &lt;b&gt;QT_QPA_PLATFORMTHEME&lt;/b&gt; environment variable is not set (required value: &lt;b&gt;qt5ct&lt;/b&gt;).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="126"/>
+        <source>The &lt;b&gt;QT_QPA_PLATFORMTHEME&lt;/b&gt; environment variable is not set correctly (current value: &lt;b&gt;%1&lt;/b&gt;, required value: &lt;b&gt;qt5ct&lt;/b&gt;).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="133"/>
+        <source>Unable to find &lt;b&gt;libqt5ct-style.so&lt;/b&gt;</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -584,27 +624,27 @@
         <translation>预览窗口</translation>
     </message>
     <message>
-        <location filename="../previewform.ui" line="24"/>
+        <location filename="../previewform.ui" line="27"/>
         <source>Tab 1</source>
         <translation>页面1</translation>
     </message>
     <message>
-        <location filename="../previewform.ui" line="30"/>
+        <location filename="../previewform.ui" line="36"/>
         <source>PushButton</source>
         <translation>按钮</translation>
     </message>
     <message>
-        <location filename="../previewform.ui" line="51"/>
+        <location filename="../previewform.ui" line="65"/>
         <source>Tab 2</source>
         <translation>页面2</translation>
     </message>
     <message>
-        <location filename="../previewform.ui" line="57"/>
+        <location filename="../previewform.ui" line="74"/>
         <source>RadioButton</source>
         <translation>单选按钮</translation>
     </message>
     <message>
-        <location filename="../previewform.ui" line="64"/>
+        <location filename="../previewform.ui" line="84"/>
         <source>CheckBox</source>
         <translation>复选框</translation>
     </message>
@@ -724,29 +764,6 @@
         <location filename="../qsspage.cpp" line="271"/>
         <source>Unable to copy file</source>
         <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>main</name>
-    <message>
-        <location filename="../main.cpp" line="62"/>
-        <source>Please remove the &lt;b&gt;QT_STYLE_OVERRIDE&lt;/b&gt; environment variable</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main.cpp" line="67"/>
-        <source>The &lt;b&gt;QT_QPA_PLATFORMTHEME&lt;/b&gt; environment variable is not set correctly</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main.cpp" line="73"/>
-        <source>Unable to find &lt;b&gt;libqt5ct-style.so&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main.cpp" line="78"/>
-        <source>Error</source>
-        <translation type="unfinished">错误</translation>
     </message>
 </context>
 </TS>

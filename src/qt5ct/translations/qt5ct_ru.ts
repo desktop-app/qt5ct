@@ -14,136 +14,136 @@
         <translation>Предварительный просмотр</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="66"/>
+        <location filename="../appearancepage.ui" line="69"/>
         <source>Active palette</source>
         <translation>Активная палитра</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="71"/>
+        <location filename="../appearancepage.ui" line="74"/>
         <source>Inactive palette</source>
         <translation>Неактивная палитра</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="76"/>
+        <location filename="../appearancepage.ui" line="79"/>
         <source>Disabled palette</source>
         <translation>Палитра выключенных элеметнов</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="107"/>
+        <location filename="../appearancepage.ui" line="113"/>
         <source>Palette</source>
         <translation>Палитра</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="118"/>
-        <location filename="../appearancepage.cpp" line="86"/>
+        <location filename="../appearancepage.ui" line="124"/>
+        <location filename="../appearancepage.cpp" line="88"/>
         <source>Default</source>
         <translation>По умолчанию</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="128"/>
+        <location filename="../appearancepage.ui" line="134"/>
         <source>Custom</source>
         <translation>Изменённая</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="155"/>
+        <location filename="../appearancepage.ui" line="161"/>
         <source>Color scheme:</source>
         <translation>Цветовая схема:</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="178"/>
+        <location filename="../appearancepage.ui" line="187"/>
         <source>...</source>
         <translation>...</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="209"/>
+        <location filename="../appearancepage.ui" line="218"/>
         <source>Standard dialogs:</source>
         <translation>Стандартные диалоги:</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="69"/>
+        <location filename="../appearancepage.cpp" line="71"/>
         <source>Create</source>
         <translation>Создать</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="70"/>
+        <location filename="../appearancepage.cpp" line="72"/>
         <source>Edit</source>
         <translation>Изменить</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="71"/>
+        <location filename="../appearancepage.cpp" line="73"/>
         <source>Create a Copy</source>
         <translation>Создать копию</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="72"/>
+        <location filename="../appearancepage.cpp" line="74"/>
         <source>Rename</source>
         <translation>Переименовать</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="74"/>
+        <location filename="../appearancepage.cpp" line="76"/>
         <source>Remove</source>
         <translation>Удалить</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="141"/>
-        <location filename="../appearancepage.cpp" line="215"/>
-        <location filename="../appearancepage.cpp" line="254"/>
+        <location filename="../appearancepage.cpp" line="143"/>
+        <location filename="../appearancepage.cpp" line="217"/>
+        <location filename="../appearancepage.cpp" line="256"/>
         <source>Enter Color Scheme Name</source>
         <translation>Введите имя цветовой схемы</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="141"/>
-        <location filename="../appearancepage.cpp" line="215"/>
-        <location filename="../appearancepage.cpp" line="254"/>
+        <location filename="../appearancepage.cpp" line="143"/>
+        <location filename="../appearancepage.cpp" line="217"/>
+        <location filename="../appearancepage.cpp" line="256"/>
         <source>File name:</source>
         <translation>Имя файла:</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="150"/>
-        <location filename="../appearancepage.cpp" line="226"/>
-        <location filename="../appearancepage.cpp" line="234"/>
-        <location filename="../appearancepage.cpp" line="264"/>
+        <location filename="../appearancepage.cpp" line="152"/>
+        <location filename="../appearancepage.cpp" line="228"/>
+        <location filename="../appearancepage.cpp" line="236"/>
+        <location filename="../appearancepage.cpp" line="266"/>
         <source>Error</source>
         <translation>Ошибка</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="150"/>
-        <location filename="../appearancepage.cpp" line="226"/>
-        <location filename="../appearancepage.cpp" line="264"/>
+        <location filename="../appearancepage.cpp" line="152"/>
+        <location filename="../appearancepage.cpp" line="228"/>
+        <location filename="../appearancepage.cpp" line="266"/>
         <source>The color scheme &quot;%1&quot; already exists</source>
         <translation>Цветовая схема &quot;%1&quot; уже существует</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="168"/>
-        <location filename="../appearancepage.cpp" line="191"/>
-        <location filename="../appearancepage.cpp" line="249"/>
+        <location filename="../appearancepage.cpp" line="170"/>
+        <location filename="../appearancepage.cpp" line="193"/>
+        <location filename="../appearancepage.cpp" line="251"/>
         <source>Warning</source>
         <translation>Предупреждение</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="168"/>
-        <location filename="../appearancepage.cpp" line="191"/>
-        <location filename="../appearancepage.cpp" line="249"/>
+        <location filename="../appearancepage.cpp" line="170"/>
+        <location filename="../appearancepage.cpp" line="193"/>
+        <location filename="../appearancepage.cpp" line="251"/>
         <source>The color scheme &quot;%1&quot; is read only</source>
         <translation>Цветовая схема &quot;%1&quot; доступна только для чтения</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="196"/>
+        <location filename="../appearancepage.cpp" line="198"/>
         <source>Confirm Remove</source>
         <translation>Подтвердите удаление</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="197"/>
+        <location filename="../appearancepage.cpp" line="199"/>
         <source>Are you sure you want to remove color scheme &quot;%1&quot;?</source>
         <translation>Вы уверены, что хотите удалить цветовую схему &quot;%1&quot;?</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="217"/>
+        <location filename="../appearancepage.cpp" line="219"/>
         <source>%1 (copy)</source>
         <translation>%1 (копия)</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="234"/>
+        <location filename="../appearancepage.cpp" line="236"/>
         <source>Unable to copy file</source>
         <translation>Невозможно скопировать файл</translation>
     </message>
@@ -403,34 +403,74 @@
         <translation>Средство настройки Qt5</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="45"/>
+        <location filename="../mainwindow.ui" line="45"/>
+        <source>The application is not configured correctly.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="52"/>
+        <source>Information</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="59"/>
+        <source>Hide</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="49"/>
         <source>Appearance</source>
         <translation>Внешний вид</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="46"/>
+        <location filename="../mainwindow.cpp" line="50"/>
         <source>Fonts</source>
         <translation>Шрифты</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="47"/>
+        <location filename="../mainwindow.cpp" line="51"/>
         <source>Icon Theme</source>
         <translation>Стиль значков</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="48"/>
+        <location filename="../mainwindow.cpp" line="52"/>
         <source>Interface</source>
         <translation>Интерфейс</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="50"/>
+        <location filename="../mainwindow.cpp" line="54"/>
         <source>Style Sheets</source>
         <translation>Таблицы стилей</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="58"/>
+        <location filename="../mainwindow.cpp" line="62"/>
         <source>Version: %1</source>
         <translation>Версия: %1</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="107"/>
+        <source>Warning</source>
+        <translation type="unfinished">Предупреждение</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="116"/>
+        <source>Please remove the &lt;b&gt;QT_STYLE_OVERRIDE&lt;/b&gt; environment variable (current value: %1).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="122"/>
+        <source>The &lt;b&gt;QT_QPA_PLATFORMTHEME&lt;/b&gt; environment variable is not set (required value: &lt;b&gt;qt5ct&lt;/b&gt;).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="126"/>
+        <source>The &lt;b&gt;QT_QPA_PLATFORMTHEME&lt;/b&gt; environment variable is not set correctly (current value: &lt;b&gt;%1&lt;/b&gt;, required value: &lt;b&gt;qt5ct&lt;/b&gt;).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="133"/>
+        <source>Unable to find &lt;b&gt;libqt5ct-style.so&lt;/b&gt;</source>
+        <translation type="unfinished">Не найден &lt;b&gt;libqt5ct-style.so&lt;/b&gt;</translation>
     </message>
 </context>
 <context>
@@ -584,27 +624,27 @@
         <translation>Окно предпросмотра</translation>
     </message>
     <message>
-        <location filename="../previewform.ui" line="24"/>
+        <location filename="../previewform.ui" line="27"/>
         <source>Tab 1</source>
         <translation>Вкладка 1</translation>
     </message>
     <message>
-        <location filename="../previewform.ui" line="30"/>
+        <location filename="../previewform.ui" line="36"/>
         <source>PushButton</source>
         <translation>Кнопка</translation>
     </message>
     <message>
-        <location filename="../previewform.ui" line="51"/>
+        <location filename="../previewform.ui" line="65"/>
         <source>Tab 2</source>
         <translation>Вкладка 2</translation>
     </message>
     <message>
-        <location filename="../previewform.ui" line="57"/>
+        <location filename="../previewform.ui" line="74"/>
         <source>RadioButton</source>
         <translation>Переключатель</translation>
     </message>
     <message>
-        <location filename="../previewform.ui" line="64"/>
+        <location filename="../previewform.ui" line="84"/>
         <source>CheckBox</source>
         <translation>Выключатель</translation>
     </message>
@@ -724,29 +764,6 @@
         <location filename="../qsspage.cpp" line="271"/>
         <source>Unable to copy file</source>
         <translation>Невозможно скопировать файл</translation>
-    </message>
-</context>
-<context>
-    <name>main</name>
-    <message>
-        <location filename="../main.cpp" line="62"/>
-        <source>Please remove the &lt;b&gt;QT_STYLE_OVERRIDE&lt;/b&gt; environment variable</source>
-        <translation>Пожалуйста, удалите переменную среды &lt;b&gt;QT_STYLE_OVERRIDE&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <location filename="../main.cpp" line="67"/>
-        <source>The &lt;b&gt;QT_QPA_PLATFORMTHEME&lt;/b&gt; environment variable is not set correctly</source>
-        <translation>Переменная среды  &lt;b&gt;QT_QPA_PLATFORMTHEME&lt;/b&gt; установлена неправильно</translation>
-    </message>
-    <message>
-        <location filename="../main.cpp" line="73"/>
-        <source>Unable to find &lt;b&gt;libqt5ct-style.so&lt;/b&gt;</source>
-        <translation>Не найден &lt;b&gt;libqt5ct-style.so&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <location filename="../main.cpp" line="78"/>
-        <source>Error</source>
-        <translation>Ошибка</translation>
     </message>
 </context>
 </TS>

@@ -1,4 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="de" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="de">
 <context>
     <name>AppearancePage</name>
     <message>
@@ -12,136 +14,136 @@
         <translation>Vorschau</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="66"/>
+        <location filename="../appearancepage.ui" line="69"/>
         <source>Active palette</source>
         <translation>Aktive Palette</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="71"/>
+        <location filename="../appearancepage.ui" line="74"/>
         <source>Inactive palette</source>
         <translation>Inaktive Palette</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="76"/>
+        <location filename="../appearancepage.ui" line="79"/>
         <source>Disabled palette</source>
         <translation>Deaktivierte Palette</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="107"/>
+        <location filename="../appearancepage.ui" line="113"/>
         <source>Palette</source>
         <translation>Palette</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="118"/>
-        <location filename="../appearancepage.cpp" line="86"/>
+        <location filename="../appearancepage.ui" line="124"/>
+        <location filename="../appearancepage.cpp" line="88"/>
         <source>Default</source>
         <translation>Standard</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="128"/>
+        <location filename="../appearancepage.ui" line="134"/>
         <source>Custom</source>
         <translation>Benutzerdefiniert</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="155"/>
+        <location filename="../appearancepage.ui" line="161"/>
         <source>Color scheme:</source>
         <translation>Farbschema:</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="178"/>
+        <location filename="../appearancepage.ui" line="187"/>
         <source>...</source>
         <translation>...</translation>
     </message>
     <message>
-        <location filename="../appearancepage.ui" line="209"/>
+        <location filename="../appearancepage.ui" line="218"/>
         <source>Standard dialogs:</source>
         <translation>Standarddialoge:</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="69"/>
+        <location filename="../appearancepage.cpp" line="71"/>
         <source>Create</source>
         <translation>Erstellen</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="70"/>
+        <location filename="../appearancepage.cpp" line="72"/>
         <source>Edit</source>
         <translation>Bearbeiten</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="71"/>
+        <location filename="../appearancepage.cpp" line="73"/>
         <source>Create a Copy</source>
         <translation>Erstellen Sie eine Kopie</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="72"/>
+        <location filename="../appearancepage.cpp" line="74"/>
         <source>Rename</source>
         <translation>Umbenennen</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="74"/>
+        <location filename="../appearancepage.cpp" line="76"/>
         <source>Remove</source>
         <translation>Entfernen</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="141"/>
-        <location filename="../appearancepage.cpp" line="215"/>
-        <location filename="../appearancepage.cpp" line="254"/>
+        <location filename="../appearancepage.cpp" line="143"/>
+        <location filename="../appearancepage.cpp" line="217"/>
+        <location filename="../appearancepage.cpp" line="256"/>
         <source>Enter Color Scheme Name</source>
         <translation>Farbschemaname eingeben</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="141"/>
-        <location filename="../appearancepage.cpp" line="215"/>
-        <location filename="../appearancepage.cpp" line="254"/>
+        <location filename="../appearancepage.cpp" line="143"/>
+        <location filename="../appearancepage.cpp" line="217"/>
+        <location filename="../appearancepage.cpp" line="256"/>
         <source>File name:</source>
         <translation>Dateiname:</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="150"/>
-        <location filename="../appearancepage.cpp" line="226"/>
-        <location filename="../appearancepage.cpp" line="234"/>
-        <location filename="../appearancepage.cpp" line="264"/>
+        <location filename="../appearancepage.cpp" line="152"/>
+        <location filename="../appearancepage.cpp" line="228"/>
+        <location filename="../appearancepage.cpp" line="236"/>
+        <location filename="../appearancepage.cpp" line="266"/>
         <source>Error</source>
         <translation>Fehler</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="150"/>
-        <location filename="../appearancepage.cpp" line="226"/>
-        <location filename="../appearancepage.cpp" line="264"/>
+        <location filename="../appearancepage.cpp" line="152"/>
+        <location filename="../appearancepage.cpp" line="228"/>
+        <location filename="../appearancepage.cpp" line="266"/>
         <source>The color scheme &quot;%1&quot; already exists</source>
         <translation>Das Farbschema »%1« ist bereits vorhanden</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="168"/>
-        <location filename="../appearancepage.cpp" line="191"/>
-        <location filename="../appearancepage.cpp" line="249"/>
+        <location filename="../appearancepage.cpp" line="170"/>
+        <location filename="../appearancepage.cpp" line="193"/>
+        <location filename="../appearancepage.cpp" line="251"/>
         <source>Warning</source>
         <translation>Warnung</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="168"/>
-        <location filename="../appearancepage.cpp" line="191"/>
-        <location filename="../appearancepage.cpp" line="249"/>
+        <location filename="../appearancepage.cpp" line="170"/>
+        <location filename="../appearancepage.cpp" line="193"/>
+        <location filename="../appearancepage.cpp" line="251"/>
         <source>The color scheme &quot;%1&quot; is read only</source>
         <translation>Das Farbschema »%1« ist schreibgeschützt</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="196"/>
+        <location filename="../appearancepage.cpp" line="198"/>
         <source>Confirm Remove</source>
         <translation>Entfernen bestätigen</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="197"/>
+        <location filename="../appearancepage.cpp" line="199"/>
         <source>Are you sure you want to remove color scheme &quot;%1&quot;?</source>
         <translation>Sind Sie sicher, dass Sie das Farbschema »%1« entfernen möchten?</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="217"/>
+        <location filename="../appearancepage.cpp" line="219"/>
         <source>%1 (copy)</source>
         <translation>%1 (kopieren)</translation>
     </message>
     <message>
-        <location filename="../appearancepage.cpp" line="234"/>
+        <location filename="../appearancepage.cpp" line="236"/>
         <source>Unable to copy file</source>
         <translation>Datei konnte nicht kopiert werden</translation>
     </message>
@@ -401,34 +403,74 @@
         <translation>Qt5-Konfigurationswerkzeug</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="45"/>
+        <location filename="../mainwindow.ui" line="45"/>
+        <source>The application is not configured correctly.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="52"/>
+        <source>Information</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="59"/>
+        <source>Hide</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="49"/>
         <source>Appearance</source>
         <translation>Erscheinungsbild</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="46"/>
+        <location filename="../mainwindow.cpp" line="50"/>
         <source>Fonts</source>
         <translation>Schriftarten</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="47"/>
+        <location filename="../mainwindow.cpp" line="51"/>
         <source>Icon Theme</source>
         <translation>Symbolthema</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="48"/>
+        <location filename="../mainwindow.cpp" line="52"/>
         <source>Interface</source>
         <translation>Oberfläche</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="50"/>
+        <location filename="../mainwindow.cpp" line="54"/>
         <source>Style Sheets</source>
         <translation>Stilvorlagen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="58"/>
+        <location filename="../mainwindow.cpp" line="62"/>
         <source>Version: %1</source>
         <translation>Version: %1</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="107"/>
+        <source>Warning</source>
+        <translation type="unfinished">Warnung</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="116"/>
+        <source>Please remove the &lt;b&gt;QT_STYLE_OVERRIDE&lt;/b&gt; environment variable (current value: %1).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="122"/>
+        <source>The &lt;b&gt;QT_QPA_PLATFORMTHEME&lt;/b&gt; environment variable is not set (required value: &lt;b&gt;qt5ct&lt;/b&gt;).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="126"/>
+        <source>The &lt;b&gt;QT_QPA_PLATFORMTHEME&lt;/b&gt; environment variable is not set correctly (current value: &lt;b&gt;%1&lt;/b&gt;, required value: &lt;b&gt;qt5ct&lt;/b&gt;).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="133"/>
+        <source>Unable to find &lt;b&gt;libqt5ct-style.so&lt;/b&gt;</source>
+        <translation type="unfinished">&lt;b&gt;libqt5ct-style.so&lt;/b&gt; kann nicht gefunden werden</translation>
     </message>
 </context>
 <context>
@@ -582,27 +624,27 @@
         <translation>Vorschaufenster</translation>
     </message>
     <message>
-        <location filename="../previewform.ui" line="24"/>
+        <location filename="../previewform.ui" line="27"/>
         <source>Tab 1</source>
         <translation>Reiter 1</translation>
     </message>
     <message>
-        <location filename="../previewform.ui" line="30"/>
+        <location filename="../previewform.ui" line="36"/>
         <source>PushButton</source>
         <translation>Schaltfläche drücken</translation>
     </message>
     <message>
-        <location filename="../previewform.ui" line="51"/>
+        <location filename="../previewform.ui" line="65"/>
         <source>Tab 2</source>
         <translation>Reiter 2</translation>
     </message>
     <message>
-        <location filename="../previewform.ui" line="57"/>
+        <location filename="../previewform.ui" line="74"/>
         <source>RadioButton</source>
         <translation>Radioschaltfläche</translation>
     </message>
     <message>
-        <location filename="../previewform.ui" line="64"/>
+        <location filename="../previewform.ui" line="84"/>
         <source>CheckBox</source>
         <translation>Ankreuzfeld</translation>
     </message>
@@ -722,29 +764,6 @@
         <location filename="../qsspage.cpp" line="271"/>
         <source>Unable to copy file</source>
         <translation>Datei konnte nicht kopiert werden</translation>
-    </message>
-</context>
-<context>
-    <name>main</name>
-    <message>
-        <location filename="../main.cpp" line="62"/>
-        <source>Please remove the &lt;b&gt;QT_STYLE_OVERRIDE&lt;/b&gt; environment variable</source>
-        <translation>Bitte entfernen Sie die Umgebungsvariable &lt;b&gt;QT_STYLE_OVERRIDE&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <location filename="../main.cpp" line="67"/>
-        <source>The &lt;b&gt;QT_QPA_PLATFORMTHEME&lt;/b&gt; environment variable is not set correctly</source>
-        <translation>Die Umgebungsvariable &lt;b&gt;QT_QPA_PLATFORMTHEME&lt;/b&gt; ist nicht korrekt festgelegt</translation>
-    </message>
-    <message>
-        <location filename="../main.cpp" line="73"/>
-        <source>Unable to find &lt;b&gt;libqt5ct-style.so&lt;/b&gt;</source>
-        <translation>&lt;b&gt;libqt5ct-style.so&lt;/b&gt; kann nicht gefunden werden</translation>
-    </message>
-    <message>
-        <location filename="../main.cpp" line="78"/>
-        <source>Error</source>
-        <translation>Fehler</translation>
     </message>
 </context>
 </TS>
