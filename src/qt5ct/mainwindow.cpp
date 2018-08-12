@@ -113,7 +113,7 @@ void MainWindow::checkConfiguration()
 
     if(env.contains("QT_STYLE_OVERRIDE"))
     {
-        m_errors << tr("Please remove the <b>QT_STYLE_OVERRIDE</b> environment variable (current value: %1).")
+        m_errors << tr("Please remove the <b>QT_STYLE_OVERRIDE</b> environment variable (current value: <b>%1</b>).")
                     .arg(env.value("QT_STYLE_OVERRIDE"));
     }
 
