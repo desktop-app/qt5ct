@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="ru">
+<TS version="2.1" language="ru">
 <context>
     <name>AppearancePage</name>
     <message>
@@ -454,8 +454,8 @@
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="116"/>
-        <source>Please remove the &lt;b&gt;QT_STYLE_OVERRIDE&lt;/b&gt; environment variable (current value: %1).</source>
-        <translation>Пожалуйста, удалите переменную среды &lt;b&gt;QT_STYLE_OVERRIDE&lt;/b&gt; (текущее значение: %1).</translation>
+        <source>Please remove the &lt;b&gt;QT_STYLE_OVERRIDE&lt;/b&gt; environment variable (current value: &lt;b&gt;%1&lt;/b&gt;).</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="122"/>
