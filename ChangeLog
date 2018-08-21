@@ -253,3 +253,20 @@ Version 0.35
 * updated Chinese (Taiwan) translation (Jeff Huang)
 * updated Bulgarian translation (Kiril Kirilov)
 * updated Czech translation (fri)
+
+Version 0.36
+* added feature to start qt5ct application without
+  QT_QPA_PLATFORMTHEME environment variable
+* added Catalan translation (Toni Estévez)
+* fixed issue with custom palette in some applications (thanks to Ari Fogel)
+* fixed build without QtDBus module 
+* fixed crash due to conflict between gtk2 style and gtk3 dialogs
+* updated Russian translation
+* updated Greek translation (Dimitrios Glentadakis)
+* updated Dutch (Netherlands) translation (Heimen Stoffels)
+* updated German translation (Ettore Atalan)
+* updated Danish translation (scootergrisen)
+* updated Chinese (Taiwan) translation (Jeff Huang)
+* updated Bulgarian translation (Kiril Kirilov)
+* updated Czech translation (fri)
+* updated Serbian translation (markosm)

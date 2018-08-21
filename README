@@ -9,7 +9,7 @@ Requirements:
 
 - GNU Linux or FreeBSD
 - qtbase >= 5.4.0
-- qtsvg >= 5.4.0 (Runtime dependency for the SVG icons support)
+- qtsvg >= 5.4.0 (Runtime dependency for the SVG icon support)
 - qttools >= 5.4.0 (For build only)
 
 
