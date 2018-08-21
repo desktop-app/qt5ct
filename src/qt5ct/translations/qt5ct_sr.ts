@@ -367,7 +367,7 @@
     <message>
         <location filename="../interfacepage.ui" line="246"/>
         <source>Show shortcut underlines</source>
-        <translation type="unfinished"></translation>
+        <translation>Прикажи пречицу</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="47"/>
@@ -470,7 +470,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="133"/>
         <source>Unable to find &lt;b&gt;libqt5ct-style.so&lt;/b&gt;</source>
-        <translation type="unfinished">Није могуће пронаћи &lt;b&gt;libqt5ct-style.so&lt;/b&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
