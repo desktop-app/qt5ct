@@ -227,6 +227,9 @@ void Qt5CTPlatformTheme::applySettings()
         QGuiApplication::setPalette(*m_customPalette); //apply palette
 
 #ifdef QT_WIDGETS_LIB
+    if(m_customPalette && m_usePalette && !m_update)
+        qApp->setPalette(*m_customPalette);
+
     if(hasWidgets())
     {
         foreach (QWidget *w, qApp->allWidgets())
