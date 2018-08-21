@@ -72,7 +72,7 @@
     <message>
         <location filename="../appearancepage.cpp" line="73"/>
         <source>Create a Copy</source>
-        <translation>Een kopie creëren</translation>
+        <translation>Kopie creëren</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="74"/>
@@ -135,7 +135,7 @@
     <message>
         <location filename="../appearancepage.cpp" line="199"/>
         <source>Are you sure you want to remove color scheme &quot;%1&quot;?</source>
-        <translation>Weet u zeker dat u het kleurenschema &quot;%1&quot; wilt verwijderen?</translation>
+        <translation>Weet je zeker dat je het kleurenschema &quot;%1&quot; wilt verwijderen?</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="219"/>
@@ -145,7 +145,7 @@
     <message>
         <location filename="../appearancepage.cpp" line="236"/>
         <source>Unable to copy file</source>
-        <translation>Kopiëren van bestand is niet mogelijk</translation>
+        <translation>Kopiëren van bestand niet mogelijk</translation>
     </message>
 </context>
 <context>
@@ -225,7 +225,7 @@
     <message>
         <location filename="../fontconfigdialog.cpp" line="74"/>
         <source>&lt;i&gt;%1&lt;/i&gt; already exists. Do you want to replace it?</source>
-        <translation>&lt;i&gt;%1&lt;/i&gt; bestaat al. Wilt u het vervangen?</translation>
+        <translation>&lt;i&gt;%1&lt;/i&gt; bestaat al. Wil je het vervangen?</translation>
     </message>
 </context>
 <context>
@@ -266,7 +266,7 @@
     <message>
         <location filename="../fontspage.cpp" line="116"/>
         <source>Are you sure you want to delete &lt;i&gt;%1&lt;/i&gt;?</source>
-        <translation>Weet u zeker dat u &lt;i&gt;%1&lt;/i&gt; wilt verwijderen?</translation>
+        <translation>Weet je zeker dat je &lt;i&gt;%1&lt;/i&gt; wilt verwijderen?</translation>
     </message>
 </context>
 <context>
@@ -274,7 +274,7 @@
     <message>
         <location filename="../interfacepage.ui" line="35"/>
         <source>Double click interval:</source>
-        <translation>Dubbelklik-tussenpose:</translation>
+        <translation>Dubbelklik-tussenpoos:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="42"/>
@@ -332,7 +332,7 @@
     <message>
         <location filename="../interfacepage.ui" line="175"/>
         <source>Enable gui effects</source>
-        <translation>Applicatie-effecten inschakelen</translation>
+        <translation>Effecten inschakelen</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="182"/>
@@ -372,22 +372,22 @@
     <message>
         <location filename="../interfacepage.cpp" line="47"/>
         <source>Only display the icon</source>
-        <translation>Alleen pictogram weergeven</translation>
+        <translation>Alleen pictogram tonen</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="48"/>
         <source>Only display the text</source>
-        <translation>Alleen tekst weergeven</translation>
+        <translation>Alleen tekst tonen</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="49"/>
         <source>The text appears beside the icon</source>
-        <translation>Tekst naast het pictogram weergeven</translation>
+        <translation>Tekst naast het pictogram tonen</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="50"/>
         <source>The text appears under the icon</source>
-        <translation>Tekst onder het pictogram weergeven</translation>
+        <translation>Tekst onder het pictogram tonen</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="51"/>
@@ -405,17 +405,17 @@
     <message>
         <location filename="../mainwindow.ui" line="45"/>
         <source>The application is not configured correctly.</source>
-        <translation type="unfinished"></translation>
+        <translation>De applicatie is onjuist ingesteld.</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="52"/>
         <source>Information</source>
-        <translation type="unfinished"></translation>
+        <translation>Informatie</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="59"/>
         <source>Hide</source>
-        <translation type="unfinished"></translation>
+        <translation>Verbergen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="49"/>
@@ -450,27 +450,27 @@
     <message>
         <location filename="../mainwindow.cpp" line="107"/>
         <source>Warning</source>
-        <translation type="unfinished">Waarschuwing</translation>
+        <translation>Waarschuwing</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="116"/>
         <source>Please remove the &lt;b&gt;QT_STYLE_OVERRIDE&lt;/b&gt; environment variable (current value: &lt;b&gt;%1&lt;/b&gt;).</source>
-        <translation type="unfinished"></translation>
+        <translation>Verwijder de omgevingsvariabel &lt;b&gt;QT_STYLE_OVERRIDE&lt;/b&gt; (huidige waarde: &lt;b&gt;%1&lt;/b&gt;).</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="122"/>
         <source>The &lt;b&gt;QT_QPA_PLATFORMTHEME&lt;/b&gt; environment variable is not set (required value: &lt;b&gt;qt5ct&lt;/b&gt;).</source>
-        <translation type="unfinished"></translation>
+        <translation>De omgevingsvariabel &lt;b&gt;QT_QPA_PLATFORMTHEME&lt;/b&gt; is niet ingesteld (vereiste waarde: &lt;b&gt;qt5ct&lt;/b&gt;).</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="126"/>
         <source>The &lt;b&gt;QT_QPA_PLATFORMTHEME&lt;/b&gt; environment variable is not set correctly (current value: &lt;b&gt;%1&lt;/b&gt;, required value: &lt;b&gt;qt5ct&lt;/b&gt;).</source>
-        <translation type="unfinished"></translation>
+        <translation>De omgevingsvariabel &lt;b&gt;QT_QPA_PLATFORMTHEME&lt;/b&gt; is onjuist ingesteld (huidige waarde: &lt;b&gt;%1&lt;/b&gt; - vereiste waarde: &lt;b&gt;qt5ct&lt;/b&gt;).</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="133"/>
         <source>Unable to find &lt;b&gt;libqt5ct-style.so&lt;/b&gt;</source>
-        <translation type="unfinished">&lt;b&gt;libqt5ct-style.so&lt;/b&gt; kan niet worden gevonden.</translation>
+        <translation>&lt;b&gt;libqt5ct-style.so&lt;/b&gt; kan niet worden gevonden.</translation>
     </message>
 </context>
 <context>
@@ -593,12 +593,12 @@
     <message>
         <location filename="../paletteeditdialog.cpp" line="94"/>
         <source>Tooltip background</source>
-        <translation>Hulpballon-achtergrond</translation>
+        <translation>Hulpballonachtergrond</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="94"/>
         <source>Tooltip text</source>
-        <translation>Hulpballon-tekst</translation>
+        <translation>Hulpballontekst</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="93"/>
@@ -727,12 +727,12 @@
     <message>
         <location filename="../qsspage.cpp" line="151"/>
         <source>Confirm Remove</source>
-        <translation>Verwijdering bevestigen</translation>
+        <translation>Verwijderen bevestigen</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="152"/>
         <source>Are you sure you want to remove style sheet &quot;%1&quot;?</source>
-        <translation>Weet u zeker dat u het stijlblad &quot;%1&quot; wilt verwijderen?</translation>
+        <translation>Weet je zeker dat je het stijlblad &quot;%1&quot; wilt verwijderen?</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="208"/>

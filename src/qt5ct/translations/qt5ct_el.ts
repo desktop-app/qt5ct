@@ -57,7 +57,7 @@
     <message>
         <location filename="../appearancepage.ui" line="218"/>
         <source>Standard dialogs:</source>
-        <translation>Τυπικοί διάλογοι</translation>
+        <translation>Τυπικοί διάλογοι:</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="71"/>
@@ -261,8 +261,7 @@
     <message>
         <location filename="../fontspage.cpp" line="115"/>
         <source>Remove Font Configuration</source>
-        <translation>Αφαίρεση διαμόρφωσης γραμματοσειράς
-</translation>
+        <translation>Αφαίρεση διαμόρφωσης γραμματοσειράς</translation>
     </message>
     <message>
         <location filename="../fontspage.cpp" line="116"/>
@@ -406,17 +405,17 @@
     <message>
         <location filename="../mainwindow.ui" line="45"/>
         <source>The application is not configured correctly.</source>
-        <translation type="unfinished"></translation>
+        <translation>Η εφαρμογή δεν έχει διαμορφωθεί σωστά.</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="52"/>
         <source>Information</source>
-        <translation type="unfinished"></translation>
+        <translation>Πληροφόρηση</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="59"/>
         <source>Hide</source>
-        <translation type="unfinished"></translation>
+        <translation>Απόκρυψη</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="49"/>
@@ -451,27 +450,27 @@
     <message>
         <location filename="../mainwindow.cpp" line="107"/>
         <source>Warning</source>
-        <translation type="unfinished">Προειδοποίηση</translation>
+        <translation>Προειδοποίηση</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="116"/>
         <source>Please remove the &lt;b&gt;QT_STYLE_OVERRIDE&lt;/b&gt; environment variable (current value: &lt;b&gt;%1&lt;/b&gt;).</source>
-        <translation type="unfinished"></translation>
+        <translation>Παρακαλώ αφαιρέστε την μεταβλητή περιβάλλοντος &lt;b&gt;QT_STYLE_OVERRIDE&lt;/b&gt; (τρέχουσα τιμή: &lt;b&gt;%1&lt;/b&gt;).</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="122"/>
         <source>The &lt;b&gt;QT_QPA_PLATFORMTHEME&lt;/b&gt; environment variable is not set (required value: &lt;b&gt;qt5ct&lt;/b&gt;).</source>
-        <translation type="unfinished"></translation>
+        <translation>Η μεταβλητή περιβάλλοντος &lt;b&gt;QT_QPA_PLATFORMTHEME&lt;/b&gt; δεν έχει οριστεί (απαιτούμενη τιμή: &lt;b&gt;qt5ct&lt;/b&gt;).</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="126"/>
         <source>The &lt;b&gt;QT_QPA_PLATFORMTHEME&lt;/b&gt; environment variable is not set correctly (current value: &lt;b&gt;%1&lt;/b&gt;, required value: &lt;b&gt;qt5ct&lt;/b&gt;).</source>
-        <translation type="unfinished"></translation>
+        <translation>Η μεταβλητή περιβάλλοντος &lt;b&gt;QT_QPA_PLATFORMTHEME&lt;/b&gt; δεν έχει οριστεί σωστά (τρέχουσα τιμή: &lt;b&gt;%1&lt;/b&gt;, απαιτούμενη τιμή: &lt;b&gt;qt5ct&lt;/b&gt;).</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="133"/>
         <source>Unable to find &lt;b&gt;libqt5ct-style.so&lt;/b&gt;</source>
-        <translation type="unfinished">Αδύνατη η εύρεση του &lt;b&gt;libqt5ct-style.so&lt;/b&gt;</translation>
+        <translation>Αδύνατη η εύρεση του &lt;b&gt;libqt5ct-style.so&lt;/b&gt;</translation>
     </message>
 </context>
 <context>
@@ -594,7 +593,7 @@
     <message>
         <location filename="../paletteeditdialog.cpp" line="94"/>
         <source>Tooltip background</source>
-        <translation>Παρασκήνιο υπόδειξης </translation>
+        <translation>Παρασκήνιο υπόδειξης</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="94"/>
