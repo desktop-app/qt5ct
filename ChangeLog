@@ -259,7 +259,7 @@ Version 0.36
   QT_QPA_PLATFORMTHEME environment variable
 * added Catalan translation (Toni Estévez)
 * fixed issue with custom palette in some applications (thanks to Ari Fogel)
-* fixed build without QtDBus module 
+* fixed build without QtDBus module
 * fixed crash due to conflict between gtk2 style and gtk3 dialogs
 * updated Russian translation
 * updated Greek translation (Dimitrios Glentadakis)
