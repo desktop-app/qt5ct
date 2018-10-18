@@ -26,7 +26,6 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <QSignalMapper>
 #include <QMessageBox>
 #include <QSettings>
 #include <QApplication>
@@ -44,12 +43,8 @@ FontsPage::FontsPage(QWidget *parent) :
 {
     m_ui->setupUi(this);
 
-    QSignalMapper *mapper = new QSignalMapper(this);
-    mapper->setMapping(m_ui->changeGeneralFontButton, m_ui->generalFontLabel);
-    mapper->setMapping(m_ui->changeFixedWidthFontButton, m_ui->fixedFontLabel);
-    connect(m_ui->changeGeneralFontButton, SIGNAL(clicked()), mapper, SLOT(map()));
-    connect(m_ui->changeFixedWidthFontButton, SIGNAL(clicked()), mapper, SLOT(map()));
-    connect(mapper, SIGNAL(mapped(QWidget*)), SLOT(onFontChangeRequested(QWidget*)));
+    connect(m_ui->changeGeneralFontButton, &QToolButton::clicked, [=] { onFontChangeRequested(m_ui->generalFontLabel); } );
+    connect(m_ui->changeFixedWidthFontButton, &QToolButton::clicked, [=] { onFontChangeRequested(m_ui->fixedFontLabel); } );
 
     readSettings();
 

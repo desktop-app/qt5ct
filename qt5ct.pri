@@ -9,6 +9,8 @@ QMAKE_DISTCLEAN += translations/*.qm
 
 CONFIG += c++11
 
+DEFINES += QT_DEPRECATED_WARNINGS
+
 !isEqual (QT_MAJOR_VERSION, 5) {
   error("Use Qt 5.4.0 or higher.")
 }
