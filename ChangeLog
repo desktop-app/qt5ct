@@ -270,3 +270,9 @@ Version 0.36
 * updated Bulgarian translation (Kiril Kirilov)
 * updated Czech translation (fri)
 * updated Serbian translation (markosm)
+
+Version 0.37
+* added Qt 5.12 support
+* added alpha channel for color themes
+* replaced deprecated code
+* updated Russian translation
