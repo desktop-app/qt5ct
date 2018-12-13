@@ -92,6 +92,9 @@ void PaletteEditDialog::setPalette(const QPalette &palette)
            << tr("Normal text") << tr("Bright text") << tr("Button text") << tr("Normal background") << tr("Window") << tr("Shadow")
            << tr("Highlight") << tr("Highlighted text")  << tr("Link")  << tr("Visited link")
            << tr("Alternate background") << tr("Default") << tr("Tooltip background")  << tr("Tooltip text");
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 12, 0))
+    labels << tr("Placeholder text");
+#endif
     m_ui->tableWidget->setVerticalHeaderLabels(labels);
 }
 

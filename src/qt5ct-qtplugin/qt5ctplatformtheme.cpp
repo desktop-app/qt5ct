@@ -400,6 +400,26 @@ QPalette Qt5CTPlatformTheme::loadColorScheme(const QString &filePath)
             customPalette.setColor(QPalette::Disabled, role, QColor(disabledColors.at(i)));
         }
     }
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 12, 0))
+    else if(activeColors.count() == QPalette::NColorRoles - 1 &&
+            inactiveColors.count() == QPalette::NColorRoles - 1 &&
+            disabledColors.count() == QPalette::NColorRoles - 1)
+    {
+        //old format compatibility
+        for (int i = 0; i < QPalette::NColorRoles - 1; i++)
+        {
+            QPalette::ColorRole role = QPalette::ColorRole(i);
+            customPalette.setColor(QPalette::Active, role, QColor(activeColors.at(i)));
+            customPalette.setColor(QPalette::Inactive, role, QColor(inactiveColors.at(i)));
+            customPalette.setColor(QPalette::Disabled, role, QColor(disabledColors.at(i)));
+        }
+        QColor textColor = customPalette.text().color();
+        textColor.setAlpha(128);
+        customPalette.setColor(QPalette::Active, QPalette::PlaceholderText, textColor);
+        customPalette.setColor(QPalette::Inactive, QPalette::PlaceholderText, textColor);
+        customPalette.setColor(QPalette::Disabled, QPalette::PlaceholderText, textColor);
+    }
+#endif
     else
     {
         customPalette = *QPlatformTheme::palette(SystemPalette); //load fallback palette
