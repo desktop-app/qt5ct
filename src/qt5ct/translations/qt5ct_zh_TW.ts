@@ -259,12 +259,12 @@
         <translation>移除 fonts.conf</translation>
     </message>
     <message>
-        <location filename="../fontspage.cpp" line="115"/>
+        <location filename="../fontspage.cpp" line="110"/>
         <source>Remove Font Configuration</source>
         <translation>移除字型設定</translation>
     </message>
     <message>
-        <location filename="../fontspage.cpp" line="116"/>
+        <location filename="../fontspage.cpp" line="111"/>
         <source>Are you sure you want to delete &lt;i&gt;%1&lt;/i&gt;?</source>
         <translation>您確定真的要刪除 &lt;i&gt;%1&lt;/i&gt; 嗎？</translation>
     </message>
@@ -611,7 +611,12 @@
         <translation>備用背景</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="106"/>
+        <location filename="../paletteeditdialog.cpp" line="96"/>
+        <source>Placeholder text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../paletteeditdialog.cpp" line="109"/>
         <source>Select Color</source>
         <translation>選取顏色</translation>
     </message>

@@ -259,12 +259,12 @@
         <translation>Supprimer  fonts.conf</translation>
     </message>
     <message>
-        <location filename="../fontspage.cpp" line="115"/>
+        <location filename="../fontspage.cpp" line="110"/>
         <source>Remove Font Configuration</source>
         <translation>Supprimer la configuration de la police</translation>
     </message>
     <message>
-        <location filename="../fontspage.cpp" line="116"/>
+        <location filename="../fontspage.cpp" line="111"/>
         <source>Are you sure you want to delete &lt;i&gt;%1&lt;/i&gt;?</source>
         <translation>Êtes-vous sûr de vouloir supprimer &lt;i&gt;%1&lt;/i&gt; ?</translation>
     </message>
@@ -611,7 +611,12 @@
         <translation>Arrière plan alternatif</translation>
     </message>
     <message>
-        <location filename="../paletteeditdialog.cpp" line="106"/>
+        <location filename="../paletteeditdialog.cpp" line="96"/>
+        <source>Placeholder text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../paletteeditdialog.cpp" line="109"/>
         <source>Select Color</source>
         <translation>Sélectionner la couleur</translation>
     </message>
