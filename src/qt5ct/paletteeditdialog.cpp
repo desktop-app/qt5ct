@@ -106,7 +106,7 @@ void PaletteEditDialog::hideEvent(QHideEvent *)
 
 void PaletteEditDialog::on_tableWidget_itemClicked(QTableWidgetItem *item)
 {
-    QColor color = QColorDialog::getColor(item->backgroundColor(), this, tr("Select Color"));
+    QColor color = QColorDialog::getColor(item->backgroundColor(), this, tr("Select Color"), QColorDialog::ShowAlphaChannel);
     if(color.isValid())
     {
         item->setBackgroundColor(color);

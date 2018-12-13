@@ -462,9 +462,9 @@ void AppearancePage::createColorScheme(const QString &name, const QPalette &pale
     for (int i = 0; i < QPalette::NColorRoles; i++)
     {
         QPalette::ColorRole role = QPalette::ColorRole(i);
-        activeColors << palette.color(QPalette::Active, role).name();
-        inactiveColors << palette.color(QPalette::Inactive, role).name();
-        disabledColors << palette.color(QPalette::Disabled, role).name();
+        activeColors << palette.color(QPalette::Active, role).name(QColor::HexArgb);
+        inactiveColors << palette.color(QPalette::Inactive, role).name(QColor::HexArgb);
+        disabledColors << palette.color(QPalette::Disabled, role).name(QColor::HexArgb);
     }
 
     settings.setValue("active_colors",activeColors);
