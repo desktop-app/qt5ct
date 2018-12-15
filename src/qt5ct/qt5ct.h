@@ -52,6 +52,7 @@ public:
     static QString userColorSchemePath();
     static QStringList sharedColorSchemePaths();
     static QString systemLanguageID();
+    static QString resolvePath(const QString &path);
 
 private:
     Qt5CT() {}

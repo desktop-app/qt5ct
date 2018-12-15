@@ -334,6 +334,7 @@ void AppearancePage::readSettings()
 
     m_ui->customPaletteButton->setChecked(settings.value("custom_palette", false).toBool());
     QString colorSchemePath = settings.value("color_scheme_path").toString();
+    colorSchemePath = Qt5CT::resolvePath(colorSchemePath); //replace environment variables
 
     QDir("/").mkpath(Qt5CT::userColorSchemePath());
     findColorSchemes(Qt5CT::userColorSchemePath());

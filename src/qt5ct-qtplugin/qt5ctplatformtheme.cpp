@@ -277,9 +277,10 @@ void Qt5CTPlatformTheme::readSettings()
 
     settings.beginGroup("Appearance");
     m_style = settings.value("style", "Fusion").toString();
-    if(settings.value("custom_palette", false).toBool())
+    QString schemePath = settings.value("color_scheme_path").toString();
+    if(!schemePath.isEmpty() && settings.value("custom_palette", false).toBool())
     {
-        QString schemePath = settings.value("color_scheme_path").toString();
+        schemePath = Qt5CT::resolvePath(schemePath); //replace environment variables
         m_customPalette = new QPalette(loadColorScheme(schemePath));
     }
     m_iconTheme = settings.value("icon_theme").toString();

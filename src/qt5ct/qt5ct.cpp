@@ -30,6 +30,7 @@
 #include <QLocale>
 #include <QLatin1String>
 #include <QStandardPaths>
+#include <QRegularExpression>
 #include "qt5ct.h"
 
 #ifndef QT5CT_DATADIR
@@ -113,4 +114,25 @@ QString Qt5CT::systemLanguageID()
         return QLocale (QString::fromLatin1(v)).name();
 #endif
     return  QLocale::system().name();
+}
+
+QString Qt5CT::resolvePath(const QString &path)
+{
+    QString tmp = path;
+    tmp.replace("~", QStandardPaths::writableLocation(QStandardPaths::HomeLocation));
+    if(!tmp.contains("$"))
+        return tmp;
+
+    //find environment variables
+    QRegularExpression regexp("\\$([A-Z_]+)\\/");
+    QRegularExpressionMatchIterator it = regexp.globalMatch(tmp);
+
+    while (it.hasNext())
+    {
+        QRegularExpressionMatch match = it.next();
+        QString captured = match.captured(1);
+        tmp.replace(QLatin1String("$") + captured, qgetenv(captured.toLatin1().constData()) );
+    }
+
+    return tmp;
 }
