@@ -35,6 +35,7 @@
 #include <QTimer>
 #include <QIcon>
 #include <QRegExp>
+#include <QMimeDatabase>
 #ifdef QT_WIDGETS_LIB
 #include <QStyle>
 #include <QStyleFactory>
@@ -170,6 +171,17 @@ QVariant Qt5CTPlatformTheme::themeHint(QPlatformTheme::ThemeHint hint) const
         return QPlatformTheme::themeHint(hint);
     }
 }
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 10, 0))
+QIcon Qt5CTPlatformTheme::fileIcon(const QFileInfo &fileInfo, QPlatformTheme::IconOptions iconOptions) const
+{
+    if((iconOptions & DontUseCustomDirectoryIcons) && fileInfo.isDir())
+        return QIcon::fromTheme(QLatin1String("inode-directory"));
+
+    QMimeDatabase db;
+    QMimeType type = db.mimeTypeForFile(fileInfo);
+    return QIcon::fromTheme(type.iconName());
+}
+#endif
 
 void Qt5CTPlatformTheme::applySettings()
 {
