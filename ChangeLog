@@ -274,5 +274,8 @@ Version 0.36
 Version 0.37
 * added Qt 5.12 support
 * added alpha channel for color themes
+* added environment variables support for paths in the qt5ct.conf
+* added mime-type based icons in the file dialog
+* fixed icon theme parsing
 * replaced deprecated code
 * updated Russian translation
