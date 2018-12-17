@@ -161,35 +161,38 @@ QIcon IconThemePage::findIcon(const QString &themePath, int size, const QString 
     bool haveInherits = config.contains("Inherits");
     config.endGroup();
 
-    foreach (QString dir, dirs)
-    {
-        config.beginGroup(dir);
-        if(config.value("Size").toInt() == size)
-        {
-            QDir iconDir = QFileInfo(themePath).path() + "/" + dir;
-            iconDir.setFilter(QDir::Files);
-            iconDir.setNameFilters(QStringList () << name + ".*");
-            if(iconDir.entryInfoList().isEmpty())
-                continue;
-            return QIcon(iconDir.entryInfoList().first().absoluteFilePath());
-        }
-        config.endGroup();
-    }
+    QString iconPath;
+    int iconSize = 0;
 
     foreach (QString dir, dirs)
     {
         config.beginGroup(dir);
-        if(abs(config.value("Size").toInt() - size) < 4)
+        QDir iconDir = QFileInfo(themePath).path() + "/" + dir;
+        iconDir.setFilter(QDir::Files);
+        iconDir.setNameFilters(QStringList () << name + ".*");
+
+        if(iconDir.entryInfoList().isEmpty())
+            iconDir.setNameFilters(QStringList () << name + "-*.*");
+
+        if(iconDir.entryInfoList().isEmpty())
+            continue;
+
+        if(!iconSize || abs(size - iconSize) > abs(size - config.value("Size").toInt()))
         {
-            QDir iconDir = QFileInfo(themePath).path() + "/" + dir;
-            iconDir.setFilter(QDir::Files);
-            iconDir.setNameFilters(QStringList () << name + ".*");
-            if(iconDir.entryInfoList().isEmpty())
-                continue;
-            return QIcon(iconDir.entryInfoList().first().absoluteFilePath());
+            iconSize = config.value("Size").toInt();
+            iconPath = iconDir.entryInfoList().first().absoluteFilePath();
+
+            if(iconSize == size)
+            {
+                config.endGroup();
+                break;
+            }
         }
         config.endGroup();
     }
+
+    if(!iconPath.isEmpty())
+        return QIcon(iconPath);
 
     if (!haveInherits)
         return QIcon();
