@@ -613,7 +613,7 @@
     <message>
         <location filename="../paletteeditdialog.cpp" line="96"/>
         <source>Placeholder text</source>
-        <translation type="unfinished"></translation>
+        <translation>Platzhaltertext</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="109"/>

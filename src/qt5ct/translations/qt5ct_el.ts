@@ -410,7 +410,7 @@
     <message>
         <location filename="../mainwindow.ui" line="52"/>
         <source>Information</source>
-        <translation>Πληροφόρηση</translation>
+        <translation>Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="59"/>
@@ -613,7 +613,7 @@
     <message>
         <location filename="../paletteeditdialog.cpp" line="96"/>
         <source>Placeholder text</source>
-        <translation type="unfinished"></translation>
+        <translation>Κείμενο δεσμευτικού θέσης</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="109"/>
