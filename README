@@ -34,7 +34,7 @@ qmake PLUGINDIR=<custom path> - changes the default installation path of the plu
 
 Wayland:
 
-If you are running Qt application under under Wayland, you should export the following variables:
+If you are running Qt application under Wayland, you should export the following variables:
 
 export QT_QPA_PLATFORM=wayland
 export QT_QPA_PLATFORMTHEME=qt5ct
