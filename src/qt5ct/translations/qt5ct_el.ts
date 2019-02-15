@@ -341,56 +341,61 @@
     </message>
     <message>
         <location filename="../interfacepage.ui" line="192"/>
+        <source>Keyboard scheme:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../interfacepage.ui" line="202"/>
         <source>Menus have icons</source>
         <translation>Τα μενού διαθέτουν εικονίδια</translation>
     </message>
     <message>
-        <location filename="../interfacepage.ui" line="199"/>
+        <location filename="../interfacepage.ui" line="209"/>
         <source>Dialog buttons have icons</source>
         <translation>Τα κουμπιά των διαλόγων διαθέτουν εικονίδια</translation>
     </message>
     <message>
-        <location filename="../interfacepage.ui" line="209"/>
+        <location filename="../interfacepage.ui" line="219"/>
         <source>Activate item on single-click</source>
         <translation>Ενεργοποίηση του αντικειμένου με μονό κλικ</translation>
     </message>
     <message>
-        <location filename="../interfacepage.ui" line="219"/>
+        <location filename="../interfacepage.ui" line="229"/>
         <source>Toolbar button style:</source>
         <translation>Τεχνοτροπία των κουμπιών της γραμμής εργαλείων:</translation>
     </message>
     <message>
-        <location filename="../interfacepage.ui" line="229"/>
+        <location filename="../interfacepage.ui" line="239"/>
         <source>Mouse wheel scroll lines:</source>
         <translation>Γραμμές κύλισης τροχού ποντικιού:</translation>
     </message>
     <message>
-        <location filename="../interfacepage.ui" line="246"/>
+        <location filename="../interfacepage.ui" line="256"/>
         <source>Show shortcut underlines</source>
         <translation>Εμφάνιση των υπογραμμίσεων των συντομεύσεων</translation>
     </message>
     <message>
-        <location filename="../interfacepage.cpp" line="47"/>
+        <location filename="../interfacepage.cpp" line="61"/>
         <source>Only display the icon</source>
         <translation>Εμφάνιση μόνον του εικονιδίου</translation>
     </message>
     <message>
-        <location filename="../interfacepage.cpp" line="48"/>
+        <location filename="../interfacepage.cpp" line="62"/>
         <source>Only display the text</source>
         <translation>Εμφάνιση μόνον του κειμένου</translation>
     </message>
     <message>
-        <location filename="../interfacepage.cpp" line="49"/>
+        <location filename="../interfacepage.cpp" line="63"/>
         <source>The text appears beside the icon</source>
         <translation>Το κείμενο εμφανίζεται δίπλα από το εικονίδιο</translation>
     </message>
     <message>
-        <location filename="../interfacepage.cpp" line="50"/>
+        <location filename="../interfacepage.cpp" line="64"/>
         <source>The text appears under the icon</source>
         <translation>Το κείμενο εμφανίζεται κάτω από το εικονίδιο</translation>
     </message>
     <message>
-        <location filename="../interfacepage.cpp" line="51"/>
+        <location filename="../interfacepage.cpp" line="65"/>
         <source>Follow the application style</source>
         <translation>Ακολούθηση της τεχνοτροπίας της εφαρμογής</translation>
     </message>

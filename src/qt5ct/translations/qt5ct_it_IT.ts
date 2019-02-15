@@ -341,56 +341,61 @@
     </message>
     <message>
         <location filename="../interfacepage.ui" line="192"/>
+        <source>Keyboard scheme:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../interfacepage.ui" line="202"/>
         <source>Menus have icons</source>
         <translation>Menu con icone</translation>
     </message>
     <message>
-        <location filename="../interfacepage.ui" line="199"/>
+        <location filename="../interfacepage.ui" line="209"/>
         <source>Dialog buttons have icons</source>
         <translation>Pulsanti finestre dialogo con icone</translation>
     </message>
     <message>
-        <location filename="../interfacepage.ui" line="209"/>
+        <location filename="../interfacepage.ui" line="219"/>
         <source>Activate item on single-click</source>
         <translation>Attiva oggetto con clic singolo</translation>
     </message>
     <message>
-        <location filename="../interfacepage.ui" line="219"/>
+        <location filename="../interfacepage.ui" line="229"/>
         <source>Toolbar button style:</source>
         <translation>Stile pulsante barra strumenti:</translation>
     </message>
     <message>
-        <location filename="../interfacepage.ui" line="229"/>
+        <location filename="../interfacepage.ui" line="239"/>
         <source>Mouse wheel scroll lines:</source>
         <translation>Linee scorrimento rotellina mouse:</translation>
     </message>
     <message>
-        <location filename="../interfacepage.ui" line="246"/>
+        <location filename="../interfacepage.ui" line="256"/>
         <source>Show shortcut underlines</source>
         <translation>Mostra sottolineatura collegamenti</translation>
     </message>
     <message>
-        <location filename="../interfacepage.cpp" line="47"/>
+        <location filename="../interfacepage.cpp" line="61"/>
         <source>Only display the icon</source>
         <translation>Mostra solo l&apos;icona</translation>
     </message>
     <message>
-        <location filename="../interfacepage.cpp" line="48"/>
+        <location filename="../interfacepage.cpp" line="62"/>
         <source>Only display the text</source>
         <translation>Mostra solo il testo</translation>
     </message>
     <message>
-        <location filename="../interfacepage.cpp" line="49"/>
+        <location filename="../interfacepage.cpp" line="63"/>
         <source>The text appears beside the icon</source>
         <translation>Il testo appare accanto all&apos;icona</translation>
     </message>
     <message>
-        <location filename="../interfacepage.cpp" line="50"/>
+        <location filename="../interfacepage.cpp" line="64"/>
         <source>The text appears under the icon</source>
         <translation>Il testo appare sotto l&apos;icona</translation>
     </message>
     <message>
-        <location filename="../interfacepage.cpp" line="51"/>
+        <location filename="../interfacepage.cpp" line="65"/>
         <source>Follow the application style</source>
         <translation>Segui lo stile dell&apos;applicazione</translation>
     </message>
