@@ -159,8 +159,12 @@ QVariant Qt5CTPlatformTheme::themeHint(QPlatformTheme::ThemeHint hint) const
         return QStringList() << "qt5ct-style";
     case QPlatformTheme::IconThemeSearchPaths:
         return Qt5CT::iconPaths();
-    case DialogButtonBoxLayout:
+    case QPlatformTheme::DialogButtonBoxLayout:
         return m_buttonBoxLayout;
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 9, 0))
+    case QPlatformTheme::KeyboardScheme:
+        return m_keyboardScheme;
+#endif
     case QPlatformTheme::UiEffects:
         return m_uiEffects;
 #if (QT_VERSION >= QT_VERSION_CHECK(5, 6, 0))
@@ -331,6 +335,10 @@ void Qt5CTPlatformTheme::readSettings()
     m_cursorFlashTime = settings.value("cursor_flash_time", m_cursorFlashTime).toInt();
     m_buttonBoxLayout = QPlatformTheme::themeHint(QPlatformTheme::DialogButtonBoxLayout).toInt();
     m_buttonBoxLayout = settings.value("buttonbox_layout", m_buttonBoxLayout).toInt();
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 9, 0))
+    m_keyboardScheme = QPlatformTheme::themeHint(QPlatformTheme::KeyboardScheme).toInt();
+    m_keyboardScheme = settings.value("keyboard_scheme", m_keyboardScheme).toInt();
+#endif
     QCoreApplication::setAttribute(Qt::AA_DontShowIconsInMenus, !settings.value("menus_have_icons", true).toBool());
     m_toolButtonStyle = settings.value("toolbutton_style", Qt::ToolButtonFollowStyle).toInt();
     m_wheelScrollLines = settings.value("wheel_scroll_lines", 3).toInt();

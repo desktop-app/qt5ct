@@ -186,14 +186,24 @@
      <item row="8" column="1">
       <widget class="QComboBox" name="buttonLayoutComboBox"/>
      </item>
-     <item row="10" column="0" colspan="2">
+     <item row="9" column="0">
+      <widget class="QLabel" name="label_10">
+       <property name="text">
+        <string>Keyboard scheme:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="1">
+      <widget class="QComboBox" name="keyboardSchemeComboBox"/>
+     </item>
+     <item row="11" column="0" colspan="2">
       <widget class="QCheckBox" name="menuIconsCheckBox">
        <property name="text">
         <string>Menus have icons</string>
        </property>
       </widget>
      </item>
-     <item row="9" column="0" colspan="2">
+     <item row="10" column="0" colspan="2">
       <widget class="QCheckBox" name="dialogIconsCheckBox">
        <property name="text">
         <string>Dialog buttons have icons</string>
@@ -213,24 +223,24 @@
        </property>
       </widget>
      </item>
-     <item row="12" column="0">
+     <item row="13" column="0">
       <widget class="QLabel" name="label_8">
        <property name="text">
         <string>Toolbar button style:</string>
        </property>
       </widget>
      </item>
-     <item row="12" column="1">
+     <item row="13" column="1">
       <widget class="QComboBox" name="toolButtonStyleComboBox"/>
      </item>
-     <item row="13" column="0">
+     <item row="14" column="0">
       <widget class="QLabel" name="label_9">
        <property name="text">
         <string>Mouse wheel scroll lines:</string>
        </property>
       </widget>
      </item>
-     <item row="13" column="1">
+     <item row="14" column="1">
       <widget class="QSpinBox" name="wheelScrollLinesSpinBox">
        <property name="minimum">
         <number>1</number>
@@ -240,7 +250,7 @@
        </property>
       </widget>
      </item>
-     <item row="11" column="0" colspan="2">
+     <item row="12" column="0" colspan="2">
       <widget class="QCheckBox" name="shortcutUnderlineCheckBox">
        <property name="text">
         <string>Show shortcut underlines</string>

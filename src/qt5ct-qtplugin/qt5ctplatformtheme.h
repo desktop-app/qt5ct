@@ -116,6 +116,9 @@ private:
     int m_cursorFlashTime;
     int m_uiEffects;
     int m_buttonBoxLayout;
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 9, 0))
+    int m_keyboardScheme;
+#endif
     bool m_update = false;
     bool m_usePalette = true;
     int m_toolButtonStyle = Qt::ToolButtonFollowStyle;
