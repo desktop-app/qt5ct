@@ -11,6 +11,7 @@ Translators:
   Chinese (Taiwan) - Jeff Huang
   Czech - fri
   Danish - scootergrisen
+  Finnish - Nikolay Korotkiy
   French - David GEIGER <david.david@mageialinux-online.org>, 
            Adrien DAUGABEL <adrien.d@mageialinux-online.org>,
            papoteur <papoteur@mageialinux-online.org>
@@ -23,9 +24,15 @@ Translators:
   Russian - Ilya Kotov
   Serbian - markosm
   Slovak - Ján Ďanovský
-  Spanish - jcn363
+  Spanish - jcn363, Toni Estévez
+  Turkish - Yaşar Çiv
 
 Style sheets and color schemes:
+
   airy.conf, darker.conf, dusk.conf, sand.conf, simple.conf, waves.conf,
   *-simple.qss - q5sys (Lumina Desktop Environment)
   fusion-fixes.qss - burak
+  
+Patches and improvements:
+
+  Keyboard scheme option - Nikolay Korotkiy

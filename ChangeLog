@@ -284,3 +284,19 @@ Version 0.37
 * updated Greek translation (Dimitrios Glentadakis)
 * updated German translation (Ettore Atalan)
 * updated Danish translation (scootergrisen)
+
+Version 0.38
+* added keyboard scheme option (Nikolay Korotkiy)
+* added system-wide configuration support
+* added Finnish translation (Nikolay Korotkiy)
+* added Turkish translation (Yaşar Çiv)
+* updated Spanish translation (Toni Estévez)
+* updated Arabic translation (abouzakaria kov)
+* updated Russian translation
+* updated Bulgarian translation (Kiril Kirilov)
+* updated Czech translation (fri)
+* updated Danish translation (scootergrisen)
+* updated German translation (Ettore Atalan)
+* updated Greek translation (Dimitrios Glentadakis)
+* updated Dutch (Netherlands) translation (Heimen Stoffels)
+* updated Chinese (Taiwan) translation (Jeff Huang)
