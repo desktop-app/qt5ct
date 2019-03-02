@@ -342,7 +342,7 @@
     <message>
         <location filename="../interfacepage.ui" line="192"/>
         <source>Keyboard scheme:</source>
-        <translation type="unfinished"></translation>
+        <translation>Toetsenbordschema:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="202"/>

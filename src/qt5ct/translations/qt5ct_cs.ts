@@ -342,7 +342,7 @@
     <message>
         <location filename="../interfacepage.ui" line="192"/>
         <source>Keyboard scheme:</source>
-        <translation type="unfinished"></translation>
+        <translation>Rozložení klávesnice:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="202"/>
@@ -618,7 +618,7 @@
     <message>
         <location filename="../paletteeditdialog.cpp" line="96"/>
         <source>Placeholder text</source>
-        <translation type="unfinished"></translation>
+        <translation>Text zástupného znaku</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="109"/>
