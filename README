@@ -58,6 +58,7 @@ libqt5ct-style.so - qt5ct proxy style plugin
 ~/.config/qt5ct/qss, ~/.local/share/qt5ct/qss, /usr/share/qt5ct/qss, /usr/local/share/qt5ct/qss - style sheets
 ~/.config/qt5ct/colors,~/.local/share/qt5ct/colors, /usr/share/qt5ct/colors,
 /usr/local/share/qt5ct/colors - color schemes
+/etc/xdg/qt5ct/qt5ct.conf - default configuration file
 
 Translation:
 
