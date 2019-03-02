@@ -33,5 +33,7 @@
     <file>qt5ct_ca.qm</file>
     <file>qt5ct_ar.qm</file>
     <file>qt5ct_da.qm</file>
+    <file>qt5ct_uk.qm</file>
+    <file>qt5ct_fi.qm</file>
   </qresource>
 </RCC>

@@ -37,17 +37,17 @@
         <location filename="../appearancepage.ui" line="124"/>
         <location filename="../appearancepage.cpp" line="88"/>
         <source>Default</source>
-        <translation>Predeterminado</translation>
+        <translation>Predeterminada</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="134"/>
         <source>Custom</source>
-        <translation>Personalizado</translation>
+        <translation>Personalizada</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="161"/>
         <source>Color scheme:</source>
-        <translation>Combinación de colores :</translation>
+        <translation>Combinación de colores:</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="187"/>
@@ -57,7 +57,7 @@
     <message>
         <location filename="../appearancepage.ui" line="218"/>
         <source>Standard dialogs:</source>
-        <translation type="unfinished"></translation>
+        <translation>Diálogos estándar:</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="71"/>
@@ -82,14 +82,14 @@
     <message>
         <location filename="../appearancepage.cpp" line="76"/>
         <source>Remove</source>
-        <translation>Borrar</translation>
+        <translation>Eliminar</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="143"/>
         <location filename="../appearancepage.cpp" line="217"/>
         <location filename="../appearancepage.cpp" line="256"/>
         <source>Enter Color Scheme Name</source>
-        <translation>Introducir nombre de la combinación de colores</translation>
+        <translation>Introducir el nombre de la combinación de colores</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="143"/>
@@ -111,7 +111,7 @@
         <location filename="../appearancepage.cpp" line="228"/>
         <location filename="../appearancepage.cpp" line="266"/>
         <source>The color scheme &quot;%1&quot; already exists</source>
-        <translation>La combinación de colores &quot;%1&quot; ya existe</translation>
+        <translation>La combinación de colores «%1» ya existe</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="170"/>
@@ -125,27 +125,27 @@
         <location filename="../appearancepage.cpp" line="193"/>
         <location filename="../appearancepage.cpp" line="251"/>
         <source>The color scheme &quot;%1&quot; is read only</source>
-        <translation>La combinación de colores &quot;%1&quot; es de sólo lectura</translation>
+        <translation>La combinación de colores «%1» es de sólo lectura</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="198"/>
         <source>Confirm Remove</source>
-        <translation>Confirmar borrado</translation>
+        <translation>Confirmar la eliminación</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="199"/>
         <source>Are you sure you want to remove color scheme &quot;%1&quot;?</source>
-        <translation>¿Seguro que quiere borrar la combinación de colores &quot;%1&quot;?</translation>
+        <translation>¿Seguro que quiere eliminar la combinación de colores «%1»?</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="219"/>
         <source>%1 (copy)</source>
-        <translation>%1 (copiar)</translation>
+        <translation>%1 (copia)</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="236"/>
         <source>Unable to copy file</source>
-        <translation type="unfinished"></translation>
+        <translation>No se puede copiar el archivo</translation>
     </message>
 </context>
 <context>
@@ -154,12 +154,12 @@
         <location filename="../fontconfigdialog.ui" line="14"/>
         <location filename="../fontconfigdialog.cpp" line="73"/>
         <source>Font Configuration</source>
-        <translation>Configuración de fuente</translation>
+        <translation>Configuración de los tipos de letra</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="29"/>
         <source>Disable automatic hinting for bold fonts</source>
-        <translation>Desactivar consejo automático para fuentes en negrita</translation>
+        <translation>Desactivar la optimización automática para tipos de letra en negrita</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="36"/>
@@ -169,17 +169,17 @@
     <message>
         <location filename="../fontconfigdialog.ui" line="43"/>
         <source>Automatic hinting</source>
-        <translation>Consejo automático</translation>
+        <translation>Optimización automática</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="50"/>
         <source>Hinting</source>
-        <translation>Consejo</translation>
+        <translation>Optimización</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="67"/>
         <source>Font resolution:</source>
-        <translation>Resolución de fuente:</translation>
+        <translation>Resolución de los tipos de letra</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="110"/>
@@ -189,17 +189,17 @@
     <message>
         <location filename="../fontconfigdialog.ui" line="83"/>
         <source>Subpixel geometry:</source>
-        <translation>Geometría subpíxeles:</translation>
+        <translation>Geometría de los subpíxeles:</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="90"/>
         <source>Antialiasing</source>
-        <translation>Suavizado de líneas</translation>
+        <translation>Suavizado</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="97"/>
         <source>Hinting style:</source>
-        <translation>Estilo de consejo:</translation>
+        <translation>Estilo de optimización:</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.cpp" line="42"/>
@@ -225,7 +225,7 @@
     <message>
         <location filename="../fontconfigdialog.cpp" line="74"/>
         <source>&lt;i&gt;%1&lt;/i&gt; already exists. Do you want to replace it?</source>
-        <translation>&lt;i&gt;%1&lt;/i&gt; ya existe. ¿Quieres reemplazarlo?</translation>
+        <translation>&lt;i&gt;%1&lt;/i&gt; ya existe. ¿Quiere reemplazarlo?</translation>
     </message>
 </context>
 <context>
@@ -256,17 +256,17 @@
     <message>
         <location filename="../fontspage.ui" line="132"/>
         <source>Remove fonts.conf</source>
-        <translation>Borrar fonts.conf</translation>
+        <translation>Eliminar fonts.conf</translation>
     </message>
     <message>
         <location filename="../fontspage.cpp" line="110"/>
         <source>Remove Font Configuration</source>
-        <translation>Borrar configuración de fuentes</translation>
+        <translation>Eliminar la configuración de los tipos de letra</translation>
     </message>
     <message>
         <location filename="../fontspage.cpp" line="111"/>
         <source>Are you sure you want to delete &lt;i&gt;%1&lt;/i&gt;?</source>
-        <translation>¿Seguro que quieres borrar &lt;i&gt;%1&lt;/i&gt;?</translation>
+        <translation>¿Seguro que quiere eliminar &lt;i&gt;%1&lt;/i&gt;?</translation>
     </message>
 </context>
 <context>
@@ -284,17 +284,17 @@
     <message>
         <location filename="../interfacepage.ui" line="49"/>
         <source>ComboBox effect:</source>
-        <translation>Efecto ComboBox:</translation>
+        <translation>Efecto del cuadro combinado:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="56"/>
         <source>ToolTip effect:</source>
-        <translation>Efecto de información sobre herramientas:</translation>
+        <translation>Efecto de la información sobre herramientas:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="63"/>
         <source>ToolBox effect:</source>
-        <translation>Efecto de caja de herramientas:</translation>
+        <translation>Efecto de la caja de herramientas:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="70"/>
@@ -308,7 +308,7 @@
         <location filename="../interfacepage.ui" line="133"/>
         <location filename="../interfacepage.ui" line="157"/>
         <source>Disable</source>
-        <translation>Inhabilitar</translation>
+        <translation>Desactivar</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="99"/>
@@ -327,17 +327,17 @@
     <message>
         <location filename="../interfacepage.ui" line="146"/>
         <source>Menu effect:</source>
-        <translation>Menú de efectos:</translation>
+        <translation>Efecto del menú:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="175"/>
         <source>Enable gui effects</source>
-        <translation>Activar efectos</translation>
+        <translation>Activar efectos de la interfaz</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="182"/>
         <source>Dialog buttons layout:</source>
-        <translation>Diseño de botones de diálogo:</translation>
+        <translation>Diseño de los botones de diálogo:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="192"/>
@@ -357,47 +357,47 @@
     <message>
         <location filename="../interfacepage.ui" line="219"/>
         <source>Activate item on single-click</source>
-        <translation type="unfinished"></translation>
+        <translation>Activar elementos con un solo clic</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="229"/>
         <source>Toolbar button style:</source>
-        <translation type="unfinished"></translation>
+        <translation>Estilo de los botones de la barra de herramientas:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="239"/>
         <source>Mouse wheel scroll lines:</source>
-        <translation type="unfinished"></translation>
+        <translation>Líneas de desplazamiento de la rueda del ratón:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="256"/>
         <source>Show shortcut underlines</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostrar el subrayado de los accesos rápidos</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="61"/>
         <source>Only display the icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostrar solo los iconos</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="62"/>
         <source>Only display the text</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostrar solo el texto</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="63"/>
         <source>The text appears beside the icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostrar el texto a lado de los iconos</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="64"/>
         <source>The text appears under the icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostrar el texto debajo de los iconos</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="65"/>
         <source>Follow the application style</source>
-        <translation type="unfinished"></translation>
+        <translation>Seguir el estilo de la aplicación</translation>
     </message>
 </context>
 <context>
@@ -430,7 +430,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="50"/>
         <source>Fonts</source>
-        <translation>Fuentes</translation>
+        <translation>Tipos de letra</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="51"/>
@@ -483,7 +483,7 @@
     <message>
         <location filename="../paletteeditdialog.ui" line="14"/>
         <source>Palette Editor</source>
-        <translation>Editor de paleta</translation>
+        <translation>Editor de la paleta</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.ui" line="79"/>
@@ -503,17 +503,17 @@
     <message>
         <location filename="../paletteeditdialog.cpp" line="49"/>
         <source>Active</source>
-        <translation>Activo</translation>
+        <translation>Activa</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="49"/>
         <source>Inactive</source>
-        <translation>Inactivo</translation>
+        <translation>Inactiva</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="49"/>
         <source>Disabled</source>
-        <translation>Desactivado</translation>
+        <translation>Desactivada</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="91"/>
@@ -523,12 +523,12 @@
     <message>
         <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Window text</source>
-        <translation>Ventana de texto</translation>
+        <translation>Texto de la ventana</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Button background</source>
-        <translation>Botón de fondo</translation>
+        <translation>Fondo del botón</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="91"/>
@@ -563,7 +563,7 @@
     <message>
         <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Button text</source>
-        <translation>Botón de texto</translation>
+        <translation>Texto del botón</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="92"/>
@@ -573,12 +573,12 @@
     <message>
         <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Normal background</source>
-        <translation>Fondo habitual</translation>
+        <translation>Fondo normal</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="93"/>
         <source>Highlight</source>
-        <translation>Resaltar</translation>
+        <translation>Resaltado</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="93"/>
@@ -593,17 +593,17 @@
     <message>
         <location filename="../paletteeditdialog.cpp" line="94"/>
         <source>Default</source>
-        <translation>Predeterminado</translation>
+        <translation>Por defecto</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="94"/>
         <source>Tooltip background</source>
-        <translation>Fondo de información sobre herramientas</translation>
+        <translation>Fondo de la información sobre herramientas</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="94"/>
         <source>Tooltip text</source>
-        <translation>Texto de información sobre herramientas</translation>
+        <translation>Texto de la información sobre herramientas</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="93"/>
@@ -623,7 +623,7 @@
     <message>
         <location filename="../paletteeditdialog.cpp" line="109"/>
         <source>Select Color</source>
-        <translation>Elegir color</translation>
+        <translation>Seleccionar el color</translation>
     </message>
 </context>
 <context>
@@ -631,7 +631,7 @@
     <message>
         <location filename="../previewform.ui" line="14"/>
         <source>Preview Window</source>
-        <translation>Ventana de previsualización</translation>
+        <translation>Ventana de vista previa</translation>
     </message>
     <message>
         <location filename="../previewform.ui" line="27"/>
@@ -696,17 +696,17 @@
         <location filename="../qsspage.ui" line="33"/>
         <location filename="../qsspage.cpp" line="55"/>
         <source>Remove</source>
-        <translation>Borrar</translation>
+        <translation>Eliminar</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="52"/>
         <source>Create a Copy</source>
-        <translation type="unfinished">Crear una copia</translation>
+        <translation>Crear una copia</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="92"/>
         <source>View</source>
-        <translation type="unfinished"></translation>
+        <translation>Vista</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="106"/>
@@ -718,7 +718,7 @@
         <location filename="../qsspage.cpp" line="106"/>
         <location filename="../qsspage.cpp" line="251"/>
         <source>Enter Style Sheet Name</source>
-        <translation>Introducir nombre de la hoja de estilo</translation>
+        <translation>Introducir el nombre de la hoja de estilo</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="117"/>
@@ -737,17 +737,17 @@
     <message>
         <location filename="../qsspage.cpp" line="151"/>
         <source>Confirm Remove</source>
-        <translation>Confirmar borrado</translation>
+        <translation>Confirmar la eliminación</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="152"/>
         <source>Are you sure you want to remove style sheet &quot;%1&quot;?</source>
-        <translation>¿Seguro que quiere borrar la hoja de estilo &quot;%1&quot;?</translation>
+        <translation>¿Seguro que quiere eliminar la hoja de estilo «%1»?</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="208"/>
         <source>Rename Style Sheet</source>
-        <translation>Renombrar hoja de estilo</translation>
+        <translation>Renombrar la hoja de estilo</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="208"/>
@@ -758,22 +758,22 @@
         <location filename="../qsspage.cpp" line="218"/>
         <location filename="../qsspage.cpp" line="263"/>
         <source>The style sheet &quot;%1&quot; already exists</source>
-        <translation>La hoja de estilo &quot;%1&quot; ya existe</translation>
+        <translation>La hoja de estilo «%1» ya existe</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="226"/>
         <source>Unable to rename file</source>
-        <translation>No es posible cambiar el nombre de archivo</translation>
+        <translation>No es posible cambiar el nombre del archivo</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="253"/>
         <source>%1 (copy).qss</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 (copia).qss</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="271"/>
         <source>Unable to copy file</source>
-        <translation type="unfinished"></translation>
+        <translation>No se puede copiar el archivo</translation>
     </message>
 </context>
 </TS>

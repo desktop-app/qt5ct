@@ -1,102 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="tr_TR">
+<TS version="2.1" language="tr">
 <context>
     <name>AppearancePage</name>
     <message>
         <location filename="../appearancepage.ui" line="20"/>
         <source>Style:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tarz:</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="59"/>
         <source>Preview</source>
-        <translation type="unfinished"></translation>
+        <translation>Önizleme</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="69"/>
         <source>Active palette</source>
-        <translation type="unfinished"></translation>
+        <translation>Etkin palet</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="74"/>
         <source>Inactive palette</source>
-        <translation type="unfinished"></translation>
+        <translation>Etkin olmayan palet</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="79"/>
         <source>Disabled palette</source>
-        <translation type="unfinished"></translation>
+        <translation>Devre dışı olan palet</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="113"/>
         <source>Palette</source>
-        <translation type="unfinished"></translation>
+        <translation>Palet</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="124"/>
         <location filename="../appearancepage.cpp" line="88"/>
         <source>Default</source>
-        <translation type="unfinished"></translation>
+        <translation>Varsayılan</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="134"/>
         <source>Custom</source>
-        <translation type="unfinished"></translation>
+        <translation>Özel</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="161"/>
         <source>Color scheme:</source>
-        <translation type="unfinished"></translation>
+        <translation>Renk şeması:</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="187"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation>...</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="218"/>
         <source>Standard dialogs:</source>
-        <translation type="unfinished"></translation>
+        <translation>Standart iletişimler:</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="71"/>
         <source>Create</source>
-        <translation type="unfinished"></translation>
+        <translation>Oluştur</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="72"/>
         <source>Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Düzenle</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="73"/>
         <source>Create a Copy</source>
-        <translation type="unfinished"></translation>
+        <translation>Bir kopya oluştur</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="74"/>
         <source>Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Yeniden adlandır</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="76"/>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Kaldır</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="143"/>
         <location filename="../appearancepage.cpp" line="217"/>
         <location filename="../appearancepage.cpp" line="256"/>
         <source>Enter Color Scheme Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Renk Şeması Adını Girin</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="143"/>
         <location filename="../appearancepage.cpp" line="217"/>
         <location filename="../appearancepage.cpp" line="256"/>
         <source>File name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Dosya adı:</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="152"/>
@@ -104,48 +104,48 @@
         <location filename="../appearancepage.cpp" line="236"/>
         <location filename="../appearancepage.cpp" line="266"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Hata</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="152"/>
         <location filename="../appearancepage.cpp" line="228"/>
         <location filename="../appearancepage.cpp" line="266"/>
         <source>The color scheme &quot;%1&quot; already exists</source>
-        <translation type="unfinished"></translation>
+        <translation>&quot;%1&quot; renk şeması zaten var</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="170"/>
         <location filename="../appearancepage.cpp" line="193"/>
         <location filename="../appearancepage.cpp" line="251"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>Uyarı</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="170"/>
         <location filename="../appearancepage.cpp" line="193"/>
         <location filename="../appearancepage.cpp" line="251"/>
         <source>The color scheme &quot;%1&quot; is read only</source>
-        <translation type="unfinished"></translation>
+        <translation>&quot;%1&quot; renk şeması yalnızca okunur</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="198"/>
         <source>Confirm Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Kaldırmayı Onayla</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="199"/>
         <source>Are you sure you want to remove color scheme &quot;%1&quot;?</source>
-        <translation type="unfinished"></translation>
+        <translation>&quot;%1&quot; renk şemasını kaldırmak istediğinizden emin misiniz?</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="219"/>
         <source>%1 (copy)</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 (kopya)</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="236"/>
         <source>Unable to copy file</source>
-        <translation type="unfinished"></translation>
+        <translation>Dosya kopyalanamıyor</translation>
     </message>
 </context>
 <context>
@@ -154,78 +154,78 @@
         <location filename="../fontconfigdialog.ui" line="14"/>
         <location filename="../fontconfigdialog.cpp" line="73"/>
         <source>Font Configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>Yazı tipi Yapılandırması</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="29"/>
         <source>Disable automatic hinting for bold fonts</source>
-        <translation type="unfinished"></translation>
+        <translation>Kalın yazı tipleri için otomatik ipucunu devre dışı bırak</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="36"/>
         <source>LCD filter:</source>
-        <translation type="unfinished"></translation>
+        <translation>LCD Süzgeci:</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="43"/>
         <source>Automatic hinting</source>
-        <translation type="unfinished"></translation>
+        <translation>Otomatik ipucu</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="50"/>
         <source>Hinting</source>
-        <translation type="unfinished"></translation>
+        <translation>İpucu</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="67"/>
         <source>Font resolution:</source>
-        <translation type="unfinished"></translation>
+        <translation>Yazı tipi çözünürlüğü:</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="110"/>
         <source> dpi</source>
-        <translation type="unfinished"></translation>
+        <translation> dpi</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="83"/>
         <source>Subpixel geometry:</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt piksel geometrisi:</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="90"/>
         <source>Antialiasing</source>
-        <translation type="unfinished"></translation>
+        <translation>Düzgünleştirme</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="97"/>
         <source>Hinting style:</source>
-        <translation type="unfinished"></translation>
+        <translation>İpucu tarzı:</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.cpp" line="42"/>
         <location filename="../fontconfigdialog.cpp" line="47"/>
         <source>None</source>
-        <translation type="unfinished"></translation>
+        <translation>Yok</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.cpp" line="43"/>
         <source>Slight</source>
-        <translation type="unfinished"></translation>
+        <translation>Hafif</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.cpp" line="44"/>
         <source>Medium</source>
-        <translation type="unfinished"></translation>
+        <translation>Orta</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.cpp" line="45"/>
         <source>Full</source>
-        <translation type="unfinished"></translation>
+        <translation>Tam</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.cpp" line="74"/>
         <source>&lt;i&gt;%1&lt;/i&gt; already exists. Do you want to replace it?</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;i&gt;%1&lt;/i&gt; zaten var. Onu değiştirmek ister misiniz?</translation>
     </message>
 </context>
 <context>
@@ -236,37 +236,37 @@
         <location filename="../fontspage.ui" line="86"/>
         <location filename="../fontspage.ui" line="93"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation>...</translation>
     </message>
     <message>
         <location filename="../fontspage.ui" line="60"/>
         <source>General:</source>
-        <translation type="unfinished"></translation>
+        <translation>Genel:</translation>
     </message>
     <message>
         <location filename="../fontspage.ui" line="100"/>
         <source>Fixed width:</source>
-        <translation type="unfinished"></translation>
+        <translation>Sabit genişlik:</translation>
     </message>
     <message>
         <location filename="../fontspage.ui" line="125"/>
         <source>Create  fonts.conf</source>
-        <translation type="unfinished"></translation>
+        <translation>fonts.conf oluştur</translation>
     </message>
     <message>
         <location filename="../fontspage.ui" line="132"/>
         <source>Remove fonts.conf</source>
-        <translation type="unfinished"></translation>
+        <translation>fonts.conf kaldır</translation>
     </message>
     <message>
         <location filename="../fontspage.cpp" line="110"/>
         <source>Remove Font Configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>Yazı tipi Yapılandırmasını Kaldır</translation>
     </message>
     <message>
         <location filename="../fontspage.cpp" line="111"/>
         <source>Are you sure you want to delete &lt;i&gt;%1&lt;/i&gt;?</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;i&gt;%1&lt;/i&gt; silmek istediğinize emin misiniz?</translation>
     </message>
 </context>
 <context>
@@ -274,33 +274,33 @@
     <message>
         <location filename="../interfacepage.ui" line="35"/>
         <source>Double click interval:</source>
-        <translation type="unfinished"></translation>
+        <translation>Çift tıklama aralığı:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="42"/>
         <source>Cursor flash time:</source>
-        <translation type="unfinished"></translation>
+        <translation>İmleç yanıp sönme süresi:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="49"/>
         <source>ComboBox effect:</source>
-        <translation type="unfinished"></translation>
+        <translation>ComboBox etkisi:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="56"/>
         <source>ToolTip effect:</source>
-        <translation type="unfinished"></translation>
+        <translation>Araç İpucu etkisi:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="63"/>
         <source>ToolBox effect:</source>
-        <translation type="unfinished"></translation>
+        <translation>Araç Kutusu etkisi:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="70"/>
         <location filename="../interfacepage.ui" line="80"/>
         <source> ms</source>
-        <translation type="unfinished"></translation>
+        <translation> ms</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="94"/>
@@ -308,7 +308,7 @@
         <location filename="../interfacepage.ui" line="133"/>
         <location filename="../interfacepage.ui" line="157"/>
         <source>Disable</source>
-        <translation type="unfinished"></translation>
+        <translation>Devre dışı</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="99"/>
@@ -316,28 +316,28 @@
         <location filename="../interfacepage.ui" line="138"/>
         <location filename="../interfacepage.ui" line="162"/>
         <source>Animate</source>
-        <translation type="unfinished"></translation>
+        <translation>Canlandırma</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="121"/>
         <location filename="../interfacepage.ui" line="167"/>
         <source>Fade</source>
-        <translation type="unfinished"></translation>
+        <translation>Karartma</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="146"/>
         <source>Menu effect:</source>
-        <translation type="unfinished"></translation>
+        <translation>Menü etkisi:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="175"/>
         <source>Enable gui effects</source>
-        <translation type="unfinished"></translation>
+        <translation>Arayüz etkilerini etkinleştir</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="182"/>
         <source>Dialog buttons layout:</source>
-        <translation type="unfinished"></translation>
+        <translation>İletişim düğmeleri düzeni:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="192"/>
@@ -347,57 +347,57 @@
     <message>
         <location filename="../interfacepage.ui" line="202"/>
         <source>Menus have icons</source>
-        <translation type="unfinished"></translation>
+        <translation>Menülerde simgeler var</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="209"/>
         <source>Dialog buttons have icons</source>
-        <translation type="unfinished"></translation>
+        <translation>İletişim düğmelerinde simgeler var</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="219"/>
         <source>Activate item on single-click</source>
-        <translation type="unfinished"></translation>
+        <translation>Tek tıklamayla öğeyi etkinleştir</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="229"/>
         <source>Toolbar button style:</source>
-        <translation type="unfinished"></translation>
+        <translation>Araç çubuğu düğme tarzı:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="239"/>
         <source>Mouse wheel scroll lines:</source>
-        <translation type="unfinished"></translation>
+        <translation>Fare tekerleği kaydırma çizgileri:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="256"/>
         <source>Show shortcut underlines</source>
-        <translation type="unfinished"></translation>
+        <translation>Kısayol alt çizgilerini göster</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="61"/>
         <source>Only display the icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Sadece simgeyi göster</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="62"/>
         <source>Only display the text</source>
-        <translation type="unfinished"></translation>
+        <translation>Sadece metni göster</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="63"/>
         <source>The text appears beside the icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Metin simgenin yanında görünür</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="64"/>
         <source>The text appears under the icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Metin simgenin altında görünür</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="65"/>
         <source>Follow the application style</source>
-        <translation type="unfinished"></translation>
+        <translation>Uygulama tarzını takip et</translation>
     </message>
 </context>
 <context>
@@ -405,77 +405,77 @@
     <message>
         <location filename="../mainwindow.ui" line="14"/>
         <source>Qt5 Configuration Tool</source>
-        <translation type="unfinished"></translation>
+        <translation>Qt5 Yapılandırma Aracı</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="45"/>
         <source>The application is not configured correctly.</source>
-        <translation type="unfinished"></translation>
+        <translation>Uygulama doğru yapılandırılmamış.</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="52"/>
         <source>Information</source>
-        <translation type="unfinished"></translation>
+        <translation>Bilgi</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="59"/>
         <source>Hide</source>
-        <translation type="unfinished"></translation>
+        <translation>Gizle</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="49"/>
         <source>Appearance</source>
-        <translation type="unfinished"></translation>
+        <translation>Görünüm</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="50"/>
         <source>Fonts</source>
-        <translation type="unfinished"></translation>
+        <translation>Yazı tipleri</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="51"/>
         <source>Icon Theme</source>
-        <translation type="unfinished"></translation>
+        <translation>Simge Teması</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="52"/>
         <source>Interface</source>
-        <translation type="unfinished"></translation>
+        <translation>Arayüz</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="54"/>
         <source>Style Sheets</source>
-        <translation type="unfinished"></translation>
+        <translation>Tarz Sayfaları</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="62"/>
         <source>Version: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Sürüm: %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="107"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>Uyarı</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="116"/>
         <source>Please remove the &lt;b&gt;QT_STYLE_OVERRIDE&lt;/b&gt; environment variable (current value: &lt;b&gt;%1&lt;/b&gt;).</source>
-        <translation type="unfinished"></translation>
+        <translation>Lütfen &lt;b&gt;QT_STYLE_OVERRIDE&lt;/b&gt; ortam değişkenini kaldırın (geçerli değer: &lt;b&gt;%1&lt;/b&gt;).</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="122"/>
         <source>The &lt;b&gt;QT_QPA_PLATFORMTHEME&lt;/b&gt; environment variable is not set (required value: &lt;b&gt;qt5ct&lt;/b&gt;).</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;QT_QPA_PLATFORMTHEME&lt;/b&gt; ortam değişkeni ayarlanmadı (gereken değer: &lt;b&gt;qt5ct&lt;/b&gt;).</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="126"/>
         <source>The &lt;b&gt;QT_QPA_PLATFORMTHEME&lt;/b&gt; environment variable is not set correctly (current value: &lt;b&gt;%1&lt;/b&gt;, required value: &lt;b&gt;qt5ct&lt;/b&gt;).</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;QT_QPA_PLATFORMTHEME&lt;/b&gt; ortam değişkeni doğru ayarlanmadı (geçerli değer: &lt;b&gt;%1&lt;/b&gt;, gereken değer: &lt;b&gt;qt5ct&lt;/b&gt;).</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="133"/>
         <source>Unable to find &lt;b&gt;libqt5ct-style.so&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;libqt5ct-style.so&lt;/b&gt; bulunamadı</translation>
     </message>
 </context>
 <context>
@@ -483,147 +483,147 @@
     <message>
         <location filename="../paletteeditdialog.ui" line="14"/>
         <source>Palette Editor</source>
-        <translation type="unfinished"></translation>
+        <translation>Palet Düzenleyici</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.ui" line="79"/>
         <source>Reset palette</source>
-        <translation type="unfinished"></translation>
+        <translation>Paleti sıfırla</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.ui" line="29"/>
         <source>Build inactive palette</source>
-        <translation type="unfinished"></translation>
+        <translation>Etkin olmayan palet oluştur</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.ui" line="36"/>
         <source>Build disabled palette</source>
-        <translation type="unfinished"></translation>
+        <translation>Devre dışı bırakılmış palet oluştur</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="49"/>
         <source>Active</source>
-        <translation type="unfinished"></translation>
+        <translation>Etkin</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="49"/>
         <source>Inactive</source>
-        <translation type="unfinished"></translation>
+        <translation>Etkin olmayan</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="49"/>
         <source>Disabled</source>
-        <translation type="unfinished"></translation>
+        <translation>Devre dışı</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Dark</source>
-        <translation type="unfinished"></translation>
+        <translation>Koyu</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Window text</source>
-        <translation type="unfinished"></translation>
+        <translation>Pencere metni</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Button background</source>
-        <translation type="unfinished"></translation>
+        <translation>Düğme arka planı</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Bright</source>
-        <translation type="unfinished"></translation>
+        <translation>Parlak</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Less bright</source>
-        <translation type="unfinished"></translation>
+        <translation>Az parlak</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Less dark</source>
-        <translation type="unfinished"></translation>
+        <translation>Az koyu</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Pencere</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Shadow</source>
-        <translation type="unfinished"></translation>
+        <translation>Gölge</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Bright text</source>
-        <translation type="unfinished"></translation>
+        <translation>Parlak metin</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Button text</source>
-        <translation type="unfinished"></translation>
+        <translation>Düğme metni</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Normal text</source>
-        <translation type="unfinished"></translation>
+        <translation>Olağan metin</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Normal background</source>
-        <translation type="unfinished"></translation>
+        <translation>Olağan arka plan</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="93"/>
         <source>Highlight</source>
-        <translation type="unfinished"></translation>
+        <translation>Vurgulama</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="93"/>
         <source>Highlighted text</source>
-        <translation type="unfinished"></translation>
+        <translation>Vurgulanan metin</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="93"/>
         <source>Visited link</source>
-        <translation type="unfinished"></translation>
+        <translation>Ziyaret edilen bağlantı</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="94"/>
         <source>Default</source>
-        <translation type="unfinished"></translation>
+        <translation>Varsayılan</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="94"/>
         <source>Tooltip background</source>
-        <translation type="unfinished"></translation>
+        <translation>Araç ipucu arka planı</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="94"/>
         <source>Tooltip text</source>
-        <translation type="unfinished"></translation>
+        <translation>Araç ipucu metni</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="93"/>
         <source>Link</source>
-        <translation type="unfinished"></translation>
+        <translation>Bağlantı</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="94"/>
         <source>Alternate background</source>
-        <translation type="unfinished"></translation>
+        <translation>Alternatif arka plan</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="96"/>
         <source>Placeholder text</source>
-        <translation type="unfinished"></translation>
+        <translation>Yer tutucu metni</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="109"/>
         <source>Select Color</source>
-        <translation type="unfinished"></translation>
+        <translation>Renk Seç</translation>
     </message>
 </context>
 <context>
@@ -631,32 +631,32 @@
     <message>
         <location filename="../previewform.ui" line="14"/>
         <source>Preview Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Önizleme Penceresi</translation>
     </message>
     <message>
         <location filename="../previewform.ui" line="27"/>
         <source>Tab 1</source>
-        <translation type="unfinished"></translation>
+        <translation>Sekme 1</translation>
     </message>
     <message>
         <location filename="../previewform.ui" line="36"/>
         <source>PushButton</source>
-        <translation type="unfinished"></translation>
+        <translation>Basma Düğmesi</translation>
     </message>
     <message>
         <location filename="../previewform.ui" line="65"/>
         <source>Tab 2</source>
-        <translation type="unfinished"></translation>
+        <translation>Sekme 2</translation>
     </message>
     <message>
         <location filename="../previewform.ui" line="74"/>
         <source>RadioButton</source>
-        <translation type="unfinished"></translation>
+        <translation>Radyo Düğmesi</translation>
     </message>
     <message>
         <location filename="../previewform.ui" line="84"/>
         <source>CheckBox</source>
-        <translation type="unfinished"></translation>
+        <translation>Onay Kutusu</translation>
     </message>
 </context>
 <context>
@@ -664,12 +664,12 @@
     <message>
         <location filename="../qsseditordialog.cpp" line="46"/>
         <source>%1 - Style Sheet Editor</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 - Tarz Sayfası Düzenleyicisi</translation>
     </message>
     <message>
         <location filename="../qsseditordialog.ui" line="14"/>
         <source>Style Sheet Editor</source>
-        <translation type="unfinished"></translation>
+        <translation>Tarz Sayfası Düzenleyicisi</translation>
     </message>
 </context>
 <context>
@@ -677,48 +677,48 @@
     <message>
         <location filename="../qsspage.ui" line="23"/>
         <source>Create</source>
-        <translation type="unfinished"></translation>
+        <translation>Oluştur</translation>
     </message>
     <message>
         <location filename="../qsspage.ui" line="66"/>
         <location filename="../qsspage.cpp" line="51"/>
         <location filename="../qsspage.cpp" line="87"/>
         <source>Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Düzenle</translation>
     </message>
     <message>
         <location filename="../qsspage.ui" line="76"/>
         <location filename="../qsspage.cpp" line="53"/>
         <source>Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Yeniden adlandır</translation>
     </message>
     <message>
         <location filename="../qsspage.ui" line="33"/>
         <location filename="../qsspage.cpp" line="55"/>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Kaldır</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="52"/>
         <source>Create a Copy</source>
-        <translation type="unfinished"></translation>
+        <translation>Bir Kopya Oluştur</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="92"/>
         <source>View</source>
-        <translation type="unfinished"></translation>
+        <translation>Görüntüle</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="106"/>
         <location filename="../qsspage.cpp" line="251"/>
         <source>File name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Dosya adı:</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="106"/>
         <location filename="../qsspage.cpp" line="251"/>
         <source>Enter Style Sheet Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Tarz Sayfası Adını Girin</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="117"/>
@@ -727,53 +727,53 @@
         <location filename="../qsspage.cpp" line="263"/>
         <location filename="../qsspage.cpp" line="271"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Hata</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="117"/>
         <source>The file &quot;%1&quot; already exists</source>
-        <translation type="unfinished"></translation>
+        <translation>&quot;%1&quot; dosyası zaten var</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="151"/>
         <source>Confirm Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Kaldırmayı Onayla</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="152"/>
         <source>Are you sure you want to remove style sheet &quot;%1&quot;?</source>
-        <translation type="unfinished"></translation>
+        <translation>&quot;%1&quot; tarz sayfasını kaldırmak istediğinize emin misiniz?</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="208"/>
         <source>Rename Style Sheet</source>
-        <translation type="unfinished"></translation>
+        <translation>Tarz Sayfasını Yeniden Adlandır</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="208"/>
         <source>Style sheet name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tarz sayfası adı:</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="218"/>
         <location filename="../qsspage.cpp" line="263"/>
         <source>The style sheet &quot;%1&quot; already exists</source>
-        <translation type="unfinished"></translation>
+        <translation>&quot;%1&quot; tarz sayfası zaten var</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="226"/>
         <source>Unable to rename file</source>
-        <translation type="unfinished"></translation>
+        <translation>Dosya yeniden adlandırılamıyor</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="253"/>
         <source>%1 (copy).qss</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 (kopya).qss</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="271"/>
         <source>Unable to copy file</source>
-        <translation type="unfinished"></translation>
+        <translation>Dosya kopyalanamıyor</translation>
     </message>
 </context>
 </TS>

@@ -1,102 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="hu">
+<TS version="2.1" language="uk">
 <context>
     <name>AppearancePage</name>
     <message>
         <location filename="../appearancepage.ui" line="20"/>
         <source>Style:</source>
-        <translation>Stílus:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="59"/>
         <source>Preview</source>
-        <translation>Előnézet</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="69"/>
         <source>Active palette</source>
-        <translation>Aktív paletta</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="74"/>
         <source>Inactive palette</source>
-        <translation>Inaktív paletta</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="79"/>
         <source>Disabled palette</source>
-        <translation>Letiltott paletta</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="113"/>
         <source>Palette</source>
-        <translation>Paletta</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="124"/>
         <location filename="../appearancepage.cpp" line="88"/>
         <source>Default</source>
-        <translation>Alapértelmezett</translation>
+        <translation>Типово</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="134"/>
         <source>Custom</source>
-        <translation>Egyéni</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="161"/>
         <source>Color scheme:</source>
-        <translation>Színséma:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="187"/>
         <source>...</source>
-        <translation>...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="218"/>
         <source>Standard dialogs:</source>
-        <translation>Alapértelmezett párbeszédablakok:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="71"/>
         <source>Create</source>
-        <translation>Létrehozás</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="72"/>
         <source>Edit</source>
-        <translation>Szerkesztés</translation>
+        <translation>Редагувати</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="73"/>
         <source>Create a Copy</source>
-        <translation>Másolat létrehozás</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="74"/>
         <source>Rename</source>
-        <translation>Átnevezés</translation>
+        <translation>Перейменувати</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="76"/>
         <source>Remove</source>
-        <translation>Eltávolítás</translation>
+        <translation>Вилучити</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="143"/>
         <location filename="../appearancepage.cpp" line="217"/>
         <location filename="../appearancepage.cpp" line="256"/>
         <source>Enter Color Scheme Name</source>
-        <translation>Színséma neve</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="143"/>
         <location filename="../appearancepage.cpp" line="217"/>
         <location filename="../appearancepage.cpp" line="256"/>
         <source>File name:</source>
-        <translation>Fájlnév:</translation>
+        <translation>Ім&apos;я файлу:</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="152"/>
@@ -104,48 +104,48 @@
         <location filename="../appearancepage.cpp" line="236"/>
         <location filename="../appearancepage.cpp" line="266"/>
         <source>Error</source>
-        <translation>Hiba</translation>
+        <translation>Помилка</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="152"/>
         <location filename="../appearancepage.cpp" line="228"/>
         <location filename="../appearancepage.cpp" line="266"/>
         <source>The color scheme &quot;%1&quot; already exists</source>
-        <translation>&quot;%1&quot; színséma már létezik</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="170"/>
         <location filename="../appearancepage.cpp" line="193"/>
         <location filename="../appearancepage.cpp" line="251"/>
         <source>Warning</source>
-        <translation>Figyelmeztetés</translation>
+        <translation>Попередження</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="170"/>
         <location filename="../appearancepage.cpp" line="193"/>
         <location filename="../appearancepage.cpp" line="251"/>
         <source>The color scheme &quot;%1&quot; is read only</source>
-        <translation>&quot;%1&quot; színséma csak olvasható</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="198"/>
         <source>Confirm Remove</source>
-        <translation>Törlés megerősítése</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="199"/>
         <source>Are you sure you want to remove color scheme &quot;%1&quot;?</source>
-        <translation>Biztos törölni szeretné ezt a színsémát &quot;%1&quot;?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="219"/>
         <source>%1 (copy)</source>
-        <translation>%1 (másol)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="236"/>
         <source>Unable to copy file</source>
-        <translation>Nem lehet másolni a fájlt</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -154,7 +154,7 @@
         <location filename="../fontconfigdialog.ui" line="14"/>
         <location filename="../fontconfigdialog.cpp" line="73"/>
         <source>Font Configuration</source>
-        <translation>Betűtípus beállítások</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="29"/>
@@ -164,7 +164,7 @@
     <message>
         <location filename="../fontconfigdialog.ui" line="36"/>
         <source>LCD filter:</source>
-        <translation>LCD szűrő:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="43"/>
@@ -184,12 +184,12 @@
     <message>
         <location filename="../fontconfigdialog.ui" line="110"/>
         <source> dpi</source>
-        <translation> dpi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="83"/>
         <source>Subpixel geometry:</source>
-        <translation>Al-pixel geometria:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="90"/>
@@ -205,27 +205,27 @@
         <location filename="../fontconfigdialog.cpp" line="42"/>
         <location filename="../fontconfigdialog.cpp" line="47"/>
         <source>None</source>
-        <translation>Nem</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.cpp" line="43"/>
         <source>Slight</source>
-        <translation>Enyhe</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.cpp" line="44"/>
         <source>Medium</source>
-        <translation>Közepes</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.cpp" line="45"/>
         <source>Full</source>
-        <translation>Teljes</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.cpp" line="74"/>
         <source>&lt;i&gt;%1&lt;/i&gt; already exists. Do you want to replace it?</source>
-        <translation>&lt;i&gt;%1&lt;/i&gt; már létezik. Szeretné felülírni?</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -236,37 +236,37 @@
         <location filename="../fontspage.ui" line="86"/>
         <location filename="../fontspage.ui" line="93"/>
         <source>...</source>
-        <translation>...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../fontspage.ui" line="60"/>
         <source>General:</source>
-        <translation>Általános:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../fontspage.ui" line="100"/>
         <source>Fixed width:</source>
-        <translation>Rögzített szélesség:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../fontspage.ui" line="125"/>
         <source>Create  fonts.conf</source>
-        <translation>fonts.conf létrehozás</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../fontspage.ui" line="132"/>
         <source>Remove fonts.conf</source>
-        <translation>fonts.conf eltávolítás</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../fontspage.cpp" line="110"/>
         <source>Remove Font Configuration</source>
-        <translation>Betűtípus beállítások eltávolítása</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../fontspage.cpp" line="111"/>
         <source>Are you sure you want to delete &lt;i&gt;%1&lt;/i&gt;?</source>
-        <translation>Biztosan szeretné ezt törölni: &lt;i&gt;%1&lt;/i&gt;?</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -300,7 +300,7 @@
         <location filename="../interfacepage.ui" line="70"/>
         <location filename="../interfacepage.ui" line="80"/>
         <source> ms</source>
-        <translation>ms</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="94"/>
@@ -308,7 +308,7 @@
         <location filename="../interfacepage.ui" line="133"/>
         <location filename="../interfacepage.ui" line="157"/>
         <source>Disable</source>
-        <translation>Eltávolítás</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="99"/>
@@ -316,7 +316,7 @@
         <location filename="../interfacepage.ui" line="138"/>
         <location filename="../interfacepage.ui" line="162"/>
         <source>Animate</source>
-        <translation>Animálás</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="121"/>
@@ -425,17 +425,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="49"/>
         <source>Appearance</source>
-        <translation>Elrendezés</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="50"/>
         <source>Fonts</source>
-        <translation>Betűtípusok</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="51"/>
         <source>Icon Theme</source>
-        <translation>Ikonok</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="52"/>
@@ -450,12 +450,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="62"/>
         <source>Version: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Версія: %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="107"/>
         <source>Warning</source>
-        <translation type="unfinished">Figyelmeztetés</translation>
+        <translation type="unfinished">Попередження</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="116"/>
@@ -503,32 +503,32 @@
     <message>
         <location filename="../paletteeditdialog.cpp" line="49"/>
         <source>Active</source>
-        <translation>Elérhető</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="49"/>
         <source>Inactive</source>
-        <translation>Nem elérhető</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="49"/>
         <source>Disabled</source>
-        <translation>Letíltva</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Dark</source>
-        <translation>Sötét</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Window text</source>
-        <translation>Ablak szöveg</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="91"/>
         <source>Button background</source>
-        <translation>Gomb háttér</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="91"/>
@@ -548,7 +548,7 @@
     <message>
         <location filename="../paletteeditdialog.cpp" line="92"/>
         <source>Window</source>
-        <translation>Ablak</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="92"/>
@@ -578,12 +578,12 @@
     <message>
         <location filename="../paletteeditdialog.cpp" line="93"/>
         <source>Highlight</source>
-        <translation>Kiemelés</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="93"/>
         <source>Highlighted text</source>
-        <translation>Szöveg kiemelés</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="93"/>
@@ -593,7 +593,7 @@
     <message>
         <location filename="../paletteeditdialog.cpp" line="94"/>
         <source>Default</source>
-        <translation>Alapértelmezett</translation>
+        <translation>Типово</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="94"/>
@@ -608,7 +608,7 @@
     <message>
         <location filename="../paletteeditdialog.cpp" line="93"/>
         <source>Link</source>
-        <translation>Hivatkozás</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="94"/>
@@ -623,7 +623,7 @@
     <message>
         <location filename="../paletteeditdialog.cpp" line="109"/>
         <source>Select Color</source>
-        <translation>Szín kiválasztás</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -631,12 +631,12 @@
     <message>
         <location filename="../previewform.ui" line="14"/>
         <source>Preview Window</source>
-        <translation>Ablak előnézet</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../previewform.ui" line="27"/>
         <source>Tab 1</source>
-        <translation>Fül 1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../previewform.ui" line="36"/>
@@ -646,7 +646,7 @@
     <message>
         <location filename="../previewform.ui" line="65"/>
         <source>Tab 2</source>
-        <translation>Fül 2</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../previewform.ui" line="74"/>
@@ -656,7 +656,7 @@
     <message>
         <location filename="../previewform.ui" line="84"/>
         <source>CheckBox</source>
-        <translation>Jelölőnégyzet</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -677,42 +677,42 @@
     <message>
         <location filename="../qsspage.ui" line="23"/>
         <source>Create</source>
-        <translation>Létrehoz</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qsspage.ui" line="66"/>
         <location filename="../qsspage.cpp" line="51"/>
         <location filename="../qsspage.cpp" line="87"/>
         <source>Edit</source>
-        <translation>Szerkeszt</translation>
+        <translation>Редагувати</translation>
     </message>
     <message>
         <location filename="../qsspage.ui" line="76"/>
         <location filename="../qsspage.cpp" line="53"/>
         <source>Rename</source>
-        <translation>Átnevez</translation>
+        <translation>Перейменувати</translation>
     </message>
     <message>
         <location filename="../qsspage.ui" line="33"/>
         <location filename="../qsspage.cpp" line="55"/>
         <source>Remove</source>
-        <translation>Töröl</translation>
+        <translation>Вилучити</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="52"/>
         <source>Create a Copy</source>
-        <translation type="unfinished">Másolat létrehozás</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="92"/>
         <source>View</source>
-        <translation>Nézet</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="106"/>
         <location filename="../qsspage.cpp" line="251"/>
         <source>File name:</source>
-        <translation>Fájlnév:</translation>
+        <translation>Ім&apos;я файлу:</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="106"/>
@@ -727,7 +727,7 @@
         <location filename="../qsspage.cpp" line="263"/>
         <location filename="../qsspage.cpp" line="271"/>
         <source>Error</source>
-        <translation>Hiba</translation>
+        <translation>Помилка</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="117"/>
@@ -737,7 +737,7 @@
     <message>
         <location filename="../qsspage.cpp" line="151"/>
         <source>Confirm Remove</source>
-        <translation type="unfinished">Törlés megerősítése</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="152"/>
@@ -773,7 +773,7 @@
     <message>
         <location filename="../qsspage.cpp" line="271"/>
         <source>Unable to copy file</source>
-        <translation type="unfinished">Nem lehet másolni a fájlt</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

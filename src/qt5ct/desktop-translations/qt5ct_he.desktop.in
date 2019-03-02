@@ -20,6 +20,10 @@ Comment=Qt5 Configuration Tool
 
 
 
+
+
+
+
 Exec=qt5ct
 Icon=preferences-desktop-theme
 Terminal=false
