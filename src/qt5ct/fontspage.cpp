@@ -60,7 +60,7 @@ FontsPage::~FontsPage()
 
 void FontsPage::writeSettings()
 {
-    QSettings settings(Qt5CT::configFile(), QSettings::IniFormat);
+    QSettings settings(QSettings::UserScope, QLatin1String("qt5ct"), QLatin1String("qt5ct"));
     settings.beginGroup("Fonts");
     settings.setValue("general", m_ui->generalFontLabel->font());
     settings.setValue("fixed", m_ui->fixedFontLabel->font());
@@ -80,7 +80,7 @@ void FontsPage::onFontChangeRequested(QWidget *widget)
 
 void FontsPage::readSettings()
 {
-    QSettings settings(Qt5CT::configFile(), QSettings::IniFormat);
+    QSettings settings(QSettings::UserScope, QLatin1String("qt5ct"), QLatin1String("qt5ct"));
     settings.beginGroup("Fonts");
     loadFont(&settings, m_ui->generalFontLabel, "general");
     loadFont(&settings, m_ui->fixedFontLabel, "fixed");

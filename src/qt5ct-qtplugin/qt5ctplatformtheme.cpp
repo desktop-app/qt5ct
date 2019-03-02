@@ -289,7 +289,7 @@ void Qt5CTPlatformTheme::readSettings()
         m_customPalette = nullptr;
     }
 
-    QSettings settings(Qt5CT::configFile(), QSettings::IniFormat);
+    QSettings settings(QSettings::UserScope, QLatin1String("qt5ct"), QLatin1String("qt5ct"));
 
     settings.beginGroup("Appearance");
     m_style = settings.value("style", "Fusion").toString();

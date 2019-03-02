@@ -45,7 +45,7 @@ QStyle *Qt5CTStylePlugin::create(const QString &key)
 {
     if (key == "qt5ct-style")
     {
-        QSettings settings(Qt5CT::configFile(), QSettings::IniFormat);
+        QSettings settings(QSettings::UserScope, QLatin1String("qt5ct"), QLatin1String("qt5ct"));
         QString style = settings.value("Appearance/style", "Fusion").toString();
         if(key == style || !QStyleFactory::keys().contains(style))
             style = "Fusion";

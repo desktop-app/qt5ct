@@ -52,7 +52,7 @@ QSSEditorDialog::QSSEditorDialog(const QString &filePath, QWidget *parent) :
         m_ui->textEdit->setReadOnly(true);
     }
 
-    QSettings settings(Qt5CT::configFile(), QSettings::IniFormat);
+    QSettings settings(QSettings::UserScope, QLatin1String("qt5ct"), QLatin1String("qt5ct"));
     restoreGeometry(settings.value("QSSEditor/geometry").toByteArray());
 }
 
@@ -70,7 +70,7 @@ void QSSEditorDialog::save()
 
 void QSSEditorDialog::hideEvent(QHideEvent *)
 {
-    QSettings settings(Qt5CT::configFile(), QSettings::IniFormat);
+    QSettings settings(QSettings::UserScope, QLatin1String("qt5ct"), QLatin1String("qt5ct"));
     settings.setValue("QSSEditor/geometry", saveGeometry());
 }
 

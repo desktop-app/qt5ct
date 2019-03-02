@@ -33,7 +33,7 @@
 Qt5CTProxyStyle::Qt5CTProxyStyle(const QString &key) :
     QProxyStyle(key)
 {
-    QSettings settings(Qt5CT::configFile(), QSettings::IniFormat);
+    QSettings settings(QSettings::UserScope, QLatin1String("qt5ct"), QLatin1String("qt5ct"));
     m_dialogButtonsHaveIcons = settings.value("Interface/dialog_buttons_have_icons", Qt::PartiallyChecked).toInt();
     m_activateItemOnSingleClick = settings.value("Interface/activate_item_on_single_click", Qt::PartiallyChecked).toInt();
     m_underlineShortcut = settings.value("Interface/underline_shortcut", Qt::PartiallyChecked).toInt();

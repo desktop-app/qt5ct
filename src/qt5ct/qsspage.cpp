@@ -70,7 +70,7 @@ QSSPage::~QSSPage()
 void QSSPage::writeSettings()
 {
     QStringList styleSheets;
-    QSettings settings(Qt5CT::configFile(), QSettings::IniFormat);
+    QSettings settings(QSettings::UserScope, QLatin1String("qt5ct"), QLatin1String("qt5ct"));
 
     for(int i = 0; i < m_ui->qssListWidget->count(); ++i)
     {
@@ -166,7 +166,7 @@ void QSSPage::readSettings()
     findStyleSheets(Qt5CT::userStyleSheetPath());
     findStyleSheets(Qt5CT::sharedStyleSheetPaths());
 
-    QSettings settings(Qt5CT::configFile(), QSettings::IniFormat);
+    QSettings settings(QSettings::UserScope, QLatin1String("qt5ct"), QLatin1String("qt5ct"));
     QStringList styleSheets = settings.value("Interface/stylesheets").toStringList();
     for(int i = 0; i < m_ui->qssListWidget->count(); ++i)
     {
