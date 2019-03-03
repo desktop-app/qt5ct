@@ -64,9 +64,9 @@ QPalette PaletteEditDialog::selectedPalette() const
     QPalette palette;
     for(int i = 0; i < QPalette::NColorRoles; i++)
     {
-        palette.setBrush(QPalette::Active, QPalette::ColorRole(i), m_ui->tableWidget->item(i,0)->backgroundColor());
-        palette.setBrush(QPalette::Inactive, QPalette::ColorRole(i), m_ui->tableWidget->item(i,1)->backgroundColor());
-        palette.setBrush(QPalette::Disabled, QPalette::ColorRole(i), m_ui->tableWidget->item(i,2)->backgroundColor());
+        palette.setBrush(QPalette::Active, QPalette::ColorRole(i), m_ui->tableWidget->item(i,0)->background());
+        palette.setBrush(QPalette::Inactive, QPalette::ColorRole(i), m_ui->tableWidget->item(i,1)->background());
+        palette.setBrush(QPalette::Disabled, QPalette::ColorRole(i), m_ui->tableWidget->item(i,2)->background());
     }
     return palette;
 }
@@ -82,9 +82,9 @@ void PaletteEditDialog::setPalette(const QPalette &palette)
         if(!m_ui->tableWidget->item(i,2))
             m_ui->tableWidget->setItem(i, 2, new QTableWidgetItem());
 
-        m_ui->tableWidget->item(i,0)->setBackgroundColor(palette.color(QPalette::Active, QPalette::ColorRole(i)));
-        m_ui->tableWidget->item(i,1)->setBackgroundColor(palette.color(QPalette::Inactive, QPalette::ColorRole(i)));
-        m_ui->tableWidget->item(i,2)->setBackgroundColor(palette.color(QPalette::Disabled, QPalette::ColorRole(i)));
+        m_ui->tableWidget->item(i,0)->setBackground(palette.color(QPalette::Active, QPalette::ColorRole(i)));
+        m_ui->tableWidget->item(i,1)->setBackground(palette.color(QPalette::Inactive, QPalette::ColorRole(i)));
+        m_ui->tableWidget->item(i,2)->setBackground(palette.color(QPalette::Disabled, QPalette::ColorRole(i)));
     }
 
     QStringList labels;
@@ -106,10 +106,10 @@ void PaletteEditDialog::hideEvent(QHideEvent *)
 
 void PaletteEditDialog::on_tableWidget_itemClicked(QTableWidgetItem *item)
 {
-    QColor color = QColorDialog::getColor(item->backgroundColor(), this, tr("Select Color"), QColorDialog::ShowAlphaChannel);
+    QColor color = QColorDialog::getColor(item->background().color(), this, tr("Select Color"), QColorDialog::ShowAlphaChannel);
     if(color.isValid())
     {
-        item->setBackgroundColor(color);
+        item->setBackground(color);
         emit paletteChanged(selectedPalette());
     }
 }
