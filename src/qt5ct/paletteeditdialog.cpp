@@ -50,7 +50,7 @@ PaletteEditDialog::PaletteEditDialog(const QPalette &palette, QStyle *currentSty
     m_ui->tableWidget->setHorizontalHeaderLabels(labels);
     setPalette(palette);
 
-    QSettings settings(QSettings::UserScope, QLatin1String("qt5ct"), QLatin1String("qt5ct"));
+    QSettings settings(Qt5CT::configFile(), QSettings::IniFormat);
     restoreGeometry(settings.value("PaletteEditor/geometry").toByteArray());
 }
 
@@ -100,7 +100,7 @@ void PaletteEditDialog::setPalette(const QPalette &palette)
 
 void PaletteEditDialog::hideEvent(QHideEvent *)
 {
-    QSettings settings(QSettings::UserScope, QLatin1String("qt5ct"), QLatin1String("qt5ct"));
+    QSettings settings(Qt5CT::configFile(), QSettings::IniFormat);
     settings.setValue("PaletteEditor/geometry", saveGeometry());
 }
 

@@ -54,7 +54,7 @@ MainWindow::MainWindow(QWidget *parent) :
     m_ui->tabWidget->addTab(new QSSPage(this), tr("Style Sheets"));
 #endif
 
-    QSettings settings(QSettings::UserScope, QLatin1String("qt5ct"), QLatin1String("qt5ct"));
+    QSettings settings(Qt5CT::configFile(), QSettings::IniFormat);
     restoreGeometry(settings.value("SettingsWindow/geometry").toByteArray());
 
     setWindowIcon(QIcon::fromTheme("preferences-desktop-theme"));
@@ -78,7 +78,7 @@ void MainWindow::showEvent(QShowEvent *)
 
 void MainWindow::closeEvent(QCloseEvent *)
 {
-    QSettings settings(QSettings::UserScope, QLatin1String("qt5ct"), QLatin1String("qt5ct"));
+    QSettings settings(Qt5CT::configFile(), QSettings::IniFormat);
     settings.setValue("SettingsWindow/geometry", saveGeometry());
 }
 

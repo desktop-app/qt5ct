@@ -107,7 +107,7 @@ AppearancePage::~AppearancePage()
 
 void AppearancePage::writeSettings()
 {
-    QSettings settings(QSettings::UserScope, QLatin1String("qt5ct"), QLatin1String("qt5ct"));
+    QSettings settings(Qt5CT::configFile(), QSettings::IniFormat);
     settings.beginGroup("Appearance");
     settings.setValue("style", m_ui->styleComboBox->currentText());
     settings.setValue("custom_palette", m_ui->customPaletteButton->isChecked());
@@ -327,7 +327,7 @@ void AppearancePage::updateActions()
 
 void AppearancePage::readSettings()
 {
-    QSettings settings(QSettings::UserScope, QLatin1String("qt5ct"), QLatin1String("qt5ct"));
+    QSettings settings(Qt5CT::configFile(), QSettings::IniFormat);
     settings.beginGroup("Appearance");
     QString style = settings.value("style", "Fusion").toString();
     m_ui->styleComboBox->setCurrentText(style);
