@@ -65,6 +65,7 @@ Q_LOGGING_CATEGORY(lqt5ct, "qt5ct")
 
 Qt5CTPlatformTheme::Qt5CTPlatformTheme()
 {
+    Qt5CT::initConfig();
     if(QGuiApplication::desktopSettingsAware())
     {
         readSettings();

@@ -44,6 +44,7 @@
 class Qt5CT
 {
 public:
+    static void initConfig();
     static QString configPath();
     static QString configFile();
     static QStringList iconPaths();

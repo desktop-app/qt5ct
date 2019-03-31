@@ -46,6 +46,8 @@ int main(int argc, char **argv)
     qt_translator.load(QLibraryInfo::location (QLibraryInfo::TranslationsPath) + "/qtbase_" + locale);
     app.installTranslator(&qt_translator);
 
+    Qt5CT::initConfig();
+
     qDebug() << "Configuration path:" << Qt5CT::configPath();
     qDebug() << "Shared QSS paths:" << Qt5CT::sharedStyleSheetPaths();
     qDebug() << "Shared color scheme paths:" << Qt5CT::sharedColorSchemePaths();

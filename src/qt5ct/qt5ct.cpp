@@ -31,12 +31,27 @@
 #include <QLatin1String>
 #include <QStandardPaths>
 #include <QRegularExpression>
+#include <QFile>
+#include <QtDebug>
 #include "qt5ct.h"
 
 #ifndef QT5CT_DATADIR
 #define QT5CT_DATADIR "/usr/share"
 #endif
 
+
+void Qt5CT::initConfig()
+{
+    if(QFile::exists(configFile()))
+        return;
+
+    QString globalConfig = QStandardPaths::locate(QStandardPaths::GenericConfigLocation, "qt5ct/qt5ct.conf");
+    if(globalConfig.isEmpty())
+        return;
+
+    QDir("/").mkpath(configPath());
+    QFile::copy(globalConfig, configFile());
+}
 
 QString Qt5CT::configPath()
 {
