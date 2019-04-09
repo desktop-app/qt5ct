@@ -45,7 +45,6 @@ private:
     int m_dialogButtonsHaveIcons;
     int m_activateItemOnSingleClick;
     int m_underlineShortcut;
-    QString m_key;
 
 };
 

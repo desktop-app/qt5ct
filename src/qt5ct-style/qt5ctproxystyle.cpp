@@ -31,7 +31,7 @@
 #include "qt5ctproxystyle.h"
 
 Qt5CTProxyStyle::Qt5CTProxyStyle(const QString &key) :
-    QProxyStyle(key), m_key(key)
+    QProxyStyle(key)
 {
     QSettings settings(Qt5CT::configFile(), QSettings::IniFormat);
     m_dialogButtonsHaveIcons = settings.value("Interface/dialog_buttons_have_icons", Qt::PartiallyChecked).toInt();
@@ -46,8 +46,6 @@ Qt5CTProxyStyle::~Qt5CTProxyStyle()
 
 int Qt5CTProxyStyle::styleHint(QStyle::StyleHint hint, const QStyleOption *option, const QWidget *widget, QStyleHintReturn *returnData) const
 {
-    int out = QProxyStyle::styleHint(hint, option, widget, returnData);
-
     if(hint == QStyle::SH_DialogButtonBox_ButtonsHaveIcons)
     {
         if(m_dialogButtonsHaveIcons == Qt::Unchecked)
@@ -69,5 +67,5 @@ int Qt5CTProxyStyle::styleHint(QStyle::StyleHint hint, const QStyleOption *optio
         else if(m_underlineShortcut == Qt::Checked)
             return 1;
     }
-    return out;
+    return QProxyStyle::styleHint(hint, option, widget, returnData);
 }
