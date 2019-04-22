@@ -375,6 +375,11 @@
         <translation>Kısayol alt çizgilerini göster</translation>
     </message>
     <message>
+        <location filename="../interfacepage.ui" line="266"/>
+        <source>Show shortcuts in conext menus</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../interfacepage.cpp" line="61"/>
         <source>Only display the icon</source>
         <translation>Sadece simgeyi göster</translation>
