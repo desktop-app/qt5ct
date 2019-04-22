@@ -83,6 +83,8 @@ void InterfacePage::writeSettings()
     settings.setValue("keyboard_scheme", m_ui->keyboardSchemeComboBox->currentData());
 #endif
     settings.setValue("menus_have_icons", m_ui->menuIconsCheckBox->isChecked());
+    settings.setValue("show_shortcuts_in_context_menus", m_ui->showShortcutsInMenusCheckBox->isChecked());
+
     settings.setValue("underline_shortcut", m_ui->shortcutUnderlineCheckBox->checkState());
     settings.setValue("activate_item_on_single_click", m_ui->singleClickCheckBox->checkState());
     settings.setValue("dialog_buttons_have_icons", m_ui->dialogIconsCheckBox->checkState());
@@ -155,6 +157,10 @@ void InterfacePage::readSettings()
     m_ui->shortcutUnderlineCheckBox->setCheckState(Qt::CheckState(settings.value("underline_shortcut", Qt::PartiallyChecked).toInt()));
 
     m_ui->menuIconsCheckBox->setChecked(!qApp->testAttribute(Qt::AA_DontShowIconsInMenus));
+    m_ui->showShortcutsInMenusCheckBox->setChecked(settings.value("show_shortcuts_in_context_menus", true).toBool());
+#if (QT_VERSION < QT_VERSION_CHECK(5, 9, 0))
+    m_ui->showShortcutsInMenusCheckBox->setVisible(false);
+#endif
 
     int toolbarStyle = settings.value("toolbutton_style", Qt::ToolButtonFollowStyle).toInt();
     index = m_ui->toolButtonStyleComboBox->findData(toolbarStyle);

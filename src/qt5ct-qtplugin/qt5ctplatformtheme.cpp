@@ -172,6 +172,10 @@ QVariant Qt5CTPlatformTheme::themeHint(QPlatformTheme::ThemeHint hint) const
     case QPlatformTheme::WheelScrollLines:
         return m_wheelScrollLines;
 #endif
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 10, 0))
+    case QPlatformTheme::ShowShortcutsInContextMenus:
+        return m_showShortcutsInContextMenus;
+#endif
     default:
         return QPlatformTheme::themeHint(hint);
     }
@@ -334,6 +338,7 @@ void Qt5CTPlatformTheme::readSettings()
     m_doubleClickInterval = settings.value("double_click_interval", m_doubleClickInterval).toInt();
     m_cursorFlashTime = QPlatformTheme::themeHint(QPlatformTheme::CursorFlashTime).toInt();
     m_cursorFlashTime = settings.value("cursor_flash_time", m_cursorFlashTime).toInt();
+    m_showShortcutsInContextMenus = settings.value("show_shortcuts_in_context_menus", true).toBool();
     m_buttonBoxLayout = QPlatformTheme::themeHint(QPlatformTheme::DialogButtonBoxLayout).toInt();
     m_buttonBoxLayout = settings.value("buttonbox_layout", m_buttonBoxLayout).toInt();
 #if (QT_VERSION >= QT_VERSION_CHECK(5, 9, 0))

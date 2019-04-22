@@ -123,6 +123,7 @@ private:
     bool m_usePalette = true;
     int m_toolButtonStyle = Qt::ToolButtonFollowStyle;
     int m_wheelScrollLines = 3;
+    bool m_showShortcutsInContextMenus = false;
 #ifdef GLOBAL_MENU
     mutable bool m_dbusGlobalMenuAvailable = false;
     mutable bool m_checkDBusGlobalMenu = true;
