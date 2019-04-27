@@ -376,7 +376,7 @@
     </message>
     <message>
         <location filename="../interfacepage.ui" line="266"/>
-        <source>Show shortcuts in conext menus</source>
+        <source>Show shortcuts in context menus</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
