@@ -302,7 +302,7 @@ Version 0.38
 * updated Chinese (Taiwan) translation (Jeff Huang)
 
 Version 0.39
-* added feature to hide shortcuts in conext menus
+* added feature to hide shortcuts in context menus
 * fixed issue with cutebrowser
 * fixed global config support
 * updated Bulgarian translation (Kiril Kirilov)
