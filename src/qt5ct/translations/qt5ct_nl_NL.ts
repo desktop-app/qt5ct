@@ -377,7 +377,7 @@
     <message>
         <location filename="../interfacepage.ui" line="266"/>
         <source>Show shortcuts in context menus</source>
-        <translation type="unfinished"></translation>
+        <translation>Sneltoetsen tonen in rechtermuisknopmenu&apos;s</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="61"/>
@@ -778,7 +778,7 @@
     <message>
         <location filename="../qsspage.cpp" line="271"/>
         <source>Unable to copy file</source>
-        <translation>Kopiëren van bestand is niet mogelijk</translation>
+        <translation>Kan bestand niet kopiëren</translation>
     </message>
 </context>
 </TS>

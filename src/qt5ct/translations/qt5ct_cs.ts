@@ -377,7 +377,7 @@
     <message>
         <location filename="../interfacepage.ui" line="266"/>
         <source>Show shortcuts in context menus</source>
-        <translation type="unfinished"></translation>
+        <translation>Ukázat zkratky v souvisejících nabídkách</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="61"/>

@@ -342,7 +342,7 @@
     <message>
         <location filename="../interfacepage.ui" line="192"/>
         <source>Keyboard scheme:</source>
-        <translation type="unfinished"></translation>
+        <translation>Klavye düzeni:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="202"/>
@@ -377,7 +377,7 @@
     <message>
         <location filename="../interfacepage.ui" line="266"/>
         <source>Show shortcuts in context menus</source>
-        <translation type="unfinished"></translation>
+        <translation>Bağlam menülerinde kısayolları göster</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="61"/>

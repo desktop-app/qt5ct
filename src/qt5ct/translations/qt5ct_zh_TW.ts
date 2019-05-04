@@ -377,7 +377,7 @@
     <message>
         <location filename="../interfacepage.ui" line="266"/>
         <source>Show shortcuts in context menus</source>
-        <translation type="unfinished"></translation>
+        <translation>在右鍵選單中顯示快捷鍵</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="61"/>

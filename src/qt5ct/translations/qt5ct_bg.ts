@@ -377,7 +377,7 @@
     <message>
         <location filename="../interfacepage.ui" line="266"/>
         <source>Show shortcuts in context menus</source>
-        <translation type="unfinished"></translation>
+        <translation>Показване на преките пътища в контекстните менюта</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="61"/>
