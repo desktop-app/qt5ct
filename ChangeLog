@@ -300,3 +300,15 @@ Version 0.38
 * updated Greek translation (Dimitrios Glentadakis)
 * updated Dutch (Netherlands) translation (Heimen Stoffels)
 * updated Chinese (Taiwan) translation (Jeff Huang)
+
+Version 0.39
+* added feature to hide shortcuts in conext menus
+* fixed issue with cutebrowser
+* fixed global config support
+* updated Bulgarian translation (Kiril Kirilov)
+* updated Czech translation (fri)
+* updated Danish translation (scootergrisen)
+* updated Dutch (Netherlands) translation (Heimen Stoffels)
+* updated Russian translation
+* updated Turkish translation (Serdar Sağlam)
+* updated Chinese (Taiwan) translation (Jeff Huang)
