@@ -184,7 +184,7 @@ void QSSPage::findStyleSheets(const QString &path)
     dir.setFilter(QDir::Files);
     dir.setNameFilters(QStringList() << "*.qss");
 
-    foreach (QFileInfo info, dir.entryInfoList())
+    for(const QFileInfo &info : dir.entryInfoList())
     {
         QListWidgetItem *item = new QListWidgetItem(info.fileName(),  m_ui->qssListWidget);
         item->setToolTip(info.filePath());
@@ -195,7 +195,7 @@ void QSSPage::findStyleSheets(const QString &path)
 
 void QSSPage::findStyleSheets(const QStringList &paths)
 {
-    foreach (QString p, paths)
+    for(const QString &p : paths)
         findStyleSheets(p);
 }
 

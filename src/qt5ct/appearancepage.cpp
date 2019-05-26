@@ -364,7 +364,7 @@ void AppearancePage::readSettings()
 
 void AppearancePage::setStyle(QWidget *w, QStyle *s)
 {
-    foreach (QObject *o, w->children())
+    for(QObject *o : w->children())
     {
         if(o->isWidgetType())
         {
@@ -376,7 +376,7 @@ void AppearancePage::setStyle(QWidget *w, QStyle *s)
 
 void AppearancePage::setPalette(QWidget *w, QPalette p)
 {
-    foreach (QObject *o, w->children())
+    for(QObject *o : w->children())
     {
         if(o->isWidgetType())
         {
@@ -392,7 +392,7 @@ void AppearancePage::findColorSchemes(const QString &path)
     dir.setFilter(QDir::Files);
     dir.setNameFilters(QStringList() << "*.conf");
 
-    foreach (QFileInfo info, dir.entryInfoList())
+    for(QFileInfo info : dir.entryInfoList())
     {
         m_ui->colorSchemeComboBox->addItem(info.baseName(), info.filePath());
     }
@@ -400,7 +400,7 @@ void AppearancePage::findColorSchemes(const QString &path)
 
 void AppearancePage::findColorSchemes(const QStringList &paths)
 {
-    foreach (QString p, paths)
+    for(const QString &p : paths)
         findColorSchemes(p);
 }
 

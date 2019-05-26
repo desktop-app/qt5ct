@@ -253,7 +253,7 @@ void Qt5CTPlatformTheme::applySettings()
 
     if(hasWidgets())
     {
-        foreach (QWidget *w, qApp->allWidgets())
+        for(QWidget *w : qApp->allWidgets())
         {
             QEvent e(QEvent::ThemeChange);
             QApplication::sendEvent(w, &e);
@@ -390,7 +390,7 @@ bool Qt5CTPlatformTheme::hasWidgets()
 QString Qt5CTPlatformTheme::loadStyleSheets(const QStringList &paths)
 {
     QString content;
-    foreach (QString path, paths)
+    for(const QString &path : paths)
     {
         if(!QFile::exists(path))
             continue;

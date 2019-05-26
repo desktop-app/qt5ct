@@ -68,14 +68,14 @@ QStringList Qt5CT::iconPaths()
     QStringList paths;
     paths << QDir::homePath() + QLatin1String("/.icons");
 
-    foreach (QString p, QStandardPaths::standardLocations(QStandardPaths::GenericDataLocation))
+    for(const QString &p : QStandardPaths::standardLocations(QStandardPaths::GenericDataLocation))
     {
         paths << (p + QLatin1String("/icons"));
     }
     paths.removeDuplicates();
 
     //remove invalid
-    foreach (QString p, paths)
+    for(const QString &p : paths)
     {
         if(!QDir(p).exists())
             paths.removeAll(p);
@@ -91,7 +91,7 @@ QString Qt5CT::userStyleSheetPath()
 QStringList Qt5CT::sharedStyleSheetPaths()
 {
     QStringList paths;
-    foreach (QString p, QStandardPaths::standardLocations(QStandardPaths::GenericDataLocation))
+    for(const QString &p : QStandardPaths::standardLocations(QStandardPaths::GenericDataLocation))
     {
         paths << (p + QLatin1String("/qt5ct/qss"));
     }
@@ -108,7 +108,7 @@ QString Qt5CT::userColorSchemePath()
 QStringList Qt5CT::sharedColorSchemePaths()
 {
     QStringList paths;
-    foreach (QString p, QStandardPaths::standardLocations(QStandardPaths::GenericDataLocation))
+    for(const QString &p : QStandardPaths::standardLocations(QStandardPaths::GenericDataLocation))
     {
         paths << (p + QLatin1String("/qt5ct/colors"));
     }

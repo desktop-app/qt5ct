@@ -81,11 +81,11 @@ void IconThemePage::readSettings()
 void IconThemePage::loadThemes()
 {
     QFileInfoList themeFileList;
-    foreach(QString path, Qt5CT::iconPaths())
+    for(const QString &path : Qt5CT::iconPaths())
     {
         QDir dir(path);
         dir.setFilter(QDir::Dirs | QDir::NoDotDot | QDir::NoDot);
-        foreach (QFileInfo info, dir.entryInfoList())
+        for(const QFileInfo &info : dir.entryInfoList())
         {
             QDir themeDir(info.absoluteFilePath());
             themeDir.setFilter(QDir::Files);
@@ -93,7 +93,7 @@ void IconThemePage::loadThemes()
         }
     }
 
-    foreach(QFileInfo info, themeFileList)
+    for(const QFileInfo &info : themeFileList)
     {
         loadTheme(info.canonicalFilePath());
     }
@@ -164,7 +164,7 @@ QIcon IconThemePage::findIcon(const QString &themePath, int size, const QString 
     QString iconPath;
     int iconSize = 0;
 
-    foreach (QString dir, dirs)
+    for(const QString &dir : dirs)
     {
         config.beginGroup(dir);
         QDir iconDir = QFileInfo(themePath).path() + "/" + dir;
@@ -201,7 +201,7 @@ QIcon IconThemePage::findIcon(const QString &themePath, int size, const QString 
     parents.append("gnome");
     parents.removeDuplicates();
 
-    foreach (QString parent, parents)
+    for(const QString &parent : parents)
     {
         QString parentThemePath = QDir(QFileInfo(themePath).path() + "/../" + parent).canonicalPath() + "/index.theme";
 
