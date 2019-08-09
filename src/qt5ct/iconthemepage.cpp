@@ -158,7 +158,7 @@ QIcon IconThemePage::findIcon(const QString &themePath, int size, const QString 
     config.beginGroup("Icon Theme");
     QStringList dirs = config.value("Directories").toStringList();
     QStringList parents = config.value("Inherits").toStringList();
-    bool haveInherits = config.contains("Inherits");
+    bool haveInherits = !parents.isEmpty();
     config.endGroup();
 
     QString iconPath;
@@ -168,19 +168,28 @@ QIcon IconThemePage::findIcon(const QString &themePath, int size, const QString 
     {
         config.beginGroup(dir);
         QDir iconDir = QFileInfo(themePath).path() + "/" + dir;
-        iconDir.setFilter(QDir::Files);
-        iconDir.setNameFilters(QStringList () << name + ".*");
 
-        if(iconDir.entryInfoList().isEmpty())
+        QString p;
+
+        if(iconDir.exists(name + ".png"))
+            p = iconDir.absoluteFilePath(name + ".png");
+        else if(iconDir.exists(name + ".svg"))
+            p = iconDir.absoluteFilePath(name + ".svg");
+        else
+        {
+            iconDir.setFilter(QDir::Files);
             iconDir.setNameFilters(QStringList () << name + "-*.*");
+            if(!iconDir.entryInfoList().isEmpty())
+                p = iconDir.entryInfoList().first().absoluteFilePath();
+        }
 
-        if(iconDir.entryInfoList().isEmpty())
+        if(p.isEmpty())
             continue;
 
         if(!iconSize || abs(size - iconSize) > abs(size - config.value("Size").toInt()))
         {
             iconSize = config.value("Size").toInt();
-            iconPath = iconDir.entryInfoList().first().absoluteFilePath();
+            iconPath = p;
 
             if(iconSize == size)
             {
