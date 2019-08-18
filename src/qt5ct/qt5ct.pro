@@ -2,7 +2,7 @@ include(../../qt5ct.pri)
 
 TEMPLATE = app
 
-QT += widgets
+QT += widgets concurrent
 
 greaterThan(QT_MINOR_VERSION, 8) {
   QT += gui-private

@@ -30,11 +30,14 @@
 #define ICONTHEMEPAGE_H
 
 #include <QIcon>
+#include <QFutureWatcher>
 #include "tabpage.h"
 
 namespace Ui {
 class IconThemePage;
 }
+
+class QTreeWidgetItem;
 
 class IconThemePage : public TabPage
 {
@@ -46,12 +49,16 @@ public:
 
     void writeSettings() override;
 
+private slots:
+    void onFinished();
+
 private:
     void readSettings();
-    void loadThemes();
-    void loadTheme(const QString &path);
+    QList<QTreeWidgetItem *> loadThemes();
+    QTreeWidgetItem *loadTheme(const QString &path);
     QIcon findIcon(const QString &themePath, int size, const QString &name);
     Ui::IconThemePage *m_ui;
+    QFutureWatcher<QList<QTreeWidgetItem *>> *m_watcher;
 };
 
 #endif // ICONTHEMEPAGE_H

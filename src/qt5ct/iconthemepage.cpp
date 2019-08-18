@@ -31,8 +31,7 @@
 #include <QFileInfoList>
 #include <QDir>
 #include <QTreeWidgetItem>
-#include <QImageReader>
-#include <QLocale>
+#include <QtConcurrent>
 #include "qt5ct.h"
 #include "iconthemepage.h"
 #include "ui_iconthemepage.h"
@@ -42,8 +41,9 @@ IconThemePage::IconThemePage(QWidget *parent) :
     m_ui(new Ui::IconThemePage)
 {
     m_ui->setupUi(this);
-    loadThemes();
-    readSettings();
+    m_watcher = new QFutureWatcher<QList<QTreeWidgetItem *>>(this);
+    connect(m_watcher, SIGNAL(finished()), SLOT(onFinished()));
+    m_watcher->setFuture(QtConcurrent::run(this, &IconThemePage::loadThemes));
 }
 
 IconThemePage::~IconThemePage()
@@ -57,6 +57,16 @@ void IconThemePage::writeSettings()
     QTreeWidgetItem *item = m_ui->treeWidget->currentItem();
     if(item)
         settings.setValue("Appearance/icon_theme", item->data(3, Qt::UserRole));
+}
+
+void IconThemePage::onFinished()
+{
+   m_ui->treeWidget->addTopLevelItems(m_watcher->result());
+   m_ui->treeWidget->resizeColumnToContents(0);
+   m_ui->treeWidget->resizeColumnToContents(1);
+   m_ui->treeWidget->resizeColumnToContents(2);
+   m_ui->treeWidget->resizeColumnToContents(3);
+   readSettings();
 }
 
 void IconThemePage::readSettings()
@@ -78,9 +88,10 @@ void IconThemePage::readSettings()
     }
 }
 
-void IconThemePage::loadThemes()
+QList<QTreeWidgetItem *> IconThemePage::loadThemes()
 {
     QFileInfoList themeFileList;
+    QList<QTreeWidgetItem *> items;
     for(const QString &path : Qt5CT::iconPaths())
     {
         QDir dir(path);
@@ -95,11 +106,14 @@ void IconThemePage::loadThemes()
 
     for(const QFileInfo &info : themeFileList)
     {
-        loadTheme(info.canonicalFilePath());
+        QTreeWidgetItem *item = loadTheme(info.canonicalFilePath());
+        if(item)
+            items << loadTheme(info.canonicalFilePath());
     }
+    return items;
 }
 
-void IconThemePage::loadTheme(const QString &path)
+QTreeWidgetItem *IconThemePage::loadTheme(const QString &path)
 {
     QSettings config(path, QSettings::IniFormat);
     config.setIniCodec("UTF-8");
@@ -107,7 +121,7 @@ void IconThemePage::loadTheme(const QString &path)
     config.beginGroup("Icon Theme");
     QStringList dirs = config.value("Directories").toStringList();
     if(dirs.isEmpty() || config.value("Hidden", false).toBool())
-        return;
+        return nullptr;
 
     QString name, comment;
     QString lang = QLocale::system().name();
@@ -144,12 +158,7 @@ void IconThemePage::loadTheme(const QString &path)
     item->setData(3, Qt::UserRole, QFileInfo(path).path().section("/", -1));
     item->setToolTip(3, comment);
     item->setSizeHint(0, QSize(24,24));
-    m_ui->treeWidget->addTopLevelItem(item);
-
-    m_ui->treeWidget->resizeColumnToContents(0);
-    m_ui->treeWidget->resizeColumnToContents(1);
-    m_ui->treeWidget->resizeColumnToContents(2);
-    m_ui->treeWidget->resizeColumnToContents(3);
+    return item;
 }
 
 QIcon IconThemePage::findIcon(const QString &themePath, int size, const QString &name)
