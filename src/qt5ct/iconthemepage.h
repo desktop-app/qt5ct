@@ -38,6 +38,7 @@ class IconThemePage;
 }
 
 class QTreeWidgetItem;
+class QProgressBar;
 
 class IconThemePage : public TabPage
 {
@@ -53,12 +54,14 @@ private slots:
     void onFinished();
 
 private:
+    void resizeEvent(QResizeEvent *event) override;
     void readSettings();
     QList<QTreeWidgetItem *> loadThemes();
     QTreeWidgetItem *loadTheme(const QString &path);
     QIcon findIcon(const QString &themePath, int size, const QString &name);
     Ui::IconThemePage *m_ui;
     QFutureWatcher<QList<QTreeWidgetItem *>> *m_watcher;
+    QProgressBar *m_progressBar;
 };
 
 #endif // ICONTHEMEPAGE_H

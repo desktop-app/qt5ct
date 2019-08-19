@@ -32,6 +32,8 @@
 #include <QDir>
 #include <QTreeWidgetItem>
 #include <QtConcurrent>
+#include <QProgressBar>
+#include <QMetaObject>
 #include "qt5ct.h"
 #include "iconthemepage.h"
 #include "ui_iconthemepage.h"
@@ -42,6 +44,9 @@ IconThemePage::IconThemePage(QWidget *parent) :
 {
     m_ui->setupUi(this);
     m_watcher = new QFutureWatcher<QList<QTreeWidgetItem *>>(this);
+    m_progressBar = new QProgressBar(m_ui->treeWidget);
+    m_progressBar->resize(200, m_progressBar->height());
+    m_progressBar->setRange(0, 100);
     connect(m_watcher, SIGNAL(finished()), SLOT(onFinished()));
     m_watcher->setFuture(QtConcurrent::run(this, &IconThemePage::loadThemes));
 }
@@ -66,7 +71,15 @@ void IconThemePage::onFinished()
    m_ui->treeWidget->resizeColumnToContents(1);
    m_ui->treeWidget->resizeColumnToContents(2);
    m_ui->treeWidget->resizeColumnToContents(3);
+   m_progressBar->hide();
    readSettings();
+}
+
+void IconThemePage::resizeEvent(QResizeEvent *event)
+{
+    Q_UNUSED(event);
+    m_progressBar->move(m_ui->treeWidget->width() - m_progressBar->width(),
+                        m_ui->treeWidget->height() - m_progressBar->height());
 }
 
 void IconThemePage::readSettings()
@@ -104,11 +117,13 @@ QList<QTreeWidgetItem *> IconThemePage::loadThemes()
         }
     }
 
+    int i = 0;
     for(const QFileInfo &info : themeFileList)
     {
         QTreeWidgetItem *item = loadTheme(info.canonicalFilePath());
         if(item)
             items << loadTheme(info.canonicalFilePath());
+        QMetaObject::invokeMethod(m_progressBar, "setValue", Qt::QueuedConnection, Q_ARG(int, ++i * 100 / themeFileList.count()));
     }
     return items;
 }
