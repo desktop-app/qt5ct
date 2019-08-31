@@ -312,3 +312,8 @@ Version 0.39
 * updated Russian translation
 * updated Turkish translation (Serdar Sağlam)
 * updated Chinese (Taiwan) translation (Jeff Huang)
+
+Version 0.40
+* using separate thread for icon theme loading
+* replaced deprecated code
+* fixed wayland application id (Chris Rendle-Short)
