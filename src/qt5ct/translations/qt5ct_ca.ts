@@ -37,7 +37,7 @@
         <location filename="../appearancepage.ui" line="124"/>
         <location filename="../appearancepage.cpp" line="88"/>
         <source>Default</source>
-        <translation>Per defecte</translation>
+        <translation>Predeterminada</translation>
     </message>
     <message>
         <location filename="../appearancepage.ui" line="134"/>
@@ -130,7 +130,7 @@
     <message>
         <location filename="../appearancepage.cpp" line="198"/>
         <source>Confirm Remove</source>
-        <translation>Confirma la supressió</translation>
+        <translation>Confirmació de la supressió</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="199"/>
@@ -159,7 +159,7 @@
     <message>
         <location filename="../fontconfigdialog.ui" line="29"/>
         <source>Disable automatic hinting for bold fonts</source>
-        <translation>Desactiva l&apos;optimizació automàtica per als tipus de lletra en negreta</translation>
+        <translation>Desactiva l&apos;optimització automàtica dels tipus de lletra en negreta</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="36"/>
@@ -294,7 +294,7 @@
     <message>
         <location filename="../interfacepage.ui" line="63"/>
         <source>ToolBox effect:</source>
-        <translation>Efecte del quadre d&apos;eines</translation>
+        <translation>Efecte de la caixa d&apos;eines</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="70"/>
@@ -332,17 +332,17 @@
     <message>
         <location filename="../interfacepage.ui" line="175"/>
         <source>Enable gui effects</source>
-        <translation>Activa el efectes de la interfície</translation>
+        <translation>Activa els efectes de la interfície</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="182"/>
         <source>Dialog buttons layout:</source>
-        <translation>Disseny dels botons de diàleg:</translation>
+        <translation>Disposició dels botons de diàleg:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="192"/>
         <source>Keyboard scheme:</source>
-        <translation type="unfinished"></translation>
+        <translation>Disposició del teclat</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="202"/>
@@ -357,7 +357,7 @@
     <message>
         <location filename="../interfacepage.ui" line="219"/>
         <source>Activate item on single-click</source>
-        <translation>Activa elements amb un sol clic</translation>
+        <translation>Activa els elements amb un sol clic</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="229"/>
@@ -377,7 +377,7 @@
     <message>
         <location filename="../interfacepage.ui" line="266"/>
         <source>Show shortcuts in context menus</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostra les dreceres als menús contextuals</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="61"/>
@@ -415,17 +415,17 @@
     <message>
         <location filename="../mainwindow.ui" line="45"/>
         <source>The application is not configured correctly.</source>
-        <translation type="unfinished"></translation>
+        <translation>No s&apos;ha configurat correctament l&apos;aplicació.</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="52"/>
         <source>Information</source>
-        <translation type="unfinished"></translation>
+        <translation>Informació</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="59"/>
         <source>Hide</source>
-        <translation type="unfinished"></translation>
+        <translation>Amaga</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="49"/>
@@ -460,27 +460,27 @@
     <message>
         <location filename="../mainwindow.cpp" line="107"/>
         <source>Warning</source>
-        <translation type="unfinished">Avís</translation>
+        <translation>Avís</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="116"/>
         <source>Please remove the &lt;b&gt;QT_STYLE_OVERRIDE&lt;/b&gt; environment variable (current value: &lt;b&gt;%1&lt;/b&gt;).</source>
-        <translation type="unfinished"></translation>
+        <translation>Suprimiu la variable d&apos;entorn &lt;b&gt;QT_STYLE_OVERRIDE&lt;/b&gt; (valor actual: &lt;b&gt;%1&lt;/b&gt;).</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="122"/>
         <source>The &lt;b&gt;QT_QPA_PLATFORMTHEME&lt;/b&gt; environment variable is not set (required value: &lt;b&gt;qt5ct&lt;/b&gt;).</source>
-        <translation type="unfinished"></translation>
+        <translation>No s&apos;ha establert la variable d&apos;entorn &lt;b&gt;QT_QPA_PLATFORMTHEME&lt;/b&gt; (valor obligatori: &lt;b&gt;qt5ct&lt;/b&gt;).</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="126"/>
         <source>The &lt;b&gt;QT_QPA_PLATFORMTHEME&lt;/b&gt; environment variable is not set correctly (current value: &lt;b&gt;%1&lt;/b&gt;, required value: &lt;b&gt;qt5ct&lt;/b&gt;).</source>
-        <translation type="unfinished"></translation>
+        <translation>No s&apos;ha establert correctament la variable d&apos;entorn &lt;b&gt;QT_QPA_PLATFORMTHEME&lt;/b&gt; (valor actual: &lt;b&gt;%1&lt;/b&gt;, valor obligatori: qt5ct).</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="133"/>
         <source>Unable to find &lt;b&gt;libqt5ct-style.so&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>No es pot trobar &lt;b&gt;libqt5ct-style.so&lt;/b&gt;</translation>
     </message>
 </context>
 <context>
@@ -493,17 +493,17 @@
     <message>
         <location filename="../paletteeditdialog.ui" line="79"/>
         <source>Reset palette</source>
-        <translation>Restablir paleta</translation>
+        <translation>Restablir la paleta</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.ui" line="29"/>
         <source>Build inactive palette</source>
-        <translation>Crea paleta inactiva</translation>
+        <translation>Crea la paleta inactiva</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.ui" line="36"/>
         <source>Build disabled palette</source>
-        <translation>Crea paleta desactivada</translation>
+        <translation>Crea la paleta desactivada</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="49"/>
@@ -623,7 +623,7 @@
     <message>
         <location filename="../paletteeditdialog.cpp" line="96"/>
         <source>Placeholder text</source>
-        <translation type="unfinished"></translation>
+        <translation>Text de farciment</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="109"/>
@@ -646,7 +646,7 @@
     <message>
         <location filename="../previewform.ui" line="36"/>
         <source>PushButton</source>
-        <translation>Polsador</translation>
+        <translation>Botó</translation>
     </message>
     <message>
         <location filename="../previewform.ui" line="65"/>
