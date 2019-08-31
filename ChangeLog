@@ -317,3 +317,8 @@ Version 0.40
 * using separate thread for icon theme loading
 * replaced deprecated code
 * fixed wayland application id (Chris Rendle-Short)
+* updated Catalan translation (Toni Estévez)
+* updated Greek translation (Dimitrios Glentadakis)
+* updated Spanish translation (Toni Estévez)
+* updated Polish translation (Evo)
+* updated Brazilian Portuguese translation (VaGNaroK Mist) 

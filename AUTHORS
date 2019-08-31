@@ -5,6 +5,7 @@ Developers:
 Translators:
 
   Arabic - abouzakaria kov
+  Brazilian Portuguese - VaGNaroK Mist 
   Bulgarian - Kiril Kirilov
   Catalan - Toni Estévez
   Chinese (Simplified) - Cary Tian
@@ -20,7 +21,7 @@ Translators:
   Dutch (Netherlands) - Heimen Stoffels
   German - Ettore Atalan, Mario Blättermann
   Italian - Luigi Baldoni
-  Polish - Tomasz Przybył (FadeMind)
+  Polish - Tomasz Przybył (FadeMind), Evo
   Russian - Ilya Kotov
   Serbian - markosm
   Slovak - Ján Ďanovský
@@ -36,3 +37,4 @@ Style sheets and color schemes:
 Patches and improvements:
 
   Keyboard scheme option - Nikolay Korotkiy
+  Wayland fixes - Chris Rendle-Short
