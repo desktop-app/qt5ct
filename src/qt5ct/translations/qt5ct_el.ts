@@ -377,7 +377,7 @@
     <message>
         <location filename="../interfacepage.ui" line="266"/>
         <source>Show shortcuts in context menus</source>
-        <translation type="unfinished"></translation>
+        <translation>Εμφάνιση των συντομεύσεων στο σχετικό μενού</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="61"/>

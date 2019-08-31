@@ -32,6 +32,3 @@ Categories=Settings;DesktopSettings;Qt;
 
 
 # Translations
-Comment[es_ES]=Herramienta de configuración de QT5
-Name[es_ES]=Ajustes QT5
-Icon[es_ES]=preferencias-escritorio-tema

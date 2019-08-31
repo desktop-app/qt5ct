@@ -89,7 +89,7 @@
         <location filename="../appearancepage.cpp" line="217"/>
         <location filename="../appearancepage.cpp" line="256"/>
         <source>Enter Color Scheme Name</source>
-        <translation>Introducir el nombre de la combinación de colores</translation>
+        <translation>Escribir el nombre de la combinación de colores</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="143"/>
@@ -125,7 +125,7 @@
         <location filename="../appearancepage.cpp" line="193"/>
         <location filename="../appearancepage.cpp" line="251"/>
         <source>The color scheme &quot;%1&quot; is read only</source>
-        <translation>La combinación de colores «%1» es de sólo lectura</translation>
+        <translation>La combinación de colores «%1» es de solo lectura</translation>
     </message>
     <message>
         <location filename="../appearancepage.cpp" line="198"/>
@@ -159,7 +159,7 @@
     <message>
         <location filename="../fontconfigdialog.ui" line="29"/>
         <source>Disable automatic hinting for bold fonts</source>
-        <translation>Desactivar la optimización automática para tipos de letra en negrita</translation>
+        <translation>Desactivar la optimización automática de los tipos de letra en negrita</translation>
     </message>
     <message>
         <location filename="../fontconfigdialog.ui" line="36"/>
@@ -289,7 +289,7 @@
     <message>
         <location filename="../interfacepage.ui" line="56"/>
         <source>ToolTip effect:</source>
-        <translation>Efecto de la información sobre herramientas:</translation>
+        <translation>Efecto de la información emergente:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="63"/>
@@ -332,17 +332,17 @@
     <message>
         <location filename="../interfacepage.ui" line="175"/>
         <source>Enable gui effects</source>
-        <translation>Activar efectos de la interfaz</translation>
+        <translation>Activar los efectos de la interfaz</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="182"/>
         <source>Dialog buttons layout:</source>
-        <translation>Diseño de los botones de diálogo:</translation>
+        <translation>Distribución de los botones de diálogo:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="192"/>
         <source>Keyboard scheme:</source>
-        <translation type="unfinished"></translation>
+        <translation>Distribución del teclado</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="202"/>
@@ -357,7 +357,7 @@
     <message>
         <location filename="../interfacepage.ui" line="219"/>
         <source>Activate item on single-click</source>
-        <translation>Activar elementos con un solo clic</translation>
+        <translation>Activar los elementos con un solo clic</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="229"/>
@@ -377,7 +377,7 @@
     <message>
         <location filename="../interfacepage.ui" line="266"/>
         <source>Show shortcuts in context menus</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostrar los accesos rápidos en los menús contextuales</translation>
     </message>
     <message>
         <location filename="../interfacepage.cpp" line="61"/>
@@ -415,17 +415,17 @@
     <message>
         <location filename="../mainwindow.ui" line="45"/>
         <source>The application is not configured correctly.</source>
-        <translation type="unfinished"></translation>
+        <translation>No se ha configurado correctamente la aplicación.</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="52"/>
         <source>Information</source>
-        <translation type="unfinished"></translation>
+        <translation>Información</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="59"/>
         <source>Hide</source>
-        <translation type="unfinished"></translation>
+        <translation>Ocultar</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="49"/>
@@ -460,27 +460,27 @@
     <message>
         <location filename="../mainwindow.cpp" line="107"/>
         <source>Warning</source>
-        <translation type="unfinished">Aviso</translation>
+        <translation>Aviso</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="116"/>
         <source>Please remove the &lt;b&gt;QT_STYLE_OVERRIDE&lt;/b&gt; environment variable (current value: &lt;b&gt;%1&lt;/b&gt;).</source>
-        <translation type="unfinished"></translation>
+        <translation>Elimine la variable de entorno &lt;b&gt;QT_STYLE_OVERRIDE&lt;/b&gt; (valor actual: &lt;b&gt;%1&lt;/b&gt;).</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="122"/>
         <source>The &lt;b&gt;QT_QPA_PLATFORMTHEME&lt;/b&gt; environment variable is not set (required value: &lt;b&gt;qt5ct&lt;/b&gt;).</source>
-        <translation type="unfinished"></translation>
+        <translation>No se ha configurado la variable de entorno &lt;b&gt;QT_QPA_PLATFORMTHEME&lt;/b&gt; (valor requerido: &lt;b&gt;qt5ct&lt;/b&gt;).</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="126"/>
         <source>The &lt;b&gt;QT_QPA_PLATFORMTHEME&lt;/b&gt; environment variable is not set correctly (current value: &lt;b&gt;%1&lt;/b&gt;, required value: &lt;b&gt;qt5ct&lt;/b&gt;).</source>
-        <translation type="unfinished"></translation>
+        <translation>No se ha configurado correctamente la variable de entorno &lt;b&gt;QT_QPA_PLATFORMTHEME&lt;/b&gt; (valor actual: &lt;b&gt;%1&lt;/b&gt;, valor requerido: qt5ct).</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="133"/>
         <source>Unable to find &lt;b&gt;libqt5ct-style.so&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>No se puede encontrar &lt;b&gt;libqt5ct-style.so&lt;/b&gt;</translation>
     </message>
 </context>
 <context>
@@ -493,17 +493,17 @@
     <message>
         <location filename="../paletteeditdialog.ui" line="79"/>
         <source>Reset palette</source>
-        <translation>Restablecer paleta</translation>
+        <translation>Restablecer la paleta</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.ui" line="29"/>
         <source>Build inactive palette</source>
-        <translation>Generar paleta inactiva</translation>
+        <translation>Generar la paleta inactiva</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.ui" line="36"/>
         <source>Build disabled palette</source>
-        <translation>Generar paleta desactivada</translation>
+        <translation>Generar la paleta desactivada</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="49"/>
@@ -608,7 +608,7 @@
     <message>
         <location filename="../paletteeditdialog.cpp" line="94"/>
         <source>Tooltip text</source>
-        <translation>Texto de la información sobre herramientas</translation>
+        <translation>Texto de la información emergente</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="93"/>
@@ -623,7 +623,7 @@
     <message>
         <location filename="../paletteeditdialog.cpp" line="96"/>
         <source>Placeholder text</source>
-        <translation type="unfinished"></translation>
+        <translation>Texto de relleno</translation>
     </message>
     <message>
         <location filename="../paletteeditdialog.cpp" line="109"/>
@@ -646,7 +646,7 @@
     <message>
         <location filename="../previewform.ui" line="36"/>
         <source>PushButton</source>
-        <translation>Pulsador</translation>
+        <translation>Botón</translation>
     </message>
     <message>
         <location filename="../previewform.ui" line="65"/>
@@ -723,7 +723,7 @@
         <location filename="../qsspage.cpp" line="106"/>
         <location filename="../qsspage.cpp" line="251"/>
         <source>Enter Style Sheet Name</source>
-        <translation>Introducir el nombre de la hoja de estilo</translation>
+        <translation>Escribir el nombre de la hoja de estilo</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="117"/>
@@ -737,7 +737,7 @@
     <message>
         <location filename="../qsspage.cpp" line="117"/>
         <source>The file &quot;%1&quot; already exists</source>
-        <translation>El archivo &quot;%1&quot; ya existe</translation>
+        <translation>El archivo «%1» ya existe</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="151"/>
@@ -768,7 +768,7 @@
     <message>
         <location filename="../qsspage.cpp" line="226"/>
         <source>Unable to rename file</source>
-        <translation>No es posible cambiar el nombre del archivo</translation>
+        <translation>No se puede cambiar el nombre del archivo</translation>
     </message>
     <message>
         <location filename="../qsspage.cpp" line="253"/>
