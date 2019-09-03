@@ -65,7 +65,7 @@ QString Qt5CT::configFile()
 
 QStringList Qt5CT::iconPaths()
 {
-    QStringList paths;
+    QStringList paths, out;
     paths << QDir::homePath() + QLatin1String("/.icons");
 
     for(const QString &p : QStandardPaths::standardLocations(QStandardPaths::GenericDataLocation))
@@ -77,10 +77,10 @@ QStringList Qt5CT::iconPaths()
     //remove invalid
     for(const QString &p : paths)
     {
-        if(!QDir(p).exists())
-            paths.removeAll(p);
+        if(QDir(p).exists())
+            out << p;
     }
-    return paths;
+    return out;
 }
 
 QString Qt5CT::userStyleSheetPath()
