@@ -322,3 +322,6 @@ Version 0.40
 * updated Spanish translation (Toni Estévez)
 * updated Polish translation (Evo)
 * updated Brazilian Portuguese translation (VaGNaroK Mist)
+
+Version 0.41
+* fixed crash on icon theme search (regression since 0.40)
