@@ -59,7 +59,7 @@
 #include <qpa/qplatformthemefactory_p.h>
 #endif
 
-Q_LOGGING_CATEGORY(lqt5ct, "qt5ct")
+Q_LOGGING_CATEGORY(lqt5ct, "qt5ct", QtWarningMsg)
 
 //QT_QPA_PLATFORMTHEME=qt5ct
 
