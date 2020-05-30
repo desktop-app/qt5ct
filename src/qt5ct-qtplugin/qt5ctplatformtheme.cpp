@@ -84,8 +84,8 @@ Qt5CTPlatformTheme::Qt5CTPlatformTheme()
 
 Qt5CTPlatformTheme::~Qt5CTPlatformTheme()
 {
-    if(m_customPalette)
-        delete m_customPalette;
+    if(m_palette)
+        delete m_palette;
 
 }
 
@@ -134,7 +134,7 @@ QPlatformSystemTrayIcon *Qt5CTPlatformTheme::createPlatformSystemTrayIcon() cons
 const QPalette *Qt5CTPlatformTheme::palette(QPlatformTheme::Palette type) const
 {
     Q_UNUSED(type);
-    return (m_usePalette ? m_customPalette : nullptr);
+    return (m_usePalette ? m_palette : nullptr);
 }
 
 const QFont *Qt5CTPlatformTheme::font(QPlatformTheme::Font type) const
@@ -226,13 +226,12 @@ void Qt5CTPlatformTheme::applySettings()
         if(m_update && qApp->style()->objectName() == "qt5ct-style") //ignore application style
             qApp->setStyle("qt5ct-style"); //recreate style object
 
+        if(!m_palette)
+            m_palette = new QPalette(qApp->style()->standardPalette());
+
         if(m_update && m_usePalette)
-        {
-            if(m_customPalette)
-                qApp->setPalette(*m_customPalette);
-            else
-                qApp->setPalette(qApp->style()->standardPalette());
-        }
+            qApp->setPalette(*m_palette);
+
 
         //do not override application style
         if(m_prevStyleSheet == qApp->styleSheet())
@@ -244,12 +243,12 @@ void Qt5CTPlatformTheme::applySettings()
 #endif
     QGuiApplication::setFont(m_generalFont); //apply font
     QIcon::setThemeName(m_iconTheme); //apply icons
-    if(m_customPalette && m_usePalette)
-        QGuiApplication::setPalette(*m_customPalette); //apply palette
+    if(m_palette && m_usePalette)
+        QGuiApplication::setPalette(*m_palette); //apply palette
 
 #ifdef QT_WIDGETS_LIB
-    if(m_customPalette && m_usePalette && !m_update)
-        qApp->setPalette(*m_customPalette);
+    if(m_palette && m_usePalette && !m_update)
+        qApp->setPalette(*m_palette);
 
     if(hasWidgets())
     {
@@ -288,10 +287,10 @@ void Qt5CTPlatformTheme::updateSettings()
 
 void Qt5CTPlatformTheme::readSettings()
 {
-    if(m_customPalette)
+    if(m_palette)
     {
-        delete m_customPalette;
-        m_customPalette = nullptr;
+        delete m_palette;
+        m_palette = nullptr;
     }
 
     QSettings settings(Qt5CT::configFile(), QSettings::IniFormat);
@@ -302,7 +301,7 @@ void Qt5CTPlatformTheme::readSettings()
     if(!schemePath.isEmpty() && settings.value("custom_palette", false).toBool())
     {
         schemePath = Qt5CT::resolvePath(schemePath); //replace environment variables
-        m_customPalette = new QPalette(loadColorScheme(schemePath));
+        m_palette = new QPalette(loadColorScheme(schemePath));
     }
     m_iconTheme = settings.value("icon_theme").toString();
     //load dialogs
