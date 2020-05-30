@@ -34,7 +34,7 @@
 #include <QPalette>
 #include <QTimer>
 #include <QIcon>
-#include <QRegExp>
+#include <QRegularExpression>
 #include <QMimeDatabase>
 #ifdef QT_WIDGETS_LIB
 #include <QStyle>
@@ -260,8 +260,7 @@ void Qt5CTPlatformTheme::applySettings()
     }
 #endif
 
-    if(!m_update)
-        m_update = true;
+    m_update = true;
 }
 
 #ifdef QT_WIDGETS_LIB
@@ -398,8 +397,7 @@ QString Qt5CTPlatformTheme::loadStyleSheets(const QStringList &paths)
         file.open(QIODevice::ReadOnly);
         content.append(QString::fromUtf8(file.readAll()));
     }
-    QRegExp regExp("//.*(\\n|$)");
-    regExp.setMinimal(true);
+    QRegularExpression regExp("//.*(\\n|$)");
     content.remove(regExp);
     return content;
 }
