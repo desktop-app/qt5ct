@@ -325,3 +325,9 @@ Version 0.40
 
 Version 0.41
 * fixed crash on icon theme search (regression since 0.40)
+
+Version 1.0
+* added Ia Ora color scheme (from Mandriva default style)
+* disabled debug messages by default
+* fixed Qt 5.15 palette
+* fixed crash on certain applications under Qt 5.15
