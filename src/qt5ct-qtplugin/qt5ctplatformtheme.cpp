@@ -36,6 +36,7 @@
 #include <QIcon>
 #include <QRegularExpression>
 #include <QMimeDatabase>
+#include <private/qiconloader_p.h>
 #ifdef QT_WIDGETS_LIB
 #include <QStyle>
 #include <QStyleFactory>
@@ -241,7 +242,9 @@ void Qt5CTPlatformTheme::applySettings()
     }
 #endif
     QGuiApplication::setFont(m_generalFont); //apply font
-    QIcon::setThemeName(m_iconTheme); //apply icons
+    if(m_update)
+        QIconLoader::instance()->updateSystemTheme(); //apply icons
+
     if(m_palette && m_usePalette)
         QGuiApplication::setPalette(*m_palette); //apply palette
 
