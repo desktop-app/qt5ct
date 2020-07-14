@@ -274,12 +274,12 @@
     <message>
         <location filename="../interfacepage.ui" line="35"/>
         <source>Double click interval:</source>
-        <translation>Dobbeltklik interval:</translation>
+        <translation>Interval for dobbeltklik:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="42"/>
         <source>Cursor flash time:</source>
-        <translation>Markør blinktid:</translation>
+        <translation>Blinketid for markør:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="49"/>
@@ -332,7 +332,7 @@
     <message>
         <location filename="../interfacepage.ui" line="175"/>
         <source>Enable gui effects</source>
-        <translation>Aktivér gui effekter</translation>
+        <translation>Aktivér effekter til grafisk brugerflade</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="182"/>
@@ -347,7 +347,7 @@
     <message>
         <location filename="../interfacepage.ui" line="202"/>
         <source>Menus have icons</source>
-        <translation>Menu har ikoner</translation>
+        <translation>Menuer har ikoner</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="209"/>
@@ -362,17 +362,17 @@
     <message>
         <location filename="../interfacepage.ui" line="229"/>
         <source>Toolbar button style:</source>
-        <translation>Værktøjslinjeknap stil:</translation>
+        <translation>Stil for værktøjslinjeknap:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="239"/>
         <source>Mouse wheel scroll lines:</source>
-        <translation>Musehjul rullelinjer:</translation>
+        <translation>Linjer som musehjulet ruller:</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="256"/>
         <source>Show shortcut underlines</source>
-        <translation>Vis genveje understreget</translation>
+        <translation>Vis understregning af genveje</translation>
     </message>
     <message>
         <location filename="../interfacepage.ui" line="266"/>
@@ -402,7 +402,7 @@
     <message>
         <location filename="../interfacepage.cpp" line="65"/>
         <source>Follow the application style</source>
-        <translation>Følg programstilen</translation>
+        <translation>Følg programmets stil</translation>
     </message>
 </context>
 <context>
