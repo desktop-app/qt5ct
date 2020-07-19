@@ -331,3 +331,7 @@ Version 1.0
 * disabled debug messages by default
 * fixed Qt 5.15 palette
 * fixed crash on certain applications under Qt 5.15
+
+Version 1.1
+* fixed issue with custom icon themes
+* updated Danish translation (scootergrisen)
