@@ -26,6 +26,10 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
+#ifdef QT_NO_KEYWORDS
+#undef QT_NO_KEYWORDS
+#endif
+
 #include <QVariant>
 #include <QSettings>
 #include <QGuiApplication>

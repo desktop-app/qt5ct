@@ -46,7 +46,7 @@ public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-private slots:
+private Q_SLOTS:
     void on_buttonBox_clicked(QAbstractButton *button);
     void on_infoButton_clicked();
 

@@ -48,7 +48,7 @@ public:
 
     void writeSettings() override;
 
-private slots:
+private Q_SLOTS:
     void on_qssListWidget_currentItemChanged(QListWidgetItem *current, QListWidgetItem *);
     void on_createButton_clicked();
     void on_editButton_clicked();

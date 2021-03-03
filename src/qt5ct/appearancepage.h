@@ -49,7 +49,7 @@ public:
 
     void writeSettings() override;
 
-private slots:
+private Q_SLOTS:
     void on_styleComboBox_activated(const QString &text);
     void on_colorSchemeComboBox_activated(int);
     void createColorScheme();

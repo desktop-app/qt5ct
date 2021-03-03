@@ -50,7 +50,7 @@ public:
 
     void writeSettings() override;
 
-private slots:
+private Q_SLOTS:
     void onFinished();
 
 private:

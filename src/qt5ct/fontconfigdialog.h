@@ -45,7 +45,7 @@ public:
     explicit FontConfigDialog(QWidget *parent = nullptr);
     ~FontConfigDialog();
 
-public slots:
+public Q_SLOTS:
     void accept() override;
     void writeOption(QXmlStreamWriter *stream, const QString &name, const QVariant &value);
 

@@ -49,10 +49,10 @@ public:
 
     QPalette selectedPalette() const;
 
-signals:
+Q_SIGNALS:
     void paletteChanged(const QPalette &p);
 
-private slots:
+private Q_SLOTS:
     void on_tableWidget_itemClicked(QTableWidgetItem *item);
     void on_resetPaletteButton_clicked();
     void on_buildInactiveButton_clicked();
