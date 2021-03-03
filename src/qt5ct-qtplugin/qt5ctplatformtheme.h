@@ -95,7 +95,7 @@ public:
     //virtual QList<QKeySequence> keyBindings(QKeySequence::StandardKey key) const;
     //virtual QString standardButtonText(int button) const;
 
-private slots:
+private Q_SLOTS:
     void applySettings();
 #ifdef QT_WIDGETS_LIB
     void createFSWatcher();

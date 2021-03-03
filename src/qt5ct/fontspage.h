@@ -48,7 +48,7 @@ public:
 
     void writeSettings() override;
 
-private slots:
+private Q_SLOTS:
     void onFontChangeRequested(QWidget *widget);
     void on_createFontsConfButton_clicked();
     void on_removeFontsConfButton_clicked();

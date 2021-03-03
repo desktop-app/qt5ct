@@ -110,14 +110,14 @@ void PaletteEditDialog::on_tableWidget_itemClicked(QTableWidgetItem *item)
     if(color.isValid())
     {
         item->setBackground(color);
-        emit paletteChanged(selectedPalette());
+        Q_EMIT paletteChanged(selectedPalette());
     }
 }
 
 void PaletteEditDialog::on_resetPaletteButton_clicked()
 {
     setPalette(m_currentStyle->standardPalette());
-    emit paletteChanged(selectedPalette());
+    Q_EMIT paletteChanged(selectedPalette());
 }
 
 void PaletteEditDialog::on_buildInactiveButton_clicked()
@@ -129,7 +129,7 @@ void PaletteEditDialog::on_buildInactiveButton_clicked()
                          palette.color(QPalette::Active, QPalette::ColorRole(i)));
     }
     setPalette(palette);
-    emit paletteChanged(selectedPalette());
+    Q_EMIT paletteChanged(selectedPalette());
 }
 
 void PaletteEditDialog::on_buildDisabledButton_clicked()
@@ -145,5 +145,5 @@ void PaletteEditDialog::on_buildDisabledButton_clicked()
     palette.setColor(QPalette::Disabled, QPalette::Text, Qt::darkGray);
     palette.setColor(QPalette::Disabled, QPalette::HighlightedText, Qt::darkGray);
     setPalette(palette);
-    emit paletteChanged(selectedPalette());
+    Q_EMIT paletteChanged(selectedPalette());
 }

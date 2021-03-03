@@ -46,7 +46,7 @@ public:
     explicit QSSEditorDialog(const QString &filePath, QWidget *parent = nullptr);
     ~QSSEditorDialog();
 
-private slots:
+private Q_SLOTS:
     void on_buttonBox_clicked(QAbstractButton *button);
 
 private:
